@@ -1,0 +1,83 @@
+07-May-2024, 02:02:47  **************************************************
+07-May-2024, 02:02:47  UpdateManager: Program StartUp. Version 7.9.36217
+07-May-2024, 02:02:47  **************************************************
+07-May-2024, 02:02:47  UpdateManager: Fetching OS product type
+07-May-2024, 02:02:47  Is System 64 bit: True
+07-May-2024, 02:02:47  UpdateManager: Node ID is 258
+07-May-2024, 02:03:02  This ISO was built in October 2022 and may not be the most current ISO available.
+07-May-2024, 02:03:02  October 2022 ISO Used
+07-May-2024, 02:03:17  Showing UI...
+07-May-2024, 02:03:17  UpdateManager: CurrentDirectory is C:\temp\D_MS_UPD
+07-May-2024, 02:03:17  PatchList Path: C:\MyPatchList.txt
+07-May-2024, 02:03:17  KBFile Path: C:\temp\D_MS_UPD\UpdateManager.ini
+07-May-2024, 02:03:17  UpdateManager: Creating Batch File C:\patch05-07-2024.bat
+07-May-2024, 02:03:18  KB5005112 needs to be installed
+07-May-2024, 02:03:18  MU21-009 KB5005112 - needs to be installed on this node
+07-May-2024, 02:03:18  KB5013626 needs to be installed
+07-May-2024, 02:03:18  KB5002115 needs to be installed
+07-May-2024, 02:03:18  KB5002052 needs to be installed
+07-May-2024, 02:03:18  KB4504745 needs to be installed
+07-May-2024, 02:03:18  KB4486670 needs to be installed
+07-May-2024, 02:03:18  KB5002226 needs to be installed
+07-May-2024, 02:03:18  KB5002192 needs to be installed
+07-May-2024, 02:03:18  KB4486747 needs to be installed
+07-May-2024, 02:03:18  KB5014356 needs to be installed
+07-May-2024, 02:03:18  KB5002026 needs to be installed
+07-May-2024, 02:03:18  KB5002288 needs to be installed
+07-May-2024, 02:03:18  3.1.29 needs to be installed
+07-May-2024, 02:03:18  Dotnet Core Not installed in the system
+07-May-2024, 02:03:18  106.0.1370.37 needs to be installed
+07-May-2024, 02:03:18  Installed MS Edge update in the system
+07-May-2024, 02:03:18  KB5018419 needs to be installed
+07-May-2024, 02:03:18  Restarting system after installing Service Stack Update (SSU). MR update will be installed after reboot.
+07-May-2024, 02:03:18  UpdateManager: Batch File created.
+Tue 05/07/2024 14:08:29.33 MU21-009 KB5005112  Installed Successfully 
+Tue 05/07/2024 14:09:23.75 MS22-05-NET KB5013626  Installed Successfully 
+Tue 05/07/2024 14:10:30.82 MS22-09-MSOFFICE KB5002115  Installed Successfully 
+Tue 05/07/2024 14:11:43.00 MS22-09-MSOFFICE KB5002052  Installed Successfully 
+Tue 05/07/2024 14:12:54.08 MS22-09-MSOFFICE KB4504745  Installed Successfully 
+Tue 05/07/2024 14:14:06.27 MS22-09-MSOFFICE KB4486670  Installed Successfully 
+Tue 05/07/2024 14:15:17.84 MS22-09-MSOFFICE KB5002226  Installed Successfully 
+Tue 05/07/2024 14:16:29.78 MS22-09-MSOFFICE KB5002192  Installed Successfully 
+Tue 05/07/2024 14:17:41.87 MS22-09-MSOFFICE KB4486747  Installed Successfully 
+Tue 05/07/2024 14:18:54.08 MS22-10-MSOFFICE KB5002026  Installed Successfully 
+Tue 05/07/2024 14:20:06.30 MS22-10-MSOFFICE KB5002288  Installed Successfully 
+Tue 05/07/2024 15:04:20.05 MS22-10-MR KB5018419  Installed Successfully 
+07-May-2024, 04:02:52  **************************************************
+07-May-2024, 04:02:52  UpdateManager: Program StartUp. Version 7.9.36217
+07-May-2024, 04:02:52  **************************************************
+07-May-2024, 04:02:52  UpdateManager: Fetching OS product type
+07-May-2024, 04:02:52  Is System 64 bit: True
+07-May-2024, 04:02:52  UpdateManager: Node ID is 258
+07-May-2024, 04:02:52  UpdateManager: Deleting resumesuit.exe from C:\temp folder
+07-May-2024, 04:02:52  UpdateManager: CommandLine argument passed
+07-May-2024, 04:02:52  :REVIEWUPDATES
+07-May-2024, 04:02:52  October 2022 ISO Used
+07-May-2024, 04:02:52  UpdateManager: AUDIT CommandLine Supplied or REVIEWUPDATES CommandLine Supplied
+07-May-2024, 04:02:52  Supplied argument: REVIEWUPDATES
+07-May-2024, 04:02:52  Showing UI...
+07-May-2024, 04:02:52  UpdateManager: CurrentDirectory is C:\temp\D_MS_UPD
+07-May-2024, 04:02:52  PatchList Path: C:\MyPatchList.txt
+07-May-2024, 04:02:52  KBFile Path: C:\temp\D_MS_UPD\UpdateManager.ini
+07-May-2024, 04:02:52  UpdateManager: Creating Batch File C:\patch05-07-2024.bat
+07-May-2024, 04:02:56  KB5005112 is installed
+07-May-2024, 04:02:56  KB5013626 is installed
+07-May-2024, 04:02:56  KB5002115 is installed
+07-May-2024, 04:02:56  KB5002052 is installed
+07-May-2024, 04:02:56  KB4504745 is installed
+07-May-2024, 04:02:56  KB4486670 is installed
+07-May-2024, 04:02:56  KB5002226 is installed
+07-May-2024, 04:02:56  KB5002192 is installed
+07-May-2024, 04:02:56  KB4486747 is installed
+07-May-2024, 04:02:56  KB5014356 needs to be installed
+07-May-2024, 04:02:56  KB5002026 is installed
+07-May-2024, 04:02:56  KB5002288 is installed
+07-May-2024, 04:02:56  3.1.29 needs to be installed
+07-May-2024, 04:02:56  Dotnet Core Not installed in the system
+07-May-2024, 04:02:56  106.0.1370.37 needs to be installed
+07-May-2024, 04:02:56  MS Edge version : 106.0.1370.37 is already installed
+07-May-2024, 04:02:56  KB5018419 is installed
+07-May-2024, 04:02:56  User did Not select Restart Required Checkbox And System will ask for user confirmation for Restart after installing all Updates
+07-May-2024, 04:02:56  UpdateManager: Batch File created.
+07-May-2024, 04:05:21  UpdateManager: User Cancelled Update Installation
+07-May-2024, 04:05:21  UpdateManager: Exit after REVIEWUPDATES CommandLine Option

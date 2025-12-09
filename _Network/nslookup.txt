@@ -1,0 +1,21 @@
+======================================== 
+Tue 12/09/2025 13:45:02.12 
+cmd: nslookup LCN01ESVTB 
+Server:  BIGSPCNS01.ALONBIGSCTRL.LOCAL
+Address:  172.20.75.20
+
+Name:    LCN01ESVTB.ALONBIGSCTRL.LOCAL
+Address:  172.20.75.24
+
+======================================== 
+Tue 12/09/2025 13:45:02.18 
+Your IP Address is:  172.20.75.24  
+cmd: nslookup  172.20.75.24 
+Server:  BIGSPCNS01.ALONBIGSCTRL.LOCAL
+Address:  172.20.75.20
+
+Name:    LCN01ESVTB.ALONBIGSCTRL.LOCAL
+Address:  172.20.75.24
+
+======================================== 
+Tue 12/09/2025 13:45:02.25 - done

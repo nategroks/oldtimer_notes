@@ -1,0 +1,3740 @@
+Tue 12/09/2025 13:45:06.20 . INITIALIZE file C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_Network\firewall_rules.txt by experionadmin on LCN01ESVTB in Domain ALONBIGSCTRL 
+mDCT++ [v1.54] (krasimir.kumanov@gmail.com) 
+
+================================================================================== 
+===== 13:45:06.21 : netsh advfirewall monitor show firewall verbose 
+================================================================================== 
+
+Global Policy State:
+----------------------------------------------------------------------
+
+Global Settings: 
+----------------------------------------------------------------------
+IPsec:
+StrongCRLCheck                        0:Disabled
+SAIdleTimeMin                         5min
+DefaultExemptions                     NeighborDiscovery,DHCP
+IPsecThroughNAT                       Never
+AuthzUserGrp                          None
+AuthzComputerGrp                      None
+AuthzUserGrpTransport                 None
+AuthzComputerGrpTransport             None
+
+StatefulFTP                           Disable
+StatefulPPTP                          Enable
+
+Main Mode:
+KeyLifetime                           480min,0sess
+SecMethods                            DHGroup2-AES128-SHA1,DHGroup2-3DES-SHA1
+ForceDH                               No
+
+Categories:
+BootTimeRuleCategory                  Windows Defender Firewall
+FirewallRuleCategory                  Windows Defender Firewall
+StealthRuleCategory                   Windows Defender Firewall
+ConSecRuleCategory                    Windows Defender Firewall
+
+
+Domain Profile Settings: 
+----------------------------------------------------------------------
+State                                 ON
+Firewall Policy                       BlockInbound,AllowOutbound
+LocalFirewallRules                    Enable
+LocalConSecRules                      Enable
+InboundUserNotification               Disable
+RemoteManagement                      Disable
+UnicastResponseToMulticast            Enable
+
+Logging:
+LogAllowedConnections                 Enable
+LogDroppedConnections                 Enable
+FileName                              %SYSTEMROOT%\System32\logfiles\firewall\domainfw.log
+MaxFileSize                           16384
+
+
+Private Profile Settings: 
+----------------------------------------------------------------------
+State                                 ON
+Firewall Policy                       BlockInbound,AllowOutbound
+LocalFirewallRules                    Enable
+LocalConSecRules                      Enable
+InboundUserNotification               Disable
+RemoteManagement                      Disable
+UnicastResponseToMulticast            Enable
+
+Logging:
+LogAllowedConnections                 Enable
+LogDroppedConnections                 Enable
+FileName                              %SYSTEMROOT%\System32\logfiles\firewall\privatefw.log
+MaxFileSize                           16384
+
+
+Public Profile Settings: 
+----------------------------------------------------------------------
+State                                 ON
+Firewall Policy                       BlockInbound,AllowOutbound
+LocalFirewallRules                    Enable
+LocalConSecRules                      Enable
+InboundUserNotification               Disable
+RemoteManagement                      Disable
+UnicastResponseToMulticast            Enable
+
+Logging:
+LogAllowedConnections                 Enable
+LogDroppedConnections                 Enable
+FileName                              %SYSTEMROOT%\System32\logfiles\firewall\publicfw.log
+MaxFileSize                           16384
+
+
+Windows Defender Firewall Rules:
+----------------------------------------------------------------------
+Rule Name:                            ExpPKS Certificate
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            443
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS HIVE API Service
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            55621
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\System\Bin\hive_api_service.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS HIVE API Client
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            Any
+RemotePort:                           55555,55620
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\System\Bin\hive_api_service.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Microsoft Edge (mDNS-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for Microsoft Edge to allow mDNS traffic.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Microsoft Edge WebView2 Runtime
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            5353
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Microsoft\EdgeWebView\Application\142.0.3595.94\msedgewebview2.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Win32WebViewHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Windows.Win32WebViewHost/resources/DisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Win32WebViewHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Windows.Win32WebViewHost/resources/Description}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Desktop App Web Viewer
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       Yes
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.SecHealthUI_10.0.17763.3232_neutral__cw5n1h2txyewy?ms-resource://Microsoft.Windows.SecHealthUI/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.SecHealthUI_10.0.17763.3232_neutral__cw5n1h2txyewy?ms-resource://Microsoft.Windows.SecHealthUI/resources/ProductDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Windows Security
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.Cortana_1.11.6.17763_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.Cortana/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.Cortana_1.11.6.17763_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.Cortana/resources/ProductDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Cortana
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.CloudExperienceHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.CloudExperienceHost/resources/appDescription}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.CloudExperienceHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.CloudExperienceHost/resources/appDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Your account
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.AAD.BrokerPlugin_1000.17763.1.0_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.AAD.BrokerPlugin/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.AAD.BrokerPlugin_1000.17763.1.0_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.AAD.BrokerPlugin/resources/PackageDisplayName}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Work or school account
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS SysConfigServer
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            55610
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS SearchCacheBuilder Service
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\SearchCacheBuilder.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS SearchCacheBuilder
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            55594
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS CDA Supervisory Platform
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\cdasp.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS EMDB Server
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\EMDBserver.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS Browser Search Events 2
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            55577
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS Browser Search Events 1
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            55576
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS Browser Orchestration Service
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\browserorchestration.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS GCL interface for ER2SR Port
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            55608
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS BOOTP Client Port
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            68
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS BOOTP Server Port
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            67
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS DtlR Server
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\dtlrsrv.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS Check Point Service
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\ChkPtService.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS ER Server
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\erserver.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS EHPM Import Service
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\EHPMImportService.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS BuilderService Service Port
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            55607
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS EciDbSyncService Service Port
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            55606
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS SrReplicationSubscription Service Port
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            55605
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS eNap Service
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\enapsrv.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS System Repository
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\sysrep.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS CDA Server
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\pscdasrv.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS GCL Name Service
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\gclnamesrv.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS OdsApp
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\OdsApp.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS DllHost.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Windows\System32\dllhost.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ServiceFramework TCP 40200
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            40200
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            DCOM TCP 135
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            135
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            RPC Endpoint mapper UDP
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            135
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            opcuaserver.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\opcuaserver.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            gevtmngr.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\gevtmngr.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            CSID.exe TCP 40209
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            40209
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\CSID.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            BACnet Utilities
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\BacnetUtilities.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            tprdsp
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\tprdsp.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            tprcom
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\tprcom.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Jacques
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\jacques.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Salt
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\salt.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            PointServer DC
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\pntsrvdc.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            cfgsum
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\cfgsum.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Excel 500 Firmware Download
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\xl5fwd.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            XL10 Direct Access
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\xl10da.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Excel 500 Time Schedules
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\xl5tms.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Excel 500 Scan Task
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\xl5scn.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ms_dfd
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\ms_dfd.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            maintd
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\maintd.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            XLWeb Download
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\xlwebdwn.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            htsserver.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\htsserver.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            hscopciengine.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\hscopciengine.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            pntrepsrv.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\pntrepsrv.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            dsdc.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\dsdc.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            dsredsrv.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\dsredsrv.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            dbrepsrv.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\dbrepsrv.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            dsnotifsync.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\dsnotifsync.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            opcenum.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\opcenum.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            opcscn.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\opcscn.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            hscopcserv5.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\hscopcserv5.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            hscopcserv4.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\hscopcserv4.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            hscopcserv3.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\hscopcserv3.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            hscopcserv2.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\hscopcserv2.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            hscopcserv.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\hscopcserv.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            filerepbcc.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\filerepbcc.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            filerep.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\filerep.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            eventsdc.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\eventsdc.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            dual_linkd.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\dual_linkd.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            dual_pswd.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\dual_pswd.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            dual_flsrv.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\dual_flsrv.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            dual_onsrv.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\dual_onsrv.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            gdamngr.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\gdamngr.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            gdanotcli.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\gdanotcli.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            gdanotsrv.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\gdanotsrv.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            gdaserver.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\gdaserver.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ms_linkd.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\ms_linkd.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            hscodbcn.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\hscodbcn.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            nifd.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\nifd.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            confd.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\confd.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ripsd.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\ripsd.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Configuration Studio
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Client\Configuration Studio\CDF.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Quick Builder
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Client\qckbld\qckbld.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            HSCStationWindow.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Client\Station\HSCStationWindow.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            HMIWeb Station
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Client\Station\Station.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            opcenum.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Windows\SysWOW64\opcenum.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            BACSTAC
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Windows\SysWOW64\bacstac.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Distributed Transaction Coordinator
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\msdtc.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Inetinfo
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\inetsrv\inetinfo.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            DLL Host
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\dllhost.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Excel 500 Daemon
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Common Files\Honeywell\Shared\xpc5_d.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            hsc_serversniffer.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Common Files\Honeywell\Server\Support Files\hsc_serversniffer.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            FTService
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\TPS\TPSXfer\FTService.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            DCOM
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            135
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              c:\windows\system32\svchost.exe
+Service:                              rpcss
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Redirection Manager
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\HCI\hcitrs.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            OpcEnum
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Windows\SysWOW64\OpcEnum.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Acronis Managed Machine Service
+----------------------------------------------------------------------
+Description:                          Acronis Managed Machine Service
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files\Acronis\BackupAndRecovery\mms.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Acronis Agent Core Service
+----------------------------------------------------------------------
+Description:                          Acronis Agent Core Service
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files\Common Files\Acronis\Agent\aakore.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Acronis Cyber Protection Service
+----------------------------------------------------------------------
+Description:                          Acronis Cyber Protection Service
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files\Acronis\CyberProtect\cyber-protect-service.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Acronis Active Protection Service
+----------------------------------------------------------------------
+Description:                          Acronis Active Protection Service
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files\Common Files\Acronis\ActiveProtection\active_protection_service.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Acronis Task Activator
+----------------------------------------------------------------------
+Description:                          Acronis Task Activator
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             127.0.0.1/32
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files\Common Files\Acronis\BackupAndRecovery\Common\act.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Acronis Service Process
+----------------------------------------------------------------------
+Description:                          Acronis Service Process
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             127.0.0.1/32
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files\Common Files\Acronis\BackupAndRecovery\Common\service_process.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Acronis Python Launcher
+----------------------------------------------------------------------
+Description:                          Acronis Python Launcher
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             127.0.0.1/32
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files\Acronis\PyShell\bin\acropsh.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Win32WebViewHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Windows.Win32WebViewHost/resources/DisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Win32WebViewHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Windows.Win32WebViewHost/resources/Description}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Desktop App Web Viewer
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       Yes
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.SecHealthUI_10.0.17763.3232_neutral__cw5n1h2txyewy?ms-resource://Microsoft.Windows.SecHealthUI/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.SecHealthUI_10.0.17763.3232_neutral__cw5n1h2txyewy?ms-resource://Microsoft.Windows.SecHealthUI/resources/ProductDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Windows Security
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.Cortana_1.11.6.17763_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.Cortana/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.Cortana_1.11.6.17763_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.Cortana/resources/ProductDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Cortana
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.CloudExperienceHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.CloudExperienceHost/resources/appDescription}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.CloudExperienceHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.CloudExperienceHost/resources/appDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Your account
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.AAD.BrokerPlugin_1000.17763.1.0_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.AAD.BrokerPlugin/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.AAD.BrokerPlugin_1000.17763.1.0_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.AAD.BrokerPlugin/resources/PackageDisplayName}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Work or school account
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            NTP Protocol
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            123
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.SecHealthUI_10.0.17763.3232_neutral__cw5n1h2txyewy?ms-resource://Microsoft.Windows.SecHealthUI/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.SecHealthUI_10.0.17763.3232_neutral__cw5n1h2txyewy?ms-resource://Microsoft.Windows.SecHealthUI/resources/ProductDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Windows Security
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.SecHealthUI_10.0.17763.3232_neutral__cw5n1h2txyewy?ms-resource://Microsoft.Windows.SecHealthUI/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.SecHealthUI_10.0.17763.3232_neutral__cw5n1h2txyewy?ms-resource://Microsoft.Windows.SecHealthUI/resources/ProductDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Windows Security
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Microsoft Edge (mDNS-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for Microsoft Edge to allow mDNS traffic.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Microsoft Edge
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            5353
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Win32WebViewHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Windows.Win32WebViewHost/resources/DisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Win32WebViewHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Windows.Win32WebViewHost/resources/Description}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Desktop App Web Viewer
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       Yes
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.Cortana_1.11.6.17763_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.Cortana/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.Cortana_1.11.6.17763_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.Cortana/resources/ProductDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Cortana
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.CloudExperienceHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.CloudExperienceHost/resources/appDescription}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.CloudExperienceHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.CloudExperienceHost/resources/appDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Your account
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.AAD.BrokerPlugin_1000.17763.1.0_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.AAD.BrokerPlugin/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.AAD.BrokerPlugin_1000.17763.1.0_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.AAD.BrokerPlugin/resources/PackageDisplayName}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Work or school account
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Firmware Manager - Advanced U-boot Support
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            Any
+RemotePort:                           55554
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\FirmwareManager\Honeywell.CMT.CommonMaintenanceTool.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Firmware Manager - U-boot Support
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            69,5353
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\FirmwareManager\Honeywell.CMT.CommonMaintenanceTool.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            rtucommservice.exe
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\FirmwareManager\comms\rtucommservice.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.Cortana_1.11.6.17763_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.Cortana/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.Cortana_1.11.6.17763_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.Cortana/resources/ProductDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Cortana
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            FteProvider
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\System Management\fteprovider.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            LCNP4EMULATOR
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\TPS\ELCN\lcnp4emulator.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            DLL Host
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Windows\SysWOW64\dllhost.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            RemConfigSvc
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\System Management\remconfigsvc.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            sysevtsvr
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\System Management\sysevtsvr.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            spsdss
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\System Management\spsdss.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            MMC
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\mmc.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            MMC
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Windows\SysWOW64\mmc.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            CAS
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\System Management\cas.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            syncrep
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\System Management\syncrep.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS OdsApp
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\OdsApp.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            UDP Port 45007
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            45007
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            UDP Port 45006
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            45006
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            TPN Server
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\TPS\TPNServer\tpndss.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            AgentHost
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\ANCIM\Agenthost.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            TCP_40300
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            40300
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            pschartmux
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\pschartmux.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Controller Migration Wizard - U-boot Support - Advanced
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            Any
+RemotePort:                           55554
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\System\Bin\contbldr.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Controller Migration Wizard - U-boot Support
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            69
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\System\Bin\contbldr.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Exp PKS Tools SysConfigService Support
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            55555
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\System\Bin\Honeywell.Experion.Tools.SysConfigService.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS Tools SysConfigService
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            55610
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            IEC61850_1010
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            1010
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            QBConcurrencyService
+----------------------------------------------------------------------
+Description:                          40215 Shared port for communicating with engineering time client applications (e.g. Configuration Studio apps). See also 40201 above. Honeywell.QB.ConcurrencyServiceHosting.exe
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            40215
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Client\Configuration Studio\Applications\Quick Builder\QBConcurrencyService\Honeywell.QB.ConcurrencyServiceHosting.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            WCF TCP 40201
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            40201
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            WCF TCP 40200
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            40200
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            HTTP TCP 80
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            80
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Plexus.exe
+----------------------------------------------------------------------
+Description:                          
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            Any
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\Run\Plexus.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS Certificate
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            443
+RemotePort:                           Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            ExpPKS Display Versioning Service
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Client\Configuration Studio\Applications\Configuration Studio\Display Versioning\Honeywell.CDF.CS.DisplaysVersioningService.exe
+Service:                              dsprepo
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            hwlicsvc.exe
+----------------------------------------------------------------------
+Description:                          
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            Any
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Program Files (x86)\Honeywell\Experion PKS\Server\run\hwlicsvc.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            SNMP Trap Service (UDP In)
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            162
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\snmptrap.exe
+Service:                              snmptrap
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            SNMP Service (UDP In)
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            161
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\SysWOW64\snmp.exe
+Service:                              snmp
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            SQLServer
+----------------------------------------------------------------------
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+Program:                              C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Binn\sqlservr.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.Cortana_1.11.6.17763_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.Cortana/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.Cortana_1.11.6.17763_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.Cortana/resources/ProductDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Cortana
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Win32WebViewHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Windows.Win32WebViewHost/resources/DisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Win32WebViewHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Windows.Win32WebViewHost/resources/Description}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Desktop App Web Viewer
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       Yes
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.AAD.BrokerPlugin_1000.17763.1.0_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.AAD.BrokerPlugin/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.AAD.BrokerPlugin_1000.17763.1.0_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.AAD.BrokerPlugin/resources/PackageDisplayName}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Work or school account
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.CloudExperienceHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.CloudExperienceHost/resources/appDescription}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.CloudExperienceHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.CloudExperienceHost/resources/appDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Your account
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Win32WebViewHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Windows.Win32WebViewHost/resources/DisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Win32WebViewHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Windows.Win32WebViewHost/resources/Description}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Desktop App Web Viewer
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       Yes
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            File Server Remote Management (SMB-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule to allow SMB traffic to manage the File Services role.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             File Server Remote Management
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            445
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            File Server Remote Management (DCOM-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule to allow DCOM traffic to manage the File Services role.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             File Server Remote Management
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            135
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              RPCSS
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            File Server Remote Management (WMI-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule to allow WMI traffic to manage the File Services role.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             File Server Remote Management
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            RPC
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              Winmgmt
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.AAD.BrokerPlugin_1000.17763.1.0_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.AAD.BrokerPlugin/resources/PackageDisplayName}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.AAD.BrokerPlugin_1000.17763.1.0_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.AAD.BrokerPlugin/resources/PackageDisplayName}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Work or school account
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            @{Microsoft.Windows.CloudExperienceHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.CloudExperienceHost/resources/appDescription}
+----------------------------------------------------------------------
+Description:                          @{Microsoft.Windows.CloudExperienceHost_10.0.17763.1_neutral_neutral_cw5n1h2txyewy?ms-resource://Microsoft.Windows.CloudExperienceHost/resources/appDescription}
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Your account
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             Any
+Edge traversal:                       No
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Windows Management Instrumentation (ASync-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule to allow Asynchronous WMI traffic for remote Windows Management Instrumentation. [TCP]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Windows Management Instrumentation (WMI)
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            Any
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\wbem\unsecapp.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Windows Management Instrumentation (WMI-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule to allow WMI traffic for remote Windows Management Instrumentation. [TCP]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Windows Management Instrumentation (WMI)
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            Any
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              winmgmt
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Windows Management Instrumentation (DCOM-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule to allow DCOM traffic for remote Windows Management Instrumentation. [TCP 135]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Windows Management Instrumentation (WMI)
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            135
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              rpcss
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            mDNS (UDP-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for mDNS traffic [UDP]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain
+Grouping:                             mDNS
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            5353
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              dnscache
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - IPv6 (IPv6-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule required to permit IPv6 traffic for ISATAP (Intra-Site Automatic Tunnel Addressing Protocol) and 6to4 tunneling services.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             41
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Dynamic Host Configuration Protocol for IPv6(DHCPV6-In)
+----------------------------------------------------------------------
+Description:                          Allows DHCPV6 (Dynamic Host Configuration Protocol for IPv6) messages for stateful and stateless configuration.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            546
+RemotePort:                           547
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              dhcp
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Dynamic Host Configuration Protocol (DHCP-In)
+----------------------------------------------------------------------
+Description:                          Allows DHCP (Dynamic Host Configuration Protocol) messages for stateful auto-configuration.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            68
+RemotePort:                           67
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              dhcp
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Internet Group Management Protocol (IGMP-In)
+----------------------------------------------------------------------
+Description:                          IGMP messages are sent and received by nodes to create, join and depart multicast groups.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             2
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Destination Unreachable Fragmentation Needed (ICMPv4-In)
+----------------------------------------------------------------------
+Description:                          Destination Unreachable Fragmentation Needed error messages are sent from any node that a packet traverses which is unable to forward the packet because fragmentation was needed and the don't fragment bit was set.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             ICMPv4
+                                      Type    Code
+                                      3       4   
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Multicast Listener Done (ICMPv6-In)
+----------------------------------------------------------------------
+Description:                          Multicast Listener Done messages inform local routers that there are no longer any members remaining for a specific multicast address on the subnet.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             LocalSubnet
+Protocol:                             ICMPv6
+                                      Type    Code
+                                      132     Any 
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Multicast Listener Report v2 (ICMPv6-In)
+----------------------------------------------------------------------
+Description:                          Multicast Listener Report v2 message is used by a listening node to either immediately report its interest in receiving multicast traffic at a specific multicast address or in response to a Multicast Listener Query.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             LocalSubnet
+Protocol:                             ICMPv6
+                                      Type    Code
+                                      143     Any 
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Multicast Listener Report (ICMPv6-In)
+----------------------------------------------------------------------
+Description:                          The Multicast Listener Report message is used by a listening node to either immediately report its interest in receiving multicast traffic at a specific multicast address or in response to a Multicast Listener Query.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             LocalSubnet
+Protocol:                             ICMPv6
+                                      Type    Code
+                                      131     Any 
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Multicast Listener Query (ICMPv6-In)
+----------------------------------------------------------------------
+Description:                          An IPv6 multicast-capable router uses the Multicast Listener Query message to query a link for multicast group membership.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             LocalSubnet
+Protocol:                             ICMPv6
+                                      Type    Code
+                                      130     Any 
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Router Solicitation (ICMPv6-In)
+----------------------------------------------------------------------
+Description:                          Router Solicitation messages are sent by nodes seeking routers to provide stateless auto-configuration.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             ICMPv6
+                                      Type    Code
+                                      133     Any 
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Router Advertisement (ICMPv6-In)
+----------------------------------------------------------------------
+Description:                          Router Advertisement messages are sent by routers to other nodes for stateless auto-configuration.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             fe80::/64
+Protocol:                             ICMPv6
+                                      Type    Code
+                                      134     Any 
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Neighbor Discovery Advertisement (ICMPv6-In)
+----------------------------------------------------------------------
+Description:                          Neighbor Discovery Advertisement messages are sent by nodes to notify other nodes of link-layer address changes or in response to a Neighbor Discovery Solicitation request.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             ICMPv6
+                                      Type    Code
+                                      136     Any 
+Edge traversal:                       Yes
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Neighbor Discovery Solicitation (ICMPv6-In)
+----------------------------------------------------------------------
+Description:                          Neighbor Discovery Solicitations are sent by nodes to discover the link-layer address of another on-link IPv6 node.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             ICMPv6
+                                      Type    Code
+                                      135     Any 
+Edge traversal:                       Yes
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Parameter Problem (ICMPv6-In)
+----------------------------------------------------------------------
+Description:                          Parameter Problem error messages are sent by nodes as a result of incorrectly generated packets.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             ICMPv6
+                                      Type    Code
+                                      4       Any 
+Edge traversal:                       Yes
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Time Exceeded (ICMPv6-In)
+----------------------------------------------------------------------
+Description:                          Time Exceeded error messages are generated from any node that a packet traverses if the Hop Limit value is decremented to zero at any point on the path.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             ICMPv6
+                                      Type    Code
+                                      3       Any 
+Edge traversal:                       Yes
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Packet Too Big (ICMPv6-In)
+----------------------------------------------------------------------
+Description:                          Packet Too Big error messages are sent from any node that a packet traverses which is unable to forward the packet because the packet is too large for the next link.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             ICMPv6
+                                      Type    Code
+                                      2       Any 
+Edge traversal:                       Yes
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Core Networking - Destination Unreachable (ICMPv6-In)
+----------------------------------------------------------------------
+Description:                          Destination Unreachable error messages are sent from any node that a packet traverses which is unable to forward the packet for any reason except congestion.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Core Networking
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             ICMPv6
+                                      Type    Code
+                                      1       Any 
+Edge traversal:                       Yes
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            File and Printer Sharing (LLMNR-UDP-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for File and Printer Sharing to allow Link Local Multicast Name Resolution. [UDP 5355]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             File and Printer Sharing
+LocalIP:                              Any
+RemoteIP:                             LocalSubnet
+Protocol:                             UDP
+LocalPort:                            5355
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              dnscache
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            File and Printer Sharing (Echo Request - ICMPv6-In)
+----------------------------------------------------------------------
+Description:                          Echo Request messages are sent as ping requests to other nodes.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             File and Printer Sharing
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             ICMPv6
+                                      Type    Code
+                                      128     Any 
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            File and Printer Sharing (Echo Request - ICMPv4-In)
+----------------------------------------------------------------------
+Description:                          Echo Request messages are sent as ping requests to other nodes.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             File and Printer Sharing
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             ICMPv4
+                                      Type    Code
+                                      8       Any 
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            File and Printer Sharing (Spooler Service - RPC-EPMAP)
+----------------------------------------------------------------------
+Description:                          Inbound rule for the RPCSS service to allow RPC/TCP traffic for the Spooler Service.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             File and Printer Sharing
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            RPC-EPMap
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              Rpcss
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            File and Printer Sharing (Spooler Service - RPC)
+----------------------------------------------------------------------
+Description:                          Inbound rule for File and Printer Sharing to allow the Print Spooler Service to communicate via TCP/RPC.
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             File and Printer Sharing
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            RPC
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\spoolsv.exe
+Service:                              Spooler
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            File and Printer Sharing (NB-Datagram-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for File and Printer Sharing to allow NetBIOS Datagram transmission and reception. [UDP 138]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             File and Printer Sharing
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            138
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            File and Printer Sharing (NB-Name-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for File and Printer Sharing to allow NetBIOS Name Resolution. [UDP 137]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             File and Printer Sharing
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            137
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            File and Printer Sharing (SMB-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for File and Printer Sharing to allow Server Message Block transmission and reception via Named Pipes. [TCP 445]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             File and Printer Sharing
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            445
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            File and Printer Sharing (NB-Session-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for File and Printer Sharing to allow NetBIOS Session Service connections. [TCP 139]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             File and Printer Sharing
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            139
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Cast to Device streaming server (RTSP-Streaming-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for the Cast to Device server to allow streaming using RTSP and RTP. [TCP 23554, 23555, 23556]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain
+Grouping:                             Cast to Device functionality
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            23554,23555,23556
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\mdeserver.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Cast to Device streaming server (RTCP-Streaming-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for the Cast to Device server to allow streaming using RTSP and RTP. [UDP]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain
+Grouping:                             Cast to Device functionality
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            Any
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\mdeserver.exe
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Cast to Device streaming server (HTTP-Streaming-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for the Cast to Device server to allow streaming using HTTP. [TCP 10246]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain
+Grouping:                             Cast to Device functionality
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            10246
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Windows Remote Management (HTTP-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for Windows Remote Management via WS-Management. [TCP 5985]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             Windows Remote Management
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            5985
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            DIAL protocol server (HTTP-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for DIAL protocol server to allow remote control of Apps using HTTP. [TCP 10247]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain
+Grouping:                             DIAL protocol server
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            10247
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            AllJoyn Router (UDP-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for AllJoyn Router traffic [UDP]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             AllJoyn Router
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            Any
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              AJRouter
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            AllJoyn Router (TCP-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for AllJoyn Router traffic [TCP]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private
+Grouping:                             AllJoyn Router
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            9955
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              AJRouter
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Network Discovery (Pub-WSD-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for Network Discovery to discover devices via Function Discovery. [UDP 3702]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Network Discovery
+LocalIP:                              Any
+RemoteIP:                             LocalSubnet
+Protocol:                             UDP
+LocalPort:                            3702
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              fdrespub
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Network Discovery (LLMNR-UDP-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for Network Discovery to allow Link Local Multicast Name Resolution. [UDP 5355]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Network Discovery
+LocalIP:                              Any
+RemoteIP:                             LocalSubnet
+Protocol:                             UDP
+LocalPort:                            5355
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              dnscache
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Network Discovery (WSD-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for Network Discovery to discover devices via Function Discovery. [UDP 3702]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Network Discovery
+LocalIP:                              Any
+RemoteIP:                             LocalSubnet
+Protocol:                             UDP
+LocalPort:                            3702
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              fdphost
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Network Discovery (SSDP-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for Network Discovery to allow use of the Simple Service Discovery Protocol. [UDP 1900]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Network Discovery
+LocalIP:                              Any
+RemoteIP:                             LocalSubnet
+Protocol:                             UDP
+LocalPort:                            1900
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              Ssdpsrv
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Network Discovery (WSD Events-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for Network Discovery to allow WSDAPI Events via Function Discovery. [TCP 5357]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Network Discovery
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            5357
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Network Discovery (WSD EventsSecure-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for Network Discovery to allow Secure WSDAPI Events via Function Discovery. [TCP 5358]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Network Discovery
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            5358
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Network Discovery (NB-Datagram-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for Network Discovery to allow NetBIOS Datagram transmission and reception. [UDP 138]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Network Discovery
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            138
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Network Discovery (NB-Name-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for Network Discovery to allow NetBIOS Name Resolution. [UDP 137]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Network Discovery
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            137
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Network Discovery (UPnP-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule for Network Discovery to allow use of Universal Plug and Play. [TCP 2869]
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Network Discovery
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            2869
+RemotePort:                           Any
+Edge traversal:                       No
+Program:                              System
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Delivery Optimization (UDP-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule to allow Delivery Optimization to connect to remote endpoints
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Delivery Optimization
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             UDP
+LocalPort:                            7680
+RemotePort:                           Any
+Edge traversal:                       Yes
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              dosvc
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Rule Name:                            Delivery Optimization (TCP-In)
+----------------------------------------------------------------------
+Description:                          Inbound rule to allow Delivery Optimization to connect to remote endpoints
+Enabled:                              Yes
+Direction:                            In
+Profiles:                             Domain,Private,Public
+Grouping:                             Delivery Optimization
+LocalIP:                              Any
+RemoteIP:                             Any
+Protocol:                             TCP
+LocalPort:                            7680
+RemotePort:                           Any
+Edge traversal:                       Yes
+Program:                              C:\Windows\system32\svchost.exe
+Service:                              dosvc
+InterfaceTypes:                       Any
+Security:                             NotRequired
+Rule source:                          Local Setting
+Action:                               Allow
+
+Ok.
+
+ 

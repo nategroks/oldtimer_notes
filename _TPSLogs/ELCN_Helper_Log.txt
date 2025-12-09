@@ -1,0 +1,210 @@
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :1.AlterServiceStart started..
+-------------------------------
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :The TdcServer service status is currently set to {0}Stopped
+-------------------------------
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :2.RunCommand started..
+-------------------------------
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :RunCommand-driver doesn't  exists in folder path
+-------------------------------
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :3.SetRegistry for SECONDARYNETWORKTYPE started
+-------------------------------
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :SetRegistry-Key doesn't exist-SOFTWARE\WOW6432Node\Honeywell\TPS50\InstallInfo
+-------------------------------
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :4.AlterServiceStartType started..
+-------------------------------
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :Attempting to change the LCNP4EmulationManagementService startup type
+-------------------------------
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :5.SetRegistry for DependOnService started
+-------------------------------
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :SetRegistry-Key doesn't exist-SYSTEM\CurrentControlSet\Services\TdcServer
+-------------------------------
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :SetServiceDependency: Arguement: sc config TdcServer depend= LCNP4EmulationManagementService 
+-------------------------------
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :SetServiceDependency: process.Start() returned true
+-------------------------------
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :6.AddDirectorySecurity started for: C:\ProgramData\Honeywell\Experion PKS\CrashDump
+-------------------------------
+
+Log Entry : 5:09:31 PM Wednesday, May 1, 2024
+  :
+  :7.AddDirectorySecurity started for: C:\ProgramData\Honeywell\TPSLogs
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :1.AlterServiceStart started..
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :The TdcServer service status is currently set to {0}Stopped
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :2.RunCommand started..
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :RunCommand-driver doesn't  exists in folder path
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :3.SetRegistry for SECONDARYNETWORKTYPE started
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :SetRegistry-Key doesn't exist-SOFTWARE\WOW6432Node\Honeywell\TPS50\InstallInfo
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :4.AlterServiceStartType started..
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :Attempting to change the LCNP4EmulationManagementService startup type
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :5.SetRegistry for DependOnService started
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :SetRegistry-Key doesn't exist-SYSTEM\CurrentControlSet\Services\TdcServer
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :SetServiceDependency: Arguement: sc config TdcServer depend= LCNP4EmulationManagementService 
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :SetServiceDependency: process.Start() returned true
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :6.AddDirectorySecurity started for: C:\ProgramData\Honeywell\Experion PKS\CrashDump
+-------------------------------
+
+Log Entry : 5:49:21 PM Wednesday, May 1, 2024
+  :
+  :7.AddDirectorySecurity started for: C:\ProgramData\Honeywell\TPSLogs
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :1.AlterServiceStart started..
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :The TdcServer service status is currently set to {0}Stopped
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :2.RunCommand started..
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :RunCommand-driver doesn't  exists in folder path
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :3.SetRegistry for SECONDARYNETWORKTYPE started
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :SetRegistry-Key doesn't exist-SOFTWARE\WOW6432Node\Honeywell\TPS50\InstallInfo
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :4.AlterServiceStartType started..
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :Attempting to change the LCNP4EmulationManagementService startup type
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :5.SetRegistry for DependOnService started
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :SetRegistry-Key doesn't exist-SYSTEM\CurrentControlSet\Services\TdcServer
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :SetServiceDependency: Arguement: sc config TdcServer depend= LCNP4EmulationManagementService 
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :SetServiceDependency: process.Start() returned true
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :6.AddDirectorySecurity started for: C:\ProgramData\Honeywell\Experion PKS\CrashDump
+-------------------------------
+
+Log Entry : 5:50:04 PM Wednesday, May 1, 2024
+  :
+  :7.AddDirectorySecurity started for: C:\ProgramData\Honeywell\TPSLogs
+-------------------------------

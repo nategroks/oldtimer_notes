@@ -1,0 +1,31 @@
+Tue 12/09/2025 13:45:04.16 . INITIALIZE file C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_Network\nbtstat.txt by experionadmin on LCN01ESVTB in Domain ALONBIGSCTRL 
+mDCT++ [v1.54] (krasimir.kumanov@gmail.com) 
+
+================================================================================== 
+===== 13:45:04.17 : nbtstat -n 
+================================================================================== 
+    
+Ethernet 2:
+Node IpAddress: [172.20.75.24] Scope Id: []
+
+                NetBIOS Local Name Table
+
+       Name               Type         Status
+    ---------------------------------------------
+    LCN01ESVTB     <00>  UNIQUE      Registered 
+    ALONBIGSCTRL   <00>  GROUP       Registered 
+    LCN01ESVTB     <20>  UNIQUE      Registered 
+ 
+================================================================================== 
+===== 13:45:05.19 : nbtstat -c 
+================================================================================== 
+    
+Ethernet 2:
+Node IpAddress: [172.20.75.24] Scope Id: []
+
+                  NetBIOS Remote Cache Name Table
+
+        Name              Type       Host Address    Life [sec]
+    ------------------------------------------------------------
+    SAFETY_STATION <20>  UNIQUE          172.20.75.49        297
+ 

@@ -1,0 +1,758 @@
+Tue 12/09/2025 13:45:34.15 . INITIALIZE file C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_Network\Net.Share.Acl.txt by experionadmin on LCN01ESVTB in Domain ALONBIGSCTRL 
+mDCT++ [v1.54] (krasimir.kumanov@gmail.com) 
+
+================================================================================== 
+===== 13:45:34.27 : icacls "\\localhost\abstract" 
+================================================================================== 
+\\localhost\abstract ALONBIGSCTRL\experionadmin:(OI)(CI)(F)
+                     LCN01ESVTB\Local View Only Users:(OI)(CI)(RX)
+                     LCN01ESVTB\Local Ack View Only Users:(OI)(CI)(RX)
+                     LCN01ESVTB\Local Servers:(OI)(CI)(F)
+                     LCN01ESVTB\Product Administrators:(OI)(CI)(F)
+                     LCN01ESVTB\Local Supervisors:(OI)(CI)(RX)
+                     LCN01ESVTB\Local Engineers:(OI)(CI)(F)
+                     LCN01ESVTB\Local Operators:(OI)(CI)(RX)
+                     Everyone:(OI)(CI)(F)
+                     NT SERVICE\dsprepo:(OI)(CI)(F)
+                     BUILTIN\Administrators:(OI)(CI)(F)
+                     NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:35.18 : icacls "\\localhost\ADMIN$" 
+================================================================================== 
+\\localhost\ADMIN$ NT SERVICE\TrustedInstaller:(F)
+                   NT SERVICE\TrustedInstaller:(CI)(IO)(F)
+                   NT AUTHORITY\SYSTEM:(M)
+                   NT AUTHORITY\SYSTEM:(OI)(CI)(IO)(F)
+                   BUILTIN\Administrators:(M)
+                   BUILTIN\Administrators:(OI)(CI)(IO)(F)
+                   BUILTIN\Users:(RX)
+                   BUILTIN\Users:(OI)(CI)(IO)(GR,GE)
+                   CREATOR OWNER:(OI)(CI)(IO)(F)
+                   APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(RX)
+                   APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)
+                   APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(RX)
+                   APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:36.17 : icacls "\\localhost\ALON SM R162.8 Programs" 
+================================================================================== 
+\\localhost\ALON SM R162.8 Programs Everyone:(OI)(CI)(F)
+                                    NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+                                    LCN01ESVTB\experionadmin:(OI)(CI)(F)
+                                    BUILTIN\Administrators:(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:37.17 : icacls "\\localhost\C$" 
+================================================================================== 
+\\localhost\C$ NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+               BUILTIN\Administrators:(OI)(CI)(F)
+               BUILTIN\Users:(OI)(CI)(RX)
+               BUILTIN\Users:(CI)(AD)
+               BUILTIN\Users:(CI)(IO)(WD)
+               CREATOR OWNER:(OI)(CI)(IO)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:38.24 : icacls "\\localhost\Checkpoint" 
+================================================================================== 
+\\localhost\Checkpoint NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                       BUILTIN\Administrators:(I)(OI)(CI)(F)
+                       CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                       BUILTIN\Users:(I)(OI)(CI)(RX)
+                       LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local Operators:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:39.14 : icacls "\\localhost\CompressorMaps" 
+================================================================================== 
+\\localhost\CompressorMaps LCN01ESVTB\Local Servers:(I)(OI)(CI)(F)
+                           NT SERVICE\dsprepo:(I)(OI)(CI)(F)
+                           NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                           BUILTIN\Administrators:(I)(OI)(CI)(F)
+                           CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                           BUILTIN\Users:(I)(OI)(CI)(RX)
+                           LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                           LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                           LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(RX)
+                           LCN01ESVTB\Local Operators:(I)(OI)(CI)(RX)
+                           LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(RX)
+                           LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:40.15 : icacls "\\localhost\ControllerIntegration" 
+================================================================================== 
+\\localhost\ControllerIntegration LCN01ESVTB\Local Servers:(I)(OI)(CI)(F)
+                                  NT SERVICE\dsprepo:(I)(OI)(CI)(F)
+                                  NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                                  BUILTIN\Administrators:(I)(OI)(CI)(F)
+                                  CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                                  BUILTIN\Users:(I)(OI)(CI)(RX)
+                                  LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                                  LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                                  LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(RX)
+                                  LCN01ESVTB\Local Operators:(I)(OI)(CI)(RX)
+                                  LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(RX)
+                                  LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:41.15 : icacls "\\localhost\CPBASE" 
+================================================================================== 
+\\localhost\CPBASE LCN01ESVTB\ExpSQLSvc:(OI)(CI)(F)
+                   NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                   BUILTIN\Administrators:(I)(OI)(CI)(F)
+                   CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                   BUILTIN\Users:(I)(OI)(CI)(RX)
+                   LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                   LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                   LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(F)
+                   LCN01ESVTB\Local Operators:(I)(OI)(CI)(F)
+                   LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(F)
+                   LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:42.14 : icacls "\\localhost\D$" 
+================================================================================== 
+\\localhost\D$ Everyone:(RX)
+               CREATOR OWNER:(OI)(CI)(IO)(F)
+               LCN01ESVTB\mngr:(OI)(CI)(F)
+               NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+               BUILTIN\Administrators:(OI)(CI)(F)
+               BUILTIN\Users:(CI)(IO)(S,WD)
+               BUILTIN\Users:(CI)(S,AD)
+               BUILTIN\Users:(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:43.14 : icacls "\\localhost\das" 
+================================================================================== 
+\\localhost\das LCN01ESVTB\Local Servers:(I)(OI)(CI)(F)
+                NT SERVICE\dsprepo:(I)(OI)(CI)(F)
+                NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                BUILTIN\Administrators:(I)(OI)(CI)(F)
+                CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                BUILTIN\Users:(I)(OI)(CI)(RX)
+                LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(RX)
+                LCN01ESVTB\Local Operators:(I)(OI)(CI)(RX)
+                LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(RX)
+                LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:44.15 : icacls "\\localhost\DEVICEHELP" 
+================================================================================== 
+\\localhost\DEVICEHELP LCN01ESVTB\Local Servers:(OI)(CI)(F)
+                       NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                       BUILTIN\Administrators:(I)(OI)(CI)(F)
+                       CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                       BUILTIN\Users:(I)(OI)(CI)(RX)
+                       LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local Operators:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:45.14 : icacls "\\localhost\DisplayShare1" 
+================================================================================== 
+\\localhost\DisplayShare1 NT SERVICE\TrustedInstaller:(I)(F)
+                          NT SERVICE\TrustedInstaller:(I)(CI)(IO)(F)
+                          NT AUTHORITY\SYSTEM:(I)(F)
+                          NT AUTHORITY\SYSTEM:(I)(OI)(CI)(IO)(F)
+                          BUILTIN\Administrators:(I)(F)
+                          BUILTIN\Administrators:(I)(OI)(CI)(IO)(F)
+                          BUILTIN\Users:(I)(RX)
+                          BUILTIN\Users:(I)(OI)(CI)(IO)(GR,GE)
+                          CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                          APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(RX)
+                          APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(OI)(CI)(IO)(GR,GE)
+                          APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(RX)
+                          APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(OI)(CI)(IO)(GR,GE)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:46.14 : icacls "\\localhost\DisplayShare2" 
+================================================================================== 
+\\localhost\DisplayShare2 ALONBIGSCTRL\experionadmin:(OI)(CI)(F)
+                          LCN01ESVTB\Local View Only Users:(OI)(CI)(RX)
+                          LCN01ESVTB\Local Ack View Only Users:(OI)(CI)(RX)
+                          LCN01ESVTB\Local Servers:(OI)(CI)(F)
+                          LCN01ESVTB\Product Administrators:(OI)(CI)(F)
+                          LCN01ESVTB\Local Supervisors:(OI)(CI)(RX)
+                          LCN01ESVTB\Local Engineers:(OI)(CI)(F)
+                          LCN01ESVTB\Local Operators:(OI)(CI)(RX)
+                          Everyone:(OI)(CI)(F)
+                          NT SERVICE\dsprepo:(OI)(CI)(F)
+                          BUILTIN\Administrators:(OI)(CI)(F)
+                          NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:47.13 : icacls "\\localhost\efm" 
+================================================================================== 
+\\localhost\efm LCN01ESVTB\Local Servers:(I)(OI)(CI)(F)
+                NT SERVICE\dsprepo:(I)(OI)(CI)(F)
+                NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                BUILTIN\Administrators:(I)(OI)(CI)(F)
+                CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                BUILTIN\Users:(I)(OI)(CI)(RX)
+                LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(RX)
+                LCN01ESVTB\Local Operators:(I)(OI)(CI)(RX)
+                LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(RX)
+                LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:48.13 : icacls "\\localhost\EquipTemplates" 
+================================================================================== 
+\\localhost\EquipTemplates LCN01ESVTB\Local Servers:(I)(OI)(CI)(F)
+                           NT SERVICE\dsprepo:(I)(OI)(CI)(F)
+                           NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                           BUILTIN\Administrators:(I)(OI)(CI)(F)
+                           CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                           BUILTIN\Users:(I)(OI)(CI)(RX)
+                           LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                           LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                           LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(RX)
+                           LCN01ESVTB\Local Operators:(I)(OI)(CI)(RX)
+                           LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(RX)
+                           LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:49.12 : icacls "\\localhost\etc" 
+================================================================================== 
+\\localhost\etc NT SERVICE\TrustedInstaller:(F)
+                NT SERVICE\TrustedInstaller:(CI)(IO)(F)
+                NT AUTHORITY\SYSTEM:(M)
+                NT AUTHORITY\SYSTEM:(OI)(CI)(IO)(F)
+                BUILTIN\Administrators:(M)
+                BUILTIN\Administrators:(OI)(CI)(IO)(F)
+                BUILTIN\Users:(RX)
+                BUILTIN\Users:(OI)(CI)(IO)(GR,GE)
+                CREATOR OWNER:(OI)(CI)(IO)(F)
+                APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(RX)
+                APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)
+                APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(RX)
+                APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:50.12 : icacls "\\localhost\eventarchive" 
+================================================================================== 
+\\localhost\eventarchive ALONBIGSCTRL\experionadmin:(I)(F)
+                         CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                         LCN01ESVTB\mngr:(I)(OI)(CI)(F)
+                         NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                         BUILTIN\Administrators:(I)(OI)(CI)(F)
+                         BUILTIN\Users:(I)(CI)(S,WD)
+                         BUILTIN\Users:(I)(CI)(S,AD)
+                         BUILTIN\Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:51.11 : icacls "\\localhost\GSDMLCATALOG" 
+================================================================================== 
+\\localhost\GSDMLCATALOG LCN01ESVTB\Local Servers:(OI)(CI)(F)
+                         LCN01ESVTB\Product Administrators:(OI)(CI)(F)
+                         NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                         BUILTIN\Administrators:(I)(OI)(CI)(F)
+                         CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                         BUILTIN\Users:(I)(OI)(CI)(RX)
+                         LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                         LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                         LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(F)
+                         LCN01ESVTB\Local Operators:(I)(OI)(CI)(F)
+                         LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(F)
+                         LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:52.21 : icacls "\\localhost\GUS Security" 
+================================================================================== 
+\\localhost\GUS Security BUILTIN\Administrators:(CI)(F)
+                         BUILTIN\Administrators:(OI)(IO)(R,W,D,WDAC,WO,DC)
+                         NT AUTHORITY\SYSTEM:(CI)(F)
+                         NT AUTHORITY\SYSTEM:(OI)(IO)(R,W,D,WDAC,WO,DC)
+                         CREATOR OWNER:(CI)(IO)(F)
+                         CREATOR OWNER:(OI)(IO)(R,W,D,WDAC,WO,DC)
+                         LCN01ESVTB\Product Administrators:(CI)(F)
+                         LCN01ESVTB\Product Administrators:(OI)(IO)(R,W,D,WDAC,WO,DC)
+                         BUILTIN\Users:(CI)(RX)
+                         BUILTIN\Users:(OI)(IO)(R)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:53.20 : icacls "\\localhost\HCISecurity" 
+================================================================================== 
+\\localhost\HCISecurity BUILTIN\Administrators:(CI)(F)
+                        BUILTIN\Administrators:(OI)(IO)(R,W,D,WDAC,WO,DC)
+                        NT AUTHORITY\SYSTEM:(CI)(F)
+                        NT AUTHORITY\SYSTEM:(OI)(IO)(R,W,D,WDAC,WO,DC)
+                        CREATOR OWNER:(CI)(IO)(F)
+                        CREATOR OWNER:(OI)(IO)(R,W,D,WDAC,WO,DC)
+                        LCN01ESVTB\Product Administrators:(CI)(F)
+                        LCN01ESVTB\Product Administrators:(OI)(IO)(R,W,D,WDAC,WO,DC)
+                        BUILTIN\Users:(CI)(RX)
+                        BUILTIN\Users:(OI)(IO)(R)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:54.20 : icacls "\\localhost\HistoryArchive" 
+================================================================================== 
+\\localhost\HistoryArchive LCN01ESVTB\mngr:(OI)(CI)(F)
+                           LCN01ESVTB\experionadmin:(I)(F)
+                           CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                           LCN01ESVTB\mngr:(I)(OI)(CI)(F)
+                           NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                           BUILTIN\Administrators:(I)(OI)(CI)(F)
+                           BUILTIN\Users:(I)(CI)(S,WD)
+                           BUILTIN\Users:(I)(CI)(S,AD)
+                           BUILTIN\Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:55.19 : icacls "\\localhost\HM Backups" 
+================================================================================== 
+\\localhost\HM Backups ALONBIGSCTRL\experionadmin:(OI)(CI)(F)
+                       Everyone:(OI)(CI)(F)
+                       NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+                       BUILTIN\Administrators:(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:56.18 : icacls "\\localhost\HYBRID" 
+================================================================================== 
+\\localhost\HYBRID LCN01ESVTB\ExpSQLSvc:(OI)(CI)(F)
+                   NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                   BUILTIN\Administrators:(I)(OI)(CI)(F)
+                   CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                   BUILTIN\Users:(I)(OI)(CI)(RX)
+                   LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                   LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                   LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(F)
+                   LCN01ESVTB\Local Operators:(I)(OI)(CI)(F)
+                   LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(F)
+                   LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:57.18 : icacls "\\localhost\IEC61850" 
+================================================================================== 
+\\localhost\IEC61850 LCN01ESVTB\Local Supervisors:(OI)(R)
+                     LCN01ESVTB\Local Servers:(OI)(F)
+                     BUILTIN\Users:(OI)(R)
+                     LCN01ESVTB\Local View Only Users:(OI)(R)
+                     LCN01ESVTB\Local Ack View Only Users:(OI)(R)
+                     LCN01ESVTB\Local Operators:(OI)(R)
+                     NT SERVICE\dsprepo:(OI)(CI)(F)
+                     NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+                     CREATOR OWNER:(OI)(CI)(IO)(F)
+                     LCN01ESVTB\Product Administrators:(OI)(CI)(F)
+                     LCN01ESVTB\Local Engineers:(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:58.18 : icacls "\\localhost\import" 
+================================================================================== 
+\\localhost\import Everyone:(OI)(CI)(F)
+                   NT SERVICE\TrustedInstaller:(I)(F)
+                   NT SERVICE\TrustedInstaller:(I)(CI)(IO)(F)
+                   NT AUTHORITY\SYSTEM:(I)(F)
+                   NT AUTHORITY\SYSTEM:(I)(OI)(CI)(IO)(F)
+                   BUILTIN\Administrators:(I)(F)
+                   BUILTIN\Administrators:(I)(OI)(CI)(IO)(F)
+                   BUILTIN\Users:(I)(RX)
+                   BUILTIN\Users:(I)(OI)(CI)(IO)(GR,GE)
+                   CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                   APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(RX)
+                   APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(OI)(CI)(IO)(GR,GE)
+                   APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(RX)
+                   APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(OI)(CI)(IO)(GR,GE)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:45:59.18 : icacls "\\localhost\INSTALL" 
+================================================================================== 
+\\localhost\INSTALL NT SERVICE\TrustedInstaller:(I)(F)
+                    NT SERVICE\TrustedInstaller:(I)(CI)(IO)(F)
+                    NT AUTHORITY\SYSTEM:(I)(F)
+                    NT AUTHORITY\SYSTEM:(I)(OI)(CI)(IO)(F)
+                    BUILTIN\Administrators:(I)(F)
+                    BUILTIN\Administrators:(I)(OI)(CI)(IO)(F)
+                    BUILTIN\Users:(I)(RX)
+                    BUILTIN\Users:(I)(OI)(CI)(IO)(GR,GE)
+                    CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                    APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(RX)
+                    APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(OI)(CI)(IO)(GR,GE)
+                    APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(RX)
+                    APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(OI)(CI)(IO)(GR,GE)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:00.17 : icacls "\\localhost\inventory" 
+================================================================================== 
+\\localhost\inventory NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                      BUILTIN\Administrators:(I)(OI)(CI)(F)
+                      CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                      BUILTIN\Users:(I)(OI)(CI)(RX)
+                      LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                      LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                      LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(F)
+                      LCN01ESVTB\Local Operators:(I)(OI)(CI)(F)
+                      LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(F)
+                      LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:01.17 : icacls "\\localhost\IPC$" 
+================================================================================== 
+\\localhost\IPC$: The request is not supported.
+Successfully processed 0 files; Failed processing 1 files
+ 
+================================================================================== 
+===== 13:46:02.16 : icacls "\\localhost\mapping" 
+================================================================================== 
+\\localhost\mapping LCN01ESVTB\Local Servers:(I)(OI)(CI)(F)
+                    NT SERVICE\dsprepo:(I)(OI)(CI)(F)
+                    NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                    BUILTIN\Administrators:(I)(OI)(CI)(F)
+                    CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                    BUILTIN\Users:(I)(OI)(CI)(RX)
+                    LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                    LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                    LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(RX)
+                    LCN01ESVTB\Local Operators:(I)(OI)(CI)(RX)
+                    LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(RX)
+                    LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:03.16 : icacls "\\localhost\MenusandToolBars" 
+================================================================================== 
+\\localhost\MenusandToolBars ALONBIGSCTRL\experionadmin:(OI)(CI)(F)
+                             LCN01ESVTB\Local Servers:(OI)(CI)(F)
+                             LCN01ESVTB\Product Administrators:(OI)(CI)(F)
+                             LCN01ESVTB\Local Engineers:(OI)(CI)(F)
+                             LCN01ESVTB\Local Supervisors:(OI)(CI)(RX)
+                             LCN01ESVTB\Local Operators:(OI)(CI)(RX)
+                             LCN01ESVTB\Local Ack View Only Users:(OI)(CI)(RX)
+                             LCN01ESVTB\Local View Only Users:(OI)(CI)(RX)
+                             Everyone:(OI)(CI)(F)
+                             NT SERVICE\dsprepo:(OI)(CI)(F)
+                             NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+                             BUILTIN\Administrators:(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:04.16 : icacls "\\localhost\NotifOverrides" 
+================================================================================== 
+\\localhost\NotifOverrides LCN01ESVTB\Local Servers:(I)(OI)(CI)(F)
+                           NT SERVICE\dsprepo:(I)(OI)(CI)(F)
+                           NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                           BUILTIN\Administrators:(I)(OI)(CI)(F)
+                           CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                           BUILTIN\Users:(I)(OI)(CI)(RX)
+                           LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                           LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                           LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(RX)
+                           LCN01ESVTB\Local Operators:(I)(OI)(CI)(RX)
+                           LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(RX)
+                           LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:05.15 : icacls "\\localhost\ODSDATA" 
+================================================================================== 
+\\localhost\ODSDATA LCN01ESVTB\Local Servers:(OI)(CI)(F)
+                    LCN01ESVTB\Product Administrators:(OI)(CI)(F)
+                    LCN01ESVTB\Local Engineers:(OI)(CI)(F)
+                    BUILTIN\Administrators:(I)(OI)(CI)(F)
+                    NT AUTHORITY\SYSTEM:(I)(F)
+                    NT AUTHORITY\SYSTEM:(I)(OI)(CI)(IO)(F)
+                    NT AUTHORITY\SERVICE:(I)(OI)(CI)(M,DC)
+                    NT AUTHORITY\INTERACTIVE:(I)(OI)(CI)(M,DC)
+                    NT AUTHORITY\BATCH:(I)(OI)(CI)(M,DC)
+                    CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:06.15 : icacls "\\localhost\ODSQUERY" 
+================================================================================== 
+\\localhost\ODSQUERY NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                     BUILTIN\Administrators:(I)(OI)(CI)(F)
+                     CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                     BUILTIN\Users:(I)(OI)(CI)(RX)
+                     LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                     LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                     LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(F)
+                     LCN01ESVTB\Local Operators:(I)(OI)(CI)(F)
+                     LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(F)
+                     LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:07.14 : icacls "\\localhost\qbfiles" 
+================================================================================== 
+\\localhost\qbfiles LCN01ESVTB\Local Servers:(I)(OI)(CI)(F)
+                    NT SERVICE\dsprepo:(I)(OI)(CI)(F)
+                    NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                    BUILTIN\Administrators:(I)(OI)(CI)(F)
+                    CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                    BUILTIN\Users:(I)(OI)(CI)(RX)
+                    LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                    LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                    LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(RX)
+                    LCN01ESVTB\Local Operators:(I)(OI)(CI)(RX)
+                    LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(RX)
+                    LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:08.13 : icacls "\\localhost\QDB$" 
+================================================================================== 
+\\localhost\QDB$ LCN01ESVTB\Local Servers:(I)(OI)(CI)(F)
+                 NT SERVICE\dsprepo:(I)(OI)(CI)(F)
+                 NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                 BUILTIN\Administrators:(I)(OI)(CI)(F)
+                 CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                 BUILTIN\Users:(I)(OI)(CI)(RX)
+                 LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                 LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                 LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(RX)
+                 LCN01ESVTB\Local Operators:(I)(OI)(CI)(RX)
+                 LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(RX)
+                 LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:09.13 : icacls "\\localhost\ReferenceBatches" 
+================================================================================== 
+\\localhost\ReferenceBatches LCN01ESVTB\Product Administrators:(OI)(CI)(M)
+                             LCN01ESVTB\Local Servers:(OI)(CI)(M)
+                             LCN01ESVTB\Local Engineers:(OI)(CI)(M)
+                             BUILTIN\Administrators:(OI)(CI)(F)
+                             LCN01ESVTB\Local Servers:(I)(OI)(CI)(F)
+                             NT SERVICE\dsprepo:(I)(OI)(CI)(F)
+                             NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                             BUILTIN\Administrators:(I)(OI)(CI)(F)
+                             CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                             BUILTIN\Users:(I)(OI)(CI)(RX)
+                             LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                             LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                             LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(RX)
+                             LCN01ESVTB\Local Operators:(I)(OI)(CI)(RX)
+                             LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(RX)
+                             LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:10.13 : icacls "\\localhost\report" 
+================================================================================== 
+\\localhost\report LCN01ESVTB\Local Servers:(I)(OI)(CI)(F)
+                   NT SERVICE\dsprepo:(I)(OI)(CI)(F)
+                   NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                   BUILTIN\Administrators:(I)(OI)(CI)(F)
+                   CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                   BUILTIN\Users:(I)(OI)(CI)(RX)
+                   LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                   LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                   LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(RX)
+                   LCN01ESVTB\Local Operators:(I)(OI)(CI)(RX)
+                   LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(RX)
+                   LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:11.12 : icacls "\\localhost\ReportDefinition" 
+================================================================================== 
+\\localhost\ReportDefinition LCN01ESVTB\Local Servers:(I)(OI)(CI)(F)
+                             NT SERVICE\dsprepo:(I)(OI)(CI)(F)
+                             NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                             BUILTIN\Administrators:(I)(OI)(CI)(F)
+                             CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                             BUILTIN\Users:(I)(OI)(CI)(RX)
+                             LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                             LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                             LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(RX)
+                             LCN01ESVTB\Local Operators:(I)(OI)(CI)(RX)
+                             LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(RX)
+                             LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:12.12 : icacls "\\localhost\Repository" 
+================================================================================== 
+\\localhost\Repository LCN01ESVTB\ExpAcctSvcLP:(OI)(CI)(M)
+                       NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                       BUILTIN\Administrators:(I)(OI)(CI)(F)
+                       CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                       BUILTIN\Users:(I)(OI)(CI)(RX)
+                       LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local Operators:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(F)
+                       LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:13.11 : icacls "\\localhost\SAFEVIEW" 
+================================================================================== 
+\\localhost\SAFEVIEW Everyone:(I)(OI)(CI)(F)
+                     NT SERVICE\TrustedInstaller:(I)(F)
+                     NT SERVICE\TrustedInstaller:(I)(CI)(IO)(F)
+                     NT AUTHORITY\SYSTEM:(I)(F)
+                     NT AUTHORITY\SYSTEM:(I)(OI)(CI)(IO)(F)
+                     BUILTIN\Administrators:(I)(F)
+                     BUILTIN\Administrators:(I)(OI)(CI)(IO)(F)
+                     BUILTIN\Users:(I)(RX)
+                     BUILTIN\Users:(I)(OI)(CI)(IO)(GR,GE)
+                     CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                     APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(RX)
+                     APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(I)(OI)(CI)(IO)(GR,GE)
+                     APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(RX)
+                     APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(I)(OI)(CI)(IO)(GR,GE)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:14.20 : icacls "\\localhost\SM Data" 
+================================================================================== 
+\\localhost\SM Data Everyone:(OI)(CI)(F)
+                    NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+                    LCN01ESVTB\experionadmin:(OI)(CI)(F)
+                    BUILTIN\Administrators:(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:15.20 : icacls "\\localhost\SRDB" 
+================================================================================== 
+\\localhost\SRDB: Access is denied.
+Successfully processed 0 files; Failed processing 1 files
+ 
+================================================================================== 
+===== 13:46:16.19 : icacls "\\localhost\STAC-ADDIns" 
+================================================================================== 
+\\localhost\STAC-ADDIns LCN01ESVTB\Local Engineers:(RX)
+                        LCN01ESVTB\Product Administrators:(R,W)
+                        NT SERVICE\TrustedInstaller:(F)
+                        NT SERVICE\TrustedInstaller:(CI)(IO)(F)
+                        NT AUTHORITY\SYSTEM:(F)
+                        NT AUTHORITY\SYSTEM:(OI)(CI)(IO)(F)
+                        BUILTIN\Administrators:(F)
+                        BUILTIN\Administrators:(OI)(CI)(IO)(F)
+                        BUILTIN\Users:(RX)
+                        BUILTIN\Users:(OI)(CI)(IO)(GR,GE)
+                        CREATOR OWNER:(OI)(CI)(IO)(F)
+                        APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(RX)
+                        APPLICATION PACKAGE AUTHORITY\ALL APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)
+                        APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(RX)
+                        APPLICATION PACKAGE AUTHORITY\ALL RESTRICTED APPLICATION PACKAGES:(OI)(CI)(IO)(GR,GE)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:17.19 : icacls "\\localhost\STAC-Workbooks" 
+================================================================================== 
+\\localhost\STAC-Workbooks LCN01ESVTB\Local Engineers:(F)
+                           NT SERVICE\dsprepo:(OI)(CI)(F)
+                           NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+                           BUILTIN\Administrators:(OI)(CI)(F)
+                           ALONBIGSCTRL\experionadmin:(OI)(CI)(F)
+                           Everyone:(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:18.18 : icacls "\\localhost\Station" 
+================================================================================== 
+\\localhost\Station ALONBIGSCTRL\experionadmin:(OI)(CI)(F)
+                    LCN01ESVTB\Local Servers:(OI)(CI)(F)
+                    LCN01ESVTB\Product Administrators:(OI)(CI)(F)
+                    LCN01ESVTB\Local Engineers:(OI)(CI)(F)
+                    LCN01ESVTB\Local Supervisors:(OI)(CI)(RX)
+                    LCN01ESVTB\Local Operators:(OI)(CI)(RX)
+                    LCN01ESVTB\Local Ack View Only Users:(OI)(CI)(RX)
+                    LCN01ESVTB\Local View Only Users:(OI)(CI)(RX)
+                    Everyone:(OI)(CI)(F)
+                    NT SERVICE\dsprepo:(OI)(CI)(F)
+                    NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+                    BUILTIN\Administrators:(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+ 
+================================================================================== 
+===== 13:46:19.18 : icacls "\\localhost\views" 
+================================================================================== 
+\\localhost\views LCN01ESVTB\Local Servers:(I)(OI)(CI)(F)
+                  NT SERVICE\dsprepo:(I)(OI)(CI)(F)
+                  NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
+                  BUILTIN\Administrators:(I)(OI)(CI)(F)
+                  CREATOR OWNER:(I)(OI)(CI)(IO)(F)
+                  BUILTIN\Users:(I)(OI)(CI)(RX)
+                  LCN01ESVTB\Product Administrators:(I)(OI)(CI)(F)
+                  LCN01ESVTB\Local Engineers:(I)(OI)(CI)(F)
+                  LCN01ESVTB\Local Supervisors:(I)(OI)(CI)(RX)
+                  LCN01ESVTB\Local Operators:(I)(OI)(CI)(RX)
+                  LCN01ESVTB\Local Ack View Only Users:(I)(OI)(CI)(RX)
+                  LCN01ESVTB\Local View Only Users:(I)(OI)(CI)(RX)
+
+Successfully processed 1 files; Failed processing 0 files
+ 

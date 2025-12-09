@@ -1,0 +1,33 @@
+Tue 12/09/2025 13:44:42.21 . INITIALIZE file C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_Network\ipconfig.txt by experionadmin on LCN01ESVTB in Domain ALONBIGSCTRL 
+mDCT++ [v1.54] (krasimir.kumanov@gmail.com) 
+
+================================================================================== 
+===== 13:44:42.22 : ipconfig /all 
+================================================================================== 
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : LCN01ESVTB
+   Primary Dns Suffix  . . . . . . . : ALONBIGSCTRL.LOCAL
+   Node Type . . . . . . . . . . . . : Peer-Peer
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : ALONBIGSCTRL.LOCAL
+
+Ethernet adapter Ethernet 2:
+
+   Connection-specific DNS Suffix  . : 
+   Description . . . . . . . . . . . : Honeywell FTE MUX-IM Virtual Miniport Driver
+   Physical Address. . . . . . . . . : 5C-6F-69-1A-64-88
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::5cf4:4222:8ecb:f556%8(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 172.20.75.24(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 172.20.75.1
+   DHCPv6 IAID . . . . . . . . . . . : 157052777
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-2D-C4-4A-30-5C-6F-69-1A-64-88
+   DNS Servers . . . . . . . . . . . : 172.20.75.20
+                                       172.20.75.21
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+ 

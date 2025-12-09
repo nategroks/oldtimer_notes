@@ -1,0 +1,26 @@
+Tue 12/09/2025 13:45:29.12 . INITIALIZE file C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_Network\msft_providers.txt by experionadmin on LCN01ESVTB in Domain ALONBIGSCTRL 
+mDCT++ [v1.54] (krasimir.kumanov@gmail.com) 
+
+================================================================================== 
+===== 13:45:29.13 : wmic path msft_providers get Provider,HostProcessIdentifier 
+================================================================================== 
+HostProcessIdentifier  provider                             
+6876                   CIMWin32                             
+5668                   Msft_ProviderSubSystem               
+7296                   RegistryEventProvider                
+5668                   SCM Event Provider                   
+7296                   WmiPerfClass                         
+6868                   WmiPerfClass                         
+7296                   RegistryEventProvider                
+5668                   SyncRepProv                          
+6876                   smbwmiv2                             
+9496                   DelegatorProvider                    
+9496                   DelegatorProvider                    
+6876                   Rsop Logging Mode Provider           
+6876                   MS_SNMP_ENCAPSULATED_EVENT_PROVIDER  
+6868                   WMIEventProv                         
+6868                   WMIProv                              
+6868                   WMIProv                              
+6868                   WMIProv                              
+
+

@@ -1,0 +1,1906 @@
+Tue 12/09/2025 13:45:25.13 . INITIALIZE file C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_Network\TcpIpParameters.txt by experionadmin on LCN01ESVTB in Domain ALONBIGSCTRL 
+mDCT++ [v1.54] (krasimir.kumanov@gmail.com) 
+
+
+================================================================================== 
+===== 13:45:25.16 : REG.EXE QUERY "HKLM\SYSTEM\CurrentControlSet\Services\FTEMUXMP" /s /t REG_SZ,REG_MULTI_SZ,REG_EXPAND_SZ,REG_DWORD,REG_QWORD,REG_NONE 
+================================================================================== 
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FTEMUXMP
+    Type    REG_DWORD    0x1
+    Start    REG_DWORD    0x3
+    ErrorControl    REG_DWORD    0x1
+    Tag    REG_DWORD    0x10
+    ImagePath    REG_EXPAND_SZ    \SystemRoot\system32\DRIVERS\ftemux.sys
+    DisplayName    REG_SZ    @oem18.inf,%FTEMUXMP_Desc%;Honeywell FTE MUX-IM Virtual Miniport Driver
+    Group    REG_SZ    NDIS
+    Description    REG_SZ    @oem18.inf,%FTEMUXMP_Desc%;Honeywell FTE MUX-IM Virtual Miniport Driver
+    Owners    REG_MULTI_SZ    oem18.inf\0oem15.inf
+    NdisMajorVersion    REG_DWORD    0x6
+    NdisMinorVersion    REG_DWORD    0x0
+    DriverMajorVersion    REG_DWORD    0x3
+    DriverMinorVersion    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FTEMUXMP\Parameters\Interfaces\{D9488900-65C8-40F3-A343-4120966D67D0}
+    IpFragmentation    REG_DWORD    0x0
+    IpService    REG_DWORD    0x0
+    MyNodeId    REG_DWORD    0x18
+    DefaultLan    REG_DWORD    0x1
+    MsgLossAllowed    REG_DWORD    0x0
+    PulseInterval(ms)    REG_DWORD    0x3e8
+    DisjoinMultiplier    REG_DWORD    0x3
+    FF-SM-Address    REG_DWORD    0xe0000021
+    IpDestAddress    REG_DWORD    0xea050607
+    IpTimeToLive    REG_DWORD    0x2
+    UdpSourcePort    REG_DWORD    0xbadd
+    UdpDestPort    REG_DWORD    0xcafe
+    AnnouncePort    REG_DWORD    0x441
+    MsgSpecPort    REG_DWORD    0x442
+    SysManagePort    REG_DWORD    0x443
+    MaxNodes    REG_DWORD    0x1ff
+    MRxSmbObeyBindingOrder    REG_DWORD    0x0
+    NetworkAddress    REG_SZ    01005E050607
+    NumAssignedAdapters    REG_DWORD    0x2
+    AssignedAdapter1    REG_SZ    {2C9070B5-DBDE-469A-8162-500128A3FAB2}
+    AssignedAdapter2    REG_SZ    {7388026A-E6E7-4BE3-A991-598640BB5892}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FTEMUXMP\Enum
+    0    REG_SZ    ROOT\HON_FTEMUXMP\0000
+    Count    REG_DWORD    0x1
+    NextInstance    REG_DWORD    0x1
+
+End of search: 37 match(es) found.
+
+================================================================================== 
+===== 13:45:25.23 : REG.EXE QUERY "HKLM\System\CurrentControlSet\Services\TcpIp\Parameters" /v ArpRetryCount 
+================================================================================== 
+
+
+ERROR: The system was unable to find the specified registry key or value.
+
+================================================================================== 
+===== 13:45:25.28 : REG.EXE QUERY "HKLM\System\CurrentControlSet\Services\TcpIp" /s 
+================================================================================== 
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp
+    BootFlags    REG_DWORD    0x1
+    Description    REG_SZ    @%SystemRoot%\system32\tcpipcfg.dll,-50003
+    DisplayName    REG_SZ    @%SystemRoot%\system32\drivers\tcpip.sys,-10001
+    ErrorControl    REG_DWORD    0x1
+    Group    REG_SZ    PNP_TDI
+    ImagePath    REG_EXPAND_SZ    System32\drivers\tcpip.sys
+    Start    REG_DWORD    0x0
+    Tag    REG_DWORD    0x3
+    Type    REG_DWORD    0x1
+    NdisMajorVersion    REG_DWORD    0x6
+    NdisMinorVersion    REG_DWORD    0x28
+    DriverMajorVersion    REG_DWORD    0x0
+    DriverMinorVersion    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Linkage
+    Export    REG_MULTI_SZ    \Device\Tcpip_{C6D6B172-374F-46FC-878C-352F2774B265}\0\Device\Tcpip_{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}\0\Device\Tcpip_{D9488900-65C8-40F3-A343-4120966D67D0}
+    Bind    REG_MULTI_SZ    \Device\{C6D6B172-374F-46FC-878C-352F2774B265}\0\Device\{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}\0\Device\{D9488900-65C8-40F3-A343-4120966D67D0}
+    Route    REG_MULTI_SZ    "{C6D6B172-374F-46FC-878C-352F2774B265}"\0"{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}"\0"{D9488900-65C8-40F3-A343-4120966D67D0}"
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters
+    DataBasePath    REG_EXPAND_SZ    %SystemRoot%\System32\drivers\etc
+    Domain    REG_SZ    ALONBIGSCTRL.LOCAL
+    ForwardBroadcasts    REG_DWORD    0x0
+    ICSDomain    REG_SZ    mshome.net
+    IPEnableRouter    REG_DWORD    0x0
+    NameServer    REG_SZ    
+    SyncDomainWithMembership    REG_DWORD    0x1
+    NV Hostname    REG_SZ    LCN01ESVTB
+    Hostname    REG_SZ    LCN01ESVTB
+    ReservedPorts    REG_MULTI_SZ    1433-1434
+    DisableIPSourceRouting    REG_DWORD    0x2
+    IPAutoconfigurationSubnet    REG_SZ    
+    IPAutoconfigurationMask    REG_SZ    ??
+    EnableICMPRedirect    REG_DWORD    0x0
+    PerformRouterDiscovery    REG_DWORD    0x0
+    KeepAliveTime    REG_DWORD    0x493e0
+    DisableDHCPMediaSense    REG_DWORD    0x1
+    KeepAliveInterval    REG_DWORD    0x3e8
+    TcpMaxConnectRetransmissions    REG_DWORD    0x0
+    TcpMaxDupAcks    REG_DWORD    0x1
+    NV Domain    REG_SZ    ALONBIGSCTRL.LOCAL
+    ShutDownTimeAtLastDomainJoin    REG_BINARY    0B5BC6C7F6A2DA01
+    ShutDownTimeAtLastDomainLeave    REG_BINARY    D9739C655AA1DA01
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Adapters
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Adapters\{2c9070b5-dbde-469a-8162-500128a3fab2}
+    LLInterface    REG_SZ    
+    IpConfig    REG_MULTI_SZ    Tcpip\Parameters\Interfaces\{2C9070B5-DBDE-469A-8162-500128A3FAB2}
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Adapters\{7388026a-e6e7-4be3-a991-598640bb5892}
+    LLInterface    REG_SZ    
+    IpConfig    REG_MULTI_SZ    Tcpip\Parameters\Interfaces\{7388026A-E6E7-4BE3-A991-598640BB5892}
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Adapters\{c6d6b172-374f-46fc-878c-352f2774b265}
+    LLInterface    REG_SZ    
+    IpConfig    REG_MULTI_SZ    Tcpip\Parameters\Interfaces\{C6D6B172-374F-46FC-878C-352F2774B265}
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Adapters\{d9488900-65c8-40f3-a343-4120966d67d0}
+    LLInterface    REG_SZ    
+    IpConfig    REG_MULTI_SZ    Tcpip\Parameters\Interfaces\{D9488900-65C8-40F3-A343-4120966D67D0}
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Adapters\{fa7955d6-8485-44b7-a8c2-f9fe77b6fec7}
+    LLInterface    REG_SZ    
+    IpConfig    REG_MULTI_SZ    Tcpip\Parameters\Interfaces\{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\DNSRegisteredAdapters
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\DNSRegisteredAdapters\{D9488900-65C8-40F3-A343-4120966D67D0}
+    Hostname    REG_SZ    LCN01ESVTB
+    AdapterDomainName    REG_SZ    
+    PrimaryDomainName    REG_SZ    ALONBIGSCTRL.LOCAL
+    HostAddrs    REG_BINARY    010000000100000000000000000000000000000000000000000000000000000002000000AC144B180000000000000000000000000000000000000000000000001000000018000000010000000000000000000000000000000000000000000000
+    DnsServers    REG_BINARY    020000000200000000000000000000000000000000000000000000000000000002000000AC144B14000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000002000000AC144B150000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000
+    SentUpdateToIp    REG_BINARY    00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    SentPriUpdateToIp    REG_BINARY    02000035AC144B14000000000000000000000000000000000000000000000000100000000000000000000000FFFFFFFF00000000000000000000000000000000
+    Ttl    REG_DWORD    0x4b0
+    Flags    REG_DWORD    0xe
+    CompartmentId    REG_DWORD    0x1
+    StaleAdapter    REG_DWORD    0x0
+    RegisteredSinceBoot    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Interfaces
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Interfaces\{2c9070b5-dbde-469a-8162-500128a3fab2}
+    EnableDHCP    REG_DWORD    0x0
+    Domain    REG_SZ    
+    NameServer    REG_SZ    172.20.75.20,172.20.75.21
+    DhcpServer    REG_SZ    255.255.255.255
+    Lease    REG_DWORD    0x0
+    LeaseObtainedTime    REG_DWORD    0x0
+    T1    REG_DWORD    0x0
+    T2    REG_DWORD    0x0
+    LeaseTerminatesTime    REG_DWORD    0x0
+    AddressType    REG_DWORD    0x0
+    IsServerNapAware    REG_DWORD    0x0
+    DhcpConnForceBroadcastFlag    REG_DWORD    0x0
+    IPAddress    REG_MULTI_SZ    172.20.75.24
+    SubnetMask    REG_MULTI_SZ    255.255.255.0
+    DefaultGateway    REG_MULTI_SZ    172.20.75.1
+    DefaultGatewayMetric    REG_MULTI_SZ    1
+    InterfaceMetric    REG_DWORD    0x5
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Interfaces\{7388026a-e6e7-4be3-a991-598640bb5892}
+    EnableDHCP    REG_DWORD    0x1
+    Domain    REG_SZ    
+    NameServer    REG_SZ    
+    IPAddress    REG_MULTI_SZ    
+    SubnetMask    REG_MULTI_SZ    
+    DefaultGateway    REG_MULTI_SZ    
+    InterfaceMetric    REG_DWORD    0xa
+    DhcpIPAddress    REG_SZ    0.0.0.0
+    DhcpSubnetMask    REG_SZ    255.0.0.0
+    DhcpServer    REG_SZ    255.255.255.255
+    Lease    REG_DWORD    0x0
+    LeaseObtainedTime    REG_DWORD    0x6632ccd5
+    T1    REG_DWORD    0x6632ccd5
+    T2    REG_DWORD    0x6632ccd5
+    LeaseTerminatesTime    REG_DWORD    0x6632ccd5
+    AddressType    REG_DWORD    0x0
+    IsServerNapAware    REG_DWORD    0x0
+    DhcpConnForceBroadcastFlag    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Interfaces\{b02b551f-0805-11ef-888a-806e6f6e6963}
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Interfaces\{c6d6b172-374f-46fc-878c-352f2774b265}
+    EnableDHCP    REG_DWORD    0x1
+    Domain    REG_SZ    
+    NameServer    REG_SZ    
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Interfaces\{D9488900-65C8-40F3-A343-4120966D67D0}
+    EnableDHCP    REG_DWORD    0x0
+    Domain    REG_SZ    
+    NameServer    REG_SZ    172.20.75.20,172.20.75.21
+    DhcpServer    REG_SZ    255.255.255.255
+    Lease    REG_DWORD    0x0
+    LeaseObtainedTime    REG_DWORD    0x0
+    T1    REG_DWORD    0x0
+    T2    REG_DWORD    0x0
+    LeaseTerminatesTime    REG_DWORD    0x0
+    AddressType    REG_DWORD    0x0
+    IsServerNapAware    REG_DWORD    0x0
+    DhcpConnForceBroadcastFlag    REG_DWORD    0x0
+    IPAddress    REG_MULTI_SZ    172.20.75.24
+    SubnetMask    REG_MULTI_SZ    255.255.255.0
+    DefaultGateway    REG_MULTI_SZ    172.20.75.1
+    DefaultGatewayMetric    REG_MULTI_SZ    1
+    InterfaceMetric    REG_DWORD    0x1
+    TcpAckFrequency    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Interfaces\{fa7955d6-8485-44b7-a8c2-f9fe77b6fec7}
+    EnableDHCP    REG_DWORD    0x1
+    Domain    REG_SZ    
+    NameServer    REG_SZ    
+    DhcpIPAddress    REG_SZ    169.254.1.2
+    DhcpSubnetMask    REG_SZ    255.255.255.0
+    DhcpServer    REG_SZ    169.254.1.1
+    Lease    REG_DWORD    0xd2f00
+    LeaseObtainedTime    REG_DWORD    0x20e
+    T1    REG_DWORD    0x6998e
+    T2    REG_DWORD    0xb8b2e
+    LeaseTerminatesTime    REG_DWORD    0xd310e
+    AddressType    REG_DWORD    0x0
+    IsServerNapAware    REG_DWORD    0x0
+    DhcpConnForceBroadcastFlag    REG_DWORD    0x0
+    DhcpSubnetMaskOpt    REG_MULTI_SZ    255.255.255.0
+    DhcpInterfaceOptions    REG_BINARY    FC0000000000000000000000000000008E530100790000000000000000000000000000008E530100770000000000000000000000000000008E5301002F0000000000000000000000000000008E5301002E0000000000000000000000000000008E5301002C0000000000000000000000000000008E5301002B0000000000000000000000000000008E530100210000000000000000000000000000008E5301001F0000000000000000000000000000008E5301000F0000000000000000000000000000008E530100060000000000000000000000000000008E530100030000000000000000000000000000008E530100010000000000000004000000000000000E0F2F00FFFFFF00330000000000000004000000000000000E0F2F00000D2F00360000000000000004000000000000000E0F2F00A9FE0101350000000000000001000000000000000E0F2F0005000000
+    IPAddress    REG_MULTI_SZ    
+    SubnetMask    REG_MULTI_SZ    
+    DefaultGateway    REG_MULTI_SZ    
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\NsiObjectSecurity
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\PersistentRoutes
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Winsock
+    UseDelayedAcceptance    REG_DWORD    0x0
+    MaxSockAddrLength    REG_DWORD    0x10
+    MinSockAddrLength    REG_DWORD    0x10
+    HelperDllName    REG_EXPAND_SZ    %SystemRoot%\System32\wshtcpip.dll
+    ProviderGUID    REG_BINARY    A01A0FE78BABCF118CA300805F48A192
+    OfflineCapable    REG_DWORD    0x1
+    Mapping    REG_BINARY    08000000030000000200000001000000060000000200000001000000000000000200000000000000060000000200000002000000110000000200000002000000000000000200000000000000110000000200000003000000FF000000020000000300000000000000
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Winsock\0
+    Version    REG_DWORD    0x2
+    AddressFamily    REG_DWORD    0x2
+    MaxSockAddrLength    REG_DWORD    0x10
+    MinSockAddrLength    REG_DWORD    0x10
+    SocketType    REG_DWORD    0x1
+    Protocol    REG_DWORD    0x6
+    ProtocolMaxOffset    REG_DWORD    0x0
+    ByteOrder    REG_DWORD    0x0
+    MessageSize    REG_DWORD    0x0
+    szProtocol    REG_EXPAND_SZ    @%SystemRoot%\System32\mswsock.dll,-60100
+    ProviderFlags    REG_DWORD    0x8
+    ServiceFlags    REG_DWORD    0x20066
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Winsock\1
+    Version    REG_DWORD    0x2
+    AddressFamily    REG_DWORD    0x2
+    MaxSockAddrLength    REG_DWORD    0x10
+    MinSockAddrLength    REG_DWORD    0x10
+    SocketType    REG_DWORD    0x2
+    Protocol    REG_DWORD    0x11
+    ProtocolMaxOffset    REG_DWORD    0x0
+    ByteOrder    REG_DWORD    0x0
+    MessageSize    REG_DWORD    0xfff7
+    szProtocol    REG_EXPAND_SZ    @%SystemRoot%\System32\mswsock.dll,-60101
+    ProviderFlags    REG_DWORD    0x8
+    ServiceFlags    REG_DWORD    0x20609
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Parameters\Winsock\2
+    Version    REG_DWORD    0x2
+    AddressFamily    REG_DWORD    0x2
+    MaxSockAddrLength    REG_DWORD    0x10
+    MinSockAddrLength    REG_DWORD    0x10
+    SocketType    REG_DWORD    0x3
+    Protocol    REG_DWORD    0x0
+    ProtocolMaxOffset    REG_DWORD    0xff
+    ByteOrder    REG_DWORD    0x0
+    MessageSize    REG_DWORD    0x8000
+    szProtocol    REG_EXPAND_SZ    @%SystemRoot%\System32\mswsock.dll,-60102
+    ProviderFlags    REG_DWORD    0xc
+    ServiceFlags    REG_DWORD    0x20609
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Performance
+    Close    REG_SZ    CloseTcpIpPerformanceData
+    Collect    REG_SZ    CollectTcpIpPerformanceData
+    Library    REG_EXPAND_SZ    %SystemRoot%\System32\Perfctrs.dll
+    Object List    REG_SZ    502 510 546 548 582 638 658 1530 1532 1534 1820
+    Open    REG_SZ    OpenTcpIpPerformanceData
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\Security
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TcpIp\ServiceProvider
+    Class    REG_DWORD    0x8
+    DnsPriority    REG_DWORD    0x7d0
+    HostsPriority    REG_DWORD    0x1f4
+    LocalPriority    REG_DWORD    0x1f3
+    Name    REG_SZ    TCP/IP
+    NetbtPriority    REG_DWORD    0x7d1
+    ProviderPath    REG_EXPAND_SZ    %SystemRoot%\System32\wsock32.dll
+
+
+================================================================================== 
+===== 13:45:25.46 : REG.EXE QUERY "HKLM\System\CurrentControlSet\Services\Tcpip6" /s 
+================================================================================== 
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6
+    DependOnService    REG_MULTI_SZ    Tcpip
+    Description    REG_SZ    @todo.dll,-100;Microsoft IPv6 Protocol Driver
+    DisplayName    REG_SZ    @todo.dll,-100;Microsoft IPv6 Protocol Driver
+    ErrorControl    REG_DWORD    0x1
+    ImagePath    REG_EXPAND_SZ    System32\drivers\tcpip.sys
+    Start    REG_DWORD    0x3
+    Tag    REG_DWORD    0x3
+    TextModeFlags    REG_DWORD    0x1
+    Type    REG_DWORD    0x1
+    NdisMajorVersion    REG_DWORD    0x6
+    NdisMinorVersion    REG_DWORD    0x28
+    DriverMajorVersion    REG_DWORD    0x0
+    DriverMinorVersion    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Linkage
+    Export    REG_MULTI_SZ    \Device\Tcpip6_{07374750-E68B-490E-9330-9FD785CD71B6}\0\Device\Tcpip6_{2EE2C70C-A092-4D88-A654-98C8D7645CD5}\0\Device\Tcpip6_{93123211-9629-4E04-82F0-EA2E4F221468}\0\Device\Tcpip6_{C6D6B172-374F-46FC-878C-352F2774B265}\0\Device\Tcpip6_{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}\0\Device\Tcpip6_{D9488900-65C8-40F3-A343-4120966D67D0}
+    Bind    REG_MULTI_SZ    \Device\{07374750-E68B-490E-9330-9FD785CD71B6}\0\Device\{2EE2C70C-A092-4D88-A654-98C8D7645CD5}\0\Device\{93123211-9629-4E04-82F0-EA2E4F221468}\0\Device\{C6D6B172-374F-46FC-878C-352F2774B265}\0\Device\{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}\0\Device\{D9488900-65C8-40F3-A343-4120966D67D0}
+    Route    REG_MULTI_SZ    "{07374750-E68B-490E-9330-9FD785CD71B6}"\0"{2EE2C70C-A092-4D88-A654-98C8D7645CD5}"\0"{93123211-9629-4E04-82F0-EA2E4F221468}"\0"{C6D6B172-374F-46FC-878C-352F2774B265}"\0"{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}"\0"{D9488900-65C8-40F3-A343-4120966D67D0}"
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters
+    Dhcpv6DUID    REG_BINARY    000100012DC44A305C6F691A6488
+    DisabledComponents    REG_DWORD    0x20
+    DisableIPSourceRouting    REG_DWORD    0x2
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Interfaces
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Interfaces\{07374750-e68b-490e-9330-9fd785cd71b6}
+    EnableDHCP    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Interfaces\{2c9070b5-dbde-469a-8162-500128a3fab2}
+    EnableDHCP    REG_DWORD    0x1
+    Dhcpv6Iaid    REG_DWORD    0x35c6f69
+    Dhcpv6State    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Interfaces\{2ee2c70c-a092-4d88-a654-98c8d7645cd5}
+    EnableDHCP    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Interfaces\{7388026a-e6e7-4be3-a991-598640bb5892}
+    EnableDHCP    REG_DWORD    0x1
+    Dhcpv6Iaid    REG_DWORD    0x55c6f69
+    Dhcpv6State    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Interfaces\{93123211-9629-4e04-82f0-ea2e4f221468}
+    EnableDHCP    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Interfaces\{c6d6b172-374f-46fc-878c-352f2774b265}
+    EnableDHCP    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Interfaces\{d9488900-65c8-40f3-a343-4120966d67d0}
+    EnableDHCP    REG_DWORD    0x1
+    Dhcpv6Iaid    REG_DWORD    0x95c6f69
+    Dhcpv6State    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Interfaces\{fa7955d6-8485-44b7-a8c2-f9fe77b6fec7}
+    EnableDHCP    REG_DWORD    0x1
+    Dhcpv6Iaid    REG_DWORD    0x8ec2a72
+    Dhcpv6State    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Winsock
+    UseDelayedAcceptance    REG_DWORD    0x0
+    MaxSockAddrLength    REG_DWORD    0x1c
+    MinSockAddrLength    REG_DWORD    0x1c
+    HelperDllName    REG_EXPAND_SZ    %SystemRoot%\System32\wship6.dll
+    ProviderGUID    REG_BINARY    C0B0EAF9D426D011BBBF00AA006C34E4
+    OfflineCapable    REG_DWORD    0x1
+    Mapping    REG_BINARY    08000000030000001700000001000000060000001700000001000000000000001700000000000000060000001700000002000000110000001700000002000000000000001700000000000000110000001700000003000000FF000000170000000300000000000000
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Winsock\0
+    Version    REG_DWORD    0x2
+    AddressFamily    REG_DWORD    0x17
+    MaxSockAddrLength    REG_DWORD    0x1c
+    MinSockAddrLength    REG_DWORD    0x1c
+    SocketType    REG_DWORD    0x1
+    Protocol    REG_DWORD    0x6
+    ProtocolMaxOffset    REG_DWORD    0x0
+    ByteOrder    REG_DWORD    0x0
+    MessageSize    REG_DWORD    0x0
+    szProtocol    REG_EXPAND_SZ    @%SystemRoot%\System32\mswsock.dll,-60200
+    ProviderFlags    REG_DWORD    0x8
+    ServiceFlags    REG_DWORD    0x20066
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Winsock\1
+    Version    REG_DWORD    0x2
+    AddressFamily    REG_DWORD    0x17
+    MaxSockAddrLength    REG_DWORD    0x1c
+    MinSockAddrLength    REG_DWORD    0x1c
+    SocketType    REG_DWORD    0x2
+    Protocol    REG_DWORD    0x11
+    ProtocolMaxOffset    REG_DWORD    0x0
+    ByteOrder    REG_DWORD    0x0
+    MessageSize    REG_DWORD    0xfff7
+    szProtocol    REG_EXPAND_SZ    @%SystemRoot%\System32\mswsock.dll,-60201
+    ProviderFlags    REG_DWORD    0x8
+    ServiceFlags    REG_DWORD    0x20609
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters\Winsock\2
+    Version    REG_DWORD    0x2
+    AddressFamily    REG_DWORD    0x17
+    MaxSockAddrLength    REG_DWORD    0x1c
+    MinSockAddrLength    REG_DWORD    0x1c
+    SocketType    REG_DWORD    0x3
+    Protocol    REG_DWORD    0x0
+    ProtocolMaxOffset    REG_DWORD    0xff
+    ByteOrder    REG_DWORD    0x0
+    MessageSize    REG_DWORD    0x8000
+    szProtocol    REG_EXPAND_SZ    @%SystemRoot%\System32\mswsock.dll,-60202
+    ProviderFlags    REG_DWORD    0xc
+    ServiceFlags    REG_DWORD    0x20609
+
+
+================================================================================== 
+===== 13:45:25.55 : REG.EXE QUERY "HKLM\System\CurrentControlSet\Services\tcpipreg" /s 
+================================================================================== 
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\tcpipreg
+    DependOnService    REG_MULTI_SZ    tcpip
+    Description    REG_SZ    Provides compatibility for legacy applications which interact with TCP/IP through the registry. If this service is stopped, certain applications may have impaired functionality.
+    DisplayName    REG_SZ    TCP/IP Registry Compatibility
+    ErrorControl    REG_DWORD    0x1
+    ImagePath    REG_EXPAND_SZ    System32\drivers\tcpipreg.sys
+    Start    REG_DWORD    0x2
+    Type    REG_DWORD    0x1
+
+
+================================================================================== 
+===== 13:45:25.61 : REG.EXE QUERY "HKLM\System\CurrentControlSet\Services\iphlpsvc" /s 
+================================================================================== 
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iphlpsvc
+    DependOnService    REG_MULTI_SZ    RpcSS\0winmgmt\0tcpip\0nsi\0WinHttpAutoProxySvc
+    Description    REG_SZ    @%SystemRoot%\system32\iphlpsvc.dll,-501
+    DisplayName    REG_SZ    @%SystemRoot%\system32\iphlpsvc.dll,-500
+    ErrorControl    REG_DWORD    0x1
+    FailureActions    REG_BINARY    805101000000000000000000030000001400000001000000C0D4010001000000E09304000000000000000000
+    ImagePath    REG_EXPAND_SZ    %SystemRoot%\System32\svchost.exe -k NetSvcs -p
+    ObjectName    REG_SZ    LocalSystem
+    RequiredPrivileges    REG_MULTI_SZ    SeCreateGlobalPrivilege\0SeImpersonatePrivilege\0SeLoadDriverPrivilege\0SeTcbPrivilege
+    ServiceSidType    REG_DWORD    0x1
+    Start    REG_DWORD    0x4
+    SvcMemHardLimitInMB    REG_DWORD    0xc5
+    SvcMemMidLimitInMB    REG_DWORD    0x87
+    SvcMemSoftLimitInMB    REG_DWORD    0x48
+    Type    REG_DWORD    0x20
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iphlpsvc\config
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iphlpsvc\DaMultisite
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iphlpsvc\Direct
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iphlpsvc\Interfaces
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iphlpsvc\Parameters
+    ServiceDll    REG_EXPAND_SZ    %SystemRoot%\System32\iphlpsvc.dll
+    ServiceDllUnloadOnStop    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iphlpsvc\Parameters\ADHarvest
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iphlpsvc\Parameters\IPHTTPS
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iphlpsvc\Parameters\ProxyMgr
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\iphlpsvc\Teredo
+    SP1Installed    REG_DWORD    0x1
+
+
+================================================================================== 
+===== 13:45:25.68 : REG.EXE QUERY "HKLM\SYSTEM\CurrentControlSet\Control\Network" /s 
+================================================================================== 
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network
+    FilterClasses    REG_MULTI_SZ    ms_firewall_upper\0scheduler\0encryption\0compression\0vpn\0loadbalance\0failover\0diagnostic\0custom\0provider_address\0ms_implatform\0ms_switch_capture\0ms_switch_filter\0ms_switch_reserved\0ms_switch_forward
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\Connections
+    ClassManagers    REG_MULTI_SZ    {B4C8DF59-D16F-4042-80B7-3557A254B7C5}\0{BA126AD3-2166-11D1-B1D0-00805FC1270E}\0{BA126AD5-2166-11D1-B1D0-00805FC1270E}\0{BA126ADD-2166-11D1-B1D0-00805FC1270E}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\Interfaces
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\Interfaces\{07374750-E68B-490E-9330-9FD785CD71B6}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\Interfaces\{07374750-E68B-490E-9330-9FD785CD71B6}\Configuration
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\Interfaces\{2EE2C70C-A092-4D88-A654-98C8D7645CD5}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\Interfaces\{2EE2C70C-A092-4D88-A654-98C8D7645CD5}\Configuration
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\Interfaces\{93123211-9629-4E04-82F0-EA2E4F221468}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\Interfaces\{93123211-9629-4E04-82F0-EA2E4F221468}\Configuration
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\LightweightCallHandlers
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\LightweightCallHandlers\NETMAN
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\LightweightCallHandlers\PNIDUI
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\LightweightCallHandlers\PNIDUI\OnPrivateNetworkAvailable
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\LightweightCallHandlers\PNIDUI\OnPrivateNetworkAvailable\WMP_OnPrivateNetworkAvailable
+    Cardinality    REG_DWORD    0x0
+    ExeName    REG_EXPAND_SZ    "%PROGRAMFILES%\Windows Media Player\wmpnscfg.exe"
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\LightweightCallHandlers\PNIDUI\Startup
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\LightweightCallHandlers\PNIDUI\Startup\NCSI_TrayIconStartup
+    Cardinality    REG_DWORD    0x1
+    DllName    REG_EXPAND_SZ    %SystemRoot%\System32\ncsi.dll
+    FunctionEntryName    REG_SZ    NcsiIdentifyUserSpecificProxies
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\NetworkLocationWizard
+    HideWizard    REG_DWORD    0x0
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\SharedAccessConnection
+    EnableControl    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\Descriptions
+    Broadcom NetXtreme Gigabit Ethernet    REG_MULTI_SZ    1\02
+    Honeywell FTE MUX-IM Virtual Miniport Driver    REG_MULTI_SZ    1
+    Microsoft Kernel Debug Network Adapter    REG_MULTI_SZ    1
+    Remote NDIS Compatible Device    REG_MULTI_SZ    1
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{07374750-E68B-490E-9330-9FD785CD71B6}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{07374750-E68B-490E-9330-9FD785CD71B6}\Connection
+    Name    REG_SZ    6to4 Adapter
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{2C9070B5-DBDE-469A-8162-500128A3FAB2}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{2C9070B5-DBDE-469A-8162-500128A3FAB2}\Connection
+    Name    REG_SZ    FTE BIGSCTRL Yellow
+    PnPInstanceId    REG_SZ    PCI\VEN_14E4&DEV_165F&SUBSYS_200314E4&REV_00\00005C6F691A648800
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{2EE2C70C-A092-4D88-A654-98C8D7645CD5}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{2EE2C70C-A092-4D88-A654-98C8D7645CD5}\Connection
+    Name    REG_SZ    Microsoft IP-HTTPS Platform Interface
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{7388026A-E6E7-4BE3-A991-598640BB5892}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{7388026A-E6E7-4BE3-A991-598640BB5892}\Connection
+    Name    REG_SZ    FTE BIGSCTRL Green
+    PnPInstanceId    REG_SZ    PCI\VEN_14E4&DEV_165F&SUBSYS_200314E4&REV_00\00005C6F691A648901
+    DefaultNameIndex    REG_DWORD    0x2
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{93123211-9629-4E04-82F0-EA2E4F221468}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{93123211-9629-4E04-82F0-EA2E4F221468}\Connection
+    Name    REG_SZ    Teredo Tunneling Pseudo-Interface
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{C6D6B172-374F-46FC-878C-352F2774B265}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{C6D6B172-374F-46FC-878C-352F2774B265}\Connection
+    Name    REG_SZ    Ethernet (Kernel Debugger)
+    PnPInstanceId    REG_SZ    ROOT\KDNIC\0000
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{D9488900-65C8-40F3-A343-4120966D67D0}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{D9488900-65C8-40F3-A343-4120966D67D0}\Connection
+    Name    REG_SZ    Honeywell FTE Adapter #1
+    PnPInstanceId    REG_SZ    ROOT\HON_FTEMUXMP\0000
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4D36E972-E325-11CE-BFC1-08002BE10318}\{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}\Connection
+    Name    REG_SZ    Ethernet
+    PnPInstanceId    REG_SZ    USB\VID_413C&PID_A102\5678
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e973-e325-11ce-bfc1-08002be10318}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e973-e325-11ce-bfc1-08002be10318}\{54494F4E-5441-4B53-CCB9-061A6EC4BF6E}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x80
+    ComponentId    REG_SZ    ms_msclient
+    Description    REG_SZ    @%systemroot%\system32\wkssvc.dll,-1010
+    InfPath    REG_SZ    Netmscli.inf
+    InfSection    REG_SZ    MSClient.ndi
+    LocDescription    REG_SZ    @%systemroot%\system32\wkssvc.dll,-1010
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e973-e325-11ce-bfc1-08002be10318}\{54494F4E-5441-4B53-CCB9-061A6EC4BF6E}\Ndi
+    HelpText    REG_SZ    @%systemroot%\system32\wkssvc.dll,-1011
+    Service    REG_SZ    LanmanWorkstation
+    BindForm    REG_SZ    LanmanWorkstation
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e973-e325-11ce-bfc1-08002be10318}\{54494F4E-5441-4B53-CCB9-061A6EC4BF6E}\Ndi\Interfaces
+    LowerRange    REG_SZ    netbios,netbios_smb,tdi
+    UpperRange    REG_SZ    winnet5
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{171C5016-3D19-4CB2-9556-63E586EE5010}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x40000
+    ComponentId    REG_SZ    ms_bridge
+    Description    REG_SZ    @%SystemRoot%\system32\bridgeres.dll,-2
+    InfPath    REG_SZ    netbrdg.inf
+    InfSection    REG_SZ    Install
+    LocDescription    REG_SZ    @%SystemRoot%\system32\bridgeres.dll,-2
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{171C5016-3D19-4CB2-9556-63E586EE5010}\Ndi
+    TimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    HelpText    REG_SZ    @%SystemRoot%\system32\bridgeres.dll,-2
+    Service    REG_SZ    MsBridge
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{171C5016-3D19-4CB2-9556-63E586EE5010}\Ndi\Interfaces
+    LowerRange    REG_SZ    nolower
+    UpperRange    REG_SZ    noupper
+    FilterMediaTypes    REG_SZ    ms_implatform
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{3BFD7820-D65C-4C1B-9FEA-983A019639EA}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x40028
+    ComponentId    REG_SZ    ms_wfplwf_lower
+    Description    REG_SZ    @%windir%\System32\drivers\wfplwfs.sys,-6006
+    InfPath    REG_SZ    wfplwfs.inf
+    InfSection    REG_SZ    WfpLwf_Lower_Install
+    LocDescription    REG_SZ    @%windir%\System32\drivers\wfplwfs.sys,-6006
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{3BFD7820-D65C-4C1B-9FEA-983A019639EA}\Ndi
+    TimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    HelpText    REG_SZ    @%windir%\System32\drivers\wfplwfs.sys,-6003
+    Service    REG_SZ    WfpLwfs
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{3BFD7820-D65C-4C1B-9FEA-983A019639EA}\Ndi\Interfaces
+    LowerRange    REG_SZ    ms_wfp_security
+    UpperRange    REG_SZ    noupper
+    FilterMediaTypes    REG_SZ    ethernet,wlan,ppip,wan
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{42494F53-4554-004E-6E89-7EF9DE2570E3}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x28
+    ComponentId    REG_SZ    ms_netbios
+    Description    REG_SZ    @%windir%\system32\drivers\netbios.sys,-501
+    InfPath    REG_SZ    netnb.inf
+    InfSection    REG_SZ    NetBIOS.ndi
+    LocDescription    REG_SZ    @%windir%\system32\drivers\netbios.sys,-501
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{42494F53-4554-004E-6E89-7EF9DE2570E3}\Ndi
+    HelpText    REG_SZ    @%windir%\system32\drivers\netbios.sys,-500
+    Service    REG_SZ    NetBIOS
+    BindForm    REG_SZ    NetBIOS
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{42494F53-4554-004E-6E89-7EF9DE2570E3}\Ndi\Interfaces
+    LowerRange    REG_SZ    netbios
+    UpperRange    REG_SZ    winnet5
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{52564552-5345-414E-2DD4-CF8F7555A888}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    ComponentId    REG_SZ    ms_server
+    Description    REG_SZ    @%systemroot%\system32\srvsvc.dll,-109
+    InfPath    REG_SZ    Netserv.inf
+    InfSection    REG_SZ    Install.ndi
+    LocDescription    REG_SZ    @%systemroot%\system32\srvsvc.dll,-109
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{52564552-5345-414E-2DD4-CF8F7555A888}\Ndi
+    HelpText    REG_SZ    @%systemroot%\system32\srvsvc.dll,-110
+    BindForm    REG_SZ    LanmanServer
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{52564552-5345-414E-2DD4-CF8F7555A888}\Ndi\Interfaces
+    LowerRange    REG_SZ    tdi,netbios,ipx,netbios_smb
+    UpperRange    REG_SZ    winnet5
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{B5F4D659-7DAA-4565-8E41-BE220ED60542}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x40000
+    ComponentId    REG_SZ    ms_pacer
+    Description    REG_SZ    @%windir%\System32\drivers\pacer.sys,-101
+    InfPath    REG_SZ    netpacer.inf
+    InfSection    REG_SZ    Install
+    LocDescription    REG_SZ    @%windir%\System32\drivers\pacer.sys,-101
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{B5F4D659-7DAA-4565-8E41-BE220ED60542}\Ndi
+    TimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    HelpText    REG_SZ    @%windir%\System32\drivers\pacer.sys,-100
+    Service    REG_SZ    Psched
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{B5F4D659-7DAA-4565-8E41-BE220ED60542}\Ndi\Interfaces
+    LowerRange    REG_SZ    nolower
+    UpperRange    REG_SZ    noupper
+    FilterMediaTypes    REG_SZ    cp_tunnel,ethernet,wan
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{B70D6460-3635-4D42-B866-B8AB1A24454C}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x40028
+    ComponentId    REG_SZ    ms_wfplwf_upper
+    Description    REG_SZ    @%windir%\System32\drivers\wfplwfs.sys,-6005
+    InfPath    REG_SZ    wfplwfs.inf
+    InfSection    REG_SZ    WfpLwf_Upper_Install
+    LocDescription    REG_SZ    @%windir%\System32\drivers\wfplwfs.sys,-6005
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{B70D6460-3635-4D42-B866-B8AB1A24454C}\Ndi
+    TimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    HelpText    REG_SZ    @%windir%\System32\drivers\wfplwfs.sys,-6002
+    Service    REG_SZ    WfpLwfs
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{B70D6460-3635-4D42-B866-B8AB1A24454C}\Ndi\Interfaces
+    LowerRange    REG_SZ    ms_wfp_security
+    UpperRange    REG_SZ    noupper
+    FilterMediaTypes    REG_SZ    ethernet
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{E7C3B2F0-F3C5-48DF-AF2B-10FED6D72E7A}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x40000
+    ComponentId    REG_SZ    ms_wfplwf_vswitch
+    Description    REG_SZ    @%windir%\System32\drivers\wfplwfs.sys,-6004
+    InfPath    REG_SZ    wfplwfs.inf
+    InfSection    REG_SZ    WfpLwf_vSwitch_Install
+    LocDescription    REG_SZ    @%windir%\System32\drivers\wfplwfs.sys,-6004
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{E7C3B2F0-F3C5-48DF-AF2B-10FED6D72E7A}\Ndi
+    TimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    HelpText    REG_SZ    @%windir%\System32\drivers\wfplwfs.sys,-6001
+    Service    REG_SZ    WfpLwfs
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{E7C3B2F0-F3C5-48DF-AF2B-10FED6D72E7A}\Ndi\Interfaces
+    LowerRange    REG_SZ    ms_wfp_security
+    UpperRange    REG_SZ    noupper
+    FilterMediaTypes    REG_SZ    vmnetextension
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{EA24CD6C-D17A-4348-9190-09F0D5BE83DD}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x40038
+    ComponentId    REG_SZ    ms_ndiscap
+    Description    REG_SZ    @%windir%\System32\drivers\ndiscap.sys,-5000
+    InfPath    REG_SZ    ndiscap.inf
+    InfSection    REG_SZ    Install
+    LocDescription    REG_SZ    @%windir%\System32\drivers\ndiscap.sys,-5000
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{EA24CD6C-D17A-4348-9190-09F0D5BE83DD}\Ndi
+    TimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    HelpText    REG_SZ    @%windir%\System32\drivers\ndiscap.sys,-5001
+    Service    REG_SZ    NdisCap
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{EA24CD6C-D17A-4348-9190-09F0D5BE83DD}\Ndi\Interfaces
+    LowerRange    REG_SZ    nolower
+    UpperRange    REG_SZ    noupper
+    FilterMediaTypes    REG_SZ    ethernet,wlan,ppip,vmnetextension
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{FC66A602-B769-4666-A540-CA3DF0E7DF2C}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x40000
+    ComponentId    REG_SZ    ms_lbfo
+    Description    REG_SZ    @%SystemRoot%\System32\drivers\MsLbfoProvider.sys,-501
+    InfPath    REG_SZ    MsLbfoProvider.inf
+    InfSection    REG_SZ    Install
+    LocDescription    REG_SZ    @%SystemRoot%\System32\drivers\MsLbfoProvider.sys,-501
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{FC66A602-B769-4666-A540-CA3DF0E7DF2C}\Ndi
+    TimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    HelpText    REG_SZ    @%SystemRoot%\System32\drivers\MsLbfoProvider.sys,-500
+    Service    REG_SZ    MsLbfoProvider
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e974-e325-11ce-bfc1-08002be10318}\{FC66A602-B769-4666-A540-CA3DF0E7DF2C}\Ndi\Interfaces
+    LowerRange    REG_SZ    nolower
+    UpperRange    REG_SZ    noupper
+    FilterMediaTypes    REG_SZ    ms_implatform
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{414E444B-444D-0052-A0C8-EE4678CF4C97}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x28
+    ComponentId    REG_SZ    ms_rdma_ndk
+    Description    REG_SZ    @%SystemRoot%\system32\drivers\tcpip.sys,-10108
+    InfPath    REG_SZ    nettcpip.inf
+    InfSection    REG_SZ    MS_RDMA.NDK.PrimaryInstall
+    LocDescription    REG_SZ    @%SystemRoot%\system32\drivers\tcpip.sys,-10108
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{414E444B-444D-0052-A0C8-EE4678CF4C97}\Ndi
+    BindForm    REG_SZ    RDMANDK
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{414E444B-444D-0052-A0C8-EE4678CF4C97}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndis5
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{43504950-0054-0000-4396-F76B563A898A}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0xa0
+    ComponentId    REG_SZ    ms_tcpip
+    Description    REG_SZ    @%SystemRoot%\system32\drivers\tcpip.sys,-10100
+    InfPath    REG_SZ    nettcpip.inf
+    InfSection    REG_SZ    MS_TCPIP.PrimaryInstall
+    LocDescription    REG_SZ    @%SystemRoot%\system32\drivers\tcpip.sys,-10100
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{43504950-0054-0000-4396-F76B563A898A}\Ndi
+    HelpText    REG_SZ    @%SystemRoot%\system32\drivers\tcpip.sys,-10101
+    Service    REG_SZ    Tcpip
+    ClsId    REG_SZ    {A907657F-6FDF-11D0-8EFB-00C04FD912B2}
+    BindForm    REG_SZ    Tcpip
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{43504950-0054-0000-4396-F76B563A898A}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndis5,ndis5_ip,flpp4
+    UpperRange    REG_SZ    tdi
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{45544254-004E-0000-E5E8-E867C26A2D4B}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x28
+    ComponentId    REG_SZ    ms_netbt
+    Description    REG_SZ    @%windir%\system32\drivers\netbt.sys,-3
+    InfPath    REG_SZ    nettcpip.inf
+    InfSection    REG_SZ    MS_WINS.PrimaryInstall
+    LocDescription    REG_SZ    @%windir%\system32\drivers\netbt.sys,-3
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{45544254-004E-0000-E5E8-E867C26A2D4B}\Ndi
+    Service    REG_SZ    NetBT
+    BindForm    REG_SZ    NetBT
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{45544254-004E-0000-E5E8-E867C26A2D4B}\Ndi\Interfaces
+    LowerRange    REG_SZ    tdi
+    UpperRange    REG_SZ    netbios
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{464F524D-4154-504C-A0A2-41BDC48EF8E9}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    ComponentId    REG_SZ    ms_implat
+    Description    REG_SZ    @%SystemRoot%\System32\drivers\ndisimplatform.sys,-501
+    InfPath    REG_SZ    NdisImPlatform.inf
+    InfSection    REG_SZ    NdisImPlatform.ndi
+    LocDescription    REG_SZ    @%SystemRoot%\System32\drivers\ndisimplatform.sys,-501
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{464F524D-4154-504C-A0A2-41BDC48EF8E9}\Ndi
+    HelpText    REG_SZ    @%SystemRoot%\System32\drivers\ndisimplatform.sys,-500
+    Service    REG_SZ    NdisImPlatform
+    BindForm    REG_SZ    NdisImPlatform
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{464F524D-4154-504C-A0A2-41BDC48EF8E9}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndis5
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{47414359-4C45-414E-7468-D029FA65984D}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x28
+    ComponentId    REG_SZ    ms_ndiswanlegacy
+    Description    REG_SZ    @%windir%\system32\mprmsg.dll,-32014
+    InfPath    REG_SZ    netrast.inf
+    InfSection    REG_SZ    Ndi-NdisWanLegacy
+    LocDescription    REG_SZ    @%windir%\system32\mprmsg.dll,-32014
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{47414359-4C45-414E-7468-D029FA65984D}\Ndi
+    Service    REG_SZ    ndiswanlegacy
+    BindForm    REG_SZ    ndiswanlegacy
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{47414359-4C45-414E-7468-D029FA65984D}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndiswan
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4C4C4450-4D53-0000-223C-9A85482F4393}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    ComponentId    REG_SZ    ms_lldp
+    Description    REG_SZ    @%SystemRoot%\system32\drivers\mslldp.sys,-211
+    InfPath    REG_SZ    netlldp.inf
+    InfSection    REG_SZ    Install
+    LocDescription    REG_SZ    @%SystemRoot%\system32\drivers\mslldp.sys,-211
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4C4C4450-4D53-0000-223C-9A85482F4393}\Ndi
+    HelpText    REG_SZ    @%SystemRoot%\system32\drivers\mslldp.sys,-210
+    Service    REG_SZ    MsLldp
+    BindForm    REG_SZ    MsLldp
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4C4C4450-4D53-0000-223C-9A85482F4393}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndis5
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4D555850-5445-0046-2050-1489B35C9783}
+    InstallTimeStamp    REG_BINARY    E807050003000100170012001500F802
+    Characteristics    REG_DWORD    0x80
+    ComponentId    REG_SZ    HON_FTEMUXP
+    Description    REG_SZ    @oem17.inf,%ftemuxp_desc%;Honeywell FTE Mux-IM Protocol Driver
+    InfPath    REG_SZ    oem17.inf
+    InfSection    REG_SZ    FTEMUXP.ndi
+    LocDescription    REG_SZ    @oem17.inf,%ftemuxp_desc%;Honeywell FTE Mux-IM Protocol Driver
+    Security    REG_SZ    D:P(A;CIOI;GA;;;LS)(A;CIOI;GA;;;SY)
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4D555850-5445-0046-2050-1489B35C9783}\Ndi
+    HelpText    REG_SZ    Honeywell FTE Mux-IM Protocol
+    Service    REG_SZ    FTEMUXP
+    ClsID    REG_SZ    {7EDAF7A2-1497-4C7D-ADCD-F32DE7EB52CB}
+    ComponentDll    REG_SZ    ftemuxcfg.dll
+    BindForm    REG_SZ    FTEMUXP
+    Security    REG_SZ    D:P(A;CIOI;GA;;;LS)(A;CIOI;GA;;;SY)
+    MaxVirtualMiniports    REG_DWORD    0x1
+    MaxAssignedAdapters    REG_DWORD    0x2
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4D555850-5445-0046-2050-1489B35C9783}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndis5
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4E415250-5741-0000-4F47-6E7DD56A104E}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x28
+    ComponentId    REG_SZ    ms_wanarp
+    Description    REG_SZ    @%windir%\system32\mprmsg.dll,-32011
+    InfPath    REG_SZ    netrast.inf
+    InfSection    REG_SZ    Ndi-Wanarp
+    LocDescription    REG_SZ    @%windir%\system32\mprmsg.dll,-32011
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4E415250-5741-0000-4F47-6E7DD56A104E}\Ndi
+    Service    REG_SZ    wanarp
+    BindForm    REG_SZ    wanarp
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4E415250-5741-0000-4F47-6E7DD56A104E}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndiswanip
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4E4E454C-5455-4950-4357-8542DC463EC5}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x28
+    ComponentId    REG_SZ    ms_tcpip_tunnel
+    Description    REG_SZ    @%SystemRoot%\system32\drivers\tcpip.sys,-10104
+    InfPath    REG_SZ    nettcpip.inf
+    InfSection    REG_SZ    MS_TCPIP.Tunnel.PrimaryInstall
+    LocDescription    REG_SZ    @%SystemRoot%\system32\drivers\tcpip.sys,-10104
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4E4E454C-5455-4950-4357-8542DC463EC5}\Ndi
+    BindForm    REG_SZ    TCPIPTUNNEL
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4E4E454C-5455-4950-4357-8542DC463EC5}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndis5_tunnel
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4E4E454C-5455-5036-4166-270ABA793D96}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x28
+    ComponentId    REG_SZ    ms_tcpip6_tunnel
+    Description    REG_SZ    @%SystemRoot%\system32\drivers\tcpip.sys,-10106
+    InfPath    REG_SZ    netip6.inf
+    InfSection    REG_SZ    MS_TCPIP6.Tunnel.Install
+    LocDescription    REG_SZ    @%SystemRoot%\system32\drivers\tcpip.sys,-10106
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4E4E454C-5455-5036-4166-270ABA793D96}\Ndi
+    BindForm    REG_SZ    TCPIP6TUNNEL
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{4E4E454C-5455-5036-4166-270ABA793D96}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndis5_tunnel,ndis5_ip6_tunnel
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{50495036-5443-0000-C278-68FD7DFB2873}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0xa0
+    ComponentId    REG_SZ    ms_tcpip6
+    Description    REG_SZ    @%SystemRoot%\system32\drivers\tcpip.sys,-10102
+    InfPath    REG_SZ    netip6.inf
+    InfSection    REG_SZ    MS_TCPIP6.Install
+    LocDescription    REG_SZ    @%SystemRoot%\system32\drivers\tcpip.sys,-10102
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{50495036-5443-0000-C278-68FD7DFB2873}\Ndi
+    HelpText    REG_SZ    @%SystemRoot%\system32\drivers\tcpip.sys,-10103
+    Service    REG_SZ    Tcpip6
+    ClsId    REG_SZ    {0C41D1E6-9D16-41ED-9CDD-D0665039857B}
+    BindForm    REG_SZ    Tcpip6
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{50495036-5443-0000-C278-68FD7DFB2873}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndis5,ndis5_tunnel,ndis5_ip6_tunnel,flpp6
+    UpperRange    REG_SZ    tdi
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{504E4452-5253-0000-B220-5E7AD36F7B3A}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    ComponentId    REG_SZ    ms_rspndr
+    Description    REG_SZ    @%SystemRoot%\system32\lltdres.dll,-5
+    InfPath    REG_SZ    rspndr.inf
+    InfSection    REG_SZ    Install
+    LocDescription    REG_SZ    @%SystemRoot%\system32\lltdres.dll,-5
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{504E4452-5253-0000-B220-5E7AD36F7B3A}\Ndi
+    HelpText    REG_SZ    @%SystemRoot%\system32\lltdres.dll,-3
+    Service    REG_SZ    rspndr
+    BindForm    REG_SZ    rspndr
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{504E4452-5253-0000-B220-5E7AD36F7B3A}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndis5
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{50504F45-5350-5241-55EF-06B36EF6E4C7}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x28
+    ComponentId    REG_SZ    ms_pppoe
+    Description    REG_SZ    @%windir%\system32\mprmsg.dll,-32015
+    InfPath    REG_SZ    netrast.inf
+    InfSection    REG_SZ    Ndi-PppoeProtocol
+    LocDescription    REG_SZ    @%windir%\system32\mprmsg.dll,-32015
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{50504F45-5350-5241-55EF-06B36EF6E4C7}\Ndi
+    HelpText    REG_SZ    @%windir%\system32\mprmsg.dll,-32015
+    Service    REG_SZ    RasPppoe
+    BindForm    REG_SZ    RasPppoe
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{50504F45-5350-5241-55EF-06B36EF6E4C7}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndis4,ndis5
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{52505636-4E41-5741-78B8-9CA6E2AF3B73}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x28
+    ComponentId    REG_SZ    ms_wanarpv6
+    Description    REG_SZ    @%windir%\system32\mprmsg.dll,-32012
+    InfPath    REG_SZ    netrast.inf
+    InfSection    REG_SZ    Ndi-Wanarpv6
+    LocDescription    REG_SZ    @%windir%\system32\mprmsg.dll,-32012
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{52505636-4E41-5741-78B8-9CA6E2AF3B73}\Ndi
+    Service    REG_SZ    wanarpv6
+    BindForm    REG_SZ    wanarpv6
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{52505636-4E41-5741-78B8-9CA6E2AF3B73}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndiswanipv6
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{53534D42-494F-5442-CC18-B25667ED6E1E}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x38
+    ComponentId    REG_SZ    ms_netbt_smb
+    Description    REG_SZ    @%windir%\system32\drivers\netbt.sys,-4
+    InfPath    REG_SZ    nettcpip.inf
+    InfSection    REG_SZ    MS_NETBT_SMB.PrimaryInstall
+    LocDescription    REG_SZ    @%windir%\system32\drivers\netbt.sys,-4
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{53534D42-494F-5442-CC18-B25667ED6E1E}\Ndi
+    BindForm    REG_SZ    NetbiosSmb
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{53534D42-494F-5442-CC18-B25667ED6E1E}\Ndi\Interfaces
+    LowerRange    REG_SZ    nolower
+    UpperRange    REG_SZ    netbios_smb
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{5355494F-4449-004E-4AA3-6271CE351349}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x28
+    ComponentId    REG_SZ    ms_ndisuio
+    Description    REG_SZ    @%windir%\system32\drivers\ndisuio.sys,-501
+    InfPath    REG_SZ    ndisuio.inf
+    InfSection    REG_SZ    Install
+    LocDescription    REG_SZ    @%windir%\system32\drivers\ndisuio.sys,-501
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{5355494F-4449-004E-4AA3-6271CE351349}\Ndi
+    HelpText    REG_SZ    @%windir%\system32\drivers\ndisuio.sys,-500
+    Service    REG_SZ    Ndisuio
+    BindForm    REG_SZ    Ndisuio
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{5355494F-4449-004E-4AA3-6271CE351349}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndis5,ndis4,ndis5_uio,flpp4,flpp6
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{5357414E-4449-004E-7CF1-D431BBD4B8EB}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    Characteristics    REG_DWORD    0x28
+    ComponentId    REG_SZ    ms_ndiswan
+    Description    REG_SZ    @%windir%\system32\mprmsg.dll,-32002
+    InfPath    REG_SZ    netrast.inf
+    InfSection    REG_SZ    Ndi-NdisWan
+    LocDescription    REG_SZ    @%windir%\system32\mprmsg.dll,-32002
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{5357414E-4449-004E-7CF1-D431BBD4B8EB}\Ndi
+    Service    REG_SZ    NdisWan
+    BindForm    REG_SZ    NdisWan
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{5357414E-4449-004E-7CF1-D431BBD4B8EB}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndisatm,ndiscowan,ndiswanasync
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{5444494F-4C4C-0000-B6DF-CDB5E038E33A}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    ComponentId    REG_SZ    ms_lltdio
+    Description    REG_SZ    @%SystemRoot%\system32\lltdres.dll,-6
+    InfPath    REG_SZ    lltdio.inf
+    InfSection    REG_SZ    Install
+    LocDescription    REG_SZ    @%SystemRoot%\system32\lltdres.dll,-6
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{5444494F-4C4C-0000-B6DF-CDB5E038E33A}\Ndi
+    HelpText    REG_SZ    @%SystemRoot%\system32\lltdres.dll,-4
+    Service    REG_SZ    lltdio
+    BindForm    REG_SZ    lltdio
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{5444494F-4C4C-0000-B6DF-CDB5E038E33A}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndis5
+    UpperRange    REG_SZ    noupper
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{56465050-5343-5456-47F9-EC637C282991}
+    InstallTimeStamp    REG_BINARY    DD070C00040005000000000000000000
+    ComponentId    REG_SZ    netvsc_vfpp
+    Description    REG_SZ    Microsoft NetVsc Failover VF Protocol
+    InfPath    REG_SZ    wnetvsc_vfpp.inf
+    InfSection    REG_SZ    netvscvfpp.ndi
+    LocDescription    REG_SZ    Microsoft NetVsc Failover VF Protocol
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{56465050-5343-5456-47F9-EC637C282991}\Ndi
+    HelpText    REG_SZ    NetVsc Failover VF Protocol
+    Service    REG_SZ    netvscvfpp
+    BindForm    REG_SZ    netvscvfpp
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Network\{4d36e975-e325-11ce-bfc1-08002be10318}\{56465050-5343-5456-47F9-EC637C282991}\Ndi\Interfaces
+    LowerRange    REG_SZ    ndisvf
+    UpperRange    REG_SZ    noupper
+
+
+================================================================================== 
+===== 13:45:25.93 : REG.EXE QUERY "HKLM\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}" /s 
+================================================================================== 
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}
+    Class    REG_SZ    Net
+    ClassDesc    REG_SZ    @%SystemRoot%\System32\NetCfgx.dll,-1502
+    IconPath    REG_MULTI_SZ    %SystemRoot%\system32\setupapi.dll,-5
+    EnumPropPages32    REG_SZ    NetCfgx.dll,NetPropPageProvider
+    LowerLogoVersion    REG_SZ    6.0
+    LastDeleteDate    REG_BINARY    D8D6BEB71C9CDA01
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0000
+    DriverDesc    REG_SZ    Microsoft Kernel Debug Network Adapter
+    ProviderName    REG_SZ    Microsoft
+    DriverDateData    REG_BINARY    00808CA3C594C601
+    DriverDate    REG_SZ    6-21-2006
+    DriverVersion    REG_SZ    10.0.17763.1
+    InfPath    REG_SZ    kdnic.inf
+    InfSection    REG_SZ    KdNic.ndi
+    MatchingDeviceId    REG_SZ    root\kdnic
+    BusNumber    REG_SZ    0
+    NoDisplayClass    REG_SZ    1
+    *IfType    REG_DWORD    0x6
+    *MediaType    REG_DWORD    0x0
+    *PhysicalMediaType    REG_DWORD    0xe
+    Characteristics    REG_DWORD    0x9
+    IfTypePreStart    REG_DWORD    0x6
+    NetworkInterfaceInstallTimestamp    REG_QWORD    0x1da9c0a19e81f39
+    InstallTimeStamp    REG_BINARY    E8070500030001001400380037009D03
+    DeviceInstanceID    REG_SZ    ROOT\KDNIC\0000
+    ComponentId    REG_SZ    root\kdnic
+    NetCfgInstanceId    REG_SZ    {C6D6B172-374F-46FC-878C-352F2774B265}
+    NetLuidIndex    REG_DWORD    0x8000
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0000\Linkage
+    RootDevice    REG_MULTI_SZ    {C6D6B172-374F-46FC-878C-352F2774B265}
+    Export    REG_MULTI_SZ    \Device\{C6D6B172-374F-46FC-878C-352F2774B265}
+    UpperBind    REG_MULTI_SZ    FTEMUXP\0lltdio\0MsLldp\0Ndisuio\0RasPppoe\0RDMANDK\0rspndr\0Tcpip\0Tcpip6
+    FilterList    REG_MULTI_SZ    {C6D6B172-374F-46FC-878C-352F2774B265}-{EA24CD6C-D17A-4348-9190-09F0D5BE83DD}-0000\0{C6D6B172-374F-46FC-878C-352F2774B265}-{3BFD7820-D65C-4C1B-9FEA-983A019639EA}-0000\0{C6D6B172-374F-46FC-878C-352F2774B265}-{EA24CD6C-D17A-4348-9190-09F0D5BE83DD}-0001\0{C6D6B172-374F-46FC-878C-352F2774B265}-{B5F4D659-7DAA-4565-8E41-BE220ED60542}-0000\0{C6D6B172-374F-46FC-878C-352F2774B265}-{EA24CD6C-D17A-4348-9190-09F0D5BE83DD}-0002\0{C6D6B172-374F-46FC-878C-352F2774B265}-{B70D6460-3635-4D42-B866-B8AB1A24454C}-0000\0{C6D6B172-374F-46FC-878C-352F2774B265}-{EA24CD6C-D17A-4348-9190-09F0D5BE83DD}-0003
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0000\Ndi
+    Service    REG_SZ    kdnic
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0000\Ndi\Interfaces
+    UpperRange    REG_SZ    ndis5
+    LowerRange    REG_SZ    ethernet
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001
+    DriverDesc    REG_SZ    Broadcom NetXtreme Gigabit Ethernet
+    ProviderName    REG_SZ    Broadcom
+    DriverDateData    REG_BINARY    000022D3155ED101
+    DriverDate    REG_SZ    2-3-2016
+    DriverVersion    REG_SZ    17.4.0.0
+    InfPath    REG_SZ    oem8.inf
+    InfSection    REG_SZ    BCM5720C_LHinst_OEMD.NTamd64.6.1
+    MatchingDeviceId    REG_SZ    PCI\VEN_14E4&DEV_165F&SUBSYS_200314E4
+    *TransmitBuffers    REG_SZ    500
+    *ReceiveBuffers    REG_SZ    200
+    RxCoalescingTicks    REG_SZ    10
+    TxCoalescingTicks    REG_SZ    30
+    RxMaxCoalescedFrames    REG_SZ    5
+    TxMaxCoalescedFrames    REG_SZ    50
+    TxAltMaxCoalescedFrames    REG_SZ    50
+    TSS    REG_SZ    1
+    RegDmpBufSize    REG_SZ    32768
+    AdminSettingsLevel    REG_SZ    2
+    JumboPacketMode    REG_SZ    1
+    *MaxRssProcessors    REG_SZ    16
+    LargeSizeRxRing    REG_SZ    0
+    product_version    REG_SZ    19.0.0
+    *IfType    REG_DWORD    0x6
+    *MediaType    REG_DWORD    0x0
+    *PhysicalMediaType    REG_DWORD    0x0
+    BusType    REG_SZ    5
+    Characteristics    REG_DWORD    0x84
+    Port1FunctionNumber    REG_DWORD    0x0
+    *InterruptModeration    REG_SZ    1
+    *TCPUDPChecksumOffloadIPv4    REG_SZ    3
+    *PriorityVLANTag    REG_SZ    3
+    VlanID    REG_SZ    0
+    *FlowControl    REG_SZ    0
+    *SpeedDuplex    REG_SZ    4
+    *WakeOnMagicPacket    REG_SZ    1
+    *WakeOnPattern    REG_SZ    1
+    WolSpeed    REG_SZ    256
+    WireSpeed    REG_SZ    1
+    *NumRssQueues    REG_SZ    4
+    *EEE    REG_SZ    0
+    EeeCtrlMode    REG_SZ    1
+    *RssBaseProcNumber    REG_SZ    0
+    *JumboPacket    REG_SZ    1500
+    *VMQ    REG_SZ    0
+    *VMQVlanFiltering    REG_SZ    0
+    *PMARPOffload    REG_SZ    1
+    *PMNSOffload    REG_SZ    1
+    *TCPUDPChecksumOffloadIPv6    REG_SZ    3
+    *LsoV2IPv4    REG_SZ    0
+    *LsoV2IPv6    REG_SZ    0
+    *RSS    REG_SZ    0
+    IfTypePreStart    REG_DWORD    0x6
+    NetworkInterfaceInstallTimestamp    REG_QWORD    0x1da9bfb10a1ea4b
+    InstallTimeStamp    REG_BINARY    E8070500030001001400390008005803
+    DeviceInstanceID    REG_SZ    PCI\VEN_14E4&DEV_165F&SUBSYS_200314E4&REV_00\00005C6F691A648800
+    ComponentId    REG_SZ    PCI\VEN_14E4&DEV_165F&SUBSYS_200314E4
+    NetCfgInstanceId    REG_SZ    {2C9070B5-DBDE-469A-8162-500128A3FAB2}
+    NetLuidIndex    REG_DWORD    0x8001
+    SpeedDuplex    REG_SZ    4
+    *LSOv1IPv4    REG_SZ    0
+    *LSOv1IPv6    REG_SZ    0
+    LargeSendEnabled    REG_SZ    0
+    *TCPConnectionOffloadIPv4    REG_SZ    0
+    PnPCapabilities    REG_DWORD    0x18
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Linkage
+    RootDevice    REG_MULTI_SZ    {2C9070B5-DBDE-469A-8162-500128A3FAB2}
+    Export    REG_MULTI_SZ    \Device\{2C9070B5-DBDE-469A-8162-500128A3FAB2}
+    UpperBind    REG_MULTI_SZ    FTEMUXP
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi
+    Service    REG_SZ    b57nd60a
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Interfaces
+    UpperRange    REG_SZ    ndis5
+    LowerRange    REG_SZ    ethernet
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*EEE
+    ParamDesc    REG_SZ    802.3az EEE
+    default    REG_SZ    0
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*EEE\enum
+    0    REG_SZ    Disable
+    1    REG_SZ    Enable
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*FlowControl
+    ParamDesc    REG_SZ    Flow Control
+    default    REG_SZ    4
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*FlowControl\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Tx Enabled
+    2    REG_SZ    Rx Enabled
+    3    REG_SZ    Rx & Tx Enabled
+    4    REG_SZ    Auto Negotiation
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*InterruptModeration
+    ParamDesc    REG_SZ    Interrupt Moderation
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*InterruptModeration\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*JumboPacket
+    ParamDesc    REG_SZ    Jumbo Mtu
+    default    REG_SZ    1500
+    type    REG_SZ    int
+    min    REG_SZ    1500
+    max    REG_SZ    9000
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*LsoV2IPv4
+    ParamDesc    REG_SZ    Large Send Offload V2 (IPv4)
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*LsoV2IPv4\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*LsoV2IPv6
+    ParamDesc    REG_SZ    Large Send Offload V2 (IPv6)
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*LsoV2IPv6\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*NumRssQueues
+    ParamDesc    REG_SZ    Maximum Number of RSS Queues
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*NumRssQueues\enum
+    1    REG_SZ    RSS 1 Queue
+    2    REG_SZ    RSS 2 Queues
+    4    REG_SZ    RSS 4 Queues
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*PMARPOffload
+    ParamDesc    REG_SZ    ARP Offload
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*PMARPOffload\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*PMNSOffload
+    ParamDesc    REG_SZ    NS Offload
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*PMNSOffload\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*PriorityVLANTag
+    ParamDesc    REG_SZ    Priority & VLAN
+    default    REG_SZ    3
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*PriorityVLANTag\enum
+    0    REG_SZ    Priority & VLAN Disabled
+    1    REG_SZ    Priority Enabled
+    2    REG_SZ    VLAN Enabled
+    3    REG_SZ    Priority & VLAN Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*ReceiveBuffers
+    ParamDesc    REG_SZ    Receive Buffers
+    type    REG_SZ    enum
+    Default    REG_SZ    200
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*ReceiveBuffers\enum
+    200    REG_SZ    Default
+    64    REG_SZ    Minimum
+    511    REG_SZ    Maximum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*RSS
+    ParamDesc    REG_SZ    Receive Side Scaling
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*RSS\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*RssBaseProcNumber
+    ParamDesc    REG_SZ    RSS Base Processor Number
+    default    REG_SZ    0
+    type    REG_SZ    int
+    min    REG_SZ    0
+    max    REG_SZ    63
+    step    REG_SZ    1
+    base    REG_SZ    10
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*SpeedDuplex
+    ParamDesc    REG_SZ    Speed & Duplex
+    default    REG_SZ    0
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*SpeedDuplex\enum
+    0    REG_SZ    Auto Negotiation
+    1    REG_SZ    10 Mbps Half Duplex
+    2    REG_SZ    10 Mbps Full Duplex
+    3    REG_SZ    100 Mbps Half Duplex
+    4    REG_SZ    100 Mbps Full Duplex
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*TCPUDPChecksumOffloadIPv4
+    ParamDesc    REG_SZ    TCP/UDP Checksum Offload (IPv4)
+    default    REG_SZ    3
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*TCPUDPChecksumOffloadIPv4\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Tx Enabled
+    2    REG_SZ    Rx Enabled
+    3    REG_SZ    Rx & Tx Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*TCPUDPChecksumOffloadIPv6
+    ParamDesc    REG_SZ    TCP/UDP Checksum Offload (IPv6)
+    default    REG_SZ    3
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*TCPUDPChecksumOffloadIPv6\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Tx Enabled
+    2    REG_SZ    Rx Enabled
+    3    REG_SZ    Rx & Tx Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*TransmitBuffers
+    ParamDesc    REG_SZ    Transmit Buffers
+    type    REG_SZ    int
+    default    REG_SZ    200
+    min    REG_SZ    100
+    max    REG_SZ    600
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*VMQ
+    ParamDesc    REG_SZ    Virtual Machine Queues
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*VMQ\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*VMQVlanFiltering
+    ParamDesc    REG_SZ    VMQ VLAN Filtering
+    default    REG_SZ    0
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*VMQVlanFiltering\enum
+    0    REG_SZ    Disable
+    1    REG_SZ    Enable
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*WakeOnMagicPacket
+    ParamDesc    REG_SZ    Wake on Magic Packet
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*WakeOnMagicPacket\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*WakeOnPattern
+    ParamDesc    REG_SZ    Wake on Pattern Match
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\*WakeOnPattern\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\EeeCtrlMode
+    ParamDesc    REG_SZ    EEE Control Policies
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\EeeCtrlMode\enum
+    0    REG_SZ    Maximum Power Saving
+    1    REG_SZ    Optimal Power and Performance
+    2    REG_SZ    Maximum Performance
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\NetworkAddress
+    ParamDesc    REG_SZ    Network Address
+    Default    REG_SZ    
+    type    REG_SZ    edit
+    LimitText    REG_SZ    12
+    UpperCase    REG_SZ    1
+    optional    REG_SZ    1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\VlanID
+    ParamDesc    REG_SZ    VLAN ID
+    default    REG_SZ    0
+    type    REG_SZ    long
+    min    REG_SZ    0
+    max    REG_SZ    4094
+    step    REG_SZ    1
+    base    REG_SZ    10
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\WireSpeed
+    ParamDesc    REG_SZ    Ethernet@WireSpeed
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\WireSpeed\enum
+    0    REG_SZ    Disable
+    1    REG_SZ    Enable
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\WolSpeed
+    ParamDesc    REG_SZ    WOL Speed
+    default    REG_SZ    256
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001\Ndi\Params\WolSpeed\enum
+    0    REG_SZ    Auto
+    1    REG_SZ    10 Mb
+    2    REG_SZ    100 Mb
+    256    REG_SZ    Lowest Speed Advertised
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002
+    DriverDesc    REG_SZ    Broadcom NetXtreme Gigabit Ethernet
+    ProviderName    REG_SZ    Broadcom
+    DriverDateData    REG_BINARY    000022D3155ED101
+    DriverDate    REG_SZ    2-3-2016
+    DriverVersion    REG_SZ    17.4.0.0
+    InfPath    REG_SZ    oem8.inf
+    InfSection    REG_SZ    BCM5720C_LHinst_OEMD.NTamd64.6.1
+    MatchingDeviceId    REG_SZ    PCI\VEN_14E4&DEV_165F&SUBSYS_200314E4
+    *TransmitBuffers    REG_SZ    500
+    *ReceiveBuffers    REG_SZ    200
+    RxCoalescingTicks    REG_SZ    10
+    TxCoalescingTicks    REG_SZ    30
+    RxMaxCoalescedFrames    REG_SZ    5
+    TxMaxCoalescedFrames    REG_SZ    50
+    TxAltMaxCoalescedFrames    REG_SZ    50
+    TSS    REG_SZ    1
+    RegDmpBufSize    REG_SZ    32768
+    AdminSettingsLevel    REG_SZ    2
+    JumboPacketMode    REG_SZ    1
+    *MaxRssProcessors    REG_SZ    16
+    LargeSizeRxRing    REG_SZ    0
+    product_version    REG_SZ    19.0.0
+    *IfType    REG_DWORD    0x6
+    *MediaType    REG_DWORD    0x0
+    *PhysicalMediaType    REG_DWORD    0x0
+    BusType    REG_SZ    5
+    Characteristics    REG_DWORD    0x84
+    Port1FunctionNumber    REG_DWORD    0x0
+    *InterruptModeration    REG_SZ    1
+    *TCPUDPChecksumOffloadIPv4    REG_SZ    3
+    *PriorityVLANTag    REG_SZ    3
+    VlanID    REG_SZ    0
+    *FlowControl    REG_SZ    4
+    *SpeedDuplex    REG_SZ    4
+    *WakeOnMagicPacket    REG_SZ    1
+    *WakeOnPattern    REG_SZ    1
+    WolSpeed    REG_SZ    256
+    WireSpeed    REG_SZ    1
+    *NumRssQueues    REG_SZ    4
+    *EEE    REG_SZ    0
+    EeeCtrlMode    REG_SZ    1
+    *RssBaseProcNumber    REG_SZ    0
+    *JumboPacket    REG_SZ    1500
+    *VMQ    REG_SZ    0
+    *VMQVlanFiltering    REG_SZ    0
+    *PMARPOffload    REG_SZ    1
+    *PMNSOffload    REG_SZ    1
+    *TCPUDPChecksumOffloadIPv6    REG_SZ    3
+    *LsoV2IPv4    REG_SZ    0
+    *LsoV2IPv6    REG_SZ    0
+    *RSS    REG_SZ    0
+    IfTypePreStart    REG_DWORD    0x6
+    NetworkInterfaceInstallTimestamp    REG_QWORD    0x1da9bfb1116b795
+    InstallTimeStamp    REG_BINARY    E807050003000100140039000900DB02
+    DeviceInstanceID    REG_SZ    PCI\VEN_14E4&DEV_165F&SUBSYS_200314E4&REV_00\00005C6F691A648901
+    ComponentId    REG_SZ    PCI\VEN_14E4&DEV_165F&SUBSYS_200314E4
+    NetCfgInstanceId    REG_SZ    {7388026A-E6E7-4BE3-A991-598640BB5892}
+    NetLuidIndex    REG_DWORD    0x8002
+    SpeedDuplex    REG_SZ    4
+    *LSOv1IPv4    REG_SZ    0
+    *LSOv1IPv6    REG_SZ    0
+    LargeSendEnabled    REG_SZ    0
+    *TCPConnectionOffloadIPv4    REG_SZ    0
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Linkage
+    RootDevice    REG_MULTI_SZ    {7388026A-E6E7-4BE3-A991-598640BB5892}
+    Export    REG_MULTI_SZ    \Device\{7388026A-E6E7-4BE3-A991-598640BB5892}
+    UpperBind    REG_MULTI_SZ    FTEMUXP
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi
+    Service    REG_SZ    b57nd60a
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Interfaces
+    UpperRange    REG_SZ    ndis5
+    LowerRange    REG_SZ    ethernet
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*EEE
+    ParamDesc    REG_SZ    802.3az EEE
+    default    REG_SZ    0
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*EEE\enum
+    0    REG_SZ    Disable
+    1    REG_SZ    Enable
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*FlowControl
+    ParamDesc    REG_SZ    Flow Control
+    default    REG_SZ    4
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*FlowControl\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Tx Enabled
+    2    REG_SZ    Rx Enabled
+    3    REG_SZ    Rx & Tx Enabled
+    4    REG_SZ    Auto Negotiation
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*InterruptModeration
+    ParamDesc    REG_SZ    Interrupt Moderation
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*InterruptModeration\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*JumboPacket
+    ParamDesc    REG_SZ    Jumbo Mtu
+    default    REG_SZ    1500
+    type    REG_SZ    int
+    min    REG_SZ    1500
+    max    REG_SZ    9000
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*LsoV2IPv4
+    ParamDesc    REG_SZ    Large Send Offload V2 (IPv4)
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*LsoV2IPv4\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*LsoV2IPv6
+    ParamDesc    REG_SZ    Large Send Offload V2 (IPv6)
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*LsoV2IPv6\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*NumRssQueues
+    ParamDesc    REG_SZ    Maximum Number of RSS Queues
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*NumRssQueues\enum
+    1    REG_SZ    RSS 1 Queue
+    2    REG_SZ    RSS 2 Queues
+    4    REG_SZ    RSS 4 Queues
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*PMARPOffload
+    ParamDesc    REG_SZ    ARP Offload
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*PMARPOffload\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*PMNSOffload
+    ParamDesc    REG_SZ    NS Offload
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*PMNSOffload\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*PriorityVLANTag
+    ParamDesc    REG_SZ    Priority & VLAN
+    default    REG_SZ    3
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*PriorityVLANTag\enum
+    0    REG_SZ    Priority & VLAN Disabled
+    1    REG_SZ    Priority Enabled
+    2    REG_SZ    VLAN Enabled
+    3    REG_SZ    Priority & VLAN Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*ReceiveBuffers
+    ParamDesc    REG_SZ    Receive Buffers
+    type    REG_SZ    enum
+    Default    REG_SZ    200
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*ReceiveBuffers\enum
+    200    REG_SZ    Default
+    64    REG_SZ    Minimum
+    511    REG_SZ    Maximum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*RSS
+    ParamDesc    REG_SZ    Receive Side Scaling
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*RSS\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*RssBaseProcNumber
+    ParamDesc    REG_SZ    RSS Base Processor Number
+    default    REG_SZ    0
+    type    REG_SZ    int
+    min    REG_SZ    0
+    max    REG_SZ    63
+    step    REG_SZ    1
+    base    REG_SZ    10
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*SpeedDuplex
+    ParamDesc    REG_SZ    Speed & Duplex
+    default    REG_SZ    0
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*SpeedDuplex\enum
+    0    REG_SZ    Auto Negotiation
+    1    REG_SZ    10 Mbps Half Duplex
+    2    REG_SZ    10 Mbps Full Duplex
+    3    REG_SZ    100 Mbps Half Duplex
+    4    REG_SZ    100 Mbps Full Duplex
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*TCPUDPChecksumOffloadIPv4
+    ParamDesc    REG_SZ    TCP/UDP Checksum Offload (IPv4)
+    default    REG_SZ    3
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*TCPUDPChecksumOffloadIPv4\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Tx Enabled
+    2    REG_SZ    Rx Enabled
+    3    REG_SZ    Rx & Tx Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*TCPUDPChecksumOffloadIPv6
+    ParamDesc    REG_SZ    TCP/UDP Checksum Offload (IPv6)
+    default    REG_SZ    3
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*TCPUDPChecksumOffloadIPv6\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Tx Enabled
+    2    REG_SZ    Rx Enabled
+    3    REG_SZ    Rx & Tx Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*TransmitBuffers
+    ParamDesc    REG_SZ    Transmit Buffers
+    type    REG_SZ    int
+    default    REG_SZ    200
+    min    REG_SZ    100
+    max    REG_SZ    600
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*VMQ
+    ParamDesc    REG_SZ    Virtual Machine Queues
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*VMQ\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*VMQVlanFiltering
+    ParamDesc    REG_SZ    VMQ VLAN Filtering
+    default    REG_SZ    0
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*VMQVlanFiltering\enum
+    0    REG_SZ    Disable
+    1    REG_SZ    Enable
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*WakeOnMagicPacket
+    ParamDesc    REG_SZ    Wake on Magic Packet
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*WakeOnMagicPacket\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*WakeOnPattern
+    ParamDesc    REG_SZ    Wake on Pattern Match
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\*WakeOnPattern\enum
+    0    REG_SZ    Disabled
+    1    REG_SZ    Enabled
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\EeeCtrlMode
+    ParamDesc    REG_SZ    EEE Control Policies
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\EeeCtrlMode\enum
+    0    REG_SZ    Maximum Power Saving
+    1    REG_SZ    Optimal Power and Performance
+    2    REG_SZ    Maximum Performance
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\NetworkAddress
+    ParamDesc    REG_SZ    Network Address
+    Default    REG_SZ    
+    type    REG_SZ    edit
+    LimitText    REG_SZ    12
+    UpperCase    REG_SZ    1
+    optional    REG_SZ    1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\VlanID
+    ParamDesc    REG_SZ    VLAN ID
+    default    REG_SZ    0
+    type    REG_SZ    long
+    min    REG_SZ    0
+    max    REG_SZ    4094
+    step    REG_SZ    1
+    base    REG_SZ    10
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\WireSpeed
+    ParamDesc    REG_SZ    Ethernet@WireSpeed
+    default    REG_SZ    1
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\WireSpeed\enum
+    0    REG_SZ    Disable
+    1    REG_SZ    Enable
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\WolSpeed
+    ParamDesc    REG_SZ    WOL Speed
+    default    REG_SZ    256
+    type    REG_SZ    enum
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0002\Ndi\Params\WolSpeed\enum
+    0    REG_SZ    Auto
+    1    REG_SZ    10 Mb
+    2    REG_SZ    100 Mb
+    256    REG_SZ    Lowest Speed Advertised
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0003
+    DriverDesc    REG_SZ    Remote NDIS Compatible Device
+    ProviderName    REG_SZ    Microsoft
+    DriverDateData    REG_BINARY    00808CA3C594C601
+    DriverDate    REG_SZ    6-21-2006
+    DriverVersion    REG_SZ    10.0.17763.1
+    InfPath    REG_SZ    rndiscmp.inf
+    InfSection    REG_SZ    RNDIS.NT.6.0
+    IncludedInfs    REG_MULTI_SZ    netrndis.inf
+    MatchingDeviceId    REG_SZ    USB\MS_COMP_RNDIS&MS_SUBCOMP_5162001
+    BusNumber    REG_SZ    0
+    *IfType    REG_DWORD    0x6
+    *MediaType    REG_DWORD    0x0
+    *PhysicalMediaType    REG_DWORD    0xe
+    BusType    REG_SZ    15
+    Characteristics    REG_DWORD    0x84
+    IfTypePreStart    REG_DWORD    0x6
+    NetworkInterfaceInstallTimestamp    REG_QWORD    0x1da9c0a229cc6c1
+    InstallTimeStamp    REG_BINARY    E807050003000100140039000A000302
+    DeviceInstanceID    REG_SZ    USB\VID_413C&PID_A102\5678
+    ComponentId    REG_SZ    USB\MS_COMP_RNDIS&MS_SUBCOMP_5162001
+    NetCfgInstanceId    REG_SZ    {FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}
+    NetLuidIndex    REG_DWORD    0x8003
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0003\Linkage
+    RootDevice    REG_MULTI_SZ    {FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}
+    Export    REG_MULTI_SZ    \Device\{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}
+    UpperBind    REG_MULTI_SZ    lltdio\0MsLldp\0Ndisuio\0RasPppoe\0RDMANDK\0rspndr\0Tcpip\0Tcpip6
+    FilterList    REG_MULTI_SZ    {FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}-{EA24CD6C-D17A-4348-9190-09F0D5BE83DD}-0000\0{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}-{3BFD7820-D65C-4C1B-9FEA-983A019639EA}-0000\0{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}-{EA24CD6C-D17A-4348-9190-09F0D5BE83DD}-0001\0{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}-{B5F4D659-7DAA-4565-8E41-BE220ED60542}-0000\0{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}-{EA24CD6C-D17A-4348-9190-09F0D5BE83DD}-0002\0{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}-{B70D6460-3635-4D42-B866-B8AB1A24454C}-0000\0{FA7955D6-8485-44B7-A8C2-F9FE77B6FEC7}-{EA24CD6C-D17A-4348-9190-09F0D5BE83DD}-0003
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0003\NDI
+    Service    REG_SZ    usbrndis6
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0003\NDI\Interfaces
+    UpperRange    REG_SZ    ndis5
+    LowerRange    REG_SZ    ethernet
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0003\NDI\params
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0003\NDI\params\NetworkAddress
+    ParamDesc    REG_SZ    Network Address
+    type    REG_SZ    edit
+    LimitText    REG_SZ    12
+    UpperCase    REG_SZ    1
+    default    REG_SZ     
+    optional    REG_SZ    1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0003\NDI\params\VistaProperty
+    ParamDesc    REG_SZ    Optional Vista Property
+    type    REG_SZ    edit
+    LimitText    REG_SZ    12
+    UpperCase    REG_SZ    1
+    default    REG_SZ     
+    optional    REG_SZ    1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0004
+    EnumPropPages32    REG_SZ    ftemuxcfg.dll,ExtensionPropSheetPageProc
+    InfPath    REG_SZ    oem18.inf
+    InfSection    REG_SZ    FTEMUXMP.ndi
+    ProviderName    REG_SZ    Honeywell
+    DriverDateData    REG_BINARY    0040A2F07BB9D701
+    DriverDate    REG_SZ    10-5-2021
+    DriverVersion    REG_SZ    21.32.53.855
+    MatchingDeviceId    REG_SZ    hon_ftemuxmp
+    DriverDesc    REG_SZ    Honeywell FTE MUX-IM Virtual Miniport Driver
+    *IfType    REG_DWORD    0x6
+    *MediaType    REG_DWORD    0x0
+    *PhysicalMediaType    REG_DWORD    0x0
+    Characteristics    REG_DWORD    0x81
+    InstallTimeStamp    REG_BINARY    E807050003000100170012001A00E003
+    DeviceInstanceID    REG_SZ    ROOT\HON_FTEMUXMP\0000
+    ComponentId    REG_SZ    hon_ftemuxmp
+    IfTypePreStart    REG_DWORD    0x6
+    NetworkInterfaceInstallTimestamp    REG_QWORD    0x1da9c1dec2ac777
+    NetCfgInstanceId    REG_SZ    {D9488900-65C8-40F3-A343-4120966D67D0}
+    NetLuidIndex    REG_DWORD    0x8004
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0004\Linkage
+    RootDevice    REG_MULTI_SZ    {D9488900-65C8-40F3-A343-4120966D67D0}
+    Export    REG_MULTI_SZ    \Device\{D9488900-65C8-40F3-A343-4120966D67D0}
+    UpperBind    REG_MULTI_SZ    lltdio\0MsLldp\0Ndisuio\0RasPppoe\0RDMANDK\0rspndr\0Tcpip\0Tcpip6
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0004\Ndi
+    Service    REG_SZ    FTEMUXMP
+    HelpText    REG_SZ    Honeywell FTE MUX-IM Virtual Miniport Instance
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0004\Ndi\Interfaces
+    UpperRange    REG_SZ    ndis5
+    LowerRange    REG_SZ    nolower
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\Configuration
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\Configuration\Driver
+    DriverUpdated    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\Configuration\Properties
+    {540b947e-8b40-45bc-a8a2-6a0b894cbda2},13,0x11    REG_DWORD    0x1
+
+HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\Properties

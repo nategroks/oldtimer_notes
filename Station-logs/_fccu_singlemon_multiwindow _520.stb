@@ -1,0 +1,646 @@
+<ToolbarsMenusShortcuts Version="4">
+	<Actions>
+		<Action ActionID="Acknowledge Alarm" ActionType="CMD_HDXCommand" ActionArguments="80784E9A-EC65-44ad-B873-03613A2572E3"/>
+		<Action ActionID="Associated Display" ActionType="CMD_HDXCommand" ActionArguments="66B55C40-9CAA-461e-9658-FF59CEBC5345"/>
+		<Action ActionID="Callup Page" ActionType="CMD_Callup_Page" ActionArguments=""/>
+		<Action ActionID="Callup Popup" ActionType="CMD_Callup_Popup" ActionArguments=""/>
+		<Action ActionID="Clear" ActionType="CMD_HDXCommand" ActionArguments="c458b3e9-749a-465d-805a-dbb4e284fc58"/>
+		<Action ActionID="Command Zone" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Control to Automatic" ActionType="CMD_HDXCommand" ActionArguments="CE12E8C8-BFF4-40cd-BD44-C7B0656836C2;30"/>
+		<Action ActionID="Control to Manual" ActionType="CMD_HDXCommand" ActionArguments="CE12E8C8-BFF4-40cd-BD44-C7B0656836C2;29"/>
+		<Action ActionID="Control to Normal" ActionType="CMD_HDXCommand" ActionArguments="CE12E8C8-BFF4-40cd-BD44-C7B0656836C2;26"/>
+		<Action ActionID="Current Display To" ActionType="CMD_Current_Display_To" ActionArguments=""/>
+		<Action ActionID="Digital Video Manager" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Enter" ActionType="CMD_HDXCommand" ActionArguments="5e06eef6-e9c1-4ee8-ace6-b34236c711c8"/>
+		<Action ActionID="Exit" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="FastLower" ActionType="CMD_HDXCommand" ActionArguments="603B2BB8-041E-4a7b-B409-DD2CDCFCD549"/>
+		<Action ActionID="FastLower Repeated" ActionType="CMD_HDXCommand" ActionArguments="156B4771-4101-406c-AABA-326AFBA02456"/>
+		<Action ActionID="FastRaise" ActionType="CMD_HDXCommand" ActionArguments="08DE67FD-1829-4ef7-9B75-2ECD4EFE7CEB"/>
+		<Action ActionID="FastRaise Repeated" ActionType="CMD_HDXCommand" ActionArguments="AF65AC6E-86E1-4ab9-8F00-1C9FC6E82FF2"/>
+		<Action ActionID="Flush PM Commands" ActionType="CMD_HDXCommand" ActionArguments="40389FA1-0F7D-4621-BD45-1AED2083F494"/>
+		<Action ActionID="Help" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Initiate Logon" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Invoke Touch Screen Keypad" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Launch Application" ActionType="CMD_Launch_Application" ActionArguments=""/>
+		<Action ActionID="Launch Help File" ActionType="CMD_Launch_Help" ActionArguments=""/>
+		<Action ActionID="Lower" ActionType="CMD_HDXCommand" ActionArguments="B2B2975C-6E90-469f-8581-F145BD67E7F3"/>
+		<Action ActionID="Lower Repeated" ActionType="CMD_HDXCommand" ActionArguments="E8A2019F-7CEE-460c-A5BD-0AF724D203A0"/>
+		<Action ActionID="Modify Connection" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Next Display To" ActionType="CMD_Next_Display_To" ActionArguments=""/>
+		<Action ActionID="None" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Open Connection" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Page Back" ActionType="CMD_HDXCommand" ActionArguments="FA92AAD8-49D9-486d-98EE-832727F79F7E"/>
+		<Action ActionID="Page Forward" ActionType="CMD_HDXCommand" ActionArguments="F74630D1-58D8-49d4-99CA-2F244D3D2B7D"/>
+		<Action ActionID="Print" ActionType="CMD_HDXCommand" ActionArguments="76721133-EBAB-4b98-A8B4-26D02736991F"/>
+		<Action ActionID="Print Preview..." ActionType="CMD_HDXCommand" ActionArguments="89ED2D2A-1B3A-42ad-B350-AB8FC1344B54"/>
+		<Action ActionID="Print Setup..." ActionType="CMD_HDXCommand" ActionArguments="63476BCF-EE4D-4532-8D98-A9999F5169ED"/>
+		<Action ActionID="Print With Alarm Bar" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Print With Status Bar" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Print..." ActionType="CMD_HDXCommand" ActionArguments="22CED4C8-CBB2-4c9e-9621-2153CCB7F1E1"/>
+		<Action ActionID="Raise" ActionType="CMD_HDXCommand" ActionArguments="27361022-DF21-452c-BF0D-490E1A6FE043"/>
+		<Action ActionID="Raise Repeated" ActionType="CMD_HDXCommand" ActionArguments="9C465592-1055-4a50-8A3C-F3ACD270E152"/>
+		<Action ActionID="Request Group" ActionType="CMD_HDXCommand" ActionArguments="E7484A0B-C5C0-44cd-A115-B4B92C930F38"/>
+		<Action ActionID="Request Page" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Request Point Detail" ActionType="CMD_HDXCommand" ActionArguments="7D6D9F1C-A3F2-4acf-9A77-F560D2581051"/>
+		<Action ActionID="Request Report" ActionType="CMD_Request_Report" ActionArguments=""/>
+		<Action ActionID="Request Task" ActionType="CMD_Request_Task" ActionArguments=""/>
+		<Action ActionID="Request Trend" ActionType="CMD_HDXCommand" ActionArguments="A16F7F1C-A3F2-4D4f-9A77-F560D2999051"/>
+		<Action ActionID="Reset Faceplate Positions" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Select Output" ActionType="CMD_HDXCommand" ActionArguments="45ae4ffd-2d22-4d59-8f36-a37a6014d78c"/>
+		<Action ActionID="Select Setpoint" ActionType="CMD_HDXCommand" ActionArguments="195f0eda-7fda-4a25-91ce-037d6d19dc9f"/>
+		<Action ActionID="Server Pushbutton" ActionType="CMD_Send_Server_Pushbutton" ActionArguments=""/>
+		<Action ActionID="Show Full Page" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Silence" ActionType="CMD_HDXCommand" ActionArguments="97BA95FD-6B51-4d5f-B61F-51071CD7E1F2"/>
+		<Action ActionID="Toggle Service" ActionType="CMD_HDXCommand" ActionArguments="B28399D8-B818-46cd-A6FD-968EC9D434B4"/>
+		<Action ActionID="VB Debug Off" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="VB Debug On" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="Zoom" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="[Edit] Copy" ActionType="CMD_HDXCommand" ActionArguments="D1DF9022-5380-41fd-88B4-A9E976116D49"/>
+		<Action ActionID="[Edit] Cut" ActionType="CMD_HDXCommand" ActionArguments="0536C00D-D21A-4480-8227-8BBDCF5CE626"/>
+		<Action ActionID="[Edit] Paste" ActionType="CMD_HDXCommand" ActionArguments="DC58C1EC-B0C3-4a94-AE5D-451705111359"/>
+		<Action ActionID="[Help] About" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="[Help] Knowledge Builder" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="[Help] Knowledge Builder Search" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="[Help] Operators Guide" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="[Help] Page Help" ActionType="CMD_HDXCommand" ActionArguments="708FC2D0-13D8-4282-AB00-4345FFC9DE4C"/>
+		<Action ActionID="[Help] VB Scripting Help" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="[Navigation] Back" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="[Navigation] Forward" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="[Navigation] Refresh" ActionType="CMD_Fixed" ActionArguments=""/>
+		<Action ActionID="[Navigation] Stop" ActionType="CMD_Fixed" ActionArguments=""/>
+	</Actions>
+	<Commands>
+		<Command CommandID="" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="#1 AMINE CONTACTOR" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIAMINE_1" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="#1 Incinerator" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmi1sruinc" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="#1 SRU" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmioldsru" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="#1 Scot Utilities" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmi1scotutl" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="#2 &amp; #6 COOLING TOWERS" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMI2CLTWRS" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="#2 AMINE CONTACTOR" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIC3_WW" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="#2 Incinerator" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiincin" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="#2 SCOT" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiscot" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="#2 SRU" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmisru" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="175 # STEAM TO EXHAUST" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMISTM_SYS" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="175# TO 15# STEAM" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMITURBINES" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="175# TO 50# STEAM" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMITURBINE2" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="23 BOILER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMI23" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="23 DEAERATOR" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIBFW" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="23 SM BOILER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMISM23" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="24 / SCR SETPOINTS" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMI24SP" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="24 ANNUNCIATOR" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMI24ALMSD" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="24 BOILER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMI24" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="24 SM BOILER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMISM24" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="3 &amp; 16 Cooling Towers" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmicltwrs" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="ABS Deprop EIV OV" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmidevdec3" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="ACID LOADING" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIACIDLOAD" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="ACID REGENERATION" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIACIDREG" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="ALKY SHUTDOWN" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMISAFE_SD" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Absorber Deprop" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmisledec3" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Acknowledge Alarm" Shortcut="115" Caption="" Image="tb002.bmp" ActionID="Acknowledge Alarm" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Activities" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysActivitySummary.htm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Air Blower #1" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiblower1" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Air Blower #2" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiblower2" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Air Blower #3" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiblower3" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Air Blowers" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiblowers" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Air to Muffle Furnace" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmi1sruair" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Airline Heater" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiairhtr" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Alarm Panel" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmisrualmsd" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Alarm Point Processing" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgAlarmMessages" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Alarms" Shortcut="114" Caption="" Image="tb001.bmp" ActionID="Callup Page" ActionArguments="sysAlarmSummary.htm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Alerts" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysAlertSummary.htm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Amine Section" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiquench" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Associated Display" Shortcut="113" Caption="" Image="tb003.bmp" ActionID="Associated Display" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Associated Station" Shortcut="1143" Caption="" Image="" ActionID="Server Pushbutton" ActionArguments="104" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="BOILER OVERVIEW" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIBOIL_OV" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="BOILER UTILITIES" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIBOILUTIL" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="BOTTOM SPLITTER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIBTMSPL" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Batches" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysBatchSummary.htm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Benzene Column" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmibenzene" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="C8 Column" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmic8column" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="CAUSTIC SYSTEM" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMICAUSTIC" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="CLARIFIERS" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMICLARIF" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="CO Boiler" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmico" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="CONTACTORS" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMICONTACT" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Cat Feed Heater S/D" Shortcut="9" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmih4almsd" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="CatFeedHeater" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmipre_ht1" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Catalyst Loading" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmicatalyst" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Caustic Treaters" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmitrtrs2" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Channels" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysStsChannelSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Channels2" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgChannelSumm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Clear" Shortcut="0" Caption="" Image="tb015.bmp" ActionID="Clear" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Clear Display" Shortcut="1139" Caption="" Image="" ActionID="Callup Page" ActionArguments="http://about:blank" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Cogen Compressor" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmicogencmp" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Coke Production Calc" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmicokecal" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Combined Recipes" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="260" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Command Zone" Shortcut="0" Caption="" Image="" ActionID="Command Zone" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Additional System Acronyms" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="156" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Alarm ED" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgAlarmEnable.htm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Alarm Message Text" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgAlarmMessages" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Alarm Pager" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgalmpgrcomms" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Alarm Tracker" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysAlmTrackerConfig" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Alarms" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgHistoryArchive" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Application Point Lists" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="SysCfgAppDevPointLists" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Application Summary" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="SysCfgAppDevSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Channels" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgChannelSumm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Connections" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgConnections" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Console Stations" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgCStnSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Consoles" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgConSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Controllers" Shortcut="0" Caption="" Image="" ActionID="Request Task" ActionArguments="1;;21;83;0;0;0;" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Distributed Servers" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgdsasvr" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Event Archiving" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgEvtArchConfig" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Excel 5000 Time Programs" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="223" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure File Replication" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgFileReplication" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Flex Stations" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgStnSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Groups" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysGrpConfigSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure History Assignment" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysHstStd" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure History Intervals" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgHistoryStd" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Holidays Schedule" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgholschedule" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Micromax Processes" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgmicromaxprocesses" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Micromax Recipes" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="241" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Micromax Set Point Programs" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="249" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Micromax Upload/Download" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="248" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Operators" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgOperSumm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure PHD Server" Shortcut="0" Caption="" Image="" ActionID="Request Task" ActionArguments="1;;21;80;999;1;0;" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Point Control Schedule" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgPntCtrlSchedule" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Printers" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgPrntSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Profiles" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgAssetProfSumm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Recipes" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgrecsumm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Redundant Server" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgRedundantServer" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Reports" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgRptSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Reports Settings" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgRptServerWide" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure S9000 Recipes" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgcntrlrecsumm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure S9000 Set Point Programs" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgcntrlpointprogsumm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Scripting" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysLicence" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Server Wide Settings" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgServerSettings" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Shifts Schedule" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgshfschedule" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Sign-On Administration" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgsignonadministration" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure System Acronyms" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="154" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure System Management Servers" Shortcut="0" Caption="" Image="" ActionID="Request Task" ActionArguments="1;;21;80;1000;1;0;" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure System Sinewave" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgappdevSinewave" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure TDC_CL Acronyms" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="157" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Task Timers" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="SysCfgAppDevTaskTimers" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Trends" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysTndConfigSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure UMC800 Combined Recipes" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="260" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure UMC800 Profiles" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="254" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure UMC800 Programmers" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="257" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure UMC800 Recipes" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="252" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure User Acronyms" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="155" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure User-Defined Data Formats" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgDataFormatsUnscaled?HSCRecord=102" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Configure Watchdog Timer" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="SysCfgAppDevWatchdogTimers" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Control to Automatic" Shortcut="1141" Caption="" Image="" ActionID="Control to Automatic" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Control to Manual" Shortcut="1140" Caption="" Image="" ActionID="Control to Manual" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Control to Normal" Shortcut="1142" Caption="" Image="" ActionID="Control to Normal" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Controllers" Shortcut="0" Caption="" Image="" ActionID="Request Task" ActionArguments="1;;21;81;0;1;0;" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Controllers2" Shortcut="0" Caption="" Image="" ActionID="Request Task" ActionArguments="1;;21;83;0;1;0;" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="DEETHANIZER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIDEETH" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="DEISO" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIDEISO" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="DEPROPANIZER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIDEPROP" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="DGA STRIPPER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIDGASTRIP" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="DHT Heater" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmidhthtr" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Debutanizer" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmidebut1" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Deiso Debut" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmisledec4" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Deiso Debut EIV OV" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmieivdec4" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Diesel Stripper" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmidht2" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Digital Video Manager" Shortcut="0" Caption="" Image="tb029.bmp" ActionID="Digital Video Manager" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Display Summary" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="3" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Distributed Servers" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysstsdstsummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="EIV SHUTDOWN" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMISEIV_SD" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="ESP" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmifccuesp" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="ESP &amp; CO Boiler SD" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiesp_sd" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="ESP Stack CGA" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmifccucga" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Electronic Signatures" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgElecSigGeneral" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Enforcer Client" Shortcut="0" Caption="" Image="" ActionID="Launch Application" ActionArguments="&quot;c:\program files (x86)\Honeywell\OPS\ACM\ACM_OP.exe&quot;" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Enter" Shortcut="0" Caption="" Image="tb014.bmp" ActionID="Enter" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Event Archiving" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgEvtArchOperate" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Event Summary" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysEventSummary.htm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Exit" Shortcut="0" Caption="" Image="" ActionID="Exit" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Experion Server Peer Responder" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysstsceepeercomms" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Extractor Stripper" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiextract" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="FCCU ESD" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmifccu_esd" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="FCCU ESD Setpoints" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmifccualsp" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="FCCU Unit Alarms" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmifccualms" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="FIRE CANNONS" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIACANNON" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="FIRE WATER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIFIREWATR" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="FUEL GAS CONTACTOR" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIFGCONT" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="FastLower" Shortcut="1145" Caption="" Image="" ActionID="FastLower" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="FastLower Repeat" Shortcut="1166" Caption="" Image="" ActionID="FastLower Repeated" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="FastRaise" Shortcut="1144" Caption="" Image="" ActionID="FastRaise" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="FastRaise Repeat" Shortcut="1165" Caption="" Image="" ActionID="FastRaise Repeated" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Flue Gas Steam Generator" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiflugsgen" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Flush PM Commands" Shortcut="53247" Caption="" Image="" ActionID="Flush PM Commands" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="GOH" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmigoh" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Group Summary" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysGrpSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Gulftronics" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmigulftron" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="H2 System" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmilsdh2" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="H2S ANALYZER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIH2S_CAL" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="H2S Stripper" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmih2s_str1" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="HMI FUEL GAS STRIPPER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIFGSTRPR" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="HOT LIME SULFUR" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMILIME" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="HOT OIL" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIHOTOIL" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Hydeal" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmidht1" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="ICA GROUND WATER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIICA" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Include Alarm Bar" Shortcut="0" Caption="" Image="" ActionID="Print With Alarm Bar" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Include Status Bar" Shortcut="0" Caption="" Image="" ActionID="Print With Status Bar" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Initiate Logon" Shortcut="0" Caption="" Image="" ActionID="Initiate Logon" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="KO Pots" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiscrubber" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="LCO Quench" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmifccrx2" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="LDH" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmildh" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Launch Display Builder" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="260" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Launch Quick Builder" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="260" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Load Recipe" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgrecsumm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Lower" Shortcut="121" Caption="" Image="tb013.bmp" ActionID="Lower" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="LowerRepeat" Shortcut="20874" Caption="" Image="tb013.bmp" ActionID="Lower Repeated" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="MAIN DEAERATOR" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIMAINDA" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="MEROX" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIMEROX" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="MTBE GUARD BED RX" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIGUARD" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="MTBE RX SECTION" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIMTBE_RX" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Main Column 1" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmimain1" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Main Column 2" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmimain2" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Main Overhead Fans" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmimain_fan" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Message Pad" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="81" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Messages" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysMessageSummary.htm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Mixing Reactor Reclaim" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmi1sruscot" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Modify Connection" Shortcut="0" Caption="" Image="" ActionID="Modify Connection" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="N.S. Flare" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hminsflare" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="None" Shortcut="0" Caption="" Image="" ActionID="None" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="OPC Integrator" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgOPCIntegrator.htm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="OPC Integrator Status" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysOPCIntegrator.htm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="OXIDIZER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIOXIDZR" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="On Process Migration" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgmigrateserver" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Open Connection" Shortcut="0" Caption="" Image="" ActionID="Open Connection" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="PHD Server" Shortcut="0" Caption="" Image="" ActionID="Request Task" ActionArguments="1;;21;80;999;0;0;" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="POLY SPLITTER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIPOLYSPL" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="PREFRAC" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIPREFRAC" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="PROPYLENE APC" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIRMPCTPRO" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="PROPYLENE OVERVIEW" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIPROP_OV" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="PSOS" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="PSOS" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Page Down" Shortcut="2082" Caption="" Image="tb005.bmp" ActionID="Page Forward" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Page Up" Shortcut="2081" Caption="" Image="tb006.bmp" ActionID="Page Back" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Plant Overview" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmirefoview" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Plant Utilities" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiutil" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Point Scripts" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgScriptingPoint" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Point Servers" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgSumPntSrv" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Point Servers2" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgSumPntSrv" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Preheater" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="pre_ht1" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Print" Shortcut="0" Caption="" Image="" ActionID="Print" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Print Preview..." Shortcut="0" Caption="" Image="" ActionID="Print Preview..." ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Print Setup..." Shortcut="0" Caption="" Image="" ActionID="Print Setup..." ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Print..." Shortcut="0" Caption="" Image="" ActionID="Print..." ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Printers" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysstsPrntSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Procedures" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysProcedureSummary.htm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Processes" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgmicromaxprocesses" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Profiles" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="254" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Programmers" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="257" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Quench Cont Stripper" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmi1quench" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="REACTOR/CLARIFIER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIMANGAN" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="RX/RG APC" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmirmpctldg" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="RX2 Detail" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmirx2detl" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="RX3 Detail" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmirx3detl" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Raise" Shortcut="120" Caption="" Image="tb012.bmp" ActionID="Raise" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="RaiseRepeat" Shortcut="20872" Caption="" Image="tb012.bmp" ActionID="Raise Repeated" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Reactor/Regen" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmifccrx1" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Recipes" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="241" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Recipes (Variables Only)" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="252" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Recipes2" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgcntrlrecsumm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Reformate Splitter" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmirefspltr" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Report Summary" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysRptSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Request Group" Shortcut="117" Caption="" Image="tb011.bmp" ActionID="Request Group" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Request Page" Shortcut="116" Caption="" Image="tb004.bmp" ActionID="Request Page" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Request Point Detail" Shortcut="123" Caption="" Image="tb017.bmp" ActionID="Request Point Detail" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Request Report" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysRptSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Request Trend" Shortcut="118" Caption="" Image="tb010.bmp" ActionID="Request Trend" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="S. S. FLARE" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMISFLR" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="S. S. FLARE CEM" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMISSFLRCEM" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="SCR ANNUN / SETPNT" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMI24SCRALM" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="SLE EIV Shutdown" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmineiv_sd" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="SOE Summary" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysSOESummary.htm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="SOUTH SIDE FUEL DRUM" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIFDRUM" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="SRU 1&amp;2 H2S Monitor" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmih2smon" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="SWS Sump" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmisump" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Script Engines" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgScriptingAutomatic" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Select Output" Shortcut="1147" Caption="" Image="" ActionID="Select Output" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Select Setpoint" Shortcut="1146" Caption="" Image="" ActionID="Select Setpoint" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Server Redundancy" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysserversredsts" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Server Scripts" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysCfgScriptingGeneral" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Set Point Programs" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="249" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Set Point Programs2" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgcntrlpointprogsumm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Show Full Page" Shortcut="0" Caption="" Image="" ActionID="Show Full Page" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Sign-On Administration" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgsignonadministration" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Silence" Shortcut="0" Caption="" Image="" ActionID="Silence" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Slide Valve Alarm/Status" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmislide" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Slurry System Detail" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmislurry" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Solvent Fract" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmisolfrac" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Sour Water Stripper" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmisws" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Sour Water System" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmipriabs" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Stabilizer Reboiler" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmismstbhtr" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Status Console Stations" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysStsCStnSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Status Consoles" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysStsConSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Status Flex Stations" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysstsflexsummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="System Interfaces" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="syscfgSumPntSrv" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="System Interfaces Status" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysStsSumPntSrv" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="System Management Servers" Shortcut="0" Caption="" Image="" ActionID="Request Task" ActionArguments="1;;21;80;1000;0;0;" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="System Menu" Shortcut="112" Caption="" Image="tb000.bmp" ActionID="Callup Page" ActionArguments="sysmnu" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="System Status Display" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysSystemSummary.htm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="TOP/MID SPLITTER" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="HMIT_MSPL" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Temp Boiler" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmitempboil" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Toggle Service" Shortcut="122" Caption="" Image="tb016.bmp" ActionID="Toggle Service" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Trend Summary" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="sysTndSummary" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Unassigned Items" Shortcut="0" Caption="" Image="" ActionID="Request Task" ActionArguments="0;$UnassignedItems;21;73;0;0;0;" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Upload/Download" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="248" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="User Alert Explorer" Shortcut="0" Caption="" Image="" ActionID="Launch Application" ActionArguments="C:\Program Files (x86)\Honeywell\OPS\UserAlert\UAExplorer.exe" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Water Wash" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiwwash" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Wet Gas Alarm S/D" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiwgalmsd" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Wet Gas Compressor" Shortcut="0" Caption="" Image="" ActionID="Callup Page" ActionArguments="hmiwgcomp" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="Zoom" Shortcut="0" Caption="" Image="" ActionID="Zoom" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="[Edit] Copy" Shortcut="579" Caption="" Image="" ActionID="[Edit] Copy" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="[Edit] Cut" Shortcut="600" Caption="" Image="" ActionID="[Edit] Cut" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="[Edit] Paste" Shortcut="598" Caption="" Image="" ActionID="[Edit] Paste" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="[Help] About" Shortcut="0" Caption="" Image="" ActionID="[Help] About" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="[Help] Knowledge Builder" Shortcut="0" Caption="" Image="" ActionID="[Help] Knowledge Builder" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="[Help] Knowledge Builder Search" Shortcut="0" Caption="" Image="" ActionID="[Help] Knowledge Builder Search" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="[Help] Operators Guide" Shortcut="0" Caption="" Image="" ActionID="Launch Help File" ActionArguments="OperatorsGuide.chm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="[Help] Page Help" Shortcut="0" Caption="" Image="" ActionID="[Help] Page Help" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="[Help] Station Help" Shortcut="0" Caption="" Image="" ActionID="Launch Help File" ActionArguments="DocumentationSet.chm" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="[Help] VB Scripting Help" Shortcut="0" Caption="" Image="" ActionID="[Help] VB Scripting Help" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="[Navigation] Back" Shortcut="119" Caption="" Image="tb007.bmp" ActionID="[Navigation] Back" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="[Navigation] Forward" Shortcut="0" Caption="" Image="tb008.bmp" ActionID="[Navigation] Forward" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+		<Command CommandID="[Navigation] Refresh" Shortcut="0" Caption="" Image="tb009.bmp" ActionID="[Navigation] Refresh" ActionArguments="" BackgroundColor="" ForegroundColor=""/>
+	</Commands>
+	<Toolbar Name="Station Toolbar" Dock="top" Window="Main Command Window">
+		<Item Caption="System Menu" CommandID="System Menu"/>
+		<Separator/>
+		<Item Caption="Alarms" CommandID="Alarms"/>
+		<Item Caption="Acknowledge/Silence" CommandID="Acknowledge Alarm"/>
+		<Item Caption="Associated Display" CommandID="Associated Display"/>
+		<Separator/>
+		<Item Caption="Request Page" CommandID="Request Page"/>
+		<Separator/>
+		<Item Caption="Page Down" CommandID="Page Down"/>
+		<Item Caption="Page Up" CommandID="Page Up"/>
+		<Item Caption="Back" CommandID="[Navigation] Back"/>
+		<Item Caption="Forward" CommandID="[Navigation] Forward"/>
+		<Item Caption="Reload Page" CommandID="[Navigation] Refresh"/>
+		<Separator/>
+		<Item Caption="Request Trend" CommandID="Request Trend"/>
+		<Item Caption="Request Group" CommandID="Request Group"/>
+		<Separator/>
+		<Item Caption="Raise" CommandID="Raise"/>
+		<Item Caption="Lower" CommandID="Lower"/>
+		<Item Caption="Enter" CommandID="Enter"/>
+		<Item Caption="Clear" CommandID="Clear"/>
+		<Separator/>
+		<Item Caption="Enable/Disable" CommandID="Toggle Service"/>
+		<Item Caption="Detail" CommandID="Request Point Detail"/>
+		<Separator/>
+		<Item Caption="Zoom" CommandID="Zoom"/>
+		<Separator/>
+		<Item Caption="Command" CommandID="None"/>
+		<Item Caption="Command Zone" CommandID="Command Zone"/>
+	</Toolbar>
+	<OTPToolbar OTPButtonCount="">
+	</OTPToolbar>
+
+	<StationMenu Window="Main Command Window">
+		<Menu Caption="Station">
+			<Item Caption="Connect..." CommandID="Open Connection"/>
+			<Separator/>
+			<Item Caption="Logon..." CommandID="Initiate Logon"/>
+			<Item Caption="Connection Properties..." CommandID="Modify Connection"/>
+			<Separator/>
+			<Item Caption="Exit" CommandID="Exit"/>
+		</Menu>
+		<Menu Caption="Edit">
+			<Item Caption="Cut" CommandID="[Edit] Cut"/>
+			<Item Caption="Copy" CommandID="[Edit] Copy"/>
+			<Item Caption="Paste" CommandID="[Edit] Paste"/>
+		</Menu>
+		<Menu Caption="View">
+			<Item Caption="Detail" CommandID="Request Point Detail"/>
+			<Item Caption="Associated Display" CommandID="Associated Display"/>
+			<Item Caption="Reload Page" CommandID="[Navigation] Refresh"/>
+			<Separator/>
+			<Item Caption="Alarms" CommandID="Alarms"/>
+			<Item Caption="Messages" CommandID="Messages"/>
+			<Item Caption="Alerts" CommandID="Alerts"/>
+			<Item Caption="Displays" CommandID="Display Summary"/>
+			<Item Caption="Batches" CommandID="Batches"/>
+			<Item Caption="Procedures" CommandID="Procedures"/>
+			<Item Caption="Activities" CommandID="Activities"/>
+			<Menu Caption="Events">
+				<Item Caption="Event Summary" CommandID="Event Summary"/>
+				<Item Caption="SOE Summary" CommandID="SOE Summary"/>
+				<Item Caption="Event Archiving" CommandID="Event Archiving"/>
+			</Menu>
+			<Item Caption="Groups" CommandID="Group Summary"/>
+			<Item Caption="Message Pad" CommandID="Message Pad"/>
+			<Item Caption="Reports" CommandID="Report Summary"/>
+			<Item Caption="System Status Display" CommandID="System Status Display"/>
+			<Menu Caption="System Status">
+				<Item Caption="Channels" CommandID="Channels"/>
+				<Item Caption="System Interfaces" CommandID="System Interfaces Status"/>
+				<Item Caption="Controllers" CommandID="Controllers"/>
+				<Item Caption="OPC Integrator" CommandID="OPC Integrator Status"/>
+				<Item Caption="Consoles" CommandID="Status Consoles"/>
+				<Menu Caption="Stations">
+					<Item Caption="Flex Stations" CommandID="Status Flex Stations"/>
+					<Item Caption="Console Stations" CommandID="Status Console Stations"/>
+				</Menu>
+				<Item Caption="Printers" CommandID="Printers"/>
+				<Item Caption="Server Redundancy" CommandID="Server Redundancy"/>
+				<Item Caption="Distributed Servers" CommandID="Distributed Servers"/>
+				<Item Caption="Experion Server Peer Responder" CommandID="Experion Server Peer Responder"/>
+				<Item Caption="System Management Servers" CommandID="System Management Servers"/>
+				<Item Caption="PHD Server" CommandID="PHD Server"/>
+			</Menu>
+			<Item Caption="Trends" CommandID="Trend Summary"/>
+			<Separator/>
+			<Item Caption="Show Full Page" CommandID="Show Full Page"/>
+		</Menu>
+		<Menu Caption="Control">
+			<Item Caption="Raise" CommandID="Raise"/>
+			<Item Caption="Lower" CommandID="Lower"/>
+			<Separator/>
+			<Item Caption="Select Setpoint" CommandID="Select Setpoint"/>
+			<Item Caption="Select Output" CommandID="Select Output"/>
+			<Separator/>
+			<Item Caption="Control to Manual" CommandID="Control to Manual"/>
+			<Item Caption="Control to Automatic" CommandID="Control to Automatic"/>
+			<Item Caption="Control to Normal" CommandID="Control to Normal"/>
+			<Separator/>
+			<Item Caption="Enable/Disable" CommandID="Toggle Service"/>
+		</Menu>
+		<Menu Caption="Action">
+			<Item Caption="Acknowledge Alarm" CommandID="Acknowledge Alarm"/>
+			<Item Caption="Silence" CommandID="Silence"/>
+			<Separator/>
+			<Item Caption="Request Report" CommandID="Request Report"/>
+			<Item Caption="Load Recipe" CommandID="Load Recipe"/>
+			<Separator/>
+			<Item Caption="Print" CommandID="Print"/>
+			<Item Caption="Page Setup..." CommandID="Print Setup..."/>
+			<Item Caption="Print..." CommandID="Print..."/>
+			<Item Caption="Print Preview..." CommandID="Print Preview..."/>
+			<Menu Caption="Print Options">
+				<Item Caption="Include Alarm Bar" CommandID="Include Alarm Bar"/>
+				<Item Caption="Include Status Bar" CommandID="Include Status Bar"/>
+			</Menu>
+		</Menu>
+		<Menu Caption="Configure">
+			<Item Caption="Server License Details" CommandID="Configure Scripting"/>
+			<Item Caption="File Replication" CommandID="Configure File Replication"/>
+			<Item Caption="Unassigned Items" CommandID="Unassigned Items"/>
+			<Separator/>
+			<Menu Caption="System Hardware">
+				<Item Caption="Connections" CommandID="Configure Connections"/>
+				<Item Caption="Channels" CommandID="Channels2"/>
+				<Item Caption="Controllers" CommandID="Controllers2"/>
+				<Item Caption="System Interfaces" CommandID="System Interfaces"/>
+				<Item Caption="Flex Stations" CommandID="Configure Flex Stations"/>
+				<Item Caption="Consoles" CommandID="Configure Consoles"/>
+				<Item Caption="Console Stations" CommandID="Configure Console Stations"/>
+				<Item Caption="Printers" CommandID="Configure Printers"/>
+				<Item Caption="Redundant Server" CommandID="Configure Redundant Server"/>
+				<Item Caption="Distributed Servers" CommandID="Configure Distributed Servers"/>
+				<Item Caption="OPC Integrator" CommandID="OPC Integrator"/>
+				<Item Caption="Server Wide Settings" CommandID="Configure Server Wide Settings"/>
+				<Item Caption="System Management Servers" CommandID="Configure System Management Servers"/>
+				<Item Caption="PHD Server" CommandID="Configure PHD Server"/>
+				<Item Caption="On Process Migration" CommandID="On Process Migration"/>
+			</Menu>
+			<Menu Caption="Alarm &amp;&amp; Event Management">
+				<Item Caption="Alarms" CommandID="Configure Alarm ED"/>
+				<Item Caption="Message &amp;&amp; Point Processing" CommandID="Alarm Point Processing"/>
+				<Item Caption="Alarm &amp;&amp; Alert Paging" CommandID="Configure Alarm Pager"/>
+				<Item Caption="Event Archiving" CommandID="Configure Event Archiving"/>
+				<Item Caption="Alarm Trackers" CommandID="Configure Alarm Tracker"/>
+			</Menu>
+			<Menu Caption="Operators">
+				<Item Caption="Operators" CommandID="Configure Operators"/>
+				<Item Caption="Sign-On Administration" CommandID="Sign-On Administration"/>
+				<Item Caption="Profile Definitions" CommandID="Configure Profiles"/>
+				<Item Caption="Electronic Signatures" CommandID="Electronic Signatures"/>
+			</Menu>
+			<Menu Caption="History">
+				<Item Caption="History Assignment" CommandID="Configure History Assignment"/>
+				<Item Caption="History Archiving" CommandID="Configure Alarms"/>
+				<Item Caption="History Intervals" CommandID="Configure History Intervals"/>
+			</Menu>
+			<Menu Caption="Reports">
+				<Item Caption="Reports" CommandID="Configure Reports"/>
+				<Item Caption="Reports Settings" CommandID="Configure Reports Settings"/>
+			</Menu>
+			<Menu Caption="Schedules">
+				<Item Caption="Point Control Schedules" CommandID="Configure Point Control Schedule"/>
+				<Item Caption="Holidays" CommandID="Configure Holidays Schedule"/>
+				<Item Caption="Shifts" CommandID="Configure Shifts Schedule"/>
+			</Menu>
+			<Menu Caption="Trend &amp;&amp; Group Displays">
+				<Item Caption="Trends" CommandID="Configure Trends"/>
+				<Item Caption="Groups" CommandID="Configure Groups"/>
+			</Menu>
+			<Menu Caption="Applications">
+				<Item Caption="Recipes" CommandID="Configure Recipes"/>
+				<Item Caption="Excel 5000 Time Programs" CommandID="Configure Excel 5000 Time Programs"/>
+				<Menu Caption="Micromax">
+					<Item Caption="Set Point Programs" CommandID="Set Point Programs"/>
+					<Menu Caption="Recipe Management">
+						<Item Caption="Processes" CommandID="Processes"/>
+						<Item Caption="Recipes" CommandID="Recipes"/>
+						<Item Caption="Upload/Download" CommandID="Upload/Download"/>
+					</Menu>
+				</Menu>
+				<Menu Caption="S9000">
+					<Item Caption="Set Point Programs" CommandID="Set Point Programs2"/>
+					<Item Caption="Recipes" CommandID="Recipes2"/>
+				</Menu>
+				<Menu Caption="HC900/UMC800">
+					<Menu Caption="Set Point Programs">
+						<Item Caption="Profiles" CommandID="Profiles"/>
+						<Item Caption="Programmers" CommandID="Programmers"/>
+					</Menu>
+					<Item Caption="Recipes (Variables Only)" CommandID="Recipes (Variables Only)"/>
+					<Item Caption="Combined Recipes" CommandID="Combined Recipes"/>
+				</Menu>
+			</Menu>
+			<Menu Caption="Application Development">
+				<Item Caption="Applications" CommandID="Configure Application Summary"/>
+				<Item Caption="Point Lists" CommandID="Configure Application Point Lists"/>
+				<Item Caption="System Sinewave" CommandID="Configure System Sinewave"/>
+				<Item Caption="Task Timers" CommandID="Configure Task Timers"/>
+				<Item Caption="Watchdog Timers" CommandID="Configure Watchdog Timer"/>
+				<Item Caption="User-Defined Data Formats" CommandID="Configure User-Defined Data Formats"/>
+				<Menu Caption="Acronyms">
+					<Item Caption="System" CommandID="Configure System Acronyms"/>
+					<Item Caption="User" CommandID="Configure User Acronyms"/>
+					<Item Caption="TDC_CL" CommandID="Configure TDC_CL Acronyms"/>
+				</Menu>
+			</Menu>
+			<Menu Caption="Server Scripting">
+				<Item Caption="Script Engines" CommandID="Script Engines"/>
+				<Item Caption="Server Scripts" CommandID="Server Scripts"/>
+				<Item Caption="Point Scripts" CommandID="Point Scripts"/>
+			</Menu>
+			<Separator/>
+		</Menu>
+		<Menu Caption="FCCU">
+			<Item Caption="CatFeedHeater" CommandID="CatFeedHeater"/>
+			<Item Caption="Reactor/Regen" CommandID="Reactor/Regen"/>
+			<Item Caption="Air Blowers" CommandID="Air Blowers"/>
+			<Item Caption="Air Blower #1" CommandID="Air Blower #1"/>
+			<Item Caption="Air Blower #2" CommandID="Air Blower #2"/>
+			<Item Caption="Air Blower #3" CommandID="Air Blower #3"/>
+			<Item Caption="Main Column 1" CommandID="Main Column 1"/>
+			<Item Caption="Main Column 2" CommandID="Main Column 2"/>
+			<Item Caption="CO Boiler" CommandID="CO Boiler"/>
+			<Item Caption="ESP" CommandID="ESP"/>
+			<Item Caption="Wet Gas Compressor" CommandID="Wet Gas Compressor"/>
+			<Item Caption="H2S Stripper" CommandID="H2S Stripper"/>
+			<Item Caption="Debutanizer" CommandID="Debutanizer"/>
+			<Item Caption="Flue Gas Steam Generator" CommandID="Flue Gas Steam Generator"/>
+			<Item Caption="Airline Heater" CommandID="Airline Heater"/>
+			<Item Caption="3 &amp; 16 Cooling Towers" CommandID="3 &amp; 16 Cooling Towers"/>
+			<Item Caption="Sour Water System" CommandID="Sour Water System"/>
+			<Item Caption="Caustic Treaters" CommandID="Caustic Treaters"/>
+			<Item Caption="Slurry System Detail" CommandID="Slurry System Detail"/>
+			<Item Caption="Gulftronics" CommandID="Gulftronics"/>
+			<Item Caption="Main Overhead Fans" CommandID="Main Overhead Fans"/>
+			<Item Caption="Plant Utilities" CommandID="Plant Utilities"/>
+			<Item Caption="Wet Gas Alarm S/D" CommandID="Wet Gas Alarm S/D"/>
+			<Item Caption="ESP &amp; CO Boiler SD" CommandID="ESP &amp; CO Boiler SD"/>
+			<Item Caption="FCCU ESD" CommandID="FCCU ESD"/>
+			<Item Caption="FCCU ESD Setpoints" CommandID="FCCU ESD Setpoints"/>
+			<Item Caption="Cat Feed Heater S/D" CommandID="Cat Feed Heater S/D"/>
+			<Item Caption="RX/RG APC" CommandID="RX/RG APC"/>
+			<Item Caption="Coke Production Calc" CommandID="Coke Production Calc"/>
+			<Item Caption="Catalyst Loading" CommandID="Catalyst Loading"/>
+			<Item Caption="ESP Stack CGA" CommandID="ESP Stack CGA"/>
+			<Item Caption="Slide Valve Alarm/Status" CommandID="Slide Valve Alarm/Status"/>
+			<Item Caption="FCCU Unit Alarms" CommandID="FCCU Unit Alarms"/>
+		</Menu>
+		<Menu Caption="APC">
+			<Item Caption="PSOS" CommandID="PSOS"/>
+		</Menu>
+		<Menu Caption="Plant Menus">
+			<Item Caption="Plant Overview" CommandID="Plant Overview"/>
+		</Menu>
+		<Menu Caption="Help">
+			<Item Caption="Help for this display..." CommandID="[Help] Page Help"/>
+			<Item Caption="Operators Guide..." CommandID="[Help] Operators Guide"/>
+			<Item Caption="Station Help..." CommandID="[Help] Station Help"/>
+			<Item Caption="Knowledge Builder..." CommandID="[Help] Knowledge Builder"/>
+			<Item Caption="Knowledge Builder Search..." CommandID="[Help] Knowledge Builder Search"/>
+			<Item Caption="VB Scripting Help..." CommandID="[Help] VB Scripting Help"/>
+			<Separator/>
+			<Item Caption="About Station..." CommandID="[Help] About"/>
+		</Menu>
+		<Menu Caption="Alarm Manager">
+			<Item Caption="Enforcer Client" CommandID="Enforcer Client"/>
+		</Menu>
+	</StationMenu>
+<StationMenu Window="Second Command Window">
+	</StationMenu>
+<StationMenu Window="Third Command Window">
+	</StationMenu>
+<StationMenu Window="Fourth Command Window">
+	</StationMenu>
+</ToolbarsMenusShortcuts>

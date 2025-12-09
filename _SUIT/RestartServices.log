@@ -1,0 +1,10 @@
+
+---------------------------------------------------------
+Started at - 5/7/2024 3:15:01 PM
+---------------------------------------------------------
+Software\Honeywell\RESTARTSERVICESkey exists under wow6432 node or direct registry in x86 os
+UpdateManager Exe Path available in registry - C:\temp\D_MS_UPD\UpdateManager.exe
+UpdateManager exe folder path C:\temp\D_MS_UPD
+Updatemanager exe exists in the path - C:\temp\D_MS_UPD\UpdateManager.exe
+Executing the batch file with Path RestartServices.bat
+Enabling and Restarting EPKS Services

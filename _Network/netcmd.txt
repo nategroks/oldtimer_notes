@@ -1,0 +1,502 @@
+Tue 12/09/2025 13:45:09.17 . INITIALIZE file C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_Network\netcmd.txt by experionadmin on LCN01ESVTB in Domain ALONBIGSCTRL 
+mDCT++ [v1.54] (krasimir.kumanov@gmail.com) 
+
+================================================================================== 
+===== 13:45:09.18 : NET SHARE 
+================================================================================== 
+
+Share name   Resource                        Remark
+
+-------------------------------------------------------------------------------
+ADMIN$       C:\Windows                      Remote Admin                      
+QDB$         C:\ProgramData\Honeywell\Experion PKS\Server\data\qdb
+                                             Used by Quick builder             
+C$           C:\                             Default share                     
+D$           D:\                             Default share                     
+IPC$                                         Remote IPC                        
+abstract     C:\ProgramData\Honeywell\Experion PKS\Client\Abstract
+                                             
+ALON SM R162.8 Programs
+             C:\ALON SM R162.8 Programs      
+Checkpoint   C:\ProgramData\Honeywell\Experion PKS\CheckPoint
+                                             FILEREP:Used for Checkpoint files 
+CompressorMaps
+             C:\ProgramData\Honeywell\Experion PKS\Server\data\CompressorMaps
+                                             Compressor Maps Share             
+ControllerIntegration
+             C:\ProgramData\Honeywell\Experion PKS\Server\data\ControllerIntegration
+                                             Controller Integration Share      
+CPBASE       C:\ProgramData\Honeywell\Experion PKS\CheckPointBase
+                                             
+das          C:\ProgramData\Honeywell\Experion PKS\Server\data\das
+                                             Used by FILEREP                   
+DEVICEHELP   C:\ProgramData\Honeywell\Experion PKS\DeviceHelp
+                                             
+DisplayShare1
+             C:\Program Files (x86)\Honeywell\Experion PKS\Client\System\R520
+                                             Shares used by Configuration St...
+DisplayShare2
+             C:\ProgramData\Honeywell\Experion PKS\Client\Abstract
+                                             Shares used by Configuration St...
+efm          C:\ProgramData\Honeywell\Experion PKS\Server\data\efm
+                                             EFM Data Export Share             
+EquipTemplates
+             C:\ProgramData\Honeywell\Experion PKS\Server\data\EquipmentTemplates
+                                             EFM Data Export Share             
+etc          C:\Windows\System32\drivers\... 
+eventarchive D:\eventarchive                 
+GSDMLCATALOG C:\ProgramData\Honeywell\Experion PKS\PROFINET\GSDMLCatalog
+                                             
+GUS Security C:\ProgramData\Honeywell\ProductConfig\Security
+                                             
+HCISecurity  C:\ProgramData\Honeywell\ProductConfig\Security
+                                             
+HistoryArchive
+             D:\HistoryArchive               
+HM Backups   C:\HM Backups                   
+HYBRID       C:\ProgramData\Honeywell\Experion PKS\Engineering Tools
+                                             
+IEC61850     C:\ProgramData\Honeywell\Experion PKS\IEC61850\Configuration
+                                             
+import       C:\Windows\SysWOW64\Repl\imp... 
+INSTALL      C:\Program Files (x86)\Honeywell\Experion PKS\Install
+                                             
+inventory    C:\ProgramData\Honeywell\Inventory
+                                             
+mapping      C:\ProgramData\Honeywell\Experion PKS\Server\data\Mapping
+                                             FILEREP:Used for System Interface 
+MenusandToolBars
+             C:\ProgramData\Honeywell\Experion PKS\Client\MenusAndToolbars
+                                             
+NotifOverrides
+             C:\ProgramData\Honeywell\Experion PKS\Server\data\NotifOverrides
+                                             Used by FILEREP                   
+ODSDATA      C:\Users\Public\Documents\Honeywell\Experion PKS\ODSDATA
+                                             
+ODSQUERY     C:\ProgramData\Honeywell\Experion PKS\ODSQUERY
+                                             
+qbfiles      C:\ProgramData\Honeywell\Experion PKS\Server\user\qbfiles
+                                             Share for Quick Builder files     
+ReferenceBatches
+             C:\ProgramData\Honeywell\Experion PKS\Server\data\ReferenceBatches
+                                             
+report       C:\ProgramData\Honeywell\Experion PKS\Server\data\Report
+                                             Share of Report files             
+ReportDefinition
+             C:\ProgramData\Honeywell\Experion PKS\Server\data\ReportDefinition
+                                             Share of Report Definition files  
+Repository   C:\ProgramData\Honeywell\FDS\Repository
+                                             
+SAFEVIEW     C:\Windows\SysWOW64\Repl\import\SAFEVIEW
+                                             
+SM Data      C:\ALON SM R162.8 Programs      
+SRDB         C:\ProgramData\Honeywell\Experion PKS\SRDB
+                                             
+STAC-ADDIns  C:\Program Files (x86)\Honeywell\Experion PKS\STAC-AddIns
+                                             
+STAC-Workbooks
+             C:\ProgramData\Honeywell\Experion PKS\STAC-Workbooks
+                                             
+Station      C:\ProgramData\Honeywell\Experion PKS\Client\Station
+                                             
+views        C:\ProgramData\Honeywell\Experion PKS\Server\data\Views
+                                             FILEREP:Used for Summary views    
+The command completed successfully.
+
+ 
+
+================================================================================== 
+===== 13:45:10.11 : Get-SmbShare 
+================================================================================== 
+
+Name                    ScopeName FolderEnumerationMode Path                                                                    Description                                            
+----                    --------- --------------------- ----                                                                    -----------                                            
+abstract                *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Client\Abstract                                                                          
+ADMIN$                  *                  Unrestricted C:\Windows                                                              Remote Admin                                           
+ALON SM R162.8 Programs *                   AccessBased C:\ALON SM R162.8 Programs                                                                                                     
+C$                      *                  Unrestricted C:\                                                                     Default share                                          
+Checkpoint              *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\CheckPoint                        FILEREP:Used for Checkpoint files                      
+CompressorMaps          *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Server\data\CompressorMaps        Compressor Maps Share                                  
+ControllerIntegration   *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Server\data\ControllerIntegration Controller Integration Share                           
+CPBASE                  *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\CheckPointBase                                                                           
+D$                      *                  Unrestricted D:\                                                                     Default share                                          
+das                     *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Server\data\das                   Used by FILEREP                                        
+DEVICEHELP              *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\DeviceHelp                                                                               
+DisplayShare1           *                  Unrestricted C:\Program Files (x86)\Honeywell\Experion PKS\Client\System\R520        Shares used by Configuration Studio for System Displays
+DisplayShare2           *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Client\Abstract                   Shares used by Configuration Studio for Custom Displays
+efm                     *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Server\data\efm                   EFM Data Export Share                                  
+EquipTemplates          *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Server\data\EquipmentTemplates    EFM Data Export Share                                  
+etc                     *                  Unrestricted C:\Windows\System32\drivers\etc                                                                                                
+eventarchive            *                  Unrestricted D:\eventarchive                                                                                                                
+GSDMLCATALOG            *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\PROFINET\GSDMLCatalog                                                                    
+GUS Security            *                  Unrestricted C:\ProgramData\Honeywell\ProductConfig\Security                                                                                
+HCISecurity             *                  Unrestricted C:\ProgramData\Honeywell\ProductConfig\Security                                                                                
+HistoryArchive          *                  Unrestricted D:\HistoryArchive                                                                                                              
+HM Backups              *                   AccessBased C:\HM Backups                                                                                                                  
+HYBRID                  *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Engineering Tools                                                                        
+IEC61850                *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\IEC61850\Configuration                                                                   
+import                  *                  Unrestricted C:\Windows\SysWOW64\Repl\import                                                                                                
+INSTALL                 *                  Unrestricted C:\Program Files (x86)\Honeywell\Experion PKS\Install                                                                          
+inventory               *                  Unrestricted C:\ProgramData\Honeywell\Inventory                                                                                             
+IPC$                    *                  Unrestricted                                                                         Remote IPC                                             
+mapping                 *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Server\data\Mapping               FILEREP:Used for System Interface mapping files        
+MenusandToolBars        *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Client\MenusAndToolbars                                                                  
+NotifOverrides          *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Server\data\NotifOverrides        Used by FILEREP                                        
+ODSDATA                 *                  Unrestricted C:\Users\Public\Documents\Honeywell\Experion PKS\ODSDATA                                                                       
+ODSQUERY                *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\ODSQUERY                                                                                 
+qbfiles                 *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Server\user\qbfiles               Share for Quick Builder files                          
+QDB$                    *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Server\data\qdb                   Used by Quick builder                                  
+ReferenceBatches        *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Server\data\ReferenceBatches                                                             
+report                  *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Server\data\Report                Share of Report files                                  
+ReportDefinition        *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Server\data\ReportDefinition      Share of Report Definition files                       
+Repository              *                  Unrestricted C:\ProgramData\Honeywell\FDS\Repository                                                                                        
+SAFEVIEW                *                  Unrestricted C:\Windows\SysWOW64\Repl\import\SAFEVIEW                                                                                       
+SM Data                 *                  Unrestricted C:\ALON SM R162.8 Programs                                                                                                     
+SRDB                    *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\SRDB                                                                                     
+STAC-ADDIns             *                  Unrestricted C:\Program Files (x86)\Honeywell\Experion PKS\STAC-AddIns                                                                      
+STAC-Workbooks          *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\STAC-Workbooks                                                                           
+Station                 *                   AccessBased C:\ProgramData\Honeywell\Experion PKS\Client\Station                                                                           
+views                   *                  Unrestricted C:\ProgramData\Honeywell\Experion PKS\Server\data\Views                 FILEREP:Used for Summary views                         
+
+
+
+================================================================================== 
+===== 13:45:13.39 : NET FILE 
+================================================================================== 
+There are no entries in the list.
+
+ 
+================================================================================== 
+===== 13:45:14.20 : NET START 
+================================================================================== 
+These Windows services are started:
+
+   Acronis Agent Core Service
+   Acronis Managed Machine Service
+   Acronis Scheduler2 Service
+   Application Information
+   AzureAttestService
+   Background Tasks Infrastructure Service
+   Base Filtering Engine
+   Carbon Black App Control Agent
+   CDPUserSvc_112c4a
+   Certificate Propagation
+   CNG Key Isolation
+   Collection Agent Service
+   COM+ Event System
+   CoreMessaging
+   Cryptographic Services
+   DCOM Server Process Launcher
+   DHCP Client
+   Diagnostic Policy Service
+   Distributed Link Tracking Client
+   Distributed Transaction Coordinator
+   DNS Client
+   DSM SA Connection Service
+   DSM SA Data Manager
+   DSM SA Event Manager
+   Experion PKS Add Route (FTE)
+   Experion PKS BOOTP Server
+   Experion PKS Browser Orchestration
+   Experion PKS Browser Support Service
+   Experion PKS CDA-SP Service
+   Experion PKS Client Data Service
+   Experion PKS Configuration Service
+   Experion PKS Configuration Studio Information Service
+   Experion PKS Control Data Access Server
+   Experion PKS Control HIVE API Service
+   Experion PKS Deployment Agent
+   Experion PKS Display Versioning Service
+   Experion PKS DTLR Server
+   Experion PKS EMDB Server
+   Experion PKS eNAP Server
+   Experion PKS ER Server
+   Experion PKS ExperionExplorerWebAPI
+   Experion PKS FDS Communication Server
+   Experion PKS Field Device Server
+   Experion PKS GCL Name Server
+   Experion PKS IEC61850 Configuration Service
+   Experion PKS Quick Builder Concurrency Service
+   Experion PKS Search Cache Builder
+   Experion PKS Server Activity Manager
+   Experion PKS Server Daemon
+   Experion PKS Server Database
+   Experion PKS Server Desktop
+   Experion PKS Server Logger
+   Experion PKS Server OPC Integrator
+   Experion PKS Server Operator Management
+   Experion PKS Server Replication
+   Experion PKS Server Service Framework
+   Experion PKS Server System
+   Experion PKS System Configuration Server
+   Experion PKS System Repository
+   Experion PKS TPS Restart Service
+   FDM Error Logger
+   FDM Safety Network Interface
+   Group Policy Client
+   Honeywell Admin HPA Collection
+   Honeywell HPA Collection
+   Honeywell License Service
+   IPsec Policy Agent
+   K4LCN Reset Server
+   LCNP4EmulationManagementService
+   Local Session Manager
+   MLGuardLauncher
+   Net.Tcp Port Sharing Service
+   Netlogon
+   Network List Service
+   Network Location Awareness
+   Network Store Interface Service
+   OpcEnum
+   Performance Logs & Alerts
+   Plug and Play
+   Power
+   Print Spooler
+   Remote Desktop Configuration
+   Remote Desktop Services
+   Remote Desktop Services UserMode Port Redirector
+   Remote Procedure Call (RPC)
+   RPC Endpoint Mapper
+   Security Accounts Manager
+   Sentinel Security Runtime
+   Server
+   SI Collector Service
+   sm-Component Admin Service
+   sm-Heartbeat Provider
+   sm-Name Service Provider
+   sm-Remote Configuration Service
+   sm-System Event Provider
+   SNMP Service
+   SNMP Trap
+   SQL Server (MSSQLSERVER)
+   SQL Server Agent (MSSQLSERVER)
+   SQL Server Reporting Services
+   SQL Server VSS Writer
+   State Repository Service
+   System Event Notification Service
+   System Events Broker
+   Task Scheduler
+   TCP/IP NetBIOS Helper
+   TDC Emulators Service
+   Themes
+   Time Broker
+   Touch Keyboard and Handwriting Panel Service
+   TPNCommSvc
+   Update Orchestrator Service
+   User Access Logging Service
+   User Manager
+   User Profile Service
+   Web Account Manager
+   Windows Defender Firewall
+   Windows Event Log
+   Windows Font Cache Service
+   Windows Management Instrumentation
+   Windows Remote Management (WS-Management)
+   Windows Search
+   Windows Time
+   Workstation
+   WpnUserService_112c4a
+
+The command completed successfully.
+
+ 
+================================================================================== 
+===== 13:45:15.12 : NET CONFIG SERVER 
+================================================================================== 
+Server Name                           \\LCN01ESVTB
+Server Comment                        
+
+Software version                      Windows Server 2019 Standard
+Server is active on                   
+	NetbiosSmb (LCN01ESVTB)
+	NetBT_Tcpip_{D9488900-65C8-40F3-A343-4120966D67D0} (LCN01ESVTB)
+
+
+Server hidden                         No
+Maximum Logged On Users               16777216
+Maximum open files per session        16384
+
+Idle session time (min)               15
+The command completed successfully.
+
+ 
+================================================================================== 
+===== 13:45:16.12 : NET SESSION 
+================================================================================== 
+
+Computer               User name            Client Type       Opens Idle time
+
+-------------------------------------------------------------------------------
+\\172.20.75.58         experionadmin                              0 00:06:00    
+The command completed successfully.
+
+ 
+================================================================================== 
+===== 13:45:17.14 : NET USER 
+================================================================================== 
+
+User accounts for \\LCN01ESVTB
+
+-------------------------------------------------------------------------------
+DefaultAccount           ExpAcctSvcLP             experionadmin            
+ExpSQLAgtSvc             ExpSQLSvc                HoneywellAdmin           
+HoneywellGuest           HPSInstall               LocalComServer           
+mngr                     odbcuser                 SSServiceAdmin           
+WDAGUtilityAccount       
+The command completed successfully.
+
+ 
+================================================================================== 
+===== 13:45:18.16 : NET USE 
+================================================================================== 
+New connections will be remembered.
+
+There are no entries in the list.
+
+ 
+================================================================================== 
+===== 13:45:19.16 : NET ACCOUNTS 
+================================================================================== 
+Force user logoff how long after time expires?:       Never
+Minimum password age (days):                          0
+Maximum password age (days):                          Unlimited
+Minimum password length:                              2
+Length of password history maintained:                24
+Lockout threshold:                                    Never
+Lockout duration (minutes):                           30
+Lockout observation window (minutes):                 30
+Computer role:                                        SERVER
+The command completed successfully.
+
+ 
+================================================================================== 
+===== 13:45:20.17 : NET LOCALGROUP 
+================================================================================== 
+
+Aliases for \\LCN01ESVTB
+
+-------------------------------------------------------------------------------
+*Access Control Assistance Operators
+*Administrators
+*Backup Operators
+*Certificate Service DCOM Access
+*Cryptographic Operators
+*Device Owners
+*Distributed COM Users
+*Event Log Readers
+*Guests
+*Hyper-V Administrators
+*IIS_IUSRS
+*Local Ack View Only Users
+*Local DSA Connections
+*Local Engineers
+*Local Operators
+*Local SecureComms Administrators
+*Local Servers
+*Local Supervisors
+*Local View Only Users
+*Network Configuration Operators
+*Performance Log Users
+*Performance Monitor Users
+*Power Users
+*Print Operators
+*Product Administrators
+*RDS Endpoint Servers
+*RDS Management Servers
+*RDS Remote Access Servers
+*Remote Desktop Users
+*Remote Management Users
+*Replicator
+*SQLServer2005SQLBrowserUser$LCN01ESVTB
+*Storage Replica Administrators
+*System Managed Accounts Group
+*Users
+The command completed successfully.
+
+ 
+================================================================================== 
+===== 13:45:21.19 : NET CONFIG WKSTA 
+================================================================================== 
+Computer name                        \\LCN01ESVTB
+Full Computer name                   LCN01ESVTB.ALONBIGSCTRL.LOCAL
+User name                            experionadmin
+
+Workstation active on                
+	NetBT_Tcpip_{D9488900-65C8-40F3-A343-4120966D67D0} (5C6F691A6488)
+
+Software version                     Windows Server 2019 Standard
+
+Workstation domain                   ALONBIGSCTRL
+Workstation Domain DNS Name          ALONBIGSCTRL.LOCAL
+Logon domain                         ALONBIGSCTRL
+
+COM Open Timeout (sec)               0
+COM Send Count (byte)                16
+COM Send Timeout (msec)              250
+The command completed successfully.
+
+ 
+================================================================================== 
+===== 13:45:22.20 : NET STATISTICS Workstation 
+================================================================================== 
+Workstation Statistics for \\LCN01ESVTB
+
+
+Statistics since 12/8/2025 1:46:45 PM
+
+
+  Bytes received                               419583960
+  Server Message Blocks (SMBs) received        61
+  Bytes transmitted                            1299444980
+  Server Message Blocks (SMBs) transmitted     0
+  Read operations                              194
+  Write operations                             16370
+  Raw reads denied                             0
+  Raw writes denied                            0
+
+  Network errors                               0
+  Connections made                             0
+  Reconnections made                           0
+  Server disconnects                           3
+
+  Sessions started                             0
+  Hung sessions                                0
+  Failed sessions                              0
+  Failed operations                            0
+  Use count                                    1841
+  Failed use count                             0
+
+The command completed successfully.
+
+ 
+================================================================================== 
+===== 13:45:23.11 : NET STATISTICS SERVER 
+================================================================================== 
+The syntax of this command is:
+
+NET STATISTICS
+[WORKSTATION]
+
+ 
+================================================================================== 
+===== 13:45:24.13 : NET CONFIG RDR 
+================================================================================== 
+Computer name                        \\LCN01ESVTB
+Full Computer name                   LCN01ESVTB.ALONBIGSCTRL.LOCAL
+User name                            experionadmin
+
+Workstation active on                
+	NetBT_Tcpip_{D9488900-65C8-40F3-A343-4120966D67D0} (5C6F691A6488)
+
+Software version                     Windows Server 2019 Standard
+
+Workstation domain                   ALONBIGSCTRL
+Workstation Domain DNS Name          ALONBIGSCTRL.LOCAL
+Logon domain                         ALONBIGSCTRL
+
+COM Open Timeout (sec)               0
+COM Send Count (byte)                16
+COM Send Timeout (msec)              250
+The command completed successfully.
+
+ 

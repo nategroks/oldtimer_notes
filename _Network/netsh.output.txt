@@ -1,0 +1,1029 @@
+Tue 12/09/2025 13:44:44.18 . INITIALIZE file C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_Network\netsh.output.txt by experionadmin on LCN01ESVTB in Domain ALONBIGSCTRL 
+mDCT++ [v1.54] (krasimir.kumanov@gmail.com) 
+
+================================================================================== 
+===== 13:44:44.19 : netsh int tcp show global 
+================================================================================== 
+Querying active state...
+
+TCP Global Parameters
+----------------------------------------------
+Receive-Side Scaling State          : enabled 
+Receive Window Auto-Tuning Level    : normal 
+Add-On Congestion Control Provider  : default 
+ECN Capability                      : enabled 
+RFC 1323 Timestamps                 : disabled 
+Initial RTO                         : 3000 
+Receive Segment Coalescing State    : enabled 
+Non Sack Rtt Resiliency             : disabled 
+Max SYN Retransmissions             : 2 
+Fast Open                           : disabled 
+Fast Open Fallback                  : enabled 
+HyStart                             : enabled 
+Pacing Profile                      : off 
+
+ 
+================================================================================== 
+===== 13:44:45.14 : netsh int tcp show heuristics 
+================================================================================== 
+TCP Window Scaling heuristics Parameters
+----------------------------------------------
+Window Scaling heuristics         : disabled 
+Qualifying Destination Threshold  : 3 
+Profile type unknown              : normal 
+Profile type public               : normal 
+Profile type private              : normal 
+Profile type domain               : normal 
+
+ 
+================================================================================== 
+===== 13:44:46.21 : netsh int IP show config 
+================================================================================== 
+
+Configuration for interface "Ethernet 2"
+    DHCP enabled:                         No
+    IP Address:                           172.20.75.24
+    Subnet Prefix:                        172.20.75.0/24 (mask 255.255.255.0)
+    Default Gateway:                      172.20.75.1
+    Gateway Metric:                       1
+    InterfaceMetric:                      1
+    Statically Configured DNS Servers:    172.20.75.20
+                                          172.20.75.21
+    Register with which suffix:           Primary only
+    Statically Configured WINS Servers:   None
+
+Configuration for interface "Loopback Pseudo-Interface 1"
+    DHCP enabled:                         No
+    IP Address:                           127.0.0.1
+    Subnet Prefix:                        127.0.0.0/8 (mask 255.0.0.0)
+    InterfaceMetric:                      75
+    Statically Configured DNS Servers:    None
+    Register with which suffix:           Primary only
+    Statically Configured WINS Servers:   None
+
+ 
+================================================================================== 
+===== 13:44:47.20 : netsh int ipv4 show dynamicport tcp 
+================================================================================== 
+
+Protocol tcp Dynamic Port Range
+---------------------------------
+Start Port      : 51031
+Number of Ports : 4518
+
+ 
+================================================================================== 
+===== 13:44:48.16 : netsh int ipv4 show dynamicport udp 
+================================================================================== 
+
+Protocol udp Dynamic Port Range
+---------------------------------
+Start Port      : 51031
+Number of Ports : 4518
+
+ 
+================================================================================== 
+===== 13:44:49.12 : netsh int ipv6 show dynamicport tcp 
+================================================================================== 
+
+Protocol tcp Dynamic Port Range
+---------------------------------
+Start Port      : 51031
+Number of Ports : 4518
+
+ 
+================================================================================== 
+===== 13:44:50.19 : netsh int ipv6 show dynamicport udp 
+================================================================================== 
+
+Protocol udp Dynamic Port Range
+---------------------------------
+Start Port      : 51031
+Number of Ports : 4518
+
+ 
+================================================================================== 
+===== 13:44:51.16 : netsh int ipv4 show offload 
+================================================================================== 
+
+Interface 1: Loopback Pseudo-Interface 1
+
+udp transmit checksum supported.
+tcp transmit checksum supported.
+udp receive checksum supported.
+tcp receive checksum supported.
+
+Interface 8: Ethernet 2
+
+
+ 
+================================================================================== 
+===== 13:44:52.13 : netsh int ipv4 show addresses 
+================================================================================== 
+
+Configuration for interface "Ethernet 2"
+    DHCP enabled:                         No
+    IP Address:                           172.20.75.24
+    Subnet Prefix:                        172.20.75.0/24 (mask 255.255.255.0)
+    Default Gateway:                      172.20.75.1
+    Gateway Metric:                       1
+    InterfaceMetric:                      1
+
+Configuration for interface "Loopback Pseudo-Interface 1"
+    DHCP enabled:                         No
+    IP Address:                           127.0.0.1
+    Subnet Prefix:                        127.0.0.0/8 (mask 255.0.0.0)
+    InterfaceMetric:                      75
+
+ 
+================================================================================== 
+===== 13:44:53.20 : netsh int ipv4 show ipstats 
+================================================================================== 
+MIB-II IP Statistics
+------------------------------------------------------
+Forwarding is:                      Disabled
+Default TTL:                        128
+In Receives:                        215474165
+In Header Errors:                   0
+In Address Errors:                  1158358
+Datagrams Forwarded:                0
+In Unknown Protocol:                2
+In Discarded:                       4865748
+In Delivered:                       210276108
+Out Requests:                       81792715
+Routing Discards:                   0
+Out Discards:                       544
+Out No Routes:                      0
+Reassembly Timeout:                 60
+Reassembly Required:                67449
+Reassembled Ok:                     17718
+Reassembly Failures:                0
+Fragments Ok:                       825
+Fragments Failed:                   0
+Fragments Created:                  1670
+
+
+ 
+================================================================================== 
+===== 13:44:54.17 : netsh int ipv4 show udpstats 
+================================================================================== 
+
+MIB-II UDP Statistics
+------------------------------------------------------
+In Datagrams:                       165980388
+In Invalid Port:                    4865262
+In Erroneous Datagrams:             171
+Out Datagrams:                      1075994
+
+
+ 
+================================================================================== 
+===== 13:44:55.14 : netsh int ipv4 show tcpstats 
+================================================================================== 
+
+TCP Statistics
+------------------------------------------------------
+Timeout Algorithm:                      Van Jacobson's Algorithm
+Minimum Timeout:                        5
+Maximum Timeout:                        4294967295
+Maximum Connections:                    Dynamic
+Active Opens:                           281038
+Passive Opens:                          345355
+Attempts Failed:                        12887
+Established Resets:                     148740
+Currently Established:                  468
+In Segments:                            89479974
+Out Segments:                           93225955
+Retransmitted Segments:                 230164
+In Errors:                              0
+Out Resets:                             214713
+Fastopen Active Opens:                  0
+Fastopen Passive Opens:                 0
+Fastopen Attempts Failed:               0
+Retransmits Of First SYN:               12904
+Retransmits Of First SYN (Fastopen):    0
+
+
+ 
+================================================================================== 
+===== 13:44:56.21 : netsh interface IPv4 show int 
+================================================================================== 
+
+Idx     Met         MTU          State                Name
+---  ----------  ----------  ------------  ---------------------------
+  1          75  4294967295  connected     Loopback Pseudo-Interface 1
+  8           1        1500  connected     Ethernet 2
+
+ 
+================================================================================== 
+===== 13:44:57.17 : netsh interface IPv4 show subint 
+================================================================================== 
+
+   MTU  MediaSenseState   Bytes In  Bytes Out  Interface
+------  ---------------  ---------  ---------  -------------
+4294967295                1          0    2002316  Loopback Pseudo-Interface 1
+  1500                1  92646919433  28646925621  Ethernet 2
+
+ 
+================================================================================== 
+===== 13:44:58.14 : netsh http show urlacl 
+================================================================================== 
+
+URL Reservations: 
+----------------- 
+
+    Reserved URL            : http://*:5357/ 
+        User: BUILTIN\Users
+            Listen: Yes
+            Delegate: No
+        User: NT AUTHORITY\LOCAL SERVICE
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;BU)(A;;GX;;;LS) 
+
+    Reserved URL            : http://+:80/Temporary_Listen_Addresses/ 
+        User: \Everyone
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;WD) 
+
+    Reserved URL            : https://*:5358/ 
+        User: BUILTIN\Users
+            Listen: Yes
+            Delegate: No
+        User: NT AUTHORITY\LOCAL SERVICE
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;BU)(A;;GX;;;LS) 
+
+    Reserved URL            : https://+:443/sra_{BA195980-CD49-458b-9E23-C84EE0ADCD75}/ 
+        User: NT SERVICE\SstpSvc
+            Listen: Yes
+            Delegate: Yes
+        User: BUILTIN\Administrators
+            Listen: Yes
+            Delegate: Yes
+        User: NT AUTHORITY\SYSTEM
+            Listen: Yes
+            Delegate: Yes
+            SDDL: D:(A;;GA;;;S-1-5-80-3435701886-799518250-3791383489-3228296122-2938884314)(A;;GA;;;BA)(A;;GA;;;SY) 
+
+    Reserved URL            : http://*:2869/ 
+        User: NT AUTHORITY\LOCAL SERVICE
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;LS) 
+
+    Reserved URL            : https://+:5986/wsman/ 
+        User: NT SERVICE\WinRM
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-80-569256582-2953403351-2909559716-1301513147-412116970) 
+
+    Reserved URL            : http://+:47001/wsman/ 
+        User: NT SERVICE\WinRM
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-80-569256582-2953403351-2909559716-1301513147-412116970) 
+
+    Reserved URL            : http://+:5985/wsman/ 
+        User: NT SERVICE\WinRM
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-80-569256582-2953403351-2909559716-1301513147-412116970) 
+
+    Reserved URL            : http://+:8082/ 
+        User: NT SERVICE\SQLServerReportingServices
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-80-4050220999-2730734961-1537482082-519850261-379003301) 
+
+    Reserved URL            : http://+:80/reportserver/ 
+        User: NT SERVICE\SQLServerReportingServices
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-80-4050220999-2730734961-1537482082-519850261-379003301) 
+
+    Reserved URL            : http://+:80/ 
+        User: NT AUTHORITY\LOCAL SERVICE
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;LS) 
+
+    Reserved URL            : http://+:80/Services/ 
+        User: LCN01ESVTB\mngr
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-21-1253468384-1019806435-2261168248-1001) 
+
+    Reserved URL            : https://+:443/Services/ 
+        User: LCN01ESVTB\mngr
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-21-1253468384-1019806435-2261168248-1001) 
+
+    Reserved URL            : http://+:55610/netconfig/ 
+        User: LCN01ESVTB\ExpAcctSvcLP
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-21-1253468384-1019806435-2261168248-1005) 
+
+    Reserved URL            : http://+:55610/happmanifest/ 
+        User: LCN01ESVTB\ExpAcctSvcLP
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-21-1253468384-1019806435-2261168248-1005) 
+
+    Reserved URL            : http://+:55610/hivecontainerimg/ 
+        User: LCN01ESVTB\ExpAcctSvcLP
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-21-1253468384-1019806435-2261168248-1005) 
+
+    Reserved URL            : http://localhost:8071/ 
+        User: LCN01ESVTB\ExpAcctSvcLP
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-21-1253468384-1019806435-2261168248-1005) 
+
+    Reserved URL            : https://+:3392/rdp/ 
+        User: NT SERVICE\TermService
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-80-446051430-1559341753-4161941529-1950928533-810483104) 
+
+    Reserved URL            : http://+:3387/rdp/ 
+        User: NT SERVICE\TermService
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-80-446051430-1559341753-4161941529-1950928533-810483104) 
+
+    Reserved URL            : http://+:10246/MDEServer/ 
+        User: NT AUTHORITY\Authenticated Users
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;AU) 
+
+    Reserved URL            : http://+:10247/apps/ 
+        User: NT AUTHORITY\Authenticated Users
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;AU) 
+
+    Reserved URL            : https://+:10245/WMPNSSv4/ 
+        User: NT SERVICE\WMPNetworkSvc
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-80-2375682873-768044350-3534595160-1005545032-2873800392) 
+
+    Reserved URL            : http://+:10243/WMPNSSv4/ 
+        User: NT SERVICE\WMPNetworkSvc
+            Listen: Yes
+            Delegate: No
+            SDDL: D:(A;;GX;;;S-1-5-80-2375682873-768044350-3534595160-1005545032-2873800392) 
+
+
+ 
+================================================================================== 
+===== 13:44:59.13 : netsh http show servicestate 
+================================================================================== 
+
+Snapshot of HTTP service state (Server Session View): 
+----------------------------------------------------- 
+
+Server session ID: FF00000320000001
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: FE00000340000001
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTP://+:8082/
+
+Server session ID: FF00000220000004
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: FE00000240000001
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 3
+            Registered URLs:
+                HTTP://+:55610/HIVECONTAINERIMG/
+                HTTP://+:55610/HAPPMANIFEST/
+                HTTP://+:55610/NETCONFIG/
+
+Server session ID: FF00000620000001
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: FF00000040000001
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTP://LOCALHOST:8071/
+
+Server session ID: FF00000420000001
+    Version: 1.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: FE00000440000001
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTP://+:80/REPORTSERVER/
+
+Server session ID: FD00000220000001
+    Version: 1.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: FC00000240000001
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 2
+            Registered URLs:
+                HTTP://+:5985/WSMAN/
+                HTTP://+:47001/WSMAN/
+
+Server session ID: FE0000012000065B
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: FD00000140000001
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTP://+:80/SERVICES/APPSERVICES/ACTIVITY/MEX/
+
+Server session ID: FE00000020000002
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: FD00000040000002
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTP://+:80/SERVICES/CERTIFICATES/
+
+Server session ID: F800000020000ED1
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: F700000040000001
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTP://+:80/SERVICES/ENTERPRISEDATASERVICE/
+
+Server session ID: F600000020000001
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: F500000040000001
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTPS://+:443/SERVICES/ENTERPRISEDATASERVICE/
+
+Server session ID: F900000320000005
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: F800000340000002
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTPS://+:443/SERVICES/OPERATORS/CLIENT/WINDOWS/
+
+Server session ID: F400000020000001
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: F300000040000001
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTPS://+:443/SERVICES/OPERATORS/CLIENT/USERNAMEPASSWORD/
+
+Server session ID: FB00000220001015
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: FA00000240000001
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTPS://+:443/SERVICES/SERVERINFORMATION/
+
+Server session ID: F800000620000002
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: F700000640000002
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTP://+:80/SERVICES/IDISPLAYSERVICE/
+
+Server session ID: F200000020000001
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: F100000040000001
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTP://+:80/SERVICES/IDISPLAYSERVICE/MEX/
+
+Server session ID: FC00000120000001
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: FB00000140000001
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTP://+:80/SERVICES/IDISPLAYSERVICEREDIRECT/MEX/
+
+Server session ID: FB00000520000005
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: FA00000540000002
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTP://+:80/SERVICES/CSID/REGISTRATION/MEX/
+
+Server session ID: FD000005200004DF
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: FC00000540000002
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTP://+:80/SERVICES/CSID/SUBSCRIPTION/MEX/
+
+Server session ID: FF00000520000002
+    Version: 2.0
+    State: Active
+    Properties:
+        Max bandwidth: 4294967295
+        Timeouts:
+            Entity body timeout (secs): 120
+            Drain entity body timeout (secs): 120
+            Request queue timeout (secs): 120
+            Idle connection timeout (secs): 120
+            Header wait timeout (secs): 120
+            Minimum send rate (bytes/sec): 150
+    URL groups:
+    URL group ID: FE00000540000002
+        State: Active
+        Request queue name: Request queue is unnamed.
+        Properties:
+            Max bandwidth: inherited
+            Max connections: inherited
+            Timeouts:
+                Timeout values inherited
+            Number of registered URLs: 1
+            Registered URLs:
+                HTTP://+:80/SERVICES/CSID/ROUTER/MEX/
+
+Request queues:
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            9864
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            12664
+
+    Request queue name: Request queue is unnamed.
+        Version: 1.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            12188
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            11680
+
+    Request queue name: Request queue is unnamed.
+        Version: 1.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            9624
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            14952
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            14952
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            14952
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            14952
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            14952
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            14952
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            14952
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            14952
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            14952
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            14952
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            18396
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            18396
+
+    Request queue name: Request queue is unnamed.
+        Version: 2.0
+        State: Active
+        Request queue 503 verbosity level: Basic
+        Max requests: 1000
+        Number of active processes attached: 1
+        Process IDs:
+            18396
+
+
+ 
+================================================================================== 
+===== 13:45:00.16 : netsh interface ipv6 show prefixpolicies 
+================================================================================== 
+Querying active state...
+
+Precedence  Label  Prefix
+----------  -----  --------------------------------
+        50      0  ::ffff:0:0/96
+        40      1  ::1/128
+        30      2  ::/0
+        20      3  2002::/16
+         5      5  2001::/32
+         3     13  fc00::/7
+         1     11  fec0::/10
+         1     12  3ffe::/16
+         1      4  ::/96
+
+ 

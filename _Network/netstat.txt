@@ -1,0 +1,1180 @@
+Tue 12/09/2025 13:44:41.20 . INITIALIZE file C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_Network\netstat.txt by experionadmin on LCN01ESVTB in Domain ALONBIGSCTRL 
+mDCT++ [v1.54] (krasimir.kumanov@gmail.com) 
+
+================================================================================== 
+===== 13:44:41.23 : netstat -natoq 
+================================================================================== 
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State           PID      Offload State
+
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       4	InHost      
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       508	InHost      
+  TCP    0.0.0.0:443            0.0.0.0:0              LISTENING       4	InHost      
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4	InHost      
+  TCP    0.0.0.0:808            0.0.0.0:0              LISTENING       3244	InHost      
+  TCP    0.0.0.0:1010           0.0.0.0:0              LISTENING       3232	InHost      
+  TCP    0.0.0.0:1311           0.0.0.0:0              LISTENING       3188	InHost      
+  TCP    0.0.0.0:1337           0.0.0.0:0              LISTENING       7024	InHost      
+  TCP    0.0.0.0:1433           0.0.0.0:0              LISTENING       4244	InHost      
+  TCP    0.0.0.0:2909           0.0.0.0:0              LISTENING       3392	InHost      
+  TCP    0.0.0.0:2910           0.0.0.0:0              LISTENING       2248	InHost      
+  TCP    0.0.0.0:3389           0.0.0.0:0              LISTENING       1096	InHost      
+  TCP    0.0.0.0:5017           0.0.0.0:0              LISTENING       5080	InHost      
+  TCP    0.0.0.0:5985           0.0.0.0:0              LISTENING       4	InHost      
+  TCP    0.0.0.0:6000           0.0.0.0:0              LISTENING       4724	InHost      
+  TCP    0.0.0.0:6888           0.0.0.0:0              LISTENING       6376	InHost      
+  TCP    0.0.0.0:8071           0.0.0.0:0              LISTENING       4	InHost      
+  TCP    0.0.0.0:8082           0.0.0.0:0              LISTENING       4	InHost      
+  TCP    0.0.0.0:9860           0.0.0.0:0              LISTENING       940	InHost      
+  TCP    0.0.0.0:18018          0.0.0.0:0              LISTENING       6376	InHost      
+  TCP    0.0.0.0:20222          0.0.0.0:0              LISTENING       11616	InHost      
+  TCP    0.0.0.0:22382          0.0.0.0:0              LISTENING       4500	InHost      
+  TCP    0.0.0.0:22479          0.0.0.0:0              LISTENING       12648	InHost      
+  TCP    0.0.0.0:22480          0.0.0.0:0              LISTENING       12648	InHost      
+  TCP    0.0.0.0:40007          0.0.0.0:0              LISTENING       25568	InHost      
+  TCP    0.0.0.0:40200          0.0.0.0:0              LISTENING       3244	InHost      
+  TCP    0.0.0.0:40209          0.0.0.0:0              LISTENING       18396	InHost      
+  TCP    0.0.0.0:40211          0.0.0.0:0              LISTENING       18988	InHost      
+  TCP    0.0.0.0:40213          0.0.0.0:0              LISTENING       14952	InHost      
+  TCP    0.0.0.0:40214          0.0.0.0:0              LISTENING       4188	InHost      
+  TCP    0.0.0.0:40215          0.0.0.0:0              LISTENING       4160	InHost      
+  TCP    0.0.0.0:40217          0.0.0.0:0              LISTENING       4300	InHost      
+  TCP    0.0.0.0:40218          0.0.0.0:0              LISTENING       24920	InHost      
+  TCP    0.0.0.0:40219          0.0.0.0:0              LISTENING       16068	InHost      
+  TCP    0.0.0.0:40220          0.0.0.0:0              LISTENING       12768	InHost      
+  TCP    0.0.0.0:40226          0.0.0.0:0              LISTENING       4464	InHost      
+  TCP    0.0.0.0:40227          0.0.0.0:0              LISTENING       4464	InHost      
+  TCP    0.0.0.0:40259          0.0.0.0:0              LISTENING       18056	InHost      
+  TCP    0.0.0.0:40300          0.0.0.0:0              LISTENING       4060	InHost      
+  TCP    0.0.0.0:45000          0.0.0.0:0              LISTENING       24936	InHost      
+  TCP    0.0.0.0:47001          0.0.0.0:0              LISTENING       4	InHost      
+  TCP    0.0.0.0:49999          0.0.0.0:0              LISTENING       13424	InHost      
+  TCP    0.0.0.0:50000          0.0.0.0:0              LISTENING       580	InHost      
+  TCP    0.0.0.0:50001          0.0.0.0:0              LISTENING       13976	InHost      
+  TCP    0.0.0.0:50002          0.0.0.0:0              LISTENING       15624	InHost      
+  TCP    0.0.0.0:50003          0.0.0.0:0              LISTENING       15700	InHost      
+  TCP    0.0.0.0:50004          0.0.0.0:0              LISTENING       14080	InHost      
+  TCP    0.0.0.0:51456          0.0.0.0:0              LISTENING       672	InHost      
+  TCP    0.0.0.0:51457          0.0.0.0:0              LISTENING       1652	InHost      
+  TCP    0.0.0.0:51458          0.0.0.0:0              LISTENING       1884	InHost      
+  TCP    0.0.0.0:51459          0.0.0.0:0              LISTENING       1804	InHost      
+  TCP    0.0.0.0:51461          0.0.0.0:0              LISTENING       812	InHost      
+  TCP    0.0.0.0:51480          0.0.0.0:0              LISTENING       2624	InHost      
+  TCP    0.0.0.0:51491          0.0.0.0:0              LISTENING       812	InHost      
+  TCP    0.0.0.0:51677          0.0.0.0:0              LISTENING       5668	InHost      
+  TCP    0.0.0.0:51846          0.0.0.0:0              LISTENING       7344	InHost      
+  TCP    0.0.0.0:51972          0.0.0.0:0              LISTENING       792	InHost      
+  TCP    0.0.0.0:53003          0.0.0.0:0              LISTENING       21344	InHost      
+  TCP    0.0.0.0:53833          0.0.0.0:0              LISTENING       5872	InHost      
+  TCP    0.0.0.0:53834          0.0.0.0:0              LISTENING       1968	InHost      
+  TCP    0.0.0.0:53835          0.0.0.0:0              LISTENING       20784	InHost      
+  TCP    0.0.0.0:53837          0.0.0.0:0              LISTENING       13360	InHost      
+  TCP    0.0.0.0:55165          0.0.0.0:0              LISTENING       23912	InHost      
+  TCP    0.0.0.0:55550          0.0.0.0:0              LISTENING       6172	InHost      
+  TCP    0.0.0.0:55553          0.0.0.0:0              LISTENING       5004	InHost      
+  TCP    0.0.0.0:55554          0.0.0.0:0              LISTENING       5004	InHost      
+  TCP    0.0.0.0:55555          0.0.0.0:0              LISTENING       5004	InHost      
+  TCP    0.0.0.0:55556          0.0.0.0:0              LISTENING       11528	InHost      
+  TCP    0.0.0.0:55557          0.0.0.0:0              LISTENING       4136	InHost      
+  TCP    0.0.0.0:55559          0.0.0.0:0              LISTENING       4128	InHost      
+  TCP    0.0.0.0:55563          0.0.0.0:0              LISTENING       11188	InHost      
+  TCP    0.0.0.0:55571          0.0.0.0:0              LISTENING       11672	InHost      
+  TCP    0.0.0.0:55572          0.0.0.0:0              LISTENING       11672	InHost      
+  TCP    0.0.0.0:55573          0.0.0.0:0              LISTENING       11672	InHost      
+  TCP    0.0.0.0:55574          0.0.0.0:0              LISTENING       11672	InHost      
+  TCP    0.0.0.0:55575          0.0.0.0:0              LISTENING       11672	InHost      
+  TCP    0.0.0.0:55576          0.0.0.0:0              LISTENING       11672	InHost      
+  TCP    0.0.0.0:55577          0.0.0.0:0              LISTENING       11672	InHost      
+  TCP    0.0.0.0:55593          0.0.0.0:0              LISTENING       11672	InHost      
+  TCP    0.0.0.0:55594          0.0.0.0:0              LISTENING       11664	InHost      
+  TCP    0.0.0.0:55608          0.0.0.0:0              LISTENING       11528	InHost      
+  TCP    0.0.0.0:55610          0.0.0.0:0              LISTENING       4	InHost      
+  TCP    127.0.0.1:80           127.0.0.1:55182        ESTABLISHED     4	InHost      
+  TCP    127.0.0.1:445          127.0.0.1:54628        ESTABLISHED     4	InHost      
+  TCP    127.0.0.1:1337         127.0.0.1:51668        ESTABLISHED     7024	InHost      
+  TCP    127.0.0.1:1434         0.0.0.0:0              LISTENING       4244	InHost      
+  TCP    127.0.0.1:8082         127.0.0.1:51726        ESTABLISHED     4	InHost      
+  TCP    127.0.0.1:9771         0.0.0.0:0              LISTENING       5768	InHost      
+  TCP    127.0.0.1:9771         127.0.0.1:51542        ESTABLISHED     5768	InHost      
+  TCP    127.0.0.1:9772         0.0.0.0:0              LISTENING       6120	InHost      
+  TCP    127.0.0.1:9773         0.0.0.0:0              LISTENING       6744	InHost      
+  TCP    127.0.0.1:9850         0.0.0.0:0              LISTENING       940	InHost      
+  TCP    127.0.0.1:9866         0.0.0.0:0              LISTENING       5528	InHost      
+  TCP    127.0.0.1:9866         127.0.0.1:54115        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:9866         127.0.0.1:54416        ESTABLISHED     5528	InHost      
+  TCP    127.0.0.1:18019        0.0.0.0:0              LISTENING       6376	InHost      
+  TCP    127.0.0.1:40211        127.0.0.1:55169        ESTABLISHED     18988	InHost      
+  TCP    127.0.0.1:40213        127.0.0.1:55181        ESTABLISHED     14952	InHost      
+  TCP    127.0.0.1:40219        127.0.0.1:55179        ESTABLISHED     16068	InHost      
+  TCP    127.0.0.1:40228        0.0.0.0:0              LISTENING       18988	InHost      
+  TCP    127.0.0.1:40252        0.0.0.0:0              LISTENING       22404	InHost      
+  TCP    127.0.0.1:40253        0.0.0.0:0              LISTENING       9820	InHost      
+  TCP    127.0.0.1:40254        0.0.0.0:0              LISTENING       21152	InHost      
+  TCP    127.0.0.1:40255        0.0.0.0:0              LISTENING       14952	InHost      
+  TCP    127.0.0.1:40261        0.0.0.0:0              LISTENING       24936	InHost      
+  TCP    127.0.0.1:40262        0.0.0.0:0              LISTENING       19960	InHost      
+  TCP    127.0.0.1:43234        0.0.0.0:0              LISTENING       940	InHost      
+  TCP    127.0.0.1:51496        0.0.0.0:0              LISTENING       3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:51521        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:51531        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:51657        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:51659        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:51682        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:51683        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:52209        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:52403        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:52450        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:52451        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:53416        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:54610        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:54611        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:54612        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:54613        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:54615        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:54616        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:54617        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:54619        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:54620        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:54621        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51496        127.0.0.1:54623        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51521        127.0.0.1:51496        ESTABLISHED     5768	InHost      
+  TCP    127.0.0.1:51531        127.0.0.1:51496        ESTABLISHED     6120	InHost      
+  TCP    127.0.0.1:51542        127.0.0.1:9771         ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51624        0.0.0.0:0              LISTENING       7676	InHost      
+  TCP    127.0.0.1:51624        127.0.0.1:53349        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51624        127.0.0.1:54144        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51624        127.0.0.1:54300        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51624        127.0.0.1:54312        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51624        127.0.0.1:54384        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51624        127.0.0.1:54385        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51624        127.0.0.1:54454        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51624        127.0.0.1:54539        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51624        127.0.0.1:54543        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51624        127.0.0.1:54544        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51624        127.0.0.1:54614        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51624        127.0.0.1:54618        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51624        127.0.0.1:54622        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51657        127.0.0.1:51496        ESTABLISHED     6744	InHost      
+  TCP    127.0.0.1:51659        127.0.0.1:51496        ESTABLISHED     6744	InHost      
+  TCP    127.0.0.1:51668        127.0.0.1:1337         ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:51682        127.0.0.1:51496        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51683        127.0.0.1:51496        ESTABLISHED     7676	InHost      
+  TCP    127.0.0.1:51726        127.0.0.1:8082         ESTABLISHED     4144	InHost      
+  TCP    127.0.0.1:51739        127.0.0.1:51740        ESTABLISHED     6376	InHost      
+  TCP    127.0.0.1:51740        127.0.0.1:51739        ESTABLISHED     6376	InHost      
+  TCP    127.0.0.1:51828        127.0.0.1:51829        ESTABLISHED     3188	InHost      
+  TCP    127.0.0.1:51829        127.0.0.1:51828        ESTABLISHED     3188	InHost      
+  TCP    127.0.0.1:51851        127.0.0.1:51852        ESTABLISHED     3188	InHost      
+  TCP    127.0.0.1:51852        127.0.0.1:51851        ESTABLISHED     3188	InHost      
+  TCP    127.0.0.1:52209        127.0.0.1:51496        ESTABLISHED     6120	InHost      
+  TCP    127.0.0.1:52331        127.0.0.1:52332        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52332        127.0.0.1:52331        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52333        127.0.0.1:52334        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52334        127.0.0.1:52333        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52335        127.0.0.1:52336        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52336        127.0.0.1:52335        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52337        127.0.0.1:52338        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52338        127.0.0.1:52337        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52403        127.0.0.1:51496        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52404        127.0.0.1:52405        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52405        127.0.0.1:52404        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52407        127.0.0.1:52408        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52408        127.0.0.1:52407        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52409        127.0.0.1:52410        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52410        127.0.0.1:52409        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52411        127.0.0.1:52412        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52412        127.0.0.1:52411        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52413        127.0.0.1:52414        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52414        127.0.0.1:52413        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52415        127.0.0.1:52416        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52416        127.0.0.1:52415        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52420        127.0.0.1:52421        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52421        127.0.0.1:52420        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52422        127.0.0.1:52423        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52423        127.0.0.1:52422        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52424        127.0.0.1:52425        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52425        127.0.0.1:52424        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52426        127.0.0.1:52427        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52427        127.0.0.1:52426        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52428        127.0.0.1:52429        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52429        127.0.0.1:52428        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52430        127.0.0.1:52431        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52431        127.0.0.1:52430        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52432        127.0.0.1:52433        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52433        127.0.0.1:52432        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52434        127.0.0.1:52435        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52435        127.0.0.1:52434        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52436        127.0.0.1:52437        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52437        127.0.0.1:52436        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52438        127.0.0.1:52439        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52439        127.0.0.1:52438        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52440        127.0.0.1:52441        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52441        127.0.0.1:52440        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52442        127.0.0.1:52443        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52443        127.0.0.1:52442        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52444        127.0.0.1:52445        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52445        127.0.0.1:52444        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52446        127.0.0.1:52447        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52447        127.0.0.1:52446        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52448        127.0.0.1:52449        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52449        127.0.0.1:52448        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52450        127.0.0.1:51496        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52451        127.0.0.1:51496        ESTABLISHED     940	InHost      
+  TCP    127.0.0.1:52767        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:53345        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:53349        127.0.0.1:51624        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:53416        127.0.0.1:51496        ESTABLISHED     14576	InHost      
+  TCP    127.0.0.1:53502        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:53981        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54060        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54063        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54064        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54136        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54140        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54144        127.0.0.1:51624        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:54188        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54189        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54190        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54191        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54192        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54193        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54194        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54195        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54196        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54197        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54198        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54199        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54200        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54243        127.0.0.1:8082         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54297        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54298        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54299        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54300        127.0.0.1:51624        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:54301        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54302        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54303        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54304        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54305        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54306        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54307        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54308        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54309        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54310        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54311        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54312        127.0.0.1:51624        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:54316        127.0.0.1:8082         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54337        127.0.0.1:18019        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54342        127.0.0.1:8082         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54345        127.0.0.1:9772         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54346        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54347        127.0.0.1:9773         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54364        127.0.0.1:8082         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54371        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54372        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54373        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54374        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54375        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54376        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54377        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54378        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54379        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54380        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54381        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54382        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54383        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54384        127.0.0.1:51624        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:54385        127.0.0.1:51624        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:54386        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54387        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54406        127.0.0.1:8082         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54416        127.0.0.1:9866         ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:54426        127.0.0.1:18019        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54431        127.0.0.1:8082         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54432        127.0.0.1:9772         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54434        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54435        127.0.0.1:9773         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54446        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54447        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54448        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54449        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54450        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54451        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54452        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54453        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54454        127.0.0.1:51624        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:54455        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54456        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54457        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54458        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54460        127.0.0.1:8082         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54481        127.0.0.1:8082         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54512        127.0.0.1:18019        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54516        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54518        127.0.0.1:8082         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54519        127.0.0.1:9772         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54521        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54522        127.0.0.1:9773         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54530        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54531        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54532        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54533        127.0.0.1:51624        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54534        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54535        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54536        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54537        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54538        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54539        127.0.0.1:51624        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:54540        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54541        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54542        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54543        127.0.0.1:51624        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:54544        127.0.0.1:51624        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:54553        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54554        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54567        127.0.0.1:8082         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54591        127.0.0.1:8082         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54607        127.0.0.1:18019        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54610        127.0.0.1:51496        ESTABLISHED     6120	InHost      
+  TCP    127.0.0.1:54611        127.0.0.1:51496        ESTABLISHED     6120	InHost      
+  TCP    127.0.0.1:54612        127.0.0.1:51496        ESTABLISHED     6120	InHost      
+  TCP    127.0.0.1:54613        127.0.0.1:51496        ESTABLISHED     6120	InHost      
+  TCP    127.0.0.1:54614        127.0.0.1:51624        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:54615        127.0.0.1:51496        ESTABLISHED     6120	InHost      
+  TCP    127.0.0.1:54616        127.0.0.1:51496        ESTABLISHED     6120	InHost      
+  TCP    127.0.0.1:54617        127.0.0.1:51496        ESTABLISHED     6120	InHost      
+  TCP    127.0.0.1:54618        127.0.0.1:51624        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:54619        127.0.0.1:51496        ESTABLISHED     6120	InHost      
+  TCP    127.0.0.1:54620        127.0.0.1:51496        ESTABLISHED     6120	InHost      
+  TCP    127.0.0.1:54621        127.0.0.1:51496        ESTABLISHED     6120	InHost      
+  TCP    127.0.0.1:54622        127.0.0.1:51624        ESTABLISHED     3044	InHost      
+  TCP    127.0.0.1:54623        127.0.0.1:51496        ESTABLISHED     6120	InHost      
+  TCP    127.0.0.1:54626        127.0.0.1:8082         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54627        127.0.0.1:9772         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54628        127.0.0.1:445          ESTABLISHED     4	InHost      
+  TCP    127.0.0.1:54629        127.0.0.1:51496        TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:54631        127.0.0.1:9773         TIME_WAIT       0	InHost      
+  TCP    127.0.0.1:55169        127.0.0.1:40211        ESTABLISHED     18396	InHost      
+  TCP    127.0.0.1:55179        127.0.0.1:40219        ESTABLISHED     764	InHost      
+  TCP    127.0.0.1:55181        127.0.0.1:40213        ESTABLISHED     18396	InHost      
+  TCP    127.0.0.1:55182        127.0.0.1:80           ESTABLISHED     18396	InHost      
+  TCP    172.20.75.24:135       172.20.75.41:53442     ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:135       172.20.75.44:51207     ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:135       172.20.75.65:52564     ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:135       172.20.75.84:55028     ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:135       172.20.75.88:51342     ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:139       0.0.0.0:0              LISTENING       4	InHost      
+  TCP    172.20.75.24:445       172.20.75.58:55277     ESTABLISHED     4	InHost      
+  TCP    172.20.75.24:1433      172.20.75.22:51553     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.22:51580     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.22:51589     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.22:51597     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.22:51602     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.22:51607     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.22:51609     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.22:51610     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.22:51701     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.22:51702     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.22:51722     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.22:51724     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.22:52026     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.24:51836     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.24:51853     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.24:51855     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.24:51879     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.24:51884     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.24:51912     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.24:52300     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.24:54273     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:1433      172.20.75.24:54398     ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:3456      0.0.0.0:0              LISTENING       9712	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52154     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52157     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52159     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52160     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52161     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52164     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52166     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52167     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52171     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52172     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52173     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52174     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52175     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52178     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:22382     172.20.75.24:52180     ESTABLISHED     4500	InHost      
+  TCP    172.20.75.24:40214     172.20.75.22:51513     ESTABLISHED     4188	InHost      
+  TCP    172.20.75.24:40214     172.20.75.22:51791     ESTABLISHED     4188	InHost      
+  TCP    172.20.75.24:40218     172.20.75.22:52140     ESTABLISHED     24920	InHost      
+  TCP    172.20.75.24:40219     172.20.75.22:52225     ESTABLISHED     16068	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:52120     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53151     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53158     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53160     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53161     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53162     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53163     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53164     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53165     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53166     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53167     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53168     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53169     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53170     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53171     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53172     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53174     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53175     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53176     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40220     172.20.75.22:53177     ESTABLISHED     12768	InHost      
+  TCP    172.20.75.24:40227     172.20.75.24:51861     ESTABLISHED     4464	InHost      
+  TCP    172.20.75.24:40227     172.20.75.24:51868     ESTABLISHED     4464	InHost      
+  TCP    172.20.75.24:40227     172.20.75.24:51911     ESTABLISHED     4464	InHost      
+  TCP    172.20.75.24:51097     172.20.75.22:1433      ESTABLISHED     19776	InHost      
+  TCP    172.20.75.24:51102     172.20.75.22:1433      ESTABLISHED     19776	InHost      
+  TCP    172.20.75.24:51132     172.20.75.22:1433      ESTABLISHED     2892	InHost      
+  TCP    172.20.75.24:51133     172.20.75.22:1433      ESTABLISHED     2892	InHost      
+  TCP    172.20.75.24:51500     172.20.75.31:9877      ESTABLISHED     3044	InHost      
+  TCP    172.20.75.24:51522     172.20.75.24:55557     ESTABLISHED     5004	InHost      
+  TCP    172.20.75.24:51523     172.20.75.24:55557     ESTABLISHED     6384	InHost      
+  TCP    172.20.75.24:51536     172.20.75.56:445       ESTABLISHED     4	InHost      
+  TCP    172.20.75.24:51619     172.20.75.58:52305     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:51620     172.20.75.82:52182     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:51628     172.20.75.54:51492     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:51645     172.20.75.71:51475     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:51677     172.20.75.22:52922     ESTABLISHED     5668	InHost      
+  TCP    172.20.75.24:51831     172.20.75.24:55556     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:51833     172.20.75.24:55556     ESTABLISHED     11664	InHost      
+  TCP    172.20.75.24:51836     172.20.75.24:1433      ESTABLISHED     11664	InHost      
+  TCP    172.20.75.24:51843     172.20.75.24:55608     ESTABLISHED     6384	InHost      
+  TCP    172.20.75.24:51844     172.20.75.24:55608     ESTABLISHED     5004	InHost      
+  TCP    172.20.75.24:51845     172.20.75.24:55556     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:51846     172.20.75.41:53443     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:51846     172.20.75.44:51208     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:51846     172.20.75.65:52565     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:51846     172.20.75.84:55029     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:51846     172.20.75.88:51343     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:51848     172.20.75.24:55556     ESTABLISHED     11672	InHost      
+  TCP    172.20.75.24:51850     172.20.75.24:55563     ESTABLISHED     11672	InHost      
+  TCP    172.20.75.24:51853     172.20.75.24:1433      ESTABLISHED     11672	InHost      
+  TCP    172.20.75.24:51855     172.20.75.24:1433      ESTABLISHED     11672	InHost      
+  TCP    172.20.75.24:51857     172.20.75.24:55556     ESTABLISHED     3312	InHost      
+  TCP    172.20.75.24:51861     172.20.75.24:40227     ESTABLISHED     4120	InHost      
+  TCP    172.20.75.24:51868     172.20.75.24:40227     ESTABLISHED     11680	InHost      
+  TCP    172.20.75.24:51877     172.20.75.24:55556     ESTABLISHED     13404	InHost      
+  TCP    172.20.75.24:51879     172.20.75.24:1433      ESTABLISHED     13404	InHost      
+  TCP    172.20.75.24:51883     172.20.75.24:55563     ESTABLISHED     13404	InHost      
+  TCP    172.20.75.24:51884     172.20.75.24:1433      ESTABLISHED     13404	InHost      
+  TCP    172.20.75.24:51911     172.20.75.24:40227     ESTABLISHED     3312	InHost      
+  TCP    172.20.75.24:51912     172.20.75.24:1433      ESTABLISHED     3312	InHost      
+  TCP    172.20.75.24:51934     172.20.75.24:55556     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:52071     172.20.75.24:55556     ESTABLISHED     4120	InHost      
+  TCP    172.20.75.24:52154     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52157     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52159     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52160     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52161     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52164     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52166     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52167     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52171     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52172     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52173     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52174     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52175     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52178     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52180     172.20.75.24:22382     ESTABLISHED     7344	InHost      
+  TCP    172.20.75.24:52287     172.20.75.56:10411     ESTABLISHED     8764	InHost      
+  TCP    172.20.75.24:52299     172.20.75.24:55556     ESTABLISHED     17624	InHost      
+  TCP    172.20.75.24:52300     172.20.75.24:1433      ESTABLISHED     17624	InHost      
+  TCP    172.20.75.24:52417     172.20.75.31:7780      ESTABLISHED     940	InHost      
+  TCP    172.20.75.24:52540     172.20.75.33:55553     ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52541     172.20.75.84:51500     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:52543     172.20.75.32:55553     ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52571     172.20.75.189:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52574     172.20.75.235:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52575     172.20.75.182:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52576     172.20.75.187:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52577     172.20.75.168:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52578     172.20.75.233:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52579     172.20.75.195:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52580     172.20.75.239:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52582     172.20.75.186:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52583     172.20.75.167:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52586     172.20.75.232:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52587     172.20.75.173:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52588     172.20.75.227:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52590     172.20.75.169:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52591     172.20.75.243:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52593     172.20.75.181:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52594     172.20.75.180:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52595     172.20.75.185:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52596     172.20.75.242:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52600     172.20.75.231:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52601     172.20.75.237:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52602     172.20.75.179:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52603     172.20.75.176:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52604     172.20.75.241:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52605     172.20.75.230:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52606     172.20.75.171:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52607     172.20.75.225:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52608     172.20.75.196:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52609     172.20.75.175:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52610     172.20.75.240:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52611     172.20.75.229:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52612     172.20.75.174:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52613     172.20.75.228:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52614     172.20.75.36:55553     ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52617     172.20.75.35:55553     ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52618     172.20.75.238:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52619     172.20.75.172:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52620     172.20.75.226:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52621     172.20.75.190:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52623     172.20.75.236:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52624     172.20.75.170:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52625     172.20.75.244:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52627     172.20.75.234:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:52628     172.20.75.188:55553    ESTABLISHED     6172	InHost      
+  TCP    172.20.75.24:53182     172.20.75.31:9877      ESTABLISHED     3044	InHost      
+  TCP    172.20.75.24:53208     172.20.75.28:41002     ESTABLISHED     1388	InHost      
+  TCP    172.20.75.24:53478     172.20.75.22:40227     ESTABLISHED     4464	InHost      
+  TCP    172.20.75.24:53575     172.20.75.20:49672     ESTABLISHED     812	InHost      
+  TCP    172.20.75.24:53836     172.20.75.22:40218     ESTABLISHED     24920	InHost      
+  TCP    172.20.75.24:53883     172.20.75.22:40220     ESTABLISHED     20768	InHost      
+  TCP    172.20.75.24:53887     172.20.75.22:40219     ESTABLISHED     16068	InHost      
+  TCP    172.20.75.24:54177     172.20.75.22:55607     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54187     172.20.75.22:55606     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54219     172.20.75.41:54251     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54220     172.20.75.41:54251     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54221     172.20.75.69:52699     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54222     172.20.75.69:52699     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54228     172.20.75.52:51500     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54229     172.20.75.52:51500     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54231     172.20.75.56:51503     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54232     172.20.75.56:51503     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54234     172.20.75.22:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54235     172.20.75.22:51686     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54238     172.20.75.40:51480     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54239     172.20.75.40:51480     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54241     172.20.75.86:51497     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54242     172.20.75.86:51497     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54246     172.20.75.65:51401     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54247     172.20.75.65:51401     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54263     172.20.75.88:51491     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54264     172.20.75.88:51491     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54265     172.20.75.44:54302     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54266     172.20.75.44:54302     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54273     172.20.75.24:1433      ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:54280     172.20.75.50:51488     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54281     172.20.75.50:51488     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54293     172.20.75.60:51503     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54294     172.20.75.60:51503     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54314     172.20.75.22:55607     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54315     172.20.75.22:55606     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54317     172.20.75.22:55607     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54327     172.20.75.22:55606     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54329     172.20.75.22:445       ESTABLISHED     4	InHost      
+  TCP    172.20.75.24:54396     172.20.75.22:55607     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54397     172.20.75.22:55606     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54398     172.20.75.24:1433      ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:54401     172.20.75.22:55607     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54402     172.20.75.22:55606     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54403     172.20.75.22:55607     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54404     172.20.75.22:55606     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54405     172.20.75.22:55607     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54407     172.20.75.22:55606     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54478     172.20.75.22:55607     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54479     172.20.75.22:55606     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54480     172.20.75.22:55607     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54485     172.20.75.86:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54486     172.20.75.84:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54487     172.20.75.52:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54488     172.20.75.40:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54489     172.20.75.88:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54490     172.20.75.82:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54491     172.20.75.50:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54492     172.20.75.54:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54493     172.20.75.69:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54494     172.20.75.41:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54495     172.20.75.44:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54496     172.20.75.60:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54497     172.20.75.42:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54498     172.20.75.56:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54499     172.20.75.58:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54500     172.20.75.71:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54501     172.20.75.65:135       ESTABLISHED     508	InHost      
+  TCP    172.20.75.24:54509     172.20.75.22:55606     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54524     172.20.75.41:54251     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54525     172.20.75.69:52699     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54526     172.20.75.69:52699     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54546     172.20.75.52:51500     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54547     172.20.75.52:51500     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54551     172.20.75.56:51503     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54552     172.20.75.56:51503     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54556     172.20.75.40:51480     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54557     172.20.75.40:51480     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54561     172.20.75.86:51497     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54562     172.20.75.86:51497     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54564     172.20.75.65:51401     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54565     172.20.75.65:51401     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54574     172.20.75.88:51491     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54575     172.20.75.88:51491     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54576     172.20.75.44:54302     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54577     172.20.75.44:54302     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54579     172.20.75.50:51488     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54580     172.20.75.50:51488     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54581     172.20.75.60:51503     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54582     172.20.75.60:51503     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:54588     172.20.75.22:55607     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54589     172.20.75.22:55606     TIME_WAIT       0	InHost      
+  TCP    172.20.75.24:54590     172.20.75.22:55607     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:54600     172.20.75.22:55606     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:54637     172.20.77.99:135       SYN_SENT        508	InHost      
+  TCP    172.20.75.24:54638     172.20.77.99:135       SYN_SENT        508	InHost      
+  TCP    172.20.75.24:54819     172.20.75.22:55605     ESTABLISHED     4136	InHost      
+  TCP    172.20.75.24:55212     172.20.75.42:54057     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:55329     172.20.75.22:51498     ESTABLISHED     7384	InHost      
+  TCP    172.20.75.24:55488     172.20.75.22:40214     ESTABLISHED     4188	InHost      
+  TCP    172.20.75.24:55489     172.20.75.22:40214     ESTABLISHED     4188	InHost      
+  TCP    172.20.75.24:55529     172.20.75.22:1433      ESTABLISHED     4244	InHost      
+  TCP    172.20.75.24:55532     172.20.75.22:1433      ESTABLISHED     23376	InHost      
+  TCP    172.20.75.24:55534     172.20.75.22:1433      ESTABLISHED     23376	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51552     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51582     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51588     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51600     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51601     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51606     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51608     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51652     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51658     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51692     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51699     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51721     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51818     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51821     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:51876     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.22:52025     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.24:51831     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.24:51833     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.24:51845     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.24:51848     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.24:51857     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.24:51877     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.24:51934     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.24:52071     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.24:52299     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.40:54853     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.40:54855     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.41:53535     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.41:53563     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.42:52527     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.42:52547     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.44:52444     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.44:52445     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.50:53950     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.50:53957     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.52:54076     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.52:54085     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.54:51884     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.54:51899     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.56:54480     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.56:54495     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.58:52574     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.58:52582     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.65:52318     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.65:52322     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.69:54377     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.69:54381     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.71:53601     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.71:53633     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.80:52899     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.80:52903     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.82:53185     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.82:53189     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.83:52743     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.83:52759     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.84:55077     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.84:55088     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.86:51361     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.86:51365     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.88:53658     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.88:53673     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.90:52941     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55556     172.20.75.90:52955     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55557     172.20.75.24:51522     ESTABLISHED     4136	InHost      
+  TCP    172.20.75.24:55557     172.20.75.24:51523     ESTABLISHED     4136	InHost      
+  TCP    172.20.75.24:55563     172.20.75.22:51700     ESTABLISHED     11188	InHost      
+  TCP    172.20.75.24:55563     172.20.75.22:51723     ESTABLISHED     11188	InHost      
+  TCP    172.20.75.24:55563     172.20.75.24:51850     ESTABLISHED     11188	InHost      
+  TCP    172.20.75.24:55563     172.20.75.24:51883     ESTABLISHED     11188	InHost      
+  TCP    172.20.75.24:55608     172.20.75.22:51502     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.22:51518     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.22:51592     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.22:51643     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.22:51749     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.24:51843     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.24:51844     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.40:54846     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.41:53525     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.42:52524     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.44:52423     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.50:53942     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.52:54055     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.54:51875     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.56:54476     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.58:52572     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.65:52301     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.69:54367     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.71:53598     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.80:52895     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.82:53178     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.83:52731     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.84:55066     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.86:51348     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.88:53634     ESTABLISHED     11528	InHost      
+  TCP    172.20.75.24:55608     172.20.75.90:52939     ESTABLISHED     11528	InHost      
+  TCP    0.0.0.0:51097          0.0.0.0:0              BOUND           19776	InHost      
+  TCP    0.0.0.0:51102          0.0.0.0:0              BOUND           19776	InHost      
+  TCP    0.0.0.0:51132          0.0.0.0:0              BOUND           2892	InHost      
+  TCP    0.0.0.0:51133          0.0.0.0:0              BOUND           2892	InHost      
+  TCP    0.0.0.0:51500          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:51521          0.0.0.0:0              BOUND           5768	InHost      
+  TCP    0.0.0.0:51522          0.0.0.0:0              BOUND           5004	InHost      
+  TCP    0.0.0.0:51523          0.0.0.0:0              BOUND           6384	InHost      
+  TCP    0.0.0.0:51531          0.0.0.0:0              BOUND           6120	InHost      
+  TCP    0.0.0.0:51542          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:51619          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:51620          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:51628          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:51645          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:51657          0.0.0.0:0              BOUND           6744	InHost      
+  TCP    0.0.0.0:51659          0.0.0.0:0              BOUND           6744	InHost      
+  TCP    0.0.0.0:51668          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:51682          0.0.0.0:0              BOUND           7676	InHost      
+  TCP    0.0.0.0:51683          0.0.0.0:0              BOUND           7676	InHost      
+  TCP    0.0.0.0:51726          0.0.0.0:0              BOUND           4144	InHost      
+  TCP    0.0.0.0:51740          0.0.0.0:0              BOUND           6376	InHost      
+  TCP    0.0.0.0:51831          0.0.0.0:0              BOUND           11528	InHost      
+  TCP    0.0.0.0:51833          0.0.0.0:0              BOUND           11664	InHost      
+  TCP    0.0.0.0:51836          0.0.0.0:0              BOUND           11664	InHost      
+  TCP    0.0.0.0:51843          0.0.0.0:0              BOUND           6384	InHost      
+  TCP    0.0.0.0:51844          0.0.0.0:0              BOUND           5004	InHost      
+  TCP    0.0.0.0:51845          0.0.0.0:0              BOUND           11528	InHost      
+  TCP    0.0.0.0:51848          0.0.0.0:0              BOUND           11672	InHost      
+  TCP    0.0.0.0:51850          0.0.0.0:0              BOUND           11672	InHost      
+  TCP    0.0.0.0:51853          0.0.0.0:0              BOUND           11672	InHost      
+  TCP    0.0.0.0:51855          0.0.0.0:0              BOUND           11672	InHost      
+  TCP    0.0.0.0:51857          0.0.0.0:0              BOUND           3312	InHost      
+  TCP    0.0.0.0:51877          0.0.0.0:0              BOUND           13404	InHost      
+  TCP    0.0.0.0:51879          0.0.0.0:0              BOUND           13404	InHost      
+  TCP    0.0.0.0:51883          0.0.0.0:0              BOUND           13404	InHost      
+  TCP    0.0.0.0:51884          0.0.0.0:0              BOUND           13404	InHost      
+  TCP    0.0.0.0:51912          0.0.0.0:0              BOUND           3312	InHost      
+  TCP    0.0.0.0:51934          0.0.0.0:0              BOUND           11528	InHost      
+  TCP    0.0.0.0:52071          0.0.0.0:0              BOUND           4120	InHost      
+  TCP    0.0.0.0:52154          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52157          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52159          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52160          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52161          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52164          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52166          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52167          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52171          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52172          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52173          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52174          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52175          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52178          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52180          0.0.0.0:0              BOUND           7344	InHost      
+  TCP    0.0.0.0:52209          0.0.0.0:0              BOUND           6120	InHost      
+  TCP    0.0.0.0:52287          0.0.0.0:0              BOUND           8764	InHost      
+  TCP    0.0.0.0:52299          0.0.0.0:0              BOUND           17624	InHost      
+  TCP    0.0.0.0:52300          0.0.0.0:0              BOUND           17624	InHost      
+  TCP    0.0.0.0:52332          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52334          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52336          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52338          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52403          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52405          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52408          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52410          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52412          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52414          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52416          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52417          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52421          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52423          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52425          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52427          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52429          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52431          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52433          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52435          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52437          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52439          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52441          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52443          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52445          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52447          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52449          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52450          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52451          0.0.0.0:0              BOUND           940	InHost      
+  TCP    0.0.0.0:52540          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52541          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:52543          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52571          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52574          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52575          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52576          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52577          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52578          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52579          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52580          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52582          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52583          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52586          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52587          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52588          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52590          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52591          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52593          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52594          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52595          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52596          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52600          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52601          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52602          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52603          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52604          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52605          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52606          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52607          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52608          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52609          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52610          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52611          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52612          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52613          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52614          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52617          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52618          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52619          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52620          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52621          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52623          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52624          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52625          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52627          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:52628          0.0.0.0:0              BOUND           6172	InHost      
+  TCP    0.0.0.0:53182          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:53208          0.0.0.0:0              BOUND           1388	InHost      
+  TCP    0.0.0.0:53349          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:53416          0.0.0.0:0              BOUND           14576	InHost      
+  TCP    0.0.0.0:53575          0.0.0.0:0              BOUND           812	InHost      
+  TCP    0.0.0.0:53836          0.0.0.0:0              BOUND           24920	InHost      
+  TCP    0.0.0.0:53883          0.0.0.0:0              BOUND           20768	InHost      
+  TCP    0.0.0.0:53887          0.0.0.0:0              BOUND           16068	InHost      
+  TCP    0.0.0.0:53998          0.0.0.0:0              BOUND           18008	InHost      
+  TCP    0.0.0.0:54144          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:54234          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54273          0.0.0.0:0              BOUND           11528	InHost      
+  TCP    0.0.0.0:54300          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:54312          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:54384          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:54385          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:54398          0.0.0.0:0              BOUND           11528	InHost      
+  TCP    0.0.0.0:54416          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:54454          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:54485          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54486          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54487          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54488          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54489          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54490          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54491          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54492          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54493          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54494          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54495          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54496          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54497          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54498          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54499          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54500          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54501          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54524          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54525          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54526          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54539          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:54543          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:54544          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:54546          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54547          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54551          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54552          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54556          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54557          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54561          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54562          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54564          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54565          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54574          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54575          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54576          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54577          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54579          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54580          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54581          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54582          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:54590          0.0.0.0:0              BOUND           11528	InHost      
+  TCP    0.0.0.0:54600          0.0.0.0:0              BOUND           11528	InHost      
+  TCP    0.0.0.0:54610          0.0.0.0:0              BOUND           6120	InHost      
+  TCP    0.0.0.0:54611          0.0.0.0:0              BOUND           6120	InHost      
+  TCP    0.0.0.0:54612          0.0.0.0:0              BOUND           6120	InHost      
+  TCP    0.0.0.0:54613          0.0.0.0:0              BOUND           6120	InHost      
+  TCP    0.0.0.0:54614          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:54615          0.0.0.0:0              BOUND           6120	InHost      
+  TCP    0.0.0.0:54616          0.0.0.0:0              BOUND           6120	InHost      
+  TCP    0.0.0.0:54617          0.0.0.0:0              BOUND           6120	InHost      
+  TCP    0.0.0.0:54618          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:54619          0.0.0.0:0              BOUND           6120	InHost      
+  TCP    0.0.0.0:54620          0.0.0.0:0              BOUND           6120	InHost      
+  TCP    0.0.0.0:54621          0.0.0.0:0              BOUND           6120	InHost      
+  TCP    0.0.0.0:54622          0.0.0.0:0              BOUND           3044	InHost      
+  TCP    0.0.0.0:54623          0.0.0.0:0              BOUND           6120	InHost      
+  TCP    0.0.0.0:54637          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54638          0.0.0.0:0              BOUND           508	InHost      
+  TCP    0.0.0.0:54819          0.0.0.0:0              BOUND           4136	InHost      
+  TCP    0.0.0.0:55169          0.0.0.0:0              BOUND           18396	InHost      
+  TCP    0.0.0.0:55179          0.0.0.0:0              BOUND           764	InHost      
+  TCP    0.0.0.0:55181          0.0.0.0:0              BOUND           18396	InHost      
+  TCP    0.0.0.0:55182          0.0.0.0:0              BOUND           18396	InHost      
+  TCP    0.0.0.0:55212          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:55329          0.0.0.0:0              BOUND           7384	InHost      
+  TCP    0.0.0.0:55488          0.0.0.0:0              BOUND           4188	InHost      
+  TCP    0.0.0.0:55489          0.0.0.0:0              BOUND           4188	InHost      
+  TCP    0.0.0.0:55529          0.0.0.0:0              BOUND           4244	InHost      
+  TCP    0.0.0.0:55532          0.0.0.0:0              BOUND           23376	InHost      
+  TCP    0.0.0.0:55534          0.0.0.0:0              BOUND           23376	InHost      
+  TCP    [::]:80                [::]:0                 LISTENING       4	InHost      
+  TCP    [::]:135               [::]:0                 LISTENING       508	InHost      
+  TCP    [::]:443               [::]:0                 LISTENING       4	InHost      
+  TCP    [::]:445               [::]:0                 LISTENING       4	InHost      
+  TCP    [::]:808               [::]:0                 LISTENING       3244	InHost      
+  TCP    [::]:1010              [::]:0                 LISTENING       3232	InHost      
+  TCP    [::]:1311              [::]:0                 LISTENING       3188	InHost      
+  TCP    [::]:1337              [::]:0                 LISTENING       7024	InHost      
+  TCP    [::]:1433              [::]:0                 LISTENING       4244	InHost      
+  TCP    [::]:3389              [::]:0                 LISTENING       1096	InHost      
+  TCP    [::]:5017              [::]:0                 LISTENING       5080	InHost      
+  TCP    [::]:5985              [::]:0                 LISTENING       4	InHost      
+  TCP    [::]:8071              [::]:0                 LISTENING       4	InHost      
+  TCP    [::]:8082              [::]:0                 LISTENING       4	InHost      
+  TCP    [::]:9860              [::]:0                 LISTENING       940	InHost      
+  TCP    [::]:40007             [::]:0                 LISTENING       25568	InHost      
+  TCP    [::]:40200             [::]:0                 LISTENING       3244	InHost      
+  TCP    [::]:40209             [::]:0                 LISTENING       18396	InHost      
+  TCP    [::]:40211             [::]:0                 LISTENING       18988	InHost      
+  TCP    [::]:40213             [::]:0                 LISTENING       14952	InHost      
+  TCP    [::]:40214             [::]:0                 LISTENING       4188	InHost      
+  TCP    [::]:40215             [::]:0                 LISTENING       4160	InHost      
+  TCP    [::]:40217             [::]:0                 LISTENING       4300	InHost      
+  TCP    [::]:40218             [::]:0                 LISTENING       24920	InHost      
+  TCP    [::]:40219             [::]:0                 LISTENING       16068	InHost      
+  TCP    [::]:40220             [::]:0                 LISTENING       12768	InHost      
+  TCP    [::]:40226             [::]:0                 LISTENING       4464	InHost      
+  TCP    [::]:40227             [::]:0                 LISTENING       4464	InHost      
+  TCP    [::]:40259             [::]:0                 LISTENING       18056	InHost      
+  TCP    [::]:40300             [::]:0                 LISTENING       4060	InHost      
+  TCP    [::]:45000             [::]:0                 LISTENING       24936	InHost      
+  TCP    [::]:47001             [::]:0                 LISTENING       4	InHost      
+  TCP    [::]:49999             [::]:0                 LISTENING       13424	InHost      
+  TCP    [::]:50001             [::]:0                 LISTENING       13976	InHost      
+  TCP    [::]:50002             [::]:0                 LISTENING       15624	InHost      
+  TCP    [::]:50003             [::]:0                 LISTENING       15700	InHost      
+  TCP    [::]:50004             [::]:0                 LISTENING       14080	InHost      
+  TCP    [::]:51456             [::]:0                 LISTENING       672	InHost      
+  TCP    [::]:51457             [::]:0                 LISTENING       1652	InHost      
+  TCP    [::]:51458             [::]:0                 LISTENING       1884	InHost      
+  TCP    [::]:51459             [::]:0                 LISTENING       1804	InHost      
+  TCP    [::]:51461             [::]:0                 LISTENING       812	InHost      
+  TCP    [::]:51480             [::]:0                 LISTENING       2624	InHost      
+  TCP    [::]:51491             [::]:0                 LISTENING       812	InHost      
+  TCP    [::]:51677             [::]:0                 LISTENING       5668	InHost      
+  TCP    [::]:51846             [::]:0                 LISTENING       7344	InHost      
+  TCP    [::]:51972             [::]:0                 LISTENING       792	InHost      
+  TCP    [::]:53003             [::]:0                 LISTENING       21344	InHost      
+  TCP    [::]:53833             [::]:0                 LISTENING       5872	InHost      
+  TCP    [::]:53834             [::]:0                 LISTENING       1968	InHost      
+  TCP    [::]:53835             [::]:0                 LISTENING       20784	InHost      
+  TCP    [::]:53837             [::]:0                 LISTENING       13360	InHost      
+  TCP    [::]:55165             [::]:0                 LISTENING       23912	InHost      
+  TCP    [::]:55594             [::]:0                 LISTENING       11664	InHost      
+  TCP    [::]:55610             [::]:0                 LISTENING       4	InHost      
+  TCP    [::1]:1434             [::]:0                 LISTENING       4244	InHost      
+  TCP    [::1]:3142             [::]:0                 LISTENING       1388	InHost      
+  TCP    [::1]:9850             [::]:0                 LISTENING       940	InHost      
+  TCP    [::1]:40227            [::1]:51505            ESTABLISHED     4464	InHost      
+  TCP    [::1]:40228            [::]:0                 LISTENING       18988	InHost      
+  TCP    [::1]:40252            [::]:0                 LISTENING       22404	InHost      
+  TCP    [::1]:40253            [::]:0                 LISTENING       9820	InHost      
+  TCP    [::1]:40254            [::]:0                 LISTENING       21152	InHost      
+  TCP    [::1]:40255            [::]:0                 LISTENING       14952	InHost      
+  TCP    [::1]:40261            [::]:0                 LISTENING       24936	InHost      
+  TCP    [::1]:40262            [::]:0                 LISTENING       19960	InHost      
+  TCP    [::1]:51505            [::1]:40227            ESTABLISHED     5032	InHost      
+  TCP    [fe80::5cf4:4222:8ecb:f556%8]:54399  [fe80::5cf4:4222:8ecb:f556%8]:1433  TIME_WAIT       0	InHost      
+  TCP    [::]:51505             [::]:0                 BOUND           5032	InHost      
+  TCP    [::]:51829             [::]:0                 BOUND           3188	InHost      
+  TCP    [::]:51852             [::]:0                 BOUND           3188	InHost      
+  TCP    [::]:51861             [::]:0                 BOUND           4120	InHost      
+  TCP    [::]:51868             [::]:0                 BOUND           11680	InHost      
+  TCP    [::]:51911             [::]:0                 BOUND           3312	InHost      
+  TCP    [::]:53478             [::]:0                 BOUND           4464	InHost      
+  UDP    0.0.0.0:67             *:*                                    3312	            
+  UDP    0.0.0.0:123            *:*                                    1224	            
+  UDP    0.0.0.0:161            *:*                                    3356	            
+  UDP    0.0.0.0:162            *:*                                    3364	            
+  UDP    0.0.0.0:2909           *:*                                    3392	            
+  UDP    0.0.0.0:3389           *:*                                    1096	            
+  UDP    0.0.0.0:5353           *:*                                    1716	            
+  UDP    0.0.0.0:5353           *:*                                    17896	            
+  UDP    0.0.0.0:5353           *:*                                    17896	            
+  UDP    0.0.0.0:5355           *:*                                    1716	            
+  UDP    0.0.0.0:6771           *:*                                    6376	            
+  UDP    0.0.0.0:6771           *:*                                    6376	            
+  UDP    0.0.0.0:6888           *:*                                    6376	            
+  UDP    0.0.0.0:12321          *:*                                    3004	            
+  UDP    0.0.0.0:45006          *:*                                    5112	            
+  UDP    0.0.0.0:50000          *:*                                    12648	            
+  UDP    0.0.0.0:50001          *:*                                    12648	            
+  UDP    0.0.0.0:51392          *:*                                    4120	            
+  UDP    0.0.0.0:51561          *:*                                    6172	            
+  UDP    0.0.0.0:51562          *:*                                    6172	            
+  UDP    0.0.0.0:51563          *:*                                    6172	            
+  UDP    0.0.0.0:51564          *:*                                    6172	            
+  UDP    0.0.0.0:51565          *:*                                    6172	            
+  UDP    0.0.0.0:51566          *:*                                    6172	            
+  UDP    0.0.0.0:51567          *:*                                    6172	            
+  UDP    0.0.0.0:51568          *:*                                    6172	            
+  UDP    0.0.0.0:51569          *:*                                    6172	            
+  UDP    0.0.0.0:51570          *:*                                    6172	            
+  UDP    0.0.0.0:51571          *:*                                    6172	            
+  UDP    0.0.0.0:51572          *:*                                    6172	            
+  UDP    0.0.0.0:51573          *:*                                    6172	            
+  UDP    0.0.0.0:51574          *:*                                    6172	            
+  UDP    0.0.0.0:51575          *:*                                    6172	            
+  UDP    0.0.0.0:51576          *:*                                    6172	            
+  UDP    0.0.0.0:51577          *:*                                    6172	            
+  UDP    0.0.0.0:51578          *:*                                    6172	            
+  UDP    0.0.0.0:51579          *:*                                    6172	            
+  UDP    0.0.0.0:51580          *:*                                    6172	            
+  UDP    0.0.0.0:51581          *:*                                    6172	            
+  UDP    0.0.0.0:51582          *:*                                    6172	            
+  UDP    0.0.0.0:51915          *:*                                    5560	            
+  UDP    0.0.0.0:51966          *:*                                    17624	            
+  UDP    0.0.0.0:52068          *:*                                    3312	            
+  UDP    0.0.0.0:52504          *:*                                    6384	            
+  UDP    0.0.0.0:52505          *:*                                    6384	            
+  UDP    0.0.0.0:52509          *:*                                    6172	            
+  UDP    0.0.0.0:52510          *:*                                    6172	            
+  UDP    0.0.0.0:52511          *:*                                    6172	            
+  UDP    0.0.0.0:52512          *:*                                    6172	            
+  UDP    0.0.0.0:52513          *:*                                    6172	            
+  UDP    0.0.0.0:52514          *:*                                    6172	            
+  UDP    0.0.0.0:52515          *:*                                    6172	            
+  UDP    0.0.0.0:52516          *:*                                    6172	            
+  UDP    0.0.0.0:52517          *:*                                    6172	            
+  UDP    0.0.0.0:52518          *:*                                    6172	            
+  UDP    0.0.0.0:52519          *:*                                    6172	            
+  UDP    0.0.0.0:52520          *:*                                    6172	            
+  UDP    0.0.0.0:52521          *:*                                    6172	            
+  UDP    0.0.0.0:52522          *:*                                    6172	            
+  UDP    0.0.0.0:52523          *:*                                    6172	            
+  UDP    0.0.0.0:52524          *:*                                    6172	            
+  UDP    0.0.0.0:52525          *:*                                    6172	            
+  UDP    0.0.0.0:52526          *:*                                    6172	            
+  UDP    0.0.0.0:52527          *:*                                    6172	            
+  UDP    0.0.0.0:52528          *:*                                    6172	            
+  UDP    0.0.0.0:52529          *:*                                    6172	            
+  UDP    0.0.0.0:52530          *:*                                    6172	            
+  UDP    0.0.0.0:52639          *:*                                    5004	            
+  UDP    0.0.0.0:52640          *:*                                    3312	            
+  UDP    0.0.0.0:52641          *:*                                    5560	            
+  UDP    0.0.0.0:52751          *:*                                    5032	            
+  UDP    0.0.0.0:52942          *:*                                    18056	            
+  UDP    0.0.0.0:52944          *:*                                    18056	            
+  UDP    0.0.0.0:53104          *:*                                    11528	            
+  UDP    0.0.0.0:53105          *:*                                    11528	            
+  UDP    0.0.0.0:53106          *:*                                    11664	            
+  UDP    0.0.0.0:53107          *:*                                    11664	            
+  UDP    0.0.0.0:53273          *:*                                    5004	            
+  UDP    0.0.0.0:53354          *:*                                    6120	            
+  UDP    0.0.0.0:53398          *:*                                    11528	            
+  UDP    0.0.0.0:53886          *:*                                    6376	            
+  UDP    0.0.0.0:53888          *:*                                    6376	            
+  UDP    0.0.0.0:54833          *:*                                    11528	            
+  UDP    0.0.0.0:54834          *:*                                    11528	            
+  UDP    0.0.0.0:54835          *:*                                    11528	            
+  UDP    0.0.0.0:54836          *:*                                    11672	            
+  UDP    0.0.0.0:54837          *:*                                    11672	            
+  UDP    0.0.0.0:54838          *:*                                    11672	            
+  UDP    0.0.0.0:54839          *:*                                    11672	            
+  UDP    0.0.0.0:54841          *:*                                    13404	            
+  UDP    0.0.0.0:54842          *:*                                    13404	            
+  UDP    0.0.0.0:54843          *:*                                    13404	            
+  UDP    0.0.0.0:54844          *:*                                    13404	            
+  UDP    0.0.0.0:55034          *:*                                    17624	            
+  UDP    0.0.0.0:55035          *:*                                    17624	            
+  UDP    0.0.0.0:55036          *:*                                    17624	            
+  UDP    0.0.0.0:55235          *:*                                    6172	            
+  UDP    0.0.0.0:55236          *:*                                    6172	            
+  UDP    0.0.0.0:55555          *:*                                    11680	            
+  UDP    0.0.0.0:55621          *:*                                    5032	            
+  UDP    0.0.0.0:60577          *:*                                    17624	            
+  UDP    127.0.0.1:2911         *:*                                    18056	            
+  UDP    127.0.0.1:6771         *:*                                    6376	            
+  UDP    127.0.0.1:24100        *:*                                    940	            
+  UDP    127.0.0.1:24101        *:*                                    940	            
+  UDP    127.0.0.1:24102        *:*                                    940	            
+  UDP    127.0.0.1:52069        *:*                                    3212	            
+  UDP    127.0.0.1:52991        *:*                                    812	            
+  UDP    127.0.0.1:53272        *:*                                    3272	            
+  UDP    127.0.0.1:53365        *:*                                    940	            
+  UDP    127.0.0.1:53882        *:*                                    6376	            
+  UDP    127.0.0.1:54155        *:*                                    17756	            
+  UDP    127.0.0.1:54845        *:*                                    12188	            
+  UDP    127.0.0.1:55013        *:*                                    1744	            
+  UDP    127.0.0.1:55395        *:*                                    1596	            
+  UDP    172.20.75.24:137       *:*                                    4	            
+  UDP    172.20.75.24:138       *:*                                    4	            
+  UDP    172.20.75.24:1089      *:*                                    3168	            
+  UDP    172.20.75.24:2911      *:*                                    18056	            
+  UDP    172.20.75.24:6771      *:*                                    6376	            
+  UDP    172.20.75.24:45007     *:*                                    5112	            
+  UDP    172.20.75.24:51966     *:*                                    3168	            
+  UDP    172.20.75.24:51967     *:*                                    9712	            
+  UDP    172.20.75.24:52752     *:*                                    5032	            
+  UDP    172.20.75.24:53619     *:*                                    9712	            
+  UDP    172.20.75.24:53856     *:*                                    9712	            
+  UDP    172.20.75.24:53881     *:*                                    6376	            
+  UDP    172.20.75.24:53885     *:*                                    6376	            
+  UDP    172.20.75.24:55090     *:*                                    9712	            
+  UDP    [::]:123               *:*                                    1224	            
+  UDP    [::]:161               *:*                                    3356	            
+  UDP    [::]:162               *:*                                    3364	            
+  UDP    [::]:3389              *:*                                    1096	            
+  UDP    [::]:5353              *:*                                    17896	            
+  UDP    [::]:5353              *:*                                    1716	            
+  UDP    [::]:5355              *:*                                    1716	            
+  UDP    [::]:6771              *:*                                    6376	            
+  UDP    [::]:53887             *:*                                    6376	            
+  UDP    [::]:53889             *:*                                    6376	            
+  UDP    [::1]:6771             *:*                                    6376	            
+  UDP    [::1]:53884            *:*                                    6376	            
+  UDP    [fe80::5cf4:4222:8ecb:f556%8]:6771  *:*                                    6376	            
+  UDP    [fe80::5cf4:4222:8ecb:f556%8]:53883  *:*                                    6376	            
+ 

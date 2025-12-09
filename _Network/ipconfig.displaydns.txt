@@ -1,0 +1,1316 @@
+Tue 12/09/2025 13:44:43.11 . INITIALIZE file C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_Network\ipconfig.displaydns.txt by experionadmin on LCN01ESVTB in Domain ALONBIGSCTRL 
+mDCT++ [v1.54] (krasimir.kumanov@gmail.com) 
+
+================================================================================== 
+===== 13:44:43.12 : ipconfig /displaydns 
+================================================================================== 
+
+Windows IP Configuration
+
+    lcn01est14
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST14
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.80
+
+
+    lcn01est14
+    ----------------------------------------
+    No records of type AAAA
+
+
+    bigsctrlebr
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLEBR
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.31
+
+
+    bigsctrlebr
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est46
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est46
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST46
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.88
+
+
+    lcn01est44
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est44
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST44
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.52
+
+
+    lcn01est45
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est45
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST45
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.54
+
+
+    lcn01est43
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est43
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST43
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.50
+
+
+    lcn01est40
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est40
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST40
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.69
+
+
+    lcn01est48
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est48
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST48
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.44
+
+
+    bigspcns02.alonbigsctrl.local
+    ----------------------------------------
+    Record Name . . . . . : BIGSPCNS02.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 1438
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.21
+
+
+    dvmsc02
+    ----------------------------------------
+    Record Name . . . . . : DVMSC02.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.76.18
+
+
+    20.73.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 20.73.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : PHD
+
+
+    lcn01est57
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est57
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST57
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.42
+
+
+    lcn01est56
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est56
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST56
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.41
+
+
+    lcn01est55
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est55
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST55
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.56
+
+
+    lcn01est54
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est54
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST54
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.65
+
+
+    lcn01est58
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est58
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST58
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.71
+
+
+    44.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 44.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST48
+
+
+    bigsdmzmnr
+    ----------------------------------------
+    No records of type AAAA
+
+
+    bigsdmzmnr
+    ----------------------------------------
+    Record Name . . . . . : BIGSDMZMNR
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.74.22
+
+
+    bigsctrlaea
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLAEA.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.74.22
+
+
+    49.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 49.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : Safety_Station
+
+
+    lcn01app61
+    ----------------------------------------
+    Record Name . . . . . : LCN01APP61
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.63
+
+
+    lcn01app61
+    ----------------------------------------
+    No records of type AAAA
+
+
+    bigsctrleis
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLEIS.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.76.21
+
+
+    48.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 48.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : SafetyStation02
+
+
+    gus48
+    ----------------------------------------
+    Record Name . . . . . : GUS48.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.44
+
+
+    71.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 71.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST58
+
+
+    bigsctrlcam
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLCAM.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.76.200
+
+
+    lcn01ems01
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01ems01
+    ----------------------------------------
+    Record Name . . . . . : LCN01EMS01
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.77.99
+
+
+    bigsctrlphd
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLPHD
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.27
+
+
+    bigsctrlphd
+    ----------------------------------------
+    No records of type AAAA
+
+
+    crudeprnt
+    ----------------------------------------
+    No records of type AAAA
+
+
+    crudeprnt
+    ----------------------------------------
+    Record Name . . . . . : CrudePrnt
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.252
+
+
+    lcn01est55.alonbigsctrl.local
+    ----------------------------------------
+    Record Name . . . . . : lcn01est55.alonbigsctrl.local
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 317
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.56
+
+
+    252.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 252.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : CrudePrnt
+
+
+    60.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 60.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01ES1
+
+
+    bigsctrldvm
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLDVM.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.76.20
+
+
+    253.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 253.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : ENGCntrlPrnt
+
+
+    254.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 254.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : AsphaltPrnt
+
+
+    _ldap._tcp.pdc._msdcs.alonbigsctrl.local
+    ----------------------------------------
+    Record Name . . . . . : _ldap._tcp.pdc._msdcs.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 33
+    Time To Live  . . . . : 600
+    Data Length . . . . . : 16
+    Section . . . . . . . : Answer
+    SRV Record  . . . . . : bigspcns03.alonbigsctrl.local
+                            0
+                            100
+                            389
+
+
+    Record Name . . . . . : bigspcns03.alonbigsctrl.local
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 600
+    Data Length . . . . . : 4
+    Section . . . . . . . : Additional
+    A (Host) Record . . . : 172.20.75.19
+
+
+    26.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 26.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : BIGSCTRLESERVER
+
+
+    lcn01_gus49
+    ----------------------------------------
+    Record Name . . . . . : LCN01_GUS49.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.44
+
+
+    29.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 29.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : BIGSCTRLACMS
+
+
+    safety_station
+    ----------------------------------------
+    Record Name . . . . . : Safety_Station
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.49
+
+
+    safety_station
+    ----------------------------------------
+    No records of type AAAA
+
+
+    bigspcns03.alonbigsctrl.local
+    ----------------------------------------
+    Record Name . . . . . : bigspcns03.alonbigsctrl.local
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 1438
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.19
+
+
+    bsr_bn
+    ----------------------------------------
+    Record Name . . . . . : BSR_BN.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.74.34
+
+
+    27.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 27.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : BIGSCTRLPHD
+
+
+    90.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 90.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST07
+
+
+    86.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 86.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST35
+
+
+    bigspcns01.alonbigsctrl.local
+    ----------------------------------------
+    Record Name . . . . . : BIGSPCNS01.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 1516
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.20
+
+
+    22.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 22.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01ESVTA
+
+
+    bigspcns01
+    ----------------------------------------
+    Record Name . . . . . : BIGSPCNS01.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 1516
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.20
+
+
+    bigspcns03
+    ----------------------------------------
+    Record Name . . . . . : BIGSPCNS03.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 314
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.19
+
+
+    bigspcns02
+    ----------------------------------------
+    Record Name . . . . . : BIGSPCNS02.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 1516
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.21
+
+
+    bigsctrlacms
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLACMS
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.29
+
+
+    bigsctrlacms
+    ----------------------------------------
+    No records of type AAAA
+
+
+    88.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 88.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST46
+
+
+    52.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 52.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST44
+
+
+    65.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 65.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST54
+
+
+    phd
+    ----------------------------------------
+    No records of type AAAA
+
+
+    phd
+    ----------------------------------------
+    Record Name . . . . . : PHD
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.73.20
+
+
+    bigsinlik
+    ----------------------------------------
+    Record Name . . . . . : BIGSINLIK
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.74.24
+
+
+    bigsinlik
+    ----------------------------------------
+    No records of type AAAA
+
+
+    bigsctrlbackup
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLBACKUP.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.31
+
+
+    safety_station47
+    ----------------------------------------
+    No records of type AAAA
+
+
+    safety_station47
+    ----------------------------------------
+    Record Name . . . . . : Safety_Station47
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.47
+
+
+    safety_station46
+    ----------------------------------------
+    No records of type AAAA
+
+
+    safety_station46
+    ----------------------------------------
+    Record Name . . . . . : Safety_Station46
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.46
+
+
+    50.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 50.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST43
+
+
+    84.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 84.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST29
+
+
+    asphaltprnt
+    ----------------------------------------
+    No records of type AAAA
+
+
+    asphaltprnt
+    ----------------------------------------
+    Record Name . . . . . : AsphaltPrnt
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.254
+
+
+    82.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 82.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST21
+
+
+    83.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 83.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST03
+
+
+    bigsctrleserver
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLESERVER
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.26
+
+
+    bigsctrleserver
+    ----------------------------------------
+    No records of type AAAA
+
+
+    69.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 69.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST40
+
+
+    bigsctrldvmas
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLDVMAS.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.76.25
+
+
+    24.74.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 24.74.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : BIGSINLIK
+
+
+    engcntrlprnt
+    ----------------------------------------
+    No records of type AAAA
+
+
+    engcntrlprnt
+    ----------------------------------------
+    Record Name . . . . . : ENGCntrlPrnt
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.253
+
+
+    bigsctrltrace
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLTRACE
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.25
+
+
+    bigsctrltrace
+    ----------------------------------------
+    No records of type AAAA
+
+
+    bigsctrldvmdb
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLDVMDB.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.76.23
+
+
+    bigsctrlwnms
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLWNMS.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.77.20
+
+
+    lcn01es1
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01es1
+    ----------------------------------------
+    Record Name . . . . . : LCN01ES1
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.60
+
+
+    lcn01esvta0
+    ----------------------------------------
+    Record Name . . . . . : LCN01ESVTA0
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : LCN01ESVTA
+
+
+    56.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 56.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST55
+
+
+    bigsctrlnas
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLNAS
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.30
+
+
+    bigsctrlnas
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01esvtb0
+    ----------------------------------------
+    Record Name . . . . . : LCN01ESVTB0
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : LCN01ESVTB
+
+
+    54.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 54.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST45
+
+
+    30.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 30.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : BIGSCTRLNAS
+
+
+    42.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 42.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST57
+
+
+    80.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 80.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST14
+
+
+    24.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 24.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01ESVTB
+
+
+    safetystation46
+    ----------------------------------------
+    Record Name . . . . . : SAFETYSTATION46.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.46
+
+
+    safetystation47
+    ----------------------------------------
+    Record Name . . . . . : SAFETYSTATION47.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.47
+
+
+    bigctrlav.alonbigsctrl.local
+    ----------------------------------------
+    Record Name . . . . . : bigctrlav.alonbigsctrl.local
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 740
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.28
+
+
+    58.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 58.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST60
+
+
+    41.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 41.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST56
+
+
+    safetystation02
+    ----------------------------------------
+    Record Name . . . . . : SafetyStation02
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.48
+
+
+    safetystation02
+    ----------------------------------------
+    No records of type AAAA
+
+
+    safetystation01
+    ----------------------------------------
+    Record Name . . . . . : SAFETYSTATION01.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.48
+
+
+    bigsctrldvmcams
+    ----------------------------------------
+    Record Name . . . . . : BIGSCTRLDVMCAMS.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.76.24
+
+
+    lcn01esvta
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01esvta
+    ----------------------------------------
+    Record Name . . . . . : LCN01ESVTA
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.22
+
+
+    lcn01esvtb
+    ----------------------------------------
+    Record Name . . . . . : LCN01ESVTB.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 28
+    Time To Live  . . . . : 1200
+    Data Length . . . . . : 16
+    Section . . . . . . . : Question
+    AAAA Record . . . . . : fe80::5cf4:4222:8ecb:f556
+
+
+    lcn01esvtb
+    ----------------------------------------
+    Record Name . . . . . : LCN01ESVTB.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 1200
+    Data Length . . . . . : 4
+    Section . . . . . . . : Question
+    A (Host) Record . . . : 172.20.75.24
+
+
+    lcn01est21
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est21
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST21
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.82
+
+
+    99.77.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 99.77.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EMS01
+
+
+    lcn01est29
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est29
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST29
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.84
+
+
+    31.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 31.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : BIGSCTRLEBR
+
+
+    40.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 40.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01EST34
+
+
+    46.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 46.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : Safety_Station46
+
+
+    lcn01est03
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST03
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.83
+
+
+    lcn01est03
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est07
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST07
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.90
+
+
+    lcn01est07
+    ----------------------------------------
+    No records of type AAAA
+
+
+    63.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 63.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LCN01APP61
+
+
+    47.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 47.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : Safety_Station47
+
+
+    lcn01est35
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est35
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST35
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.86
+
+
+    lcn01est34
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est34
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST34
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.40
+
+
+    dvmcs01
+    ----------------------------------------
+    Record Name . . . . . : DVMCS01.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.76.19
+
+
+    25.75.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 25.75.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : BIGSCTRLTRACE
+
+
+    22.74.20.172.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 22.74.20.172.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : BIGSDMZMNR
+
+
+    lcn01est60
+    ----------------------------------------
+    No records of type AAAA
+
+
+    lcn01est60
+    ----------------------------------------
+    Record Name . . . . . : LCN01EST60
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 518505
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.58
+
+
+    bigctrlav
+    ----------------------------------------
+    Record Name . . . . . : BIGCTRLAV.ALONBIGSCTRL.LOCAL
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 320
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 172.20.75.28
+
+
+ 

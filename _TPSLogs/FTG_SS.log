@@ -1,0 +1,176 @@
+3/12/2025 13:23:28::480 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 13 307 
+3/12/2025 13:23:28::482 [TPS File Transfer](3280): FSE>SMBgetatr name=\&801\&I01\HPM01212.CP mode=0x0 size=1793554
+
+3/12/2025 13:23:28::483 [TPS File Transfer](3280): FSE>SMBopen file=\&801\&I01\HPM01212.CP mode=0
+
+3/12/2025 13:23:28::483 [TPS File Transfer](3280): FSE>GetAccess>ProxyPath = C:\ProgramData\Honeywell\ProductConfig\Security\File Transfer\&801
+
+3/12/2025 13:23:28::484 [TPS File Transfer](3280): FSE>GetAccess> Using DEFAULT Security
+
+3/12/2025 13:23:28::638 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 12 153 
+3/12/2025 13:23:28::890 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 252 
+3/12/2025 13:23:29::143 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 252 
+3/12/2025 13:23:29::396 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 253 
+3/12/2025 13:23:29::549 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:29::703 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:29::857 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:30::0 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 142 
+3/12/2025 13:23:30::153 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:30::307 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:30::460 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:30::658 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 197 
+3/12/2025 13:23:30::866 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 208 
+3/12/2025 13:23:31::20 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:31::175 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:31::328 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:31::470 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 142 
+3/12/2025 13:23:31::624 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:31::777 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:32::29 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 252 
+3/12/2025 13:23:32::293 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 263 
+3/12/2025 13:23:32::491 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 198 
+3/12/2025 13:23:32::644 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:32::841 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 197 
+3/12/2025 13:23:33::203 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 362 
+3/12/2025 13:23:33::357 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:33::554 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 197 
+3/12/2025 13:23:33::664 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 110 
+3/12/2025 13:23:33::861 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 197 
+3/12/2025 13:23:34::15 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:34::170 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:34::324 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:34::466 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 142 
+3/12/2025 13:23:34::620 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:34::784 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 164 
+3/12/2025 13:23:34::926 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 142 
+3/12/2025 13:23:35::81 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:35::234 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:35::387 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:35::584 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 197 
+3/12/2025 13:23:35::738 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:35::891 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:36::44 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:36::198 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:36::351 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:36::504 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:36::603 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 99 
+3/12/2025 13:23:36::812 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 208 
+3/12/2025 13:23:37::65 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 253 
+3/12/2025 13:23:37::318 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 253 
+3/12/2025 13:23:37::472 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:37::625 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:37::822 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 197 
+3/12/2025 13:23:37::976 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:38::129 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:38::282 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:38::426 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 143 
+3/12/2025 13:23:38::579 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:38::732 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:38::886 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:39::39 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:39::192 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:39::346 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:39::554 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 208 
+3/12/2025 13:23:39::652 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 98 
+3/12/2025 13:23:39::751 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 99 
+3/12/2025 13:23:39::904 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:40::58 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:40::156 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 98 
+3/12/2025 13:23:40::310 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:40::465 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:40::618 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:40::815 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 197 
+3/12/2025 13:23:41::68 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 252 
+3/12/2025 13:23:41::331 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 263 
+3/12/2025 13:23:41::529 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 197 
+3/12/2025 13:23:41::891 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 362 
+3/12/2025 13:23:42::33 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 142 
+3/12/2025 13:23:42::186 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:42::394 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 208 
+3/12/2025 13:23:42::548 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:42::702 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:42::855 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:42::998 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 143 
+3/12/2025 13:23:43::151 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:43::304 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:43::512 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 208 
+3/12/2025 13:23:43::611 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 99 
+3/12/2025 13:23:43::765 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:43::919 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:44::72 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:44::270 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 197 
+3/12/2025 13:23:44::423 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:44::577 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:44::730 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:44::927 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 197 
+3/12/2025 13:23:45::289 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 362 
+3/12/2025 13:23:45::442 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:45::585 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 142 
+3/12/2025 13:23:45::739 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:45::892 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:46::45 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:46::199 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:46::353 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:46::506 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:46::660 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:46::813 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:47::10 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 197 
+3/12/2025 13:23:47::163 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:47::371 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 208 
+3/12/2025 13:23:47::570 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 199 
+3/12/2025 13:23:47::724 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:47::877 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:48::30 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:48::184 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:48::337 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:48::479 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 142 
+3/12/2025 13:23:48::633 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:48::786 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:49::38 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 252 
+3/12/2025 13:23:49::246 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 208 
+3/12/2025 13:23:49::400 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:49::554 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:49::652 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 98 
+3/12/2025 13:23:49::751 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 99 
+3/12/2025 13:23:49::904 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:50::58 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:50::157 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 98 
+3/12/2025 13:23:50::310 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:50::464 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:50::672 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 208 
+3/12/2025 13:23:50::869 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 197 
+3/12/2025 13:23:51::22 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:51::176 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:51::329 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:51::482 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:51::637 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:51::791 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:51::933 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 142 
+3/12/2025 13:23:52::88 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:52::242 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:52::396 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:52::550 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:52::704 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:52::956 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 252 
+3/12/2025 13:23:53::263 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 306 
+3/12/2025 13:23:53::417 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:53::559 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 142 
+3/12/2025 13:23:53::712 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:53::866 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:54::75 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 208 
+3/12/2025 13:23:54::228 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:54::425 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 197 
+3/12/2025 13:23:54::579 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 154 
+3/12/2025 13:23:54::732 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 153 
+3/12/2025 13:23:54::940 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 208 
+3/12/2025 13:23:55::39 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 1 99 
+3/12/2025 13:23:55::39 [TPS File Transfer](3280): FSE>File loaded in memory, 1793554 allocsize, 1793554 size
+
+3/12/2025 13:23:55::40 [TPS File Transfer](3280): FSE>SMBopen file=\&801\&I01\HPM01212.CP fhandle=0 mode=0x0 size=1793554 rmode=0 
+
+3/12/2025 13:23:55::42 [TPS File Transfer](3280): FT_ReadFile fhandle=0, dwBytesToRead=1793554, dwOffset=0
+
+3/12/2025 13:23:55::286 [TPS File Transfer](3280): <LXS_cmd - LXS_Elapsed_Time> 13 240 
+3/12/2025 13:23:55::287 [TPS File Transfer](3280): FSE>SMBclose : fhandle=0, prevTime=1764765592, newTime=0
+
+3/12/2025 13:37:13::588 [TPS File Transfer](5936): CFileTransfer::LXSActiveHdlgProc() -- Exiting

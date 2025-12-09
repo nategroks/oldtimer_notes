@@ -1,0 +1,810 @@
+Tue 12/09/2025 13:38:29.74 . INITIALIZE file C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\mDCTlog.txt by experionadmin on LCN01ESVTB in Domain ALONBIGSCTRL 
+mDCT++ [v1.54] (krasimir.kumanov@gmail.com) 
+
+Tue 12/09/2025 13:38:29.75 : change priority to IDLE 
+Tue 12/09/2025 13:38:30.46 : mDCT++ /krasimir.kumanov@gmail.com/ -v1.54 start invocation: 'C:\temp\mDCT_v1.54\mDCT++.cmd ' 
+ Windows version:  10.0.17763.3532 Minor: 3532 
+ ScriptVersion: mDCT++ v1.54 - DateTime: 20251209_133828 Locale: EN-US PSversion: 5 
+Tue 12/09/2025 13:38:30.51 : *** DCT data collection ... *** 
+Tue 12/09/2025 13:38:30.54 : MSInfo32 report 
+Tue 12/09/2025 13:38:30.58 : Windows hosts file copy 
+================================================================================== 
+===== 13:38:30.60 : copy /y C:\Windows\System32\drivers\etc\hosts "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\GeneralSystemInfo\" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:38:31.18 : ipconfig output 
+Tue 12/09/2025 13:38:32.12 : netsh firewall show config 
+Tue 12/09/2025 13:38:34.18 : get time zone information 
+Tue 12/09/2025 13:38:35.12 : export Windows Events 
+Tue 12/09/2025 13:38:50.21 : get Experion PKS Product Version file 
+================================================================================== 
+===== 13:38:50.23 : copy /y "C:\Program Files (x86)\Honeywell\Experion PKS\ProductVersion.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\GeneralSystemInfo\" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:38:51.20 : query services 
+Tue 12/09/2025 13:38:51.23 : collecting Services info 
+Tue 12/09/2025 13:38:55.17 : export Experion registry settings 
+================================================================================== 
+===== 13:38:55.22 : "C:\Windows\SysWOW64\regedit.exe" /E "C:\Users\EXPERI~1.000\AppData\Local\Temp\regoutput.txt" "HKEY_CURRENT_USER\Software\Honeywell" 
+================================================================================== 
+ 
+================================================================================== 
+===== 13:38:56.21 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\regoutput.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\RegistryInfo\HKEY_CURRENT_USER_Software_Honeywell.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+================================================================================== 
+===== 13:38:57.19 : "C:\Windows\SysWOW64\regedit.exe" /E "C:\Users\EXPERI~1.000\AppData\Local\Temp\regoutput.txt" "HKEY_LOCAL_MACHINE\SOFTWARE\Honeywell" 
+================================================================================== 
+ 
+================================================================================== 
+===== 13:38:58.18 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\regoutput.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\RegistryInfo\HKEY_LOCAL_MACHINE_Software_Honeywell.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+================================================================================== 
+===== 13:38:59.17 : "C:\Windows\SysWOW64\regedit.exe" /E "C:\Users\EXPERI~1.000\AppData\Local\Temp\regoutput.txt" "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" 
+================================================================================== 
+ 
+================================================================================== 
+===== 13:39:00.20 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\regoutput.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\RegistryInfo\HKEY_LOCAL_MACHINE_Software_Microsoft_Uninstall.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+Tue 12/09/2025 13:39:01.17 : get FTE logs 
+Tue 12/09/2025 13:39:01.25 : get HMIWeb log files 
+================================================================================== 
+===== 13:39:01.28 : xcopy /i/q/y/H "C:\ProgramData\Honeywell\HMIWebLog\*log*.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\" 
+================================================================================== 
+2 File(s) copied
+ 
+================================================================================== 
+===== 13:39:04.21 : copy /y "C:\ProgramData\Honeywell\HMIWebLog\PersistentDictionary.xml" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:39:05.18 : tasklist /svc 
+Tue 12/09/2025 13:39:06.43 : Experion active log paranoids 
+Tue 12/09/2025 13:39:09.13 : get Experion log files 
+================================================================================== 
+===== 13:39:09.15 : xcopy /i/q/y/H "C:\ProgramData\Honeywell\Experion PKS\logfiles\log*.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\SloggerLogs\" 
+================================================================================== 
+26 File(s) copied
+ 
+Tue 12/09/2025 13:39:12.13 : get get archived Experion log files 
+Tue 12/09/2025 13:39:12.14 : _LogArchiveDirectory=C:\ProgramData\Honeywell\Experion PKS\logfiles\ 
+Tue 12/09/2025 13:39:57.54 : get Configuration Studio log file 
+================================================================================== 
+===== 13:39:57.56 : copy /y "C:\ProgramData\Honeywell\Configuration Studio Logs\Configuration Studio.log*" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Configuration Studio\" 
+================================================================================== 
+C:\ProgramData\Honeywell\Configuration Studio Logs\Configuration Studio.log
+C:\ProgramData\Honeywell\Configuration Studio Logs\Configuration Studio.log.1
+        2 file(s) copied.
+ 
+Tue 12/09/2025 13:39:58.15 : File Replication logs 
+================================================================================== 
+===== 13:39:58.20 : xcopy /i/q/y/H "C:\ProgramData\Honeywell\Experion PKS\Server\data\Report\filrep*.*" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\File-Replication\" /s 
+================================================================================== 
+42 File(s) copied
+ 
+Tue 12/09/2025 13:39:59.27 : actutil dump 
+================================================================================== 
+===== 13:39:59.33 : actutil --dump -o "C:\Users\EXPERI~1.000\AppData\Local\Temp\actutil.output.txt" 
+================================================================================== 
+Dumping activity list to: C:\Users\EXPERI~1.000\AppData\Local\Temp\actutil.output.txt
+ 
+================================================================================== 
+===== 13:40:01.19 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\actutil.output.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\actutil.output.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+Tue 12/09/2025 13:40:02.27 : Experion alarm/event dump 
+Tue 12/09/2025 13:40:44.30 : Experion shheap output 
+Tue 12/09/2025 13:40:56.27 : Experion point back build 
+Tue 12/09/2025 13:41:03.27 : Experion hardware back build 
+Tue 12/09/2025 13:41:05.30 : Experion history diagnostic 
+Tue 12/09/2025 13:41:07.25 : Experion embckbuilder output 
+================================================================================== 
+===== 13:41:07.29 : embckbuilder  "C:\Users\EXPERI~1.000\AppData\Local\Temp\embckbuilder.alarmgroup.output.txt"  -ALARMGROUP 
+================================================================================== 
+ 
+================================================================================== 
+===== 13:41:09.14 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\embckbuilder.alarmgroup.output.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\embckbuilder.alarmgroup.output.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+================================================================================== 
+===== 13:41:10.21 : embckbuilder  "C:\Users\EXPERI~1.000\AppData\Local\Temp\embckbuilder.asset.output.txt"       -ASSET 
+================================================================================== 
+ 
+================================================================================== 
+===== 13:41:12.22 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\embckbuilder.asset.output.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\embckbuilder.asset.output.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+================================================================================== 
+===== 13:41:13.21 : embckbuilder  "C:\Users\EXPERI~1.000\AppData\Local\Temp\embckbuilder.network.output.txt"     -NETWORK 
+================================================================================== 
+ 
+================================================================================== 
+===== 13:41:15.14 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\embckbuilder.network.output.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\embckbuilder.network.output.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+================================================================================== 
+===== 13:41:16.12 : embckbuilder  "C:\Users\EXPERI~1.000\AppData\Local\Temp\embckbuilder.system.output.txt"      -SYSTEM 
+================================================================================== 
+ 
+================================================================================== 
+===== 13:41:18.17 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\embckbuilder.system.output.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\embckbuilder.system.output.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+Tue 12/09/2025 13:41:19.14 : Experion OPC Integrator 
+================================================================================== 
+===== 13:41:19.18 : xcopy /i/q/y/H "C:\ProgramData\Honeywell\Experion PKS\Server\data\OPCIntegrator\*.tsv" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\OPCIntegrator\" 
+================================================================================== 
+6 File(s) copied
+ 
+Tue 12/09/2025 13:41:20.27 : listag output 
+Tue 12/09/2025 13:41:24.23 : Experion System Flags Table output 
+================================================================================== 
+===== 13:41:24.25 : fildmp -DUMP -FILE "C:\Users\EXPERI~1.000\AppData\Local\Temp\sysflg.output.txt" -FILENUM 8 -RECORDS 1 -FORMAT HEX 
+================================================================================== 
+
+System status is BACK-UP & SYNCD
+Reading from memory. Writing to memory,disc.
+
+ 
+================================================================================== 
+===== 13:41:25.55 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\sysflg.output.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\sysflg.output.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+Tue 12/09/2025 13:41:26.11 : Experion Area Asignmnt Table output 
+================================================================================== 
+===== 13:41:26.14 : fildmp -DUMP -FILE "C:\Users\EXPERI~1.000\AppData\Local\Temp\areaasignmnt.output.txt" -FILENUM 7 -RECORDS 1,1001 -FORMAT HEX 
+================================================================================== 
+
+System status is BACK-UP & SYNCD
+Reading from memory. Writing to memory,disc.
+
+ 
+================================================================================== 
+===== 13:41:27.59 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\areaasignmnt.output.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\areaasignmnt.output.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+Tue 12/09/2025 13:41:28.15 : copy system.build file 
+================================================================================== 
+===== 13:41:28.19 : copy /y "C:\ProgramData\Honeywell\Experion PKS\Server\data\system.build" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:41:29.17 : collect bad files .\server\data\*.bad 
+================================================================================== 
+===== 13:41:29.21 : xcopy /i/q/y/H "C:\ProgramData\Honeywell\Experion PKS\Server\data\*.bad" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\" 
+================================================================================== 
+File not found - *.bad
+0 File(s) copied
+ 
+Tue 12/09/2025 13:41:30.18 : copy TPNServer.log file 
+================================================================================== 
+===== 13:41:30.23 : copy /y "C:\ProgramData\Honeywell\TPNServer\TPNServer.log" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:41:31.19 : list C:\Windows\winsxs\ 
+Tue 12/09/2025 13:41:33.27 : Experion license list - liclist 
+Tue 12/09/2025 13:41:35.23 : Experion license list - hwlictool 
+Tue 12/09/2025 13:41:38.15 : run 'HwLicTool getTracking' 
+================================================================================== 
+===== 13:41:38.18 : HwLicTool getTracking -out:"C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerRunDirectory\licenses.json" 
+================================================================================== 
+    invalid command 
+
+License Management Tool
+Copyright (c) 2014-2016 Honeywell International SARL
+ 
+Usage:
+        hwlictool {command} {parameters}
+        ---------  -------   --------------------------------------------------------------------------------
+ 
+        hwlictool  apply     [-s:{server} [-p:{port}]] -file:"{lic-file}"
+ 
+        hwlictool  check     -file:"{lic-file}" 
+                             [-format:text|csv|xml] [-options:all|licensed] 
+                             [-out:"{out-file}"]
+ 
+        hwlictool  compare   [-s:{server} [-p:{port}]] [-license:active|new|{lic-id}] -file:"{lic-file}" 
+                             [-format:text|csv|xml] 
+                             [-usage:on|off] [-options:all|licensed] 
+                             [-out:"{out-file}"]
+ 
+        hwlictool  export    [-s:{server} [-p:{port}]] [-license:active|new|{lic-id}] 
+                             [-format:text|csv|xml] 
+                             [-usage:on|off] [-options:all|licensed] 
+                             [-out:"{out-file}"]
+ 
+        hwlictool  status    [-s:{server} [-p:{port}]] [-format:text|csv|xml] 
+                             [-out:"{out-file}"]
+ 
+        hwlictool  list      [-s:{server} [-p:{port}]] [-format:text|csv|xml] 
+                             [-out:"{out-file}"]
+ 
+        hwlictool  revert    [-s:{server} [-p:{port}]] -license:{lic-id}
+ 
+        hwlictool  dongle    [-sysnum:{system number}] [-out:"{out-file}"]
+ 
+        ---------  -------   --------------------------------------------------------------------------------
+ 
+                   {server}    - server name, default 'localhost'
+                   {port}      - port number, default from services file
+                   {lic-file}  - unc or local path to 'license file'
+                   {rul-file}  - unc or local path to 'product rules file'
+                   {out-file}  - unc or local path to 'output file'
+                   {lic-id}    - license identifier from 'list' command
+  
+Tue 12/09/2025 13:41:39.29 : usrlrn -p -a 
+Tue 12/09/2025 13:41:41.27 : Notification Utility - Dump indexes 
+Tue 12/09/2025 13:41:43.15 : get ErrorHandling log files 
+================================================================================== 
+===== 13:41:43.19 : copy /y "C:\ProgramData\Honeywell\Experion PKS\BrowserLog_Current.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ErrorHandling\" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:41:44.15 : File "C:\ProgramData\Honeywell\Experion PKS\CurrentLogIndex.txt" do not exist 
+================================================================================== 
+===== 13:41:44.17 : copy /y "C:\ProgramData\Honeywell\Experion PKS\ErrLog_*.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ErrorHandling\" 
+================================================================================== 
+C:\ProgramData\Honeywell\Experion PKS\ErrLog_1_1.txt
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:41:45.16 : get CDA Upgrade and Update logs 
+================================================================================== 
+===== 13:41:45.18 : copy /y "C:\ProgramData\Honeywell\Experion PKS\EhpmImport*.log" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ErrorHandling\" 
+================================================================================== 
+C:\ProgramData\Honeywell\Experion PKS\EhpmImport.log
+C:\ProgramData\Honeywell\Experion PKS\EhpmImport0.log
+C:\ProgramData\Honeywell\Experion PKS\EhpmImport1.log
+C:\ProgramData\Honeywell\Experion PKS\EhpmImport2.log
+C:\ProgramData\Honeywell\Experion PKS\EhpmImport3.log
+C:\ProgramData\Honeywell\Experion PKS\EhpmImport4.log
+        6 file(s) copied.
+ 
+Tue 12/09/2025 13:41:46.17 : get CreateSQLObject logs 
+================================================================================== 
+===== 13:41:46.20 : copy /y "C:\ProgramData\Honeywell\\Experion PKS\Server\data\CreateSQLObject*.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\CreateSQL-Logs\" 
+================================================================================== 
+C:\ProgramData\Honeywell\\Experion PKS\Server\data\CreateSQLObjectdasconfig.txt
+C:\ProgramData\Honeywell\\Experion PKS\Server\data\CreateSQLObjectemsevents.txt
+C:\ProgramData\Honeywell\\Experion PKS\Server\data\CreateSQLObjecthwreports.txt
+C:\ProgramData\Honeywell\\Experion PKS\Server\data\CreateSQLObjecthwsystem.txt
+        4 file(s) copied.
+ 
+Tue 12/09/2025 13:41:47.22 : get SQL Error log files 
+Tue 12/09/2025 13:41:52.62 : reldmp output 
+Tue 12/09/2025 13:41:55.13 : file version information 
+Tue 12/09/2025 13:42:11.14 : get Experion Performance Logs 
+Tue 12/09/2025 13:42:34.44 : *** Additional data collection ... *** 
+Tue 12/09/2025 13:42:34.46 : . net time check 
+Tue 12/09/2025 13:42:34.49 : * Experion data * 
+Tue 12/09/2025 13:42:34.51 : . create crash dumps list 
+Tue 12/09/2025 13:42:34.55 : "dir /o-d /s C:\*.dmp >> "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\CrashDumps\_CrashDumpsList.txt"" 
+Tue 12/09/2025 13:42:36.30 : . filfrag output 
+Tue 12/09/2025 13:42:39.14 : . copy .\mapping\tps.xml 
+================================================================================== 
+===== 13:42:39.17 : copy /y "C:\ProgramData\Honeywell\Experion PKS\Server\data\mapping\tps.xml" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\_mapping.tps.xml" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:42:40.15 : . get mapping xml files 
+Tue 12/09/2025 13:42:45.41 : . get server scripts xml files 
+Tue 12/09/2025 13:42:46.20 : . lisscn output 
+Tue 12/09/2025 13:43:01.22 : . dsasublist 
+Tue 12/09/2025 13:43:03.15 : . dsa clients 
+Tue 12/09/2025 13:43:05.12 : . gda dynamic scanning 
+Tue 12/09/2025 13:43:07.17 : . crash control registry settings 
+Tue 12/09/2025 13:43:07.56 : . Recover OS settings 
+Tue 12/09/2025 13:43:08.24 : . get server dual status 
+Tue 12/09/2025 13:43:10.22 : . get console station status 
+Tue 12/09/2025 13:43:12.29 : . ps output 
+Tue 12/09/2025 13:43:14.27 : . Experion shheap 1 check 
+Tue 12/09/2025 13:43:17.16 : . Experion shheap 2 dump /dual_q heap/ 
+Tue 12/09/2025 13:43:19.20 : . list disk resident heap files 
+Tue 12/09/2025 13:43:19.22 : . copy station.ini file 
+================================================================================== 
+===== 13:43:19.26 : copy /y "C:\ProgramData\Honeywell\Experion PKS\Client\Station\station.ini" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\_station.ini" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:43:20.12 : . collect station configuration files 
+================================================================================== 
+===== 13:43:24.44 : copy /y "\\lcn01esvta\c$\ProgramData\Honeywell\Experion PKS\Client\Station\WaterIcon.stn" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\_WaterIcon.stn" 
+================================================================================== 
+        1 file(s) copied.
+ 
+================================================================================== 
+===== 13:43:25.13 : copy /y "C:\ProgramData\Honeywell\Experion PKS\Client\Station\Default.stn" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\_Default.stn" 
+================================================================================== 
+        1 file(s) copied.
+ 
+================================================================================== 
+===== 13:43:26.22 : copy /y "c:\programdata\honeywell\experion pks\client\station\defaultb.stn" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\_Defaultb.stn" 
+================================================================================== 
+        1 file(s) copied.
+ 
+================================================================================== 
+===== 13:43:27.21 : copy /y "C:\ProgramData\Honeywell\Experion PKS\Client\Station\LCN01ESVTA.stn" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\_LCN01ESVTA.stn" 
+================================================================================== 
+        1 file(s) copied.
+ 
+================================================================================== 
+===== 13:43:28.20 : copy /y "C:\ProgramData\Honeywell\Experion PKS\Client\Station\Rotary.stn" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\_Rotary.stn" 
+================================================================================== 
+        1 file(s) copied.
+ 
+================================================================================== 
+===== 13:43:29.18 : copy /y "c:\programdata\honeywell\experion pks\client\station\rotarya.stn" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\_rotarya.stn" 
+================================================================================== 
+        1 file(s) copied.
+ 
+================================================================================== 
+===== 13:43:30.17 : copy /y "C:\ProgramData\Honeywell\Experion PKS\Client\Station\ServerB.stn" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\_ServerB.stn" 
+================================================================================== 
+        1 file(s) copied.
+ 
+================================================================================== 
+===== 13:43:32.62 : copy /y "C:\ProgramData\Honeywell\Experion PKS\Client\MenusAndToolbars\default.stb" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\_default.stb" 
+================================================================================== 
+        1 file(s) copied.
+ 
+================================================================================== 
+===== 13:43:33.20 : copy /y "C:\ProgramData\Honeywell\Experion PKS\Client\MenusAndToolbars\fccu_singlemon_multiwindow _520.stb" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\_fccu_singlemon_multiwindow _520.stb" 
+================================================================================== 
+        1 file(s) copied.
+ 
+================================================================================== 
+===== 13:43:34.19 : copy /y "C:\ProgramData\Honeywell\Experion PKS\Client\MenusAndToolbars\Water_icon-est_multiwindow_520.stb" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\_Water_icon-est_multiwindow_520.stb" 
+================================================================================== 
+        1 file(s) copied.
+ 
+================================================================================== 
+===== 13:43:36.64 : copy /y "C:\ProgramData\Honeywell\Experion PKS\Client\MenusAndToolbars\\DisplayGroupLinks.xml" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\_DisplayGroupLinks.xml" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:43:38.25 : . chkem /tpsmappings 
+Tue 12/09/2025 13:43:40.31 : . Backbuild history assignments 
+================================================================================== 
+===== 13:43:40.35 : bckbld -np -nt -ng -ns -out "C:\Users\EXPERI~1.000\AppData\Local\Temp\_hist_scada.txt" 
+================================================================================== 
+Initializing tag cache, Please Wait ....
+Please Wait ....
+ BCKBLD: invalid history parameter  32764  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32763  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32757  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32756  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32755  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32754  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32753  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32760  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32750  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32755  on point 
+  70TRIM_2                                                                      
+      
+ BCKBLD: invalid history parameter  32756  on point 
+  70TRIM_3                                                                      
+      
+ BCKBLD: invalid history parameter  32758  on point 
+  70TRIM_4                                                                      
+      
+NUMBER OF POINTS SELECTED =   21805
+NUMBER OF RECORDS PRINTED =   22084
+BCKBLD: output successful to C:\Users\EXPERI~1.000\AppData\Local\Temp\_hist_scada.txt
+ 
+================================================================================== 
+===== 13:43:43.17 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\_hist_scada.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\_hist_scada.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+================================================================================== 
+===== 13:43:44.15 : bckbld -np -nt -ng -ns -tag CDA -out "C:\Users\EXPERI~1.000\AppData\Local\Temp\_hist_cda.txt" 
+================================================================================== 
+Initializing tag cache, Please Wait ....
+Please Wait ....
+NUMBER OF POINTS SELECTED =     629
+NUMBER OF RECORDS PRINTED =       0
+BCKBLD: output successful to C:\Users\EXPERI~1.000\AppData\Local\Temp\_hist_cda.txt
+ 
+================================================================================== 
+===== 13:43:46.13 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\_hist_cda.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\_hist_cda.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+================================================================================== 
+===== 13:43:47.21 : bckbld -np -nt -ng -ns -tag RDA -out "C:\Users\EXPERI~1.000\AppData\Local\Temp\_hist_dsa.txt" 
+================================================================================== 
+Initializing tag cache, Please Wait ....
+Please Wait ....
+NUMBER OF POINTS SELECTED =      14
+NUMBER OF RECORDS PRINTED =       0
+BCKBLD: output successful to C:\Users\EXPERI~1.000\AppData\Local\Temp\_hist_dsa.txt
+ 
+================================================================================== 
+===== 13:43:49.21 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\_hist_dsa.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\_hist_dsa.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+================================================================================== 
+===== 13:43:50.19 : bckbld -np -nt -ng -ns -tag PSA -out "C:\Users\EXPERI~1.000\AppData\Local\Temp\_hist_psa.txt" 
+================================================================================== 
+Initializing tag cache, Please Wait ....
+Please Wait ....
+ BCKBLD: invalid history parameter  32764  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32763  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32757  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32756  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32755  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32754  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32753  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32760  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32750  on point 
+  75PRUMSG                                                                      
+      
+ BCKBLD: invalid history parameter  32755  on point 
+  70TRIM_2                                                                      
+      
+ BCKBLD: invalid history parameter  32756  on point 
+  70TRIM_3                                                                      
+      
+ BCKBLD: invalid history parameter  32758  on point 
+  70TRIM_4                                                                      
+      
+NUMBER OF POINTS SELECTED =   19952
+NUMBER OF RECORDS PRINTED =   20765
+BCKBLD: output successful to C:\Users\EXPERI~1.000\AppData\Local\Temp\_hist_psa.txt
+ 
+================================================================================== 
+===== 13:43:53.20 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\_hist_psa.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\_hist_psa.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+Tue 12/09/2025 13:43:54.16 : . reg query HKLM_SOFTWARE_Classes_Experion\ 
+Tue 12/09/2025 13:43:55.96 : . check files in Abstract folder for Zone.Identifier stream data 
+================================================================================== 
+===== 13:43:59.22 : move /y C:\Users\EXPERI~1.000\AppData\Local\Temp\_Zone.Identifier.txt "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\" 
+================================================================================== 
+        1 file(s) moved.
+ 
+Tue 12/09/2025 13:44:00.18 : . get system station configuration files  /Factory.stn, etc./ 
+================================================================================== 
+===== 13:44:00.21 : copy /y "C:\Program Files (x86)\Honeywell\Experion PKS\Client\Station\Default.stn" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\@Default.stn" 
+================================================================================== 
+        1 file(s) copied.
+ 
+================================================================================== 
+===== 13:44:01.22 : copy /y "C:\Program Files (x86)\Honeywell\Experion PKS\Client\Station\Factory.stn" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\@Factory.stn" 
+================================================================================== 
+        1 file(s) copied.
+ 
+================================================================================== 
+===== 13:44:02.20 : copy /y "C:\Program Files (x86)\Honeywell\Experion PKS\Client\Station\PanelStation_Default.stn" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\@PanelStation_Default.stn" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:44:03.27 : . plexus -printconfig 
+Tue 12/09/2025 13:44:04.17 : . copy flbkup.def file 
+================================================================================== 
+===== 13:44:04.20 : copy /y "C:\ProgramData\Honeywell\Experion PKS\Server\data\flbkup.def" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\_flbkup.def" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:44:05.17 : . search read only files in history archives 
+Tue 12/09/2025 13:44:05.29 : . search read only files in "C:\ProgramData\Honeywell\Experion PKS\Server\data\Archive" 
+Tue 12/09/2025 13:44:05.32 : . search hidden files in "C:\ProgramData\Honeywell\Experion PKS\Server\data\Archive" 
+Tue 12/09/2025 13:44:05.34 : . search system files in "C:\ProgramData\Honeywell\Experion PKS\Server\data\Archive" 
+Tue 12/09/2025 13:44:05.36 : . search read only files in "C:\ProgramData\Honeywell\Experion PKS\Server\data\RestoredArchives" 
+Tue 12/09/2025 13:44:05.36 : . search hidden files in "C:\ProgramData\Honeywell\Experion PKS\Server\data\RestoredArchives" 
+Tue 12/09/2025 13:44:05.37 : . search system files in "C:\ProgramData\Honeywell\Experion PKS\Server\data\RestoredArchives" 
+Tue 12/09/2025 13:44:05.48 : . fixduplicates -report 
+================================================================================== 
+===== 13:44:05.52 : fixduplicates -report "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerRunDirectory\_duplicates.txt" 
+================================================================================== 
+
+Searching for duplicate points ...
+
+Total number of points processed: 22692
+Errors: 0
+Duplicate points: 0
+Unimplemented points: 0
+Points with a blank point name: 0
+ 
+Tue 12/09/2025 13:44:08.33 : . Experion GDA Table output 
+================================================================================== 
+===== 13:44:08.36 : fildmp -DUMP -FILE "C:\Users\EXPERI~1.000\AppData\Local\Temp\_gdatbldump.txt" -FILENUM 5 -RECORDS 1,1001 -FORMAT HEX 
+================================================================================== 
+
+System status is BACK-UP & SYNCD
+Reading from memory. Writing to memory,disc.
+
+ 
+================================================================================== 
+===== 13:44:10.68 : move "C:\Users\EXPERI~1.000\AppData\Local\Temp\_gdatbldump.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\_gdatbldump.txt" 
+================================================================================== 
+        1 file(s) moved.
+ 
+Tue 12/09/2025 13:44:11.13 : . list HPSInstall temp folder 
+Tue 12/09/2025 13:44:12.23 : . export Experion operator settings 
+================================================================================== 
+===== 13:44:12.27 : databld -export -def OPERATORS -out "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerRunDirectory\_OPERATORS.xml" 
+================================================================================== 
+
+Please run utility on primary server 
+Tue 12/09/2025 13:44:16.17 : . export File Replication settings 
+================================================================================== 
+===== 13:44:16.21 : databld -export -def FILEREPLICATION -out "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerRunDirectory\_FILEREPLICATION.xml" 
+================================================================================== 
+
+Please run utility on primary server 
+Tue 12/09/2025 13:44:18.20 : . find system/hidden files in HwProgramData 
+Tue 12/09/2025 13:44:21.78 : . Quick Builder Log Files 
+================================================================================== 
+===== 13:44:21.84 : copy /y "C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\*.log" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\SloggerLogs\_QBLogFiles\Default\" 
+================================================================================== 
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\Action.log
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\ConcurrencyLog.log
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\Debug.log
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\Download.log
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\EFM.log
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\Error.log
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\Export.log
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\Import.log
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\Migration.log
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\QB Application.log
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\QBWPFUtility_GUI_App_lib.log
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\QBWPFUtility_QB_Interfacing.log
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\TemplateLibrary.log
+C:\ProgramData\Honeywell\Quick Builder\LogFiles\Default\Upload.log
+       14 file(s) copied.
+ 
+Tue 12/09/2025 13:44:23.20 : . get SequencerStepFile.xml 
+================================================================================== 
+===== 13:44:23.22 : copy /y "C:\Program Files (x86)\Honeywell\Experion PKS\Install\SequencerStepFile.xml" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerSetupDirectory\" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:44:24.30 : . certtool /SCADA:status 
+Tue 12/09/2025 13:44:26.24 : . Console Station History Config Utility 
+Tue 12/09/2025 13:44:28.17 : . get TPS log files 
+================================================================================== 
+===== 13:44:28.21 : copy /y "C:\ProgramData\Honeywell\TPSLogs\*.log" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_TPSLogs" 
+================================================================================== 
+C:\ProgramData\Honeywell\TPSLogs\lcnp4emulator.log
+C:\ProgramData\Honeywell\TPSLogs\TPNEntityBuilder.log
+        2 file(s) copied.
+ 
+Tue 12/09/2025 13:44:29.20 : . TPN Dumps list/get 
+Tue 12/09/2025 13:44:30.56 : . TPSLogs - FTLog 
+================================================================================== 
+===== 13:44:30.60 : copy /y "C:\ProgramData\Honeywell\FTLog\FTG_SS.log*" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_TPSLogs" 
+================================================================================== 
+C:\ProgramData\Honeywell\FTLog\FTG_SS.log
+C:\ProgramData\Honeywell\FTLog\FTG_SS.log.old
+        2 file(s) copied.
+ 
+Tue 12/09/2025 13:44:31.11 : . TPSLogs - ELCN_HELPER_LOG 
+================================================================================== 
+===== 13:44:31.14 : copy /y "C:\ProgramData\Honeywell\ELCN_HELPER_LOG\ELCN_Helper_Log.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_TPSLogs" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:44:32.11 : . TPSLogs - TPNBU 
+Tue 12/09/2025 13:44:33.17 : . directory qdb 
+Tue 12/09/2025 13:44:34.26 : . crtdmp output 
+Tue 12/09/2025 13:44:34.39 : . prfdmp output 
+Tue 12/09/2025 13:44:36.14 : . copy ver_rev.txt 
+================================================================================== 
+===== 13:44:36.16 : copy /y "C:\Program Files (x86)\Honeywell\Experion PKS\Engineering Tools\system\bin\ver_rev.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Migration\" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:44:37.14 : . EMS Sync related files 
+================================================================================== 
+===== 13:44:37.17 : copy /y "C:\ProgramData\Honeywell\Experion PKS\Server\data\bcp_*.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\ServerDataDirectory\" 
+================================================================================== 
+C:\ProgramData\Honeywell\Experion PKS\Server\data\bcp_error.txt
+C:\ProgramData\Honeywell\Experion PKS\Server\data\bcp_out.txt
+        2 file(s) copied.
+ 
+Tue 12/09/2025 13:44:38.13 : . get .\Abstract\CSS files 
+================================================================================== 
+===== 13:44:38.15 : xcopy /s/i/q/y/H "C:\ProgramData\Honeywell\Experion PKS\Client\Abstract\CSS\*.css" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\CSS\" 
+================================================================================== 
+95 File(s) copied
+ 
+Tue 12/09/2025 13:44:39.11 : . get .\Abstract\Scripts\*.js files 
+================================================================================== 
+===== 13:44:39.13 : xcopy /s/i/q/y/H "C:\ProgramData\Honeywell\Experion PKS\Client\Abstract\Scripts\*.js" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\Scripts\" 
+================================================================================== 
+5 File(s) copied
+ 
+Tue 12/09/2025 13:44:40.16 : . get .\Abstract\Scripts\*.vbs files 
+================================================================================== 
+===== 13:44:40.18 : xcopy /s/i/q/y/H "C:\ProgramData\Honeywell\Experion PKS\Client\Abstract\Scripts\*.vbs" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\Station-logs\Scripts\" 
+================================================================================== 
+File not found - *.vbs
+0 File(s) copied
+ 
+Tue 12/09/2025 13:44:41.17 : * Network configuration data * 
+Tue 12/09/2025 13:44:41.19 : . netstat connections 
+Tue 12/09/2025 13:44:42.20 : . ipconfig output 
+Tue 12/09/2025 13:44:44.17 : . netsh config/stats 
+Tue 12/09/2025 13:45:01.17 : . nslookup 
+Tue 12/09/2025 13:45:02.25 : . route / arp output 
+Tue 12/09/2025 13:45:04.15 : . nbtstat 
+Tue 12/09/2025 13:45:06.19 : . firewall rules 
+Tue 12/09/2025 13:45:09.16 : . net commands 
+Tue 12/09/2025 13:45:26.21 : . wmic nic/nicconfig get 
+Tue 12/09/2025 13:45:29.11 : . msft_providers 
+Tue 12/09/2025 13:45:30.14 : . get NetTcpPortSharing config file 
+================================================================================== 
+===== 13:45:30.35 : copy /y "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\SMSvcHost.exe.config" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_Network\" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:45:31.11 : . get clientaccesspolicy.xml for Silverlight 
+Tue 12/09/2025 13:45:32.17 : . get FTE config files 
+================================================================================== 
+===== 13:45:32.20 : copy /y "C:\ProgramData\Honeywell\ProductConfig\FTE\FTEinstall.inf" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\FTELogs\_FTEinstall.inf" 
+================================================================================== 
+        1 file(s) copied.
+ 
+================================================================================== 
+===== 13:45:33.17 : copy /y "C:\ProgramData\Honeywell\ProductConfig\FTE\fteconfig.inf" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\FTELogs\_fteConfig.inf" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:45:34.14 : . net share folder permissions 
+Tue 12/09/2025 13:46:20.17 : * Windows data * 
+Tue 12/09/2025 13:46:20.20 : . SystemInfo.exe output 
+Tue 12/09/2025 13:46:26.12 : . whoami - currently logged in user 
+Tue 12/09/2025 13:46:26.15 : . scheduled task - query 
+Tue 12/09/2025 13:46:29.20 : . collecting GPResult output 
+Tue 12/09/2025 13:46:29.23 : . collecting NLTEST Domain information 
+Tue 12/09/2025 13:46:33.21 : . get power configuration settings 
+Tue 12/09/2025 13:46:36.18 : . reg query power settings 
+Tue 12/09/2025 13:46:37.00 : . collecting Quick Fix Engineering information /Hotfixes/ 
+================================================================================== 
+===== 13:46:37.03 : wmic /output:"C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\GeneralSystemInfo\_Hotfixes.txt" qfe list full /format:table 
+================================================================================== 
+ 
+Tue 12/09/2025 13:46:41.19 : . get SUIT logs 
+================================================================================== 
+===== 13:46:41.22 : copy /y "C:\ProgramData\Honeywell\SUIT\*.log" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_SUIT\" 
+================================================================================== 
+C:\ProgramData\Honeywell\SUIT\Manage_Experion_Services.log
+C:\ProgramData\Honeywell\SUIT\RestartServices.log
+C:\ProgramData\Honeywell\SUIT\ResumeBatFile.log
+        3 file(s) copied.
+ 
+================================================================================== 
+===== 13:46:42.21 : copy /y "C:\ProgramData\Honeywell\SUIT\*.txt" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_SUIT\" 
+================================================================================== 
+C:\ProgramData\Honeywell\SUIT\honeywell_mspatches.txt
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:46:43.19 : . WindowsUpdate.log 
+================================================================================== 
+===== 13:46:43.22 : copy /y "C:\Windows\WindowsUpdate.log" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_SUIT\" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:46:44.18 : . get Windows CBS logs 
+================================================================================== 
+===== 13:46:44.22 : copy /y "C:\Windows\Logs\CBS\CBS*.log" "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\_SUIT\" 
+================================================================================== 
+C:\Windows\Logs\CBS\CBS.log
+C:\Windows\Logs\CBS\CbsPersist_20251205204330.log
+C:\Windows\Logs\CBS\CbsPersist_20251209194621.log
+        3 file(s) copied.
+ 
+Tue 12/09/2025 13:46:46.12 : . WMI Configuration 
+Tue 12/09/2025 13:46:50.17 : . secedit /export /cfg 
+                                                                           
+The task has completed successfully.
+See log %windir%\security\logs\scesrv.log for detail info.
+Tue 12/09/2025 13:46:51.19 : . reg query RPC settings 
+Tue 12/09/2025 13:46:51.58 : . reg query Microsoft\OLE 
+Tue 12/09/2025 13:46:51.74 : . reg query Graphics Drivers 
+Tue 12/09/2025 13:46:52.37 : . reg query services 
+Tue 12/09/2025 13:46:58.16 : . acronis registry settings 
+Tue 12/09/2025 13:46:58.33 : . reg query misc 
+Tue 12/09/2025 13:46:59.21 : . Windows Time status/settings 
+Tue 12/09/2025 13:47:01.36 : . get GDI Handles Count 
+Tue 12/09/2025 13:47:03.14 : . get members of Experion groups 
+Tue 12/09/2025 13:47:15.12 : . get HKEY_USERS Reg Values 
+Tue 12/09/2025 13:47:24.14 : . get mngr account information - Local Group Memberships 
+Tue 12/09/2025 13:47:25.18 : . query mngr account Excel registry settings 
+Tue 12/09/2025 13:47:25.57 : . MiniFilter drivers 
+Tue 12/09/2025 13:47:28.24 : . Experion ACL Verify 
+Tue 12/09/2025 13:47:28.26 : . Experion ACL Verify - HKLM:\SOFTWARE\Honeywell\ 
+Tue 12/09/2025 13:47:28.93 : . Experion ACL Verify - HKLM:\SOFTWARE\Wow6432Node\Honeywell\ 
+Tue 12/09/2025 13:47:30.32 : . Experion ACL Verify - "C:\ProgramData\Honeywell\Experion PKS" 
+Tue 12/09/2025 13:47:34.17 : . Experion ACL Verify - "C:\Program Files (x86)\Honeywell\Experion PKS" 
+Tue 12/09/2025 13:47:34.21 : . diskdrive status 
+Tue 12/09/2025 13:47:34.33 : . tasklist /verbose 
+Tue 12/09/2025 13:47:35.15 : . cmd query output 
+Tue 12/09/2025 13:47:41.21 : . export additional Windows Event Logs 
+Tue 12/09/2025 13:47:48.15 : . export Windows Event Logs in CSV 
+Tue 12/09/2025 13:48:19.39 : . MSPower_DeviceEnable query 
+Tue 12/09/2025 13:48:20.18 : . check pending reboot 
+Tue 12/09/2025 13:48:21.14 : . DISM Check Health 
+Tue 12/09/2025 13:48:22.23 : . vssadmin list report 
+Tue 12/09/2025 13:48:33.22 : . omreport info 
+Tue 12/09/2025 13:49:20.12 : . hdd defrag analysis 
+Tue 12/09/2025 13:49:28.21 : . reg query HKCU\Control Panel 
+Tue 12/09/2025 13:49:28.46 : . reg query Internet Settings 
+Tue 12/09/2025 13:49:30.38 : . reg query Installed Components 
+Tue 12/09/2025 13:49:30.57 : . Windows Policies 
+Tue 12/09/2025 13:49:31.20 : . fetching environment Variables 
+Tue 12/09/2025 13:49:32.20 : . Memory Management Agent 
+13:49:32.25 mDCT++: " [RunPS] .. calling: PowerShell -command Get-MMAgent" 
+Tue 12/09/2025 13:49:34.16 : . get Physical Disk information 
+13:49:34.22 mDCT++: " [RunPS] .. calling: PowerShell -command Get-PhysicalDisk" 
+Tue 12/09/2025 13:49:38.16 : . fsutil behavior query 
+Tue 12/09/2025 13:49:40.16 : . Windows .\etc\services file copy 
+================================================================================== 
+===== 13:49:40.18 : copy /y C:\Windows\System32\drivers\etc\services "C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828\GeneralSystemInfo\" 
+================================================================================== 
+        1 file(s) copied.
+ 
+Tue 12/09/2025 13:49:41.25 : * MS SQL queries * 
+Tue 12/09/2025 13:49:41.27 : . select count(*) from NON_ERDB_POINTS_PARAMS 
+Tue 12/09/2025 13:49:41.53 : . get ps_erdb database stats 
+Tue 12/09/2025 13:49:42.87 : . EXEC sp_helplogins 
+Tue 12/09/2025 13:49:43.87 : . SELECT name, type_desc, is_disabled FROM sys.server_principals 
+Tue 12/09/2025 13:49:44.01 : . EXEC sp_who2 
+Tue 12/09/2025 13:49:44.19 : . emsevents sql queries 
+Tue 12/09/2025 13:49:50.04 : . hwreports sql queries 
+Tue 12/09/2025 13:49:51.24 : . Check SQL DB Logs 
+Tue 12/09/2025 13:49:51.63 : . SQL Server Status 
+Tue 12/09/2025 13:49:52.48 : . Querying the SSRS Catalog 
+Tue 12/09/2025 13:49:52.62 : . QBDB database 
+Tue 12/09/2025 13:49:54.24 : .. PowerShell: compressing data C:\temp\mDCT_v1.54\LCN01ESVTB_20251209_133828 - please be patient... 

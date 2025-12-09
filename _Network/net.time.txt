@@ -1,0 +1,344 @@
+
+############################################################
+# hosts file::       102.54.94.97     rhino.acme.com          # source server
+test connection (ping) failed
+
+############################################################
+# hosts file::        38.25.63.10     x.acme.com              # x client host
+test connection (ping) failed
+
+############################################################
+# hosts file::  127.0.0.1       localhost
+Current time at \\127.0.0.1 is 12/9/2025 1:42:43 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:43.462
+
+############################################################
+# hosts file:: 172.20.75.22    LCN01ESVTA    LCN01ESVTA0	# LCN01_ESVTA
+Current time at \\172.20.75.22 is 12/9/2025 1:42:43 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:43.507
+
+############################################################
+# hosts file:: 172.20.75.24    LCN01ESVTB    LCN01ESVTB0	# LCN01_ESVTB
+Current time at \\172.20.75.24 is 12/9/2025 1:42:43 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:43.545
+
+############################################################
+# hosts file:: 172.20.75.26  BIGSCTRLESERVER			# Experion eSERVER
+Current time at \\172.20.75.26 is 12/9/2025 1:42:43 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:43.597
+
+############################################################
+# hosts file:: 172.20.75.49    Safety_Station              	# PCN FSC and Safety Manager Configuration Station
+net : The service has not been started.
+At line:1 char:331
++ ... -Connection $ip -Count 1 -ErrorAction 0) {net time \\$ip 2>&1; 'Local ...
++                                               ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (The service has not been started.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+More help is available by typing NET HELPMSG 2184.
+
+Local Current time: 13:42:43.922
+
+############################################################
+# hosts file:: 172.20.75.48	SafetyStation02            	# PCN FSC and Safety Manager Configuration Station
+Current time at \\172.20.75.48 is 12/9/2025 1:42:43 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:44.056
+
+############################################################
+# hosts file:: 172.20.75.47	Safety_Station47		# PCN FSC and Safety Manager Configuration Station
+Current time at \\172.20.75.47 is 12/9/2025 1:42:44 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:44.226
+
+############################################################
+# hosts file:: 172.20.75.46	Safety_Station46		# PCN FSC and Safety Manager Configuration Station
+test connection (ping) failed
+
+############################################################
+# hosts file:: 172.20.75.40    LCN01EST34                  	# EST Asphalt Console-Asphalt CCR
+Current time at \\172.20.75.40 is 12/9/2025 1:42:47 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:47.857
+
+############################################################
+# hosts file:: 172.20.75.69    LCN01EST40                  	# EST Asphalt Console-Asphalt CCR
+Current time at \\172.20.75.69 is 12/9/2025 1:42:47 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:47.904
+
+############################################################
+# hosts file:: 172.20.75.88	LCN01EST46                  	# EST Asphalt Console-Asphalt PMA Warehouse
+Current time at \\172.20.75.88 is 12/9/2025 1:42:47 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:47.950
+
+############################################################
+# hosts file:: 172.20.75.71    LCN01EST58                  	# EST Asphalt Console-Asphalt Truck Loading Rack
+Current time at \\172.20.75.71 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:47.996
+
+############################################################
+# hosts file:: 172.20.75.50    LCN01EST43			# EST Crude Console
+Current time at \\172.20.75.50 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.049
+
+############################################################
+# hosts file:: 172.20.75.52    LCN01EST44			# EST Crude Console
+Current time at \\172.20.75.52 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.097
+
+############################################################
+# hosts file:: 172.20.75.54    LCN01EST45			# EST Crude Console
+Current time at \\172.20.75.54 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.143
+
+############################################################
+# hosts file:: 172.20.75.84	LCN01EST29			# EST Water Console
+Current time at \\172.20.75.84 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.187
+
+############################################################
+# hosts file:: 172.20.75.86    LCN01EST35                  	# EST Water Console
+Current time at \\172.20.75.86 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.234
+
+############################################################
+# hosts file:: 172.20.75.65    LCN01EST54		    	# EST Engineering Console
+Current time at \\172.20.75.65 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.310
+
+############################################################
+# hosts file:: 172.20.75.56    LCN01EST55			# EST Engineering Console
+Current time at \\172.20.75.56 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.383
+
+############################################################
+# hosts file:: 172.20.75.58    LCN01EST60			# EST Engineering Console
+Current time at \\172.20.75.58 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.462
+
+############################################################
+# hosts file:: 172.20.75.90    LCN01EST07                	# EST Engineering Console
+Current time at \\172.20.75.90 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.534
+
+############################################################
+# hosts file:: 172.20.75.44	LCN01EST48                 	# GUS on ENG console for D4K updates replacement
+Current time at \\172.20.75.44 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.594
+
+############################################################
+# hosts file:: 172.20.75.82    LCN01EST21			# EST Northside Console
+Current time at \\172.20.75.82 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.640
+
+############################################################
+# hosts file:: 172.20.75.83    LCN01EST03			# EST Alky Console
+Current time at \\172.20.75.83 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.683
+
+############################################################
+# hosts file:: 172.20.75.80	LCN01EST14			# EST FCCU Console
+Current time at \\172.20.75.80 is 12/9/2025 1:42:49 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.770
+
+############################################################
+# hosts file:: 172.20.75.41	LCN01EST56			# EST OM&S Orion Console
+Current time at \\172.20.75.41 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.816
+
+############################################################
+# hosts file:: 172.20.75.42	LCN01EST57			# EST OM&S Orion Console
+Current time at \\172.20.75.42 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:48.862
+
+############################################################
+# hosts file:: 172.20.75.63    LCN01APP61                 	# Profit Suite (Advanced Process Control)
+Current time at \\172.20.75.63 is 12/9/2025 1:42:48 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:49.011
+
+############################################################
+# hosts file:: 172.20.75.252	CrudePrnt 	        	# Crude Console HP2500N
+test connection (ping) failed
+
+############################################################
+# hosts file:: 172.20.75.253   ENGCntrlPrnt        		# Engineering Central HP4600N PCL
+test connection (ping) failed
+
+############################################################
+# hosts file:: 172.20.75.254   AsphaltPrnt             	# ASPHALT CONSOLE HP4550N PCL
+test connection (ping) failed
+
+############################################################
+# hosts file:: 172.20.75.60	LCN01ES1			# Crude Console D Heater
+Current time at \\172.20.75.60 is 12/9/2025 1:42:57 PM
+
+The command completed successfully.
+
+Local Current time: 13:42:57.855
+
+############################################################
+# hosts file:: 172.20.77.99	LCN01EMS01			# Demin Mobile Station Wireless Address
+test connection (ping) failed
+
+############################################################
+# hosts file:: 172.20.75.97	LCN01EMS01			# Wired Connection
+net : The service has not been started.
+At line:1 char:331
++ ... -Connection $ip -Count 1 -ErrorAction 0) {net time \\$ip 2>&1; 'Local ...
++                                               ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (The service has not been started.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+More help is available by typing NET HELPMSG 2184.
+
+Local Current time: 13:43:08.364
+
+############################################################
+# hosts file:: 172.20.73.20	PHD				# Shadow Server
+net : System error 5 has occurred.
+At line:1 char:331
++ ... -Connection $ip -Count 1 -ErrorAction 0) {net time \\$ip 2>&1; 'Local ...
++                                               ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (System error 5 has occurred.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Access is denied.
+
+Local Current time: 13:43:08.415
+
+############################################################
+# hosts file:: 172.20.75.27	BIGSCTRLPHD			# PHD Collector
+Current time at \\172.20.75.27 is 12/9/2025 1:43:08 PM
+
+The command completed successfully.
+
+Local Current time: 13:43:08.462
+
+############################################################
+# hosts file:: 172.20.75.29    BIGSCTRLACMS                	# Alarm Config Mngr
+Current time at \\172.20.75.29 is 12/9/2025 1:43:08 PM
+
+The command completed successfully.
+
+Local Current time: 13:43:08.511
+
+############################################################
+# hosts file:: 172.20.74.22    BIGSDMZMNR                 	# ALARM METRICS AND REPORTING SERVER
+test connection (ping) failed
+
+############################################################
+# hosts file:: 172.20.74.24    BIGSINLIK                   	# Doc4000 and Intelatrac
+net : System error 5 has occurred.
+At line:1 char:331
++ ... -Connection $ip -Count 1 -ErrorAction 0) {net time \\$ip 2>&1; 'Local ...
++                                               ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (System error 5 has occurred.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Access is denied.
+
+Local Current time: 13:43:29.124
+
+############################################################
+# hosts file:: 172.20.75.25	BIGSCTRLTRACE			# Trace Server
+Current time at \\172.20.75.25 is 12/9/2025 1:43:29 PM
+
+The command completed successfully.
+
+Local Current time: 13:43:29.283
+
+############################################################
+# hosts file:: 172.20.75.30	BIGSCTRLNAS			# NAS for EBR Backup Storage
+Current time at \\172.20.75.30 is 12/9/2025 1:43:29 PM
+
+The command completed successfully.
+
+Local Current time: 13:43:29.329
+
+############################################################
+# hosts file:: 172.20.75.31	BIGSCTRLEBR			# EBR Server
+Current time at \\172.20.75.31 is 12/9/2025 1:43:29 PM
+
+The command completed successfully.
+
+Local Current time: 13:43:29.480

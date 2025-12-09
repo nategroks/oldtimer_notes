@@ -1,0 +1,18 @@
+================================================================================== 
+===== 13:44:29.21 : dir "C:\ProgramData\Honeywell\TPSLogs\TPNDumps\" 
+================================================================================== 
+ Volume in drive C has no label.
+ Volume Serial Number is BE90-BA94
+
+ Directory of C:\ProgramData\Honeywell\TPSLogs\TPNDumps
+
+05/10/2024  10:08 AM    <DIR>          .
+05/10/2024  10:08 AM    <DIR>          ..
+05/10/2024  10:08 AM         1,209,217 dump1.zip
+05/10/2024  09:46 AM         1,209,205 dump2.zip
+05/10/2024  09:23 AM         1,209,398 dump3.zip
+05/10/2024  09:01 AM         1,209,452 dump4.zip
+05/10/2024  08:39 AM         1,209,843 dump5.zip
+               5 File(s)      6,047,115 bytes
+               2 Dir(s)  64,658,649,088 bytes free
+ 

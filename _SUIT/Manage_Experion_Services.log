@@ -1,0 +1,114 @@
+
+---------------------------------------------------------
+Started at - 5/7/2024 2:03:21 PM
+---------------------------------------------------------
+
+---------------------------------------------------------
+Started at - 5/7/2024 2:03:21 PM
+---------------------------------------------------------
+The 'SamServ' has been stopped successfully
+The 'SamServ' has been disabled successfully
+The 'pscdasrv' has been stopped successfully
+The 'pscdasrv' has been disabled successfully
+The 'SysRep' has been stopped successfully
+The 'SysRep' has been disabled successfully
+The 'Experion PKS eNAP Server' has been stopped successfully
+The 'Experion PKS eNAP Server' has been disabled successfully
+The 'Experion PKS Search Cache Builder' has been stopped successfully
+The 'Experion PKS Search Cache Builder' has been disabled successfully
+The 'Experion PKS Browser Support Service' has been stopped successfully
+The 'Experion PKS Browser Support Service' has been disabled successfully
+The 'Experion PKS Browser Orchestration' has been stopped successfully
+The 'Experion PKS Browser Orchestration' has been disabled successfully
+The 'ErServer' has been stopped successfully
+The 'ErServer' has been disabled successfully
+The 'EMDBServer' has been stopped successfully
+The 'EMDBServer' has been disabled successfully
+The 'dtlrsrv' has been stopped successfully
+The 'dtlrsrv' has been disabled successfully
+The 'ChkPtSrv' is already stopped
+The 'ChkPtSrv' has been disabled successfully
+The 'cdasp' has been stopped successfully
+The 'cdasp' has been disabled successfully
+The 'HSCSERVER_System' has been stopped successfully
+The 'HSCSERVER_System' has been disabled successfully
+The 'gclnamesrv' has been stopped successfully
+The 'gclnamesrv' has been disabled successfully
+The 'bootpsrv' has been stopped successfully
+The 'bootpsrv' has been disabled successfully
+
+---------------------------------------------------------
+Started at - 5/7/2024 2:45:45 PM
+---------------------------------------------------------
+
+---------------------------------------------------------
+Started at - 5/7/2024 2:45:45 PM
+---------------------------------------------------------
+The 'SamServ' is already stopped
+The 'SamServ' is already disabled
+The 'pscdasrv' is already stopped
+The 'pscdasrv' is already disabled
+The 'SysRep' is already stopped
+The 'SysRep' is already disabled
+The 'Experion PKS eNAP Server' is already stopped
+The 'Experion PKS eNAP Server' is already disabled
+The 'Experion PKS Search Cache Builder' is already stopped
+The 'Experion PKS Search Cache Builder' is already disabled
+The 'Experion PKS Browser Support Service' is already stopped
+The 'Experion PKS Browser Support Service' is already disabled
+The 'Experion PKS Browser Orchestration' is already stopped
+The 'Experion PKS Browser Orchestration' is already disabled
+The 'ErServer' is already stopped
+The 'ErServer' is already disabled
+The 'EMDBServer' is already stopped
+The 'EMDBServer' is already disabled
+The 'dtlrsrv' is already stopped
+The 'dtlrsrv' is already disabled
+The 'ChkPtSrv' is already stopped
+The 'ChkPtSrv' is already disabled
+The 'cdasp' is already stopped
+The 'cdasp' is already disabled
+The 'HSCSERVER_System' is already stopped
+The 'HSCSERVER_System' is already disabled
+The 'gclnamesrv' is already stopped
+The 'gclnamesrv' is already disabled
+The 'bootpsrv' is already stopped
+The 'bootpsrv' is already disabled
+
+---------------------------------------------------------
+Started at - 5/7/2024 3:37:48 PM
+---------------------------------------------------------
+
+---------------------------------------------------------
+Started at - 5/7/2024 3:37:48 PM
+---------------------------------------------------------
+The 'SamServ' has been Enabled successfully
+Exception - Cannot start service SamServ on computer '.'.
+The 'pscdasrv' has been Enabled successfully
+Exception - Cannot start service pscdasrv on computer '.'.
+The 'SysRep' has been Enabled successfully
+Exception - Cannot start service SysRep on computer '.'.
+The 'Experion PKS eNAP Server' has been Enabled successfully
+Exception - Cannot start service Experion PKS eNAP Server on computer '.'.
+The 'Experion PKS Search Cache Builder' has been Enabled successfully
+Exception - Cannot start service Experion PKS Search Cache Builder on computer '.'.
+The 'Experion PKS Browser Support Service' has been Enabled successfully
+Exception - Cannot start service Experion PKS Browser Support Service on computer '.'.
+The 'Experion PKS Browser Orchestration' has been Enabled successfully
+Exception - Cannot start service Experion PKS Browser Orchestration on computer '.'.
+The 'ErServer' has been Enabled successfully
+Exception - Cannot start service ErServer on computer '.'.
+The 'EMDBServer' has been Enabled successfully
+Exception - Cannot start service EMDBServer on computer '.'.
+The 'dtlrsrv' has been Enabled successfully
+Exception - Cannot start service dtlrsrv on computer '.'.
+The 'ChkPtSrv' has been Enabled successfully
+Exception - Cannot start service ChkPtSrv on computer '.'.
+The 'cdasp' has been Enabled successfully
+Exception - Cannot start service cdasp on computer '.'.
+The 'HSCSERVER_System' has been Enabled successfully
+Exception - Cannot start service HSCSERVER_System on computer '.'.
+The 'gclnamesrv' has been Enabled successfully
+Exception - Cannot start service gclnamesrv on computer '.'.
+The 'bootpsrv' has been Enabled successfully
+Exception - Cannot start service bootpsrv on computer '.'.

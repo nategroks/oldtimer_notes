@@ -7,7 +7,7 @@ Short answer: partly.
 | What is on HM51/55 | Can it move to HM57? | How |
 |---|---|---|
 | User volumes, area DBs (&3np), CL objects (&4np/&9np), schematics, IDFs, logs | Yes | BACKUP PN:nn then RESTORE, or CPV volume by volume, after HM57 is rebuilt. |
-| History group definitions (which points, which group) | Yes, but only via IDF/.EB files reloaded through HM History Groups | APL files from another HM will not restore into a reconfigured HM (ERM 7.7, caution). |
+| History group definitions (which points, which group) | Yes, but only as .EB or IDF files reloaded through HM History Groups | APL files from another HM will not restore into a reconfigured HM (ERM 7.7, caution). |
 | Continuous history data (!0np/!1np) | No | Cannot be merged into another HM. Cannot be restored into any HM whose Continuous History config changed (ERM 7.7.1, Table 7-17). Expanding HM57's history config also destroys HM57's own history. |
 | Journals (!2np) | No, if journal assignment changes | Print or archive what you need first. |
 | Checkpoint volumes (&5np to &8np) | Reassign, do not copy | Reassign in Volume Configuration, then demand-checkpoint every affected node after HM57 is up. |
@@ -17,68 +17,279 @@ Root cause of the "no": history groups and journals are keyed to the HM node pai
 
 ELCN does not change any of this. An ELCN HM still loads &HMO/&HMI, still lives in the NCF Volume Configuration, and still has the same NCF Checker limits. What ELCN gives you is (a) large emulated drives on the EST for backups instead of Zip/Bernoulli media and (b) the HM's disk is a file on the ELCN node, so a whole-disk copy of HM57 before the F6 is a byte-exact rollback. Verify the ELCN HM disk-file backup/restore steps and redundancy behaviour against the ELCN Planning & Implementation guide / CRG-690, they are not in the manuals in this repo.
 
+---
+
+## Conventions used below
+
+- **CTL+HELP** = Engineering Main Menu (Universal or Engineer personality, ENGR key lock). Targets referenced: SYSTEM STATUS, COMMAND PROCESSOR, SUPPORT UTILITIES, VOLUME CONFIGURATION, LCN NODES, HM HISTORY GROUPS, SYSTEM WIDE VALUES.
+- **HM Status display** = SYSTEM STATUS > select the HM node box > NODE STATUS (or SYSTEM STATUS > HISTORY MODULES). Targets: SHUTDOWN, LOAD/DUMP, HIST COLLECT.
+- **Function keys in the Configurator**: CTL+F1 = CHECK, CTL+F2 = INSTALL, F4 = PRINT, CTL+F6 = INITIALIZE HM, CTL+PAGE BACK = previous menu.
+- **Command Processor** = CTL+HELP > COMMAND PROCESSOR. `nn` = HM node number (51, 55, 57). `np` = node pair number from the HM PAIR SELECTION MENU. `$Fn` = drive (Zip or EST emulated drive). `$Pn` = printer.
+- Device ID rule: use `PN:nn>` (not `NET>`) whenever the HM is running &HMI. `NET>` only resolves against HMs running &HMO.
+- `-D` on CP/CPV lists each file as copied. `-A` on CPV includes all directories. `=` on CP keeps the source file name and suffix.
+
+---
+
 ## Phase 0 - Discovery (before touching anything)
 
-1. DO $Pn, PD ON, then LSV PN:51, LSV PN:55, LSV PN:57. Keep the printouts; you rebuild directories from them.
-2. Find the system HM: which HM holds &ASY (&0np), &1np, &2np, !4np. If it is 51 or 55, this is a system HM move.
-3. Print (F4) every Volume Configuration page for node pairs 51, 55, 57: Program Image, Areas, Checkpoint (3 pages), Continuous History units/groups and Group Options, Journals, User Volumes.
-4. Load check on the combined HM57:
-   - History groups: 51 + 55 + 57 total must stay within 150 groups / 3000 points (non-system HM) or 120 groups (system HM). Checker CTRL-F1 warns above 150.
-   - pps by hand: (points per group / save rate seconds) summed over all groups. Target under 50 pps non-system, 40 pps system (ERM 7.2.2).
-   - History for a unit cannot be split across HMs, so units move whole (ERM 7.2.3).
-5. Space check: volume KB and volume count. 14 volumes per drive plus !9np (29 on dual drive).
-6. Downstream: anything that reads history from 51/55 by node (logs, free-format logs, PHD/Experion collection, CL programs with NET>vol paths).
+### 0.1 Print the volume and directory maps
+
+CTL+HELP > COMMAND PROCESSOR:
+
+```
+PD ON
+DO $P1
+LSV PN:51
+LSV PN:55
+LSV PN:57
+STA NET -D
+DO
+```
+
+`LSV` is the same as `LV`. `STA NET -D` gives drive status and virtual volume listing for every HM. The final bare `DO` turns printer output back off. Keep the printouts; you rebuild directories from them in Phase 3.
+
+### 0.2 Find the system HM
+
+On the LSV printout, find which HM holds `&ASY` (in &0np), `&1np` personality images, `&2np` dump, `!4np`. If it is 51 or 55, this is a system HM move as well and HM57 must receive &ASY and the personality files (Phase 3, steps 3.4d and 3.4e).
+
+### 0.3 Print every Volume Configuration page
+
+CTL+HELP > VOLUME CONFIGURATION > HM PAIR SELECTION MENU > select node pair for 51.
+On the VOLUME CONFIGURATION menu display, open each target and press F4 (PRINT) on every page:
+
+- PROGRAM IMAGE VOLUME
+- AREA DATA VOLUME
+- PHYSICAL NODE FOR CHECKPOINT (3 pages, PAGE FWD)
+- CONTINUOUS HISTORY UNIT AND GROUPS (2 pages), then the GROUP OPTIONS target (up to 15 pages), then the HM/UNIT OPTIONS target
+- JOURNALS
+- USER VOLUMES
+
+CTL+PAGE BACK to the pair menu and repeat for node pairs 55 and 57. Press F5 (ABORT) when finished so no work file is left open.
+
+### 0.4 Load check for the combined HM57
+
+- History groups: 51 + 55 + 57 must stay within 150 groups / 3000 points for a non-system HM, 120 groups for a system HM (ERM 7.2.2). CTL+F1 warns above 150 and above 140.
+- pps by hand from the Group Options printouts: for each group, (points in group) / (save rate seconds). Sum all groups. Under 50 pps non-system, under 40 pps system HM.
+- History for one unit cannot be split across HMs (ERM 7.2.3), so units move whole.
+- Volume count: 14 volumes plus !9np per single/redundant drive, 29 on dual drive (ERM 7.2.1).
+- Space: sum the KB of every volume moving, against HM57 free space from `STA PN:57 -D`.
+
+### 0.5 Downstream references
+
+Grep your own records for anything that names 51 or 55 explicitly: free-format logs, CL programs with `PN:51>` pathnames, EC files, Experion/PHD collection, button configuration.
+
+---
 
 ## Phase 1 - Preserve
 
-1. Disable auto-checkpointing on HG/NIM/AM/CG and allow no demand checkpoints while backing up (Command Processor 5.2 caution).
-2. Save history group definitions from HM51 and HM55 to IDF/.EB files (HM History Groups display). This is the only portable form.
-3. BACKUP PN:51 $Fn, BACKUP PN:55 $Fn, BACKUP PN:57 $Fn to emulated drives on the EST. BACKUP skips continuous history, journals, and the system maintenance journal.
-4. Continuous history you want to keep: load the source HM with &HMI first, then CPV PN:nn>!0np> $Fx>HSTn -A -D (ERM Table 7-18 steps 3 to 6). Never copy history with &HMO running. This copy can only ever be restored to an HM with the identical history config (i.e. a re-created HM51/55), so treat it as an archive, not a migration.
-5. Print/export journals and logs for the retention period.
-6. Copy NET>&ASY to a BACKUP NCF disk (CR $F1>&ASY -F -MF 3000 -BS 1700; CP NET>&ASY>*.* $F1>&ASY>= -D).
-7. ELCN: shut HM57 down and take a Windows-level copy of its HM disk file(s). This is your rollback for HM57.
+### 1.1 Freeze checkpointing
+
+SYSTEM STATUS > select each NIM, HG, AM, CG node > AUTO SAVE > DISABLE SAVE. Do not run demand checkpoints while backups run (Command Processor 5.2 caution).
+
+### 1.2 Save history group definitions from HM51 and HM55 to .EB files
+
+.EB is the portable master copy (DEB 7.2.1 note). Two ways. Use (a); (b) is the fallback for a handful of groups.
+
+**(a) Print Entities to .EB, all groups at once**
+
+1. CTL+HELP > COMMAND PROCESSOR. Create a selection list file of the group entity names with the Text Editor, one name per line, in the form `$CHuu(n)` where uu = unit id and n = group number (take these from the Continuous History printouts):
+   ```
+   EDIT NET>HMV1>HM51GRP.SL
+   ```
+   Or generate it: HM HISTORY GROUPS > COMND > LIST ENTITIES IN MODULE, MODULE number 51, pathname for SELECTION LIST `NET>HMV1>HM51GRP.SL`.
+2. CTL+HELP > HM HISTORY GROUPS > press COMND > select PRINT ENTITIES > select PRINT system entities > pathname for SELECTION LIST `NET>HMV1>HM51GRP.SL` > PRINT device ID or DESTINATION pathname `NET>HMV1>HM51GRP.EB` > ENTER.
+3. Repeat for HM55 into `HM55GRP.EB`. Also do HM57 into `HM57GRP.EB` (you will need it, HM57 gets wiped).
+4. Verify: `EDIT NET>HMV1>HM51GRP.EB` and check it begins with `&T`, has one `&N $CHuu(n)` block per group, ends with `&E`.
+
+**(b) Reconstitute one group at a time to an IDF**
+
+HM HISTORY GROUPS > COMND > RECONSTITUTE > ENTITY name `$CHuu(n)` > ENTER (PED fills with the live group) > COMND > WRITE TO IDF > Reference path `NET>HMV1>` > IDF pathname `HM51HIS` > ENTER. Repeat per group.
+
+### 1.3 Back up the non-history contents of 51, 55 and 57
+
+Prepare one destination volume per HM on EST emulated drives (Zip syntax shown; use `-MF` about 100 above the file count from `LS PN:nn>*>*.* -D`):
+
+```
+CR $F1>BU51 -F -MF 3000 -BS 1700
+BACKUP PN:51 $F1
+CR $F2>BU55 -F -MF 3000 -BS 1700
+BACKUP PN:55 $F2
+CR $F3>BU57 -F -MF 3000 -BS 1700
+BACKUP PN:57 $F3
+```
+
+BACKUP writes `BKUPnn.EC` on the medium and runs it. It skips continuous history, journals and the system maintenance journal, and saves the APL history group files (which you will not reuse, see 1.2). Works with &HMO or &HMI running. Verify each with `LS $Fn -A` and compare file counts to `LS PN:nn>*>*.* -D`.
+
+### 1.4 Archive continuous history (optional, archive only)
+
+Only if someone needs the raw history on a rebuilt HM later. Per HM, load &HMI first (never copy history under &HMO, ERM 7.3.5):
+
+HM Status display > node 51 > LOAD/DUMP > MANUAL LOAD > INIT PROGRAM > DEFAULT SOURCE > EXECUTE COMMAND > DEFAULT SOURCE > EXECUTE COMMAND > ENTER. Wait for HMOFF OK.
+
+```
+CR $F4>H51A -F -MF 3000 -BS 1700
+CPV PN:51>!0np> $F4>H51A -A -D
+CPV PN:51>!1np> $F4>H51B -A -D      (only if a second history volume exists)
+LS $F4 -A
+```
+
+This copy restores only to an HM with identical Continuous History configuration (ERM 7.7.1). It is not a migration path to HM57.
+
+### 1.5 Journals, logs, reports
+
+Print or export whatever the retention policy needs from 51/55 journals now. Journal volumes are not backed up and cannot be restored after reassignment.
+
+### 1.6 BACKUP NCF disk
+
+```
+CR $F1>&ASY -F -MF 3000 -BS 1700
+CP NET>&ASY>*.* $F1>&ASY>= -D
+```
+
+Label it BACKUP NCF. It is the rollback for the NCF and the DATA source when loading HM57 in Phase 3.
+
+### 1.7 ELCN whole-disk copy of HM57
+
+HM Status display > node 57 > SHUTDOWN > ENTER, wait for QUALIF. On the ELCN node hosting HM57, copy the HM disk file(s) at the Windows level to a safe location. Restart HM57 afterwards (LOAD/DUMP > AUTOLOAD NET, or power-cycle the node per your ELCN procedure) and wait for HMON OK before continuing.
+
+---
 
 ## Phase 2 - One NCF edit
 
-Order matters: the checker will not let you delete an HM node that still owns volumes.
+Order matters: CTL+F1 will not let you delete an HM node that still owns volumes.
 
-1. Volume Configuration, node pair 57: add the units/groups from 51 and 55 with the exact same Group Options (save rate, prearchive hours, snapshots, user avg, archive), journal units, checkpoint node assignments, area volumes, user volumes. Entries must be consecutive, no blank rows.
-2. Volume Configuration, node pairs 51 and 55: clear them.
-3. LCN Nodes: Delete Node 51, Delete Node 55 (NDE Table 7-27).
-4. F1 Check. Fix everything it flags. Then F2 Install only after step 3 below is done.
+### 2.1 Set the NCF backup path
 
-Variant with a rollback window: leave out the Delete Node step now, shut 51/55 down after cutover and delete them in a second NCF edit at the next station-reload window. Rollback in either variant is: reinstall BACKUP NCF, restore HM57 from its disk-file copy, power 51/55 back on (they still match the old NCF).
+CTL+HELP > SUPPORT UTILITIES > MODIFY VOLUME PATHS > NCF BACKUP PATH = `$F1>&ASY>` (the BACKUP NCF disk from 1.6, mounted) > ENTER > MAIN MENU.
+
+### 2.2 Grow node pair 57
+
+CTL+HELP > VOLUME CONFIGURATION > HM PAIR SELECTION MENU > node pair 57:
+
+- CONTINUOUS HISTORY: add every unit id and group count from the 51 and 55 printouts. Entries must be consecutive, no blank rows. Then GROUP OPTIONS: enter save rate, prearchive hours, snapshots, user avg, archive for every added group exactly as printed. Then HM/UNIT OPTIONS if used.
+- JOURNALS: add the units journaled on 51/55.
+- PHYSICAL NODE FOR CHECKPOINT: add the node numbers, volume size and file counts that pointed at 51/55.
+- AREA DATA VOLUME: add areas whose &3np was on 51/55, with sizes.
+- USER VOLUMES: add the user volumes from the 51/55 LSV printouts, with sizes and file counts.
+- PROGRAM IMAGE and DUMP: only if 51 or 55 was the system HM.
+- ENTER after each page.
+
+### 2.3 Clear node pairs 51 and 55
+
+Same menu, node pair 51: open each page and clear the entries (clear the port, ENTER). Repeat for 55.
+
+### 2.4 Delete the nodes
+
+CTL+HELP > LCN NODES > select node 51 > DELETE NODE > CTL+F1. Print the installation instructions (F4). Repeat for node 55.
+
+Rollback-window variant: skip 2.4 now, do it as a second NCF edit at the next station-reload window. 51/55 stay in the NCF, shut down.
+
+### 2.5 Check
+
+CTL+F1 on the Volume Configuration and LCN Nodes displays. Fix every message. Do not press CTL+F2 yet; Install happens in 3.2 after 51 and 55 are shut down.
+
+Rollback for either variant: SUPPORT UTILITIES > MODIFY VOLUME PATHS > NETWORK CONFIG PATH back to the BACKUP NCF disk, reinstall it, restore HM57 from the disk-file copy (1.7), power 51/55 back on. They still match the old NCF.
+
+---
 
 ## Phase 3 - Cutover
 
-1. SHUTDOWN HM51 and HM55 (status OFF / PWR_ON / QUALIF). Required before Install.
-2. F2 Install the NCF.
-3. HM57 rebuild (NDE Table 7-36 / ERM Table 7-18):
-   a. If 57 is the system HM: Support Utilities > Modify Volume Paths > set device paths to removable media, &Z1 in the lower drive, BACKUP NCF in the higher.
-   b. Shutdown HM57, wait QUALIF, Manual Load > Init Program (&HMI). Status HMOFF OK.
-   c. Volume Configuration > node pair 57 > CTL-F6. Wait for HM INITIALIZATION COMPLETE.
-   d. System HM only: CP $Fs>&ASY>*.* PN:57>&ASY>= -D.
-   e. EC $Fs>&EC>LOC_VOLZ.EC $Fs 57 np. Wait for EC Complete.
-   f. Autoboot: Shutdown, QUALIF, then restart the node (on ELCN this is a node restart from the ELCN tooling, not a power plug). Wait for HMON OK, up to an hour.
-   g. CD any directories missing versus the LSV printouts.
-   h. RESTORE $Fn PN:57 for the 57 backup, then for the 51 and 55 backups (volume and directory must already exist on the HM).
-   i. Modify Volume Paths back to NET>&ASY>.
-   j. HM History Groups: reload all groups from the IDF/.EB files (57's own plus 51's and 55's).
-   k. History Module Status > HIST COLLECT > ENABLE. Check trends after a few minutes.
-   l. Demand checkpoint every NIM/AM/HG/CG whose checkpoint volume moved, then re-enable auto-checkpointing.
-   m. Redundant WDA drives only: SYNC PN:57 after RESTORE finishes, auto-checkpoint off during sync. Confirm what redundancy means on the ELCN HM before running this.
-4. Shutdown and reload every Universal-Station-class node named in the install instructions: US, GUS, and the EST/ESVT Native Window nodes. One at a time so operators keep a console. Until this is done the deleted HMs still show on status displays.
-5. Watch the RTJ for "CHECK SYSTEM LOAD xx SEC. HISTORY COLLECTION CYCLE OVERRUN" for a week. If it repeats, slow save rates (5 s to 10/20/60 s) or spread groups so consecutive groups do not hit the same data owner (HM collects 3 groups at a time, ERM 7.2.4).
+### 3.1 Shut down HM51 and HM55
+
+HM Status display > node 51 > SHUTDOWN > ENTER. Wait for QUALIF. Repeat for 55. Status must be OFF, PWR_ON or QUALIF before Install (NDE Table 7-27 step 2).
+
+### 3.2 Install the NCF
+
+CTL+HELP > LCN NODES (or VOLUME CONFIGURATION) > CTL+F2. Wait for "installation complete". The NCF Status Display now lists every node that needs a reload.
+
+### 3.3 Point the loading station at removable media (system HM case only)
+
+If HM57 is, or is becoming, the system HM: CTL+HELP > SUPPORT UTILITIES > MODIFY VOLUME PATHS > SET DEVICE PATH TO REM. MEDIA. Mount &Z1 in the lower drive ($F1) and BACKUP NCF in the higher drive ($F2). Nothing may point at NET while the system HM is down.
+
+### 3.4 Rebuild HM57 (NDE Table 7-36, ERM Table 7-18)
+
+a. **Load &HMI.** HM Status display > node 57 > SHUTDOWN > ENTER > wait QUALIF > LOAD/DUMP > MANUAL LOAD > INIT PROGRAM.
+   PGM source: DEFAULT SOURCE if HMOF files are in !9np and the system HM is up, else ALTERNATE SOURCE > drive holding &Z1 > EXECUTE COMMAND.
+   DATA source: DEFAULT SOURCE (NET) or ALTERNATE SOURCE > drive holding BACKUP NCF > EXECUTE COMMAND > ENTER.
+   Wait for HMOFF OK.
+
+b. **Initialize.** CTL+HELP > VOLUME CONFIGURATION > node pair 57 > CTL+F6. Wait for "HM INITIALIZATION COMPLETE" (several minutes). Everything on HM57 is gone at this point.
+
+c. **Two-pass history file build (mandatory, prevents fragmentation).** Manual load &HMO from &Z1 + BACKUP NCF (LOAD/DUMP > MANUAL LOAD > OPERATOR PROGRAM > sources as in a). Wait HMON OK, let it run 5 minutes, then SHUTDOWN, wait QUALIF, manual load INIT PROGRAM again. Wait HMOFF OK. (ERM Table 7-18 steps 8 and 10.)
+
+d. **System HM only.** COMMAND PROCESSOR:
+   ```
+   CP $F2>&ASY>*.* PN:57>&ASY>= -D
+   ```
+
+e. **Personalities to the local volume.** With &Z1 in $F1:
+   ```
+   PD ON
+   DO $P1
+   EC $F1>&EC>LOC_VOLZ.EC $F1 57 np
+   ```
+   Answer the Y/N prompts. Copy &HMO (required) and &HMI (recommended). Wait for "Write Boot ... EC Complete". Confirm on the printout that &LDR, &HMI and &HMO files transferred.
+
+f. **Autoboot.** HM Status display > node 57 > SHUTDOWN > ENTER > wait QUALIF. Restart the HM node (on a classic HM: power off 5 seconds, power on; on the ELCN HM: restart the node from the ELCN tooling). Status goes LOC LOAD > READY > HMON OK. Allow up to an hour. Redundant WDA drives may show SEVERE until 3.4m.
+
+g. **Recreate directories.** `LSV PN:57` and compare to the 57, 51 and 55 printouts from 0.1. For every missing directory:
+   ```
+   CD NET>VOL DIR
+   ```
+   One command per directory, four-character names. Put them in an EC file if there are many.
+
+h. **Restore volumes.** Mount each backup medium in turn:
+   ```
+   RESTORE $F3 PN:57
+   RESTORE $F1 PN:57
+   RESTORE $F2 PN:57
+   ```
+   RESTORE needs the volume and directory to already exist on the HM (2.2 created the volumes, g created the directories). If a backup spans media, edit RESTVOLM.EC on the medium to add a CPV and PAUSE per extra medium (Command Processor 5.3). Watch for "Restore Complete" each time and `LS NET>VOL -A` spot checks.
+
+i. **NCF path back to NET.** CTL+HELP > SUPPORT UTILITIES > MODIFY VOLUME PATHS > NETWORK CONFIG PATH `NET>&ASY>` > ENTER.
+
+j. **Reload history groups.** HM57 must be HMON OK. CTL+HELP > HM HISTORY GROUPS > COMND > EXCEPTION BUILD > pathname for .EB source `NET>HMV1>HM57GRP.EB`, select the load option > ENTER. Repeat for `HM51GRP.EB` and `HM55GRP.EB`. If a group reports "HISTORY WILL BE LOST", that is expected on a fresh HM; F5 OVERWRITE. IDF alternative: COMND > LOAD MULTIPLE > pathname for IDF `NET>HMV1>HM51HIS` > ENTER.
+   Verify: COMND > LIST ENTITIES IN MODULE, MODULE 57. Count must equal the 51 + 55 + 57 group count.
+
+k. **Enable collection.** HM Status display > node 57 > HIST COLLECT > ENABLE COLLECT. After a few minutes call up a trend on a point from each old HM.
+
+l. **Checkpoints.** For every node whose checkpoint volume moved (from the 0.3 checkpoint pages):
+   - NIM: SYSTEM STATUS > NIM node > LOAD/SAVE RESTORE > SAVE DATA > EXECUTE COMMAND.
+   - AM/CM: SYSTEM STATUS > AM node > SAVE DATA > EXECUTE COMMAND.
+   - HG: SYSTEM STATUS > HG node > SAVE DATA > ALL BOXES > ENTER.
+   Confirm "SAVED" on each, then SYSTEM STATUS > node > AUTO SAVE > ENABLE SAVE on every node you disabled in 1.1. Do not reload any of these nodes until their checkpoint on HM57 shows SAVED.
+
+m. **Sync (redundant WDA drives only).** After every RESTORE has finished and with auto-save still disabled:
+   ```
+   SYNC PN:57
+   ```
+   Can take hours; status goes from SEVERE to OK. Confirm what redundancy means on the ELCN HM before running this; it may not apply.
+
+### 3.5 Reload every station
+
+The install instructions list them. For each US, GUS and EST/ESVT (Native Window) node, one at a time so the operators always have a console:
+
+SYSTEM STATUS > select the station > NODE STATUS > SHUTDOWN > ENTER > LOAD/DUMP > AUTOLOAD NET (or MANUAL LOAD > OPERATOR PROGRAM > DEFAULT SOURCE). Reload the station you are working from first; the NCF is passed from the loading station to the loaded node (NDE 7.4.3.3). Until this is done the deleted HMs still appear on status displays.
+
+### 3.6 Watch
+
+For a week, watch the Real-Time Journal for `CHECK SYSTEM LOAD xx SEC. HISTORY COLLECTION CYCLE OVERRUN` and the HM node status for `HM HISTORY IS OVERLOADED`. If it repeats: slow save rates from 5 s to 10/20/60 s in GROUP OPTIONS, or renumber groups so three consecutive groups do not all hit the same NIM/AM (the HM collects three groups at a time, ERM 7.2.4).
+
+---
 
 ## Turning 51/55 "off" without deleting them
 
-Powering them off and leaving them in the NCF works only if nothing in Volume Configuration still points at them, and it costs you standing node-status alarms and an NCF that lies to the next person. Acceptable for a few weeks as a rollback window. Not acceptable as an end state.
+Powering them off and leaving them in the NCF works only if nothing in Volume Configuration still points at them (2.3 done, 2.4 skipped). It costs you standing node-status alarms and an NCF that lies to the next person. Acceptable for a few weeks as a rollback window. Not acceptable as an end state. When you come back to delete them: 2.4, 2.5, 3.2, 3.5.
+
+---
 
 ## Sources
 
-- Engineer's Reference Manual SW09-605: 7.2.1 Table 7-1 HM data types, 7.2.2 HM limits, 7.2.3 units to HMs, 7.3.5 copying history only under &HMI, 7.7.1 Table 7-17, 7.7.2 Table 7-18, 7.7.3 Table 7-19.
-- Network Data Entry SW11-605: 2.1.6 Volume Configuration, Tables 7-8 to 7-12, Table 7-27 Delete History Module, Table 7-36 Edit Volume Configuration.
-- Command Processor Operation SW11-607: 5.2 BACKUP (exclusions and checkpoint caution), 5.3 RESTORE, 5.5 SYNC.
-- Customer Release Guide R684: 10.1 Migrate HMs (manual restore of history and APL files).
+- Engineer's Reference Manual SW09-605: 7.2.1 Table 7-1 HM data types, 7.2.2 HM limits, 7.2.3 units to HMs, 7.2.4 group layout, 7.3.5 copying history only under &HMI, 7.7.1 Table 7-17, 7.7.2 Table 7-18, 7.7.3 Table 7-19.
+- Network Data Entry SW11-605: 2.1.6 Volume Configuration, Tables 7-8 to 7-12, Table 7-27 Delete History Module, Table 7-36 Edit Volume Configuration, 7.4.3.3 reload notes.
+- Command Processor Operation SW11-607: 4.2 CP, 5.2 BACKUP, 5.3 RESTORE, 5.5 SYNC, 6.2 CPV, 6.3 CD, 6.4 CR, 8.2 DO, 9.3 STA, 9.4 LS, 9.5 LSV/LV, 11.7 EC.
+- Data Entity Builder SW11-611: 7.2.1 Write to IDF, 7.2.4 Load Multiple, 7.2.5/7.2.6 Reconstitute, 7.2.7 Exception Build, 7.2.10 List Entities, 7.2.11 Print Entities to .EB.
+- System Startup Guide SW11-614: Tasks 13, 14, 15, 27.
+- Operator's Digest SW11-615: Load/Dump targets, HIST COLLECT, AUTO SAVE, SAVE DATA procedures.
+- Customer Release Guide R684: 10.1 Migrate HMs.
 - "HM initialization" note in this repo.

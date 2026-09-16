@@ -48,6 +48,22 @@ DO
 
 `LSV` is the same as `LV`. `STA NET -D` gives drive status and virtual volume listing for every HM. The final bare `DO` turns printer output back off. Keep the printouts; you rebuild directories from them in Phase 3.
 
+No printer? Send it to a text file on an emulated disk instead. `PD ON` only affects printers; use `PO` to capture the command lines and completion messages into a second file:
+
+```
+CR $F1>NOTE -F -MF 300 -BS 300        (only on a blank emulated disk; wipes it)
+PO $F1>NOTE>HMLOG.XX
+DO $F1>NOTE>HMMAP.XX
+LSV PN:51
+LSV PN:55
+LSV PN:57
+STA NET -D
+DO
+PO
+```
+
+Read it back with `P $F1>NOTE>HMMAP.XX` or `EDIT $F1>NOTE>HMMAP.XX`, or move it to Windows on the EST with TPS File Transfer (FT05). Suffixes starting with x, y or z are plain text. (Command Processor 8.2, 8.4, 8.5.)
+
 ### 0.2 Find the system HM
 
 On the LSV printout, find which HM holds `&ASY` (in &0np), `&1np` personality images, `&2np` dump, `!4np`. If it is 51 or 55, this is a system HM move as well and HM57 must receive &ASY and the personality files (Phase 3, steps 3.4d and 3.4e).

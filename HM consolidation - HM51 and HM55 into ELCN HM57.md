@@ -121,6 +121,10 @@ SYSTEM STATUS > select each NIM, HG, AM, CG node > AUTO SAVE > DISABLE SAVE. Do 
 
 HM HISTORY GROUPS > COMND > RECONSTITUTE > ENTITY name `$CHuu(n)` > ENTER (PED fills with the live group) > COMND > WRITE TO IDF > Reference path `NET>HMV1>` > IDF pathname `HM51HIS` > ENTER. Repeat per group.
 
+Shortcut on the CH HEADER PED: key UNIT and HISTORIZATION GROUP, ENTER, then F7=RECON fills the PED and F10=WRITE writes it to the last IDF named. You never key the HM node; `$CHuu(n)` is keyed by unit and group and RECON pulls it from whichever HM owns the unit.
+
+**Native Window keys (EST/ESVT)**: LCN F1 to F12 = Ctrl + top-row 1 to 0, minus, equals (F7=RECON is Ctrl+7, F10=WRITE is Ctrl+0). COMND = Engineering > CMD_MENU, or Shift + keypad Minus. Delete key = LOAD, so avoid it while saving. Status bar must show ENG.
+
 ### 1.3 Back up the non-history contents of 51, 55 and 57
 
 Prepare one destination volume per HM on EST emulated drives (Zip syntax shown; use `-MF` about 100 above the file count from `LS PN:nn>*>*.* -D`):

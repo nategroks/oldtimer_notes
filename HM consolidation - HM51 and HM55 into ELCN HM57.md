@@ -124,10 +124,6 @@ On this system the IDFs live in volume `NET>IDF>` and an IDF named `HISGRP` (06/
 
 On the CH HEADER PED key the UNIT id and HISTORIZATION GROUP, ENTER, F7=RECON fills the PED, then COMND > WRITE TO IDF (first time) or F10=WRITE (after that) into `HMALLHIS`.
 
-**(b) Print system entities straight to .EB from a hand-built selection list (only if PRINT ENTITIES on this display offers the PRINT system entities pick)**
-
-CTL+HELP > COMMAND PROCESSOR: `EDIT NET>HMV1>HM51GRP.SL`, one `$CHuu(n)` per line from the printouts. Then HM HISTORY GROUPS > COMND > PRINT ENTITIES > PRINT system entities > pathname for SELECTION LIST `NET>HMV1>HM51GRP.SL` > destination `NET>HMV1>HM51GRP.EB` > ENTER. Verify as in (a) step 6.
-
 **Native Window keys (EST/ESVT)**: LCN F1 to F12 = Ctrl + top-row 1 to 0, minus, equals (F7=RECON is Ctrl+7, F10=WRITE is Ctrl+0). COMND = Engineering > CMD_MENU, or Shift + keypad Minus. Delete key = LOAD, so avoid it while saving. Status bar must show ENG.
 
 ### 1.3 Back up the non-history contents of 51, 55 and 57

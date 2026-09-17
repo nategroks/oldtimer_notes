@@ -19,6 +19,25 @@ ELCN does not change any of this. An ELCN HM still loads &HMO/&HMI, still lives 
 
 ---
 
+## Decision 17 Sep 26: virtualize first, consolidate later
+
+HM57 is the system HM. Rather than consolidate now, replace HM51 and HM55 one for one with ELCN HMs on the same node numbers and leave the NCF continuous history configuration unchanged. Reasons: continuous history can be saved and restored when its NCF items do not change (ERM 7.7.1); HM57 and NET stay up throughout, so each swap is an ordinary non-system HM rebuild; no Delete Node, so no station reload sweep; fully reversible with the old HM and its media. The HMALLHIS IDF, the .EB and HM5157.XX stay as insurance and are ready for the later consolidation, which becomes an ELCN-to-ELCN move planned with real load data.
+
+Per-HM sequence (ERM Table 7-18 applied to a node swap):
+
+1. BACKUP NCF disk. `BACKUP PN:nn $Fn`, auto-save disabled on every checkpointing node.
+2. Load the old HM with &HMI. `CPV PN:nn>!0np> $Fx>Hnn A -A -D` (and `!1np` on 55). Verify with `LS -A` both sides. `LSV PN:nn` to printer or file.
+3. SHUTDOWN, power off, bring up the ELCN HM as the same node number.
+4. Only if the ELCN HM needs a different LCN Nodes entry: modify, CTL+F1, CTL+F2. Do not touch Continuous History pages.
+5. New HM: manual load &HMI (&Z1, DATA from NET). CTL+F6. Two-pass &HMO then &HMI (Table 7-18 steps 8 and 10). `DL PN:nn>!0np>*.*`. `CPV $Fx>HnnA> PN:nn>!0np> -A -D`. `LOC_VOLZ.EC`. Autoboot. CD missing directories. `RESTORE $Fn PN:nn`. HIST COLLECT > ENABLE. Demand checkpoint nodes that checkpoint to it.
+6. Repeat for the second HM.
+
+Verify against ELCN documentation first (not in this repo): how the ELCN HM presents drive count to the NCF (HM51 is one drive, 55 and 57 are two), and whether the LCN Nodes entry changes for an ELCN HM.
+
+The consolidation procedure below stays valid for later.
+
+---
+
 ## Conventions used below
 
 - **CTL+HELP** = Engineering Main Menu (Universal or Engineer personality, ENGR key lock). Targets referenced: SYSTEM STATUS, COMMAND PROCESSOR, SUPPORT UTILITIES, VOLUME CONFIGURATION, LCN NODES, HM HISTORY GROUPS, SYSTEM WIDE VALUES.

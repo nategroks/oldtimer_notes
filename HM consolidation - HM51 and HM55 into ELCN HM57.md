@@ -104,9 +104,9 @@ SYSTEM STATUS > select each NIM, HG, AM, CG node > AUTO SAVE > DISABLE SAVE. Do 
 
 ### 1.2 Save history group definitions from HM51 and HM55 to .EB files
 
-.EB is the portable master copy (DEB 7.2.1 note). Two ways. Use (a); (b) is the fallback for a handful of groups.
+.EB is the portable master copy (DEB 7.2.1 note). Use (a); (a2) is the fallback for a handful of groups.
 
-History groups are reserved entities named `$CHuu(n)` (uu = unit id, n = group number, DEB Appendix B). They are keyed by unit and group, not by HM node, so you never type 51 or 55 anywhere. RECON pulls the group from whichever HM owns the unit, and the same names load straight onto HM57 once the units are reassigned there. LIST ENTITIES IN MODULE is on the HM HISTORY GROUPS command display; the manual does not say whether it enumerates `$CHuu(n)` for an HM node, so try it once (MODULE number 51, selection list `HM51GRP.SL`) and fall back to the printouts if it comes back empty.
+History groups are reserved entities named `$CHuu(n)` (uu = unit id, n = group number, DEB Appendix B). They are keyed by unit and group, not by HM node, so you never type 51 or 55 anywhere. RECON pulls the group from whichever HM owns the unit, and the same names load straight onto HM57 once the units are reassigned there. The group list comes from the existing HISGRP IDF (below) plus the Volume Configuration printouts.
 
 Pathname rules (DEB 7.1.5): the REFERENCE PATH NAME is device and volume, `NET>vol>` or `$Fn>vol>`; the IDF port is the bare file name with no `>` and no suffix. On this system the volume is `IDF` (the Command Processor USER PATH default `NET>HMV1>` points at a volume that no longer exists; fix it under SUPPORT UTILITIES > MODIFY VOLUME PATHS).
 

@@ -106,22 +106,22 @@ SYSTEM STATUS > select each NIM, HG, AM, CG node > AUTO SAVE > DISABLE SAVE. Do 
 
 .EB is the portable master copy (DEB 7.2.1 note). Two ways. Use (a); (b) is the fallback for a handful of groups.
 
-**(a) Print Entities to .EB, all groups at once**
+History groups are reserved entities named `$CHuu(n)` (uu = unit id, n = group number, DEB Appendix B). They are keyed by unit and group, not by HM node, so you never type 51 or 55 anywhere. RECON pulls the group from whichever HM owns the unit, and the same names load straight onto HM57 once the units are reassigned there. The HM HISTORY GROUPS command display does not offer LIST ENTITIES IN MODULE; that pick is for tagged points in AM/HG/NIM nodes. Build the list from the Continuous History printouts.
 
-1. CTL+HELP > COMMAND PROCESSOR. Create a selection list file of the group entity names with the Text Editor, one name per line, in the form `$CHuu(n)` where uu = unit id and n = group number (take these from the Continuous History printouts):
-   ```
-   EDIT NET>HMV1>HM51GRP.SL
-   ```
-   Or generate it: HM HISTORY GROUPS > COMND > LIST ENTITIES IN MODULE, MODULE number 51, pathname for SELECTION LIST `NET>HMV1>HM51GRP.SL`.
-2. CTL+HELP > HM HISTORY GROUPS > press COMND > select PRINT ENTITIES > select PRINT system entities > pathname for SELECTION LIST `NET>HMV1>HM51GRP.SL` > PRINT device ID or DESTINATION pathname `NET>HMV1>HM51GRP.EB` > ENTER.
-3. Repeat for HM55 into `HM55GRP.EB`. Also do HM57 into `HM57GRP.EB` (you will need it, HM57 gets wiped).
-4. Verify: `EDIT NET>HMV1>HM51GRP.EB` and check it begins with `&T`, has one `&N $CHuu(n)` block per group, ends with `&E`.
+**(a) Reconstitute each group to an IDF, then print the IDF to .EB (primary)**
 
-**(b) Reconstitute one group at a time to an IDF**
+On the CH HEADER PED (CTL+HELP > HM HISTORY GROUPS):
 
-HM HISTORY GROUPS > COMND > RECONSTITUTE > ENTITY name `$CHuu(n)` > ENTER (PED fills with the live group) > COMND > WRITE TO IDF > Reference path `NET>HMV1>` > IDF pathname `HM51HIS` > ENTER. Repeat per group.
+1. Key the UNIT id (two characters, exactly as in Volume Configuration) and the HISTORIZATION GROUP number. ENTER.
+2. F7=RECON. The PED fills with the live points and deadbands for `$CHuu(n)`.
+3. First group only: COMND > WRITE TO IDF > Reference path `NET>HMV1>` > IDF pathname `HM51HIS` > ENTER. Every group after that: F10=WRITE writes to the same IDF without the command display.
+4. Repeat 1 to 3 for every unit and group on the HM51 printouts. Use `HM55HIS` for HM55 and `HM57HIS` for HM57 (you will need it, HM57 gets wiped).
+5. Portable master: COMND > PRINT ENTITIES > PRINT IDF entities > pathname for IDF `NET>HMV1>HM51HIS` > PRINT device ID or DESTINATION pathname `NET>HMV1>HM51GRP.EB` > ENTER. Repeat per IDF.
+6. Verify: COMND > LIST ENTITIES IN IDF for each IDF (count must match the printout), and `EDIT NET>HMV1>HM51GRP.EB` in the Command Processor to check it begins with `&T`, has one `&N $CHuu(n)` block per group, ends with `&E`.
 
-Shortcut on the CH HEADER PED: key UNIT and HISTORIZATION GROUP, ENTER, then F7=RECON fills the PED and F10=WRITE writes it to the last IDF named. You never key the HM node; `$CHuu(n)` is keyed by unit and group and RECON pulls it from whichever HM owns the unit.
+**(b) Print system entities straight to .EB from a hand-built selection list (only if PRINT ENTITIES on this display offers the PRINT system entities pick)**
+
+CTL+HELP > COMMAND PROCESSOR: `EDIT NET>HMV1>HM51GRP.SL`, one `$CHuu(n)` per line from the printouts. Then HM HISTORY GROUPS > COMND > PRINT ENTITIES > PRINT system entities > pathname for SELECTION LIST `NET>HMV1>HM51GRP.SL` > destination `NET>HMV1>HM51GRP.EB` > ENTER. Verify as in (a) step 6.
 
 **Native Window keys (EST/ESVT)**: LCN F1 to F12 = Ctrl + top-row 1 to 0, minus, equals (F7=RECON is Ctrl+7, F10=WRITE is Ctrl+0). COMND = Engineering > CMD_MENU, or Shift + keypad Minus. Delete key = LOAD, so avoid it while saving. Status bar must show ENG.
 
@@ -268,10 +268,10 @@ h. **Restore volumes.** Mount each backup medium in turn:
 
 i. **NCF path back to NET.** CTL+HELP > SUPPORT UTILITIES > MODIFY VOLUME PATHS > NETWORK CONFIG PATH `NET>&ASY>` > ENTER.
 
-j. **Reload history groups.** HM57 must be HMON OK. CTL+HELP > HM HISTORY GROUPS > COMND > EXCEPTION BUILD > pathname for .EB source `NET>HMV1>HM57GRP.EB`, select the load option > ENTER. Repeat for `HM51GRP.EB` and `HM55GRP.EB`. If a group reports "HISTORY WILL BE LOST", that is expected on a fresh HM; F5 OVERWRITE. IDF alternative: COMND > LOAD MULTIPLE > pathname for IDF `NET>HMV1>HM51HIS` > ENTER.
-   Verify: COMND > LIST ENTITIES IN MODULE, MODULE 57. Count must equal the 51 + 55 + 57 group count.
+j. **Reload history groups.** HM57 must be HMON OK. CTL+HELP > HM HISTORY GROUPS > COMND > LOAD MULTIPLE > pathname for IDF `NET>HMV1>HM57HIS` > ENTER. Repeat for `HM51HIS` and `HM55HIS`. .EB alternative: COMND > EXCEPTION BUILD > pathname for .EB source `NET>HMV1>HM51GRP.EB`, select the load option > ENTER. If a group reports "HISTORY WILL BE LOST", that is expected on a fresh HM; F5 OVERWRITE.
+   Verify by spot check: key a unit and group from each old HM on the CH HEADER PED, F7=RECON, confirm the points come back from HM57. Then call up a trend on one of them after collection is enabled in k.
 
-k. **Enable collection.** HM Status display > node 57 > HIST COLLECT > ENABLE COLLECT. After a few minutes call up a trend on a point from each old HM.
+   k. **Enable collection.** HM Status display > node 57 > HIST COLLECT > ENABLE COLLECT. After a few minutes call up a trend on a point from each old HM.
 
 l. **Checkpoints.** For every node whose checkpoint volume moved (from the 0.3 checkpoint pages):
    - NIM: SYSTEM STATUS > NIM node > LOAD/SAVE RESTORE > SAVE DATA > EXECUTE COMMAND.

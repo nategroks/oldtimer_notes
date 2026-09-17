@@ -106,7 +106,9 @@ SYSTEM STATUS > select each NIM, HG, AM, CG node > AUTO SAVE > DISABLE SAVE. Do 
 
 .EB is the portable master copy (DEB 7.2.1 note). Two ways. Use (a); (b) is the fallback for a handful of groups.
 
-History groups are reserved entities named `$CHuu(n)` (uu = unit id, n = group number, DEB Appendix B). They are keyed by unit and group, not by HM node, so you never type 51 or 55 anywhere. RECON pulls the group from whichever HM owns the unit, and the same names load straight onto HM57 once the units are reassigned there. The HM HISTORY GROUPS command display does not offer LIST ENTITIES IN MODULE; that pick is for tagged points in AM/HG/NIM nodes. Build the list from the Continuous History printouts.
+History groups are reserved entities named `$CHuu(n)` (uu = unit id, n = group number, DEB Appendix B). They are keyed by unit and group, not by HM node, so you never type 51 or 55 anywhere. RECON pulls the group from whichever HM owns the unit, and the same names load straight onto HM57 once the units are reassigned there. LIST ENTITIES IN MODULE is on the HM HISTORY GROUPS command display; the manual does not say whether it enumerates `$CHuu(n)` for an HM node, so try it once (MODULE number 51, selection list `HM51GRP.SL`) and fall back to the printouts if it comes back empty.
+
+Pathname rules (DEB 7.1.5): the REFERENCE PATH NAME is device and volume, `NET>vol>` or `$Fn>vol>`; the IDF port is the bare file name with no `>` and no suffix. `HMV1` below is the Startup Guide sample volume name; substitute a user volume that exists on your LSV listing, or create one on an emulated drive with `CR $F1>VOL -F -MF 300 -BS 300`.
 
 **(a) Reconstitute each group to an IDF, then print the IDF to .EB (primary)**
 

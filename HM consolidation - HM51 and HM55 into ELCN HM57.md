@@ -119,7 +119,18 @@ On this system the IDFs live in volume `NET>IDF>` and an IDF named `HISGRP` (06/
 3. Groups that fail with `CHENTPAR(nnnn) CANNOT TRANSLATE INTERNAL ENTITY ID TO EXTERNAL - ENTITY NOT ESTABLISHED ON NET` (see `HMALLHIS.EF`) hold references to points that were deleted from the NIM/AM/HG without being removed from the group. Reconstitute rejects the whole group. For each such group on a unit that belongs to 51, 55 or 57: COMND > READ TO PED > IDF `HISGRP` > entity `$CHuu(n)`; clear any slot whose tag no longer exists (check with a Detail display); ENTER; COMND > WRITE TO IDF > `HMALLHIS` with OVERWRITE. If nothing usable is left, drop the group from the reload list; HM57 creates it empty. Groups on units that stay on other HMs need no action. (17 Sep 26 run: 13 of 104 failed this way; only `$CH01(6)`, `$CH20(6)`, `$CH20(7)`, `$CH20(8)` were on HM51, and all four are decommissioned. Dropped from the reload list. In Phase 2, unit 01 can go to HM57 with 5 groups and unit 20 with 5 instead of 6 and 8, unless a log, trend set or CL program refers to the dead group names.)
 4. Freshness check: LIST ENTITIES IN IDF on `HMALLHIS` and on `HISGRP`; a count difference means groups changed since June. Add any new units found on the Volume Configuration printouts to the list by hand and rerun step 2.
 5. Master copy: COMND > PRINT ENTITIES > PRINT IDF entities > pathname for IDF `HMALLHIS` > destination `NET>IDF>HMALLHIS.EB` > ENTER. `EDIT NET>IDF>HMALLHIS.EB` in the Command Processor to confirm `&T` at the top, one `&N $CHuu(n)` block per group, `&E` at the end.
-6. Reload list: `CP NET>IDF>HISGRP.XL NET>IDF>HM5157 -D`, then `EDIT NET>IDF>HM5157.XL` and delete every unit that is not on node pair 51, 55 or 57 per the printouts. (`.XL` is a valid input list suffix, DEB 7.1.8.1.) This is the selection list for LOAD MULTIPLE in 3.4j, so nothing on other HMs is touched.
+6. Reload list: `HM5157.XX` in this repo is the finished list (102 groups, built 17 Sep 26 from HISGRP.XL and the Volume Configuration pages). Copy it to the LCN with File Transfer (`ftcopy c:\path\HM5157.XX !\IDF`) and confirm with `P NET>IDF>HM5157.XX`. Any X/Y/Z suffix is a valid input list (DEB 7.1.8.1). This is the selection list for LOAD MULTIPLE in 3.4j, so nothing on HM53 or HM59 is touched.
+
+   HM pair map (HM PAIR SELECTION MENU, 17 Sep 26): pair 1 = HM51 (1 drive), pair 2 = HM53, pair 3 = HM55, pair 4 = HM57, pair 5 = HM59, all 2 drives.
+
+   | HM | Units (Continuous History page 1; page 2 empty) | NCF groups | Groups with points |
+   |---|---|---|---|
+   | 51 | 01(5) 02(5) 03(1) 04(1) 05(2) 06(8) 07(6) 08(2) 21(2) 22(5) 23(2) 55(2) | 41 | 37 |
+   | 55 | 09(5) 10(2) 11(2) 12(2) 13(4) 14(4) 15(6) 16(4) 17(2) 20(5) 30(1) 38(1) 60(2) 61(2) | 42 | 37 |
+   | 57 | 56(2) 18(4) 19(2) 28(4) 29(6) 31(6) 33(2) 34(5) 35(4) 53(1) | 36 | 28 |
+   | combined | | 119 | 102 |
+
+   Dropped: `$CH01(6)`, `$CH20(6-8)`, `$CH22(6)` (stale, above the NCF group count); `$CH55(1)`, `$CH55(2)`, `$CH29(4)` (dead point references). 119 configured groups is under the 150 non-system limit but at the 120 system-HM guideline: confirm HM57 is not the system HM, or trim unused slots in Phase 2.
 
 **(a2) Single group by hand (fallback)**
 

@@ -68,6 +68,12 @@ Read it back with `P $F1>NOTE>HMMAP.XX` or `EDIT $F1>NOTE>HMMAP.XX`, or move it 
 
 On the LSV printout, find which HM holds `&ASY` (in &0np), `&1np` personality images, `&2np` dump, `!4np`. If it is 51 or 55, this is a system HM move as well and HM57 must receive &ASY and the personality files (Phase 3, steps 3.4d and 3.4e).
 
+**Confirmed 17 Sep 26: HM57 is the system HM.** Consequences:
+
+- Load guideline is the system-HM one: 120 groups, 40 pps recommended, 20 to 30 pps realistic (ERM 7.2.2). Combined NCF count is 119; key Phase 2 group counts down to groups with points plus small headroom (about 105) and calculate pps from GROUP OPTIONS before Install.
+- ERM 7.2.2 says keep continuous history off the system HM. Accepted risk on ELCN hardware. Review trigger: repeated `HISTORY COLLECTION CYCLE OVERRUN` after cutover means move the system function (&ASY, &1np, &2np, checkpoint volumes) to another ELCN HM, not cut history.
+- The HM57 rebuild window is a system-wide window: no NET>&ASY, no personality loads, no checkpoint volumes until 3.4d and 3.4e complete. Step 3.3 is mandatory. Before Phase 3: &Z1 and BACKUP NCF mounted on the loading station, demand checkpoints of every NIM/AM/HG also saved to removable media, and a shift with no controller work planned. Do the 3.5 station reloads only after HM57 is HMON OK.
+
 ### 0.3 Print every Volume Configuration page
 
 CTL+HELP > VOLUME CONFIGURATION > HM PAIR SELECTION MENU > select node pair for 51.
